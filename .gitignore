@@ -1,0 +1,27 @@
+.DS_Store
+Thumbs.db
+.cursor/
+.trash/
+_private/
+
+# Copyright: never commit commercial book binaries or full-text machine extracts
+books/**/source/*.pdf
+books/**/source/extracted-pages.json
+
+# Obsidian local workspace state
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/workspace-mobile.json
+.obsidian/hotkeys.json
+
+# Obsidian local helper scripts
+.obsidian/plugins/obsidian-git/obsidian_askpass.sh
+
+# Obsidian plugin binaries from Community Plugins
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/manifest.json
+.obsidian/plugins/*/styles.css
+!.obsidian/plugins/books-reading-progress/main.js
+!.obsidian/plugins/books-reading-progress/manifest.json
+!.obsidian/plugins/books-reading-progress/styles.css
+.obsidian/plugins/books-reading-progress/data.json

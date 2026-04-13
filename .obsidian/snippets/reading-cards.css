@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap");
+
+body {
+  --books-font-display: "Playfair Display", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --books-font-body: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  --books-font-mono: "SFMono-Regular", "JetBrains Mono", "Cascadia Mono", monospace;
+  --books-radius-card: 22px;
+  --books-radius-pill: 999px;
+  --books-line-width: 49rem;
+  --books-measure: 72ch;
+  --file-line-width: var(--books-line-width);
+  --line-height-normal: 1.74;
+  --font-monospace: var(--books-font-mono);
+}
+
+.theme-dark {
+  --books-paper-rgb: 10, 14, 24;
+  --books-paper-elevated-rgb: 18, 24, 38;
+  --books-paper-soft-rgb: 26, 34, 52;
+  --books-ink-rgb: 240, 244, 250;
+  --books-muted-rgb: 156, 168, 188;
+  --books-border-rgb: 96, 108, 136;
+  --books-link-rgb: 196, 169, 108;
+  --books-link-hover-rgb: 223, 199, 141;
+  --books-shadow-lg: 0 26px 60px rgba(2, 6, 23, 0.38);
+  --books-shadow-md: 0 14px 34px rgba(2, 6, 23, 0.28);
+}
+
+.theme-light {
+  --books-paper-rgb: 250, 248, 243;
+  --books-paper-elevated-rgb: 255, 252, 247;
+  --books-paper-soft-rgb: 245, 239, 229;
+  --books-ink-rgb: 17, 24, 39;
+  --books-muted-rgb: 87, 96, 111;
+  --books-border-rgb: 191, 181, 164;
+  --books-link-rgb: 148, 102, 25;
+  --books-link-hover-rgb: 113, 74, 16;
+  --books-shadow-lg: 0 24px 54px rgba(15, 23, 42, 0.1);
+  --books-shadow-md: 0 14px 26px rgba(15, 23, 42, 0.08);
+}
+
+.workspace-leaf-content[data-type="markdown"] .view-content {
+  background:
+    radial-gradient(circle at top left, rgba(202, 138, 4, 0.08), transparent 20rem),
+    linear-gradient(180deg, rgba(var(--books-paper-rgb), 1), rgba(var(--books-paper-rgb), 0.98));
+}
+
+.markdown-reading-view .markdown-preview-sizer,
+.markdown-preview-view .markdown-preview-sizer {
+  font-family: var(--books-font-body);
+  color: rgba(var(--books-ink-rgb), 0.96);
+}
+
+.markdown-reading-view .markdown-preview-sizer > *:not(table),
+.markdown-preview-view .markdown-preview-sizer > *:not(table) {
+  max-width: min(var(--books-line-width), 100%);
+}
+
+.markdown-reading-view p,
+.markdown-reading-view li,
+.markdown-preview-view p,
+.markdown-preview-view li {
+  max-width: var(--books-measure);
+  color: rgba(var(--books-ink-rgb), 0.95);
+}
+
+.markdown-reading-view p,
+.markdown-preview-view p {
+  margin-block: 0.85rem;
+}
+
+.markdown-reading-view h1,
+.markdown-reading-view h2,
+.markdown-preview-view h1,
+.markdown-preview-view h2 {
+  font-family: var(--books-font-display);
+  letter-spacing: -0.028em;
+  color: rgba(var(--books-ink-rgb), 1);
+}
+
+.markdown-reading-view h1,
+.markdown-preview-view h1 {
+  max-width: 16ch;
+  font-size: clamp(2.6rem, 4.6vw, 4.1rem);
+  line-height: 0.98;
+  margin-top: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.markdown-reading-view h2,
+.markdown-preview-view h2 {
+  position: relative;
+  font-size: 1.7rem;
+  line-height: 1.08;
+  margin-top: 3.4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.35rem;
+}
+
+.markdown-reading-view h2::after,
+.markdown-preview-view h2::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 1px;
+  margin-top: 0.55rem;
+  background: linear-gradient(90deg, rgba(var(--books-link-rgb), 0.8), rgba(var(--books-border-rgb), 0));
+}
+
+.markdown-reading-view h3,
+.markdown-preview-view h3 {
+  margin-top: 2.3rem;
+  margin-bottom: 0.65rem;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: rgba(var(--books-ink-rgb), 0.92);
+}
+
+.markdown-reading-view ul,
+.markdown-reading-view ol,
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+  padding-left: 1.35rem;
+}
+
+.markdown-reading-view li,
+.markdown-preview-view li {
+  margin-block: 0.46rem;
+}
+
+.markdown-reading-view a.internal-link,
+.markdown-reading-view a.external-link,
+.markdown-preview-view a.internal-link,
+.markdown-preview-view a.external-link {
+  color: rgb(var(--books-link-rgb));
+  text-decoration-color: rgba(var(--books-link-rgb), 0.34);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition:
+    color 180ms ease,
+    text-decoration-color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.markdown-reading-view a.internal-link:hover,
+.markdown-reading-view a.external-link:hover,
+.markdown-preview-view a.internal-link:hover,
+.markdown-preview-view a.external-link:hover {
+  color: rgb(var(--books-link-hover-rgb));
+  text-decoration-color: rgba(var(--books-link-hover-rgb), 0.82);
+}
+
+.markdown-reading-view code,
+.markdown-preview-view code {
+  border-radius: 0.45rem;
+  padding: 0.12rem 0.38rem;
+  font-size: 0.9em;
+}
+
+.markdown-reading-view blockquote,
+.markdown-preview-view blockquote {
+  border-left: 2px solid rgba(var(--books-link-rgb), 0.42);
+  padding-left: 1rem;
+  color: rgba(var(--books-muted-rgb), 0.96);
+}
+
+.callout {
+  border-radius: var(--books-radius-card);
+  border: 1px solid rgba(var(--callout-color), 0.26);
+  background: linear-gradient(180deg, rgba(var(--callout-color), 0.16), rgba(var(--callout-color), 0.1));
+  box-shadow: var(--books-shadow-md);
+  overflow: hidden;
+}
+
+.callout .callout-title {
+  font-family: var(--books-font-body);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.callout .callout-content > :first-child {
+  margin-top: 0.2rem;
+}
+
+.callout[data-callout="hero"] {
+  --callout-color: 20, 24, 35;
+  --callout-icon: lucide-library;
+  background:
+    radial-gradient(circle at top right, rgba(202, 138, 4, 0.24), transparent 16rem),
+    linear-gradient(180deg, rgba(17, 24, 39, 0.96), rgba(15, 23, 42, 0.92));
+  border-color: rgba(202, 138, 4, 0.24);
+}
+
+.callout[data-callout="hero"] .callout-title,
+.callout[data-callout="hero"] .callout-content,
+.callout[data-callout="hero"] p,
+.callout[data-callout="hero"] li,
+.callout[data-callout="hero"] a.internal-link {
+  color: #f8fafc;
+}
+
+.callout[data-callout="hero"] a.internal-link {
+  text-decoration-color: rgba(255, 255, 255, 0.28);
+}
+
+.callout[data-callout="panel"] {
+  --callout-color: 135, 120, 96;
+  --callout-icon: lucide-panel-top;
+}
+
+.callout[data-callout="abstract"] {
+  --callout-color: 82, 101, 137;
+  --callout-icon: lucide-scroll-text;
+}
+
+.callout[data-callout="info"] {
+  --callout-color: 73, 106, 161;
+  --callout-icon: lucide-badge-info;
+}
+
+.callout[data-callout="locator"] {
+  --callout-color: 84, 123, 96;
+  --callout-icon: lucide-map;
+}
+
+.callout[data-callout="concept"] {
+  --callout-color: 178, 124, 43;
+  --callout-icon: lucide-book-open;
+}
+
+.callout[data-callout="status"] {
+  --callout-color: 190, 131, 43;
+  --callout-icon: lucide-book-check;
+}
+
+.callout[data-callout="status"]:has(li.task-list-item.is-checked) {
+  --callout-color: 77, 141, 101;
+}
+
+.callout[data-callout="route"] {
+  --callout-color: 151, 124, 68;
+  --callout-icon: lucide-signpost;
+}
+
+.callout[data-callout="map"] {
+  --callout-color: 112, 126, 149;
+  --callout-icon: lucide-map;
+}
+
+.callout[data-callout="note"] {
+  --callout-color: 117, 94, 143;
+  --callout-icon: lucide-pencil-line;
+}
+
+.callout[data-callout="hero"] .callout-content ul,
+.callout[data-callout="route"] .callout-content ul,
+.callout[data-callout="map"] .callout-content ul,
+.callout[data-callout="panel"] .callout-content ul {
+  margin-block: 0.55rem;
+}
+
+.callout[data-callout="concept"] p,
+.callout[data-callout="concept"] ul {
+  margin-block: 0.52rem;
+}
+
+.callout[data-callout="status"] ul.contains-task-list {
+  margin-block: 0.35rem 0;
+  padding-left: 0;
+}
+
+.callout[data-callout="status"] li.task-list-item {
+  list-style: none;
+  font-weight: 600;
+}
+
+.callout[data-callout="status"] li.task-list-item.is-checked {
+  color: rgba(var(--books-ink-rgb), 0.88);
+  text-decoration: none;
+}
+
+.callout[data-callout="status"] input.task-list-item-checkbox {
+  accent-color: rgb(190, 131, 43);
+}
+
+.callout[data-callout="status"]:has(li.task-list-item.is-checked) input.task-list-item-checkbox {
+  accent-color: rgb(77, 141, 101);
+}
+
+.markdown-preview-view .callout[data-callout="hero"],
+.markdown-preview-view .callout[data-callout="panel"],
+.markdown-preview-view .callout[data-callout="abstract"],
+.markdown-preview-view .callout[data-callout="info"],
+.markdown-preview-view .callout[data-callout="locator"],
+.markdown-preview-view .callout[data-callout="concept"],
+.markdown-preview-view .callout[data-callout="status"],
+.markdown-preview-view .callout[data-callout="route"],
+.markdown-preview-view .callout[data-callout="map"],
+.markdown-preview-view .callout[data-callout="note"] {
+  margin-top: 0.7rem;
+  margin-bottom: 1.05rem;
+}
+
+.markdown-reading-view p:has(> strong:first-child):has(a.internal-link),
+.markdown-preview-view p:has(> strong:first-child):has(a.internal-link) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.55rem;
+  margin-bottom: 0.85rem;
+  color: rgba(var(--books-muted-rgb), 0.95);
+}
+
+.markdown-reading-view p:has(> strong:first-child):has(a.internal-link) > strong,
+.markdown-preview-view p:has(> strong:first-child):has(a.internal-link) > strong {
+  width: auto;
+  margin-right: 0.1rem;
+  margin-bottom: 0;
+  font-size: 0.72rem;
+  font-family: var(--books-font-body);
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(var(--books-muted-rgb), 0.72);
+  line-height: 1;
+}
+
+.markdown-reading-view p:has(> strong:first-child):has(a.internal-link) a.internal-link,
+.markdown-preview-view p:has(> strong:first-child):has(a.internal-link) a.internal-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.9rem;
+  padding: 0.28rem 0.72rem;
+  border-radius: var(--books-radius-pill);
+  border: 1px solid rgba(var(--books-border-rgb), 0.34);
+  background: rgba(var(--books-paper-elevated-rgb), 0.78);
+  color: rgba(var(--books-ink-rgb), 0.96);
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 600;
+  line-height: 1.1;
+  box-shadow: 0 5px 12px rgba(15, 23, 42, 0.08);
+  cursor: pointer;
+}
+
+.markdown-reading-view p:has(> strong:first-child):has(a.internal-link) a.internal-link:hover,
+.markdown-reading-view p:has(> strong:first-child):has(a.internal-link) a.internal-link:focus-visible,
+.markdown-preview-view p:has(> strong:first-child):has(a.internal-link) a.internal-link:hover,
+.markdown-preview-view p:has(> strong:first-child):has(a.internal-link) a.internal-link:focus-visible {
+  border-color: rgba(var(--books-link-rgb), 0.42);
+  background: rgba(var(--books-link-rgb), 0.12);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  outline: none;
+}
+
+.markdown-reading-view table,
+.markdown-preview-view table {
+  width: 100%;
+  margin: 1.1rem 0 1.6rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid rgba(var(--books-border-rgb), 0.24);
+  border-radius: var(--books-radius-card);
+  overflow: hidden;
+  box-shadow: var(--books-shadow-md);
+  background:
+    linear-gradient(180deg, rgba(var(--books-paper-elevated-rgb), 0.95), rgba(var(--books-paper-rgb), 0.82));
+}
+
+.markdown-reading-view thead th,
+.markdown-preview-view thead th {
+  padding: 0.95rem 1rem;
+  background: rgba(var(--books-paper-soft-rgb), 0.92);
+  border-bottom: 1px solid rgba(var(--books-border-rgb), 0.24);
+  font-family: var(--books-font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(var(--books-muted-rgb), 0.92);
+}
+
+.markdown-reading-view tbody td,
+.markdown-preview-view tbody td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(var(--books-border-rgb), 0.16);
+  vertical-align: middle;
+}
+
+.markdown-reading-view tbody tr:last-child td,
+.markdown-preview-view tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.markdown-reading-view tbody tr:hover td,
+.markdown-preview-view tbody tr:hover td {
+  background: rgba(var(--books-paper-soft-rgb), 0.52);
+}
+
+.markdown-reading-view th:last-child,
+.markdown-reading-view td:last-child,
+.markdown-preview-view th:last-child,
+.markdown-preview-view td:last-child {
+  width: 8.2rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  body {
+    --books-line-width: 100%;
+  }
+
+  .markdown-reading-view h1,
+  .markdown-preview-view h1 {
+    font-size: 2.25rem;
+  }
+
+  .markdown-reading-view h2,
+  .markdown-preview-view h2 {
+    font-size: 1.45rem;
+  }
+
+  .markdown-reading-view table,
+  .markdown-preview-view table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .markdown-reading-view a.internal-link,
+  .markdown-reading-view a.external-link,
+  .markdown-preview-view a.internal-link,
+  .markdown-preview-view a.external-link,
+  .markdown-reading-view p:has(> strong:first-child):has(a.internal-link) a.internal-link,
+  .markdown-preview-view p:has(> strong:first-child):has(a.internal-link) a.internal-link {
+    transition: none;
+  }
+}

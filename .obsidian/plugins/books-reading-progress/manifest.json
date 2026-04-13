@@ -1,0 +1,10 @@
+{
+  "id": "books-reading-progress",
+  "name": "Books Reading Progress",
+  "version": "0.0.1",
+  "minAppVersion": "1.5.0",
+  "description": "Local read or unread tracking for shared chapter summaries.",
+  "author": "Codex",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}
