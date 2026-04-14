@@ -198,3 +198,120 @@ test('chapter status processor still renders when container is not yet connected
     delete require.cache[pluginPath];
   }
 });
+
+test('table renderer marks rows and buttons with explicit read status', async () => {
+  const pluginPath = require.resolve('../.obsidian/plugins/books-reading-progress/main.js');
+  const originalLoad = Module._load;
+
+  class FakeElement {
+    constructor(tag = 'div') {
+      this.tag = tag;
+      this.children = [];
+      this.dataset = {};
+      this.className = '';
+      this.textContent = '';
+      this.type = undefined;
+    }
+
+    empty() {
+      this.children = [];
+    }
+
+    createDiv(opts = {}) {
+      const el = new FakeElement('div');
+      if (opts.cls) el.className = opts.cls;
+      this.children.push(el);
+      return el;
+    }
+
+    createEl(tag, opts = {}) {
+      const el = new FakeElement(tag);
+      if (opts.cls) el.className = opts.cls;
+      if (opts.text) el.textContent = opts.text;
+      if (opts.type) el.type = opts.type;
+      this.children.push(el);
+      return el;
+    }
+
+    addEventListener() {}
+  }
+
+  class FakePlugin {
+    constructor(app) {
+      this.app = app;
+      this._processor = null;
+    }
+
+    async loadData() {
+      return {
+        progress: {
+          'books/taleb-antifragile-2012/chapters/01-between-damocles-and-hydra.md': true,
+        },
+      };
+    }
+
+    async saveData() {}
+
+    registerMarkdownCodeBlockProcessor(name, fn) {
+      if (name === 'books-progress') this._processor = fn;
+    }
+  }
+
+  try {
+    delete require.cache[pluginPath];
+    Module._load = function patchedLoad(request, parent, isMain) {
+      if (request === 'obsidian') {
+        return {
+          Plugin: FakePlugin,
+          MarkdownRenderer: { render: async (_app, markdown, el) => { el.textContent = markdown; } },
+        };
+      }
+      return originalLoad.call(this, request, parent, isMain);
+    };
+
+    const PluginClass = require(pluginPath);
+    const app = {
+      vault: {
+        getAbstractFileByPath(p) {
+          if (p === '_private/reader-state') return null;
+          return null;
+        },
+        getMarkdownFiles() {
+          return [
+            { path: 'books/taleb-antifragile-2012/chapters/01-between-damocles-and-hydra.md' },
+            { path: 'books/taleb-antifragile-2012/chapters/02-overcompensation-and-overreaction-everywhere.md' },
+          ];
+        },
+        async cachedRead(file) {
+          if (file.path.endsWith('01-between-damocles-and-hydra.md')) {
+            return '---\nchapter: 1\n---\n\n# Chapter 1. Between Damocles and Hydra\n';
+          }
+          return '---\nchapter: 2\n---\n\n# Chapter 2. Overcompensation and Overreaction Everywhere\n';
+        },
+      },
+    };
+    const plugin = new PluginClass(app);
+    plugin.app = app;
+    await plugin.onload();
+
+    const el = new FakeElement();
+    await plugin._processor('mode: table\nbook: books/taleb-antifragile-2012/chapters', el, {
+      sourcePath: 'Home.md',
+    });
+
+    const table = el.children[0];
+    const tbody = table.children[1];
+    const firstRow = tbody.children[0];
+    const secondRow = tbody.children[1];
+    const firstButton = firstRow.children[1].children[0];
+    const secondButton = secondRow.children[1].children[0];
+
+    assert.equal(firstRow.dataset.status, 'read');
+    assert.equal(secondRow.dataset.status, 'unread');
+    assert.equal(firstButton.dataset.status, 'read');
+    assert.equal(secondButton.dataset.status, 'unread');
+  } finally {
+    Module._load = originalLoad;
+    delete require.cache[pluginPath];
+  }
+});

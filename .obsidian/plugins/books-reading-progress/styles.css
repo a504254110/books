@@ -61,6 +61,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.45rem;
   min-width: 5.9rem;
   padding: 0.34rem 0.82rem;
   border-radius: var(--books-radius-pill, 999px);
@@ -70,28 +71,42 @@
   letter-spacing: 0.02em;
 }
 
+.books-status-chip::before {
+  content: "";
+  inline-size: 0.5rem;
+  block-size: 0.5rem;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0.95;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
 .theme-dark .books-status-chip--read {
   color: #bff3cc;
   background: rgba(52, 168, 83, 0.26);
   border-color: rgba(52, 168, 83, 0.5);
+  box-shadow: inset 0 0 0 1px rgba(52, 168, 83, 0.08);
 }
 
 .theme-dark .books-status-chip--unread {
   color: #ffe0b0;
   background: rgba(217, 119, 6, 0.26);
   border-color: rgba(217, 119, 6, 0.48);
+  box-shadow: inset 0 0 0 1px rgba(217, 119, 6, 0.08);
 }
 
 .theme-light .books-status-chip--read {
   color: rgb(20, 83, 45);
   background: rgba(34, 197, 94, 0.22);
   border-color: rgba(22, 163, 74, 0.42);
+  box-shadow: inset 0 0 0 1px rgba(22, 163, 74, 0.06);
 }
 
 .theme-light .books-status-chip--unread {
   color: rgb(120, 53, 15);
   background: rgba(245, 158, 11, 0.26);
   border-color: rgba(217, 119, 6, 0.4);
+  box-shadow: inset 0 0 0 1px rgba(217, 119, 6, 0.06);
 }
 
 .books-progress-table tbody tr[data-read="true"] td {

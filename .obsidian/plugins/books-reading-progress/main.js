@@ -131,6 +131,7 @@ module.exports = class BooksReadingProgressPlugin extends Plugin {
       cls: `books-status-chip ${checkbox.checked ? 'books-status-chip--read' : 'books-status-chip--unread'}`,
       text: checkbox.checked ? 'Read' : 'Unread',
     });
+    chip.dataset.status = checkbox.checked ? 'read' : 'unread';
     const text = label.createEl('span', {
       cls: 'books-progress-label',
       text: 'Finished reading this chapter',
@@ -140,6 +141,7 @@ module.exports = class BooksReadingProgressPlugin extends Plugin {
       wrapper.dataset.read = String(checkbox.checked);
       chip.textContent = checkbox.checked ? 'Read' : 'Unread';
       chip.className = `books-status-chip ${checkbox.checked ? 'books-status-chip--read' : 'books-status-chip--unread'}`;
+      chip.dataset.status = checkbox.checked ? 'read' : 'unread';
       text.textContent = 'Finished reading this chapter';
     });
   }
@@ -179,6 +181,7 @@ module.exports = class BooksReadingProgressPlugin extends Plugin {
     for (const row of rows) {
       const tr = tbody.createEl('tr');
       tr.dataset.read = String(row.read);
+      tr.dataset.status = row.read ? 'read' : 'unread';
       const titleCell = tr.createEl('td');
       await MarkdownRenderer.render(this.app, `[[${row.path}|${row.title}]]`, titleCell, row.path, this);
 
@@ -186,7 +189,9 @@ module.exports = class BooksReadingProgressPlugin extends Plugin {
       const button = statusCell.createEl('button', {
         cls: `books-status-chip ${row.read ? 'books-status-chip--read' : 'books-status-chip--unread'}`,
         text: row.read ? 'Read' : 'Unread',
+        type: 'button',
       });
+      button.dataset.status = row.read ? 'read' : 'unread';
       button.addEventListener('click', async () => {
         await this.setRead(row.path, !this.isRead(row.path));
       });
