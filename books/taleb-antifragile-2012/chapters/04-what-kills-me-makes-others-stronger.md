@@ -68,7 +68,7 @@ mode: chapter
 > [!concept]
 > **Claim.** In biological and evolutionary settings, elimination is not an accidental by-product. It is a core mechanism through which systems discover what works.
 >
-> **Example.** Taleb contrasts hormesis with evolution. In hormesis, the organism survives and gets stronger. In evolution, the organism often dies, but the gene pool gains because weaker forms disappear and surviving forms reproduce. He also uses antibiotic resistance: the harder you hit bacteria without fully eradicating them, the stronger the survivors become.
+> **Example.** Taleb contrasts two levels. In hormesis, the same organism survives a small stress and gets stronger. In evolution, many organisms do not survive; instead the population gains because weaker variants disappear and stronger ones reproduce. He then adds antibiotic resistance: if treatment kills weak bacteria but leaves some alive, the surviving strain becomes harder to kill next time.
 >
 > **Why this example matters.** These examples clarify the level where the gain appears. The individual organism or bacterium may die, but the larger population learns through selection.
 >
@@ -83,7 +83,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Errors are beneficial only when they remain local, partial, and nonterminal. When the same mistake is spread across a tightly connected system, the learning benefit disappears.
 >
-> **Example.** Taleb compares aviation with finance. A crash such as Swissair 111, TWA 800, or Air France 447 is tragic, but it is studied and does not shut down all aviation. By contrast, bank failures in a tightly connected system spread and make the next failure more likely instead of less likely. He also uses the Titanic and Fukushima as cases where one disaster taught the system before an even bigger one could happen.
+> **Example.** Taleb compares aviation with finance. When Swissair 111, TWA 800, or Air France 447 crashed, investigators studied the accident and the rest of aviation learned without shutting the whole system down. He then uses the Titanic and Fukushima the same way: one disaster exposed a design weakness before an even larger wave of similar failures could accumulate. By contrast, a tightly linked banking system spreads the mistake instead of learning from it.
 >
 > **Why this example matters.** The chapter's real distinction is here. A small failure is useful only when it stays local enough to teach. Once the error spreads through the whole network, the learning benefit is replaced by contagion.
 >
@@ -98,7 +98,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Risk takers are socially valuable not because they never fail, but because they make experimentation possible by putting themselves at risk.
 >
-> **Example.** Taleb asks readers to compare the ruined entrepreneur with the protected manager or intellectual. The failed restaurant owner may be eating canned tuna while others enjoy better coffee machines and meals because his experiment failed. Taleb then pushes the point to its limit with his imaginary National Entrepreneur Day, where society would thank failed entrepreneurs the way it honors dead soldiers.
+> **Example.** Taleb asks readers to compare the ruined entrepreneur with the protected manager or intellectual. A failed restaurant owner may end up broke and eating canned tuna while others later enjoy better coffee machines, meals, or business models because his failed experiment taught the market what not to do. Taleb then pushes the point to its limit with his imaginary National Entrepreneur Day, where society would thank failed entrepreneurs the way it honors dead soldiers.
 >
 > **Why this example matters.** These scenes show why Taleb treats entrepreneurship as an exposure role, not a prestige label. The entrepreneur matters because the downside falls on the person making the bet, while the knowledge created by the failure spreads to others.
 >

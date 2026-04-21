@@ -19,9 +19,9 @@ mode: chapter
 ## Chapter in one minute
 
 > [!abstract]
-> - The title means Seneca's method has two sides at once: cut the downside from fate and keep the upside.
+> - The title means Seneca tries to do two things at once: make bad luck hurt less and keep the gains from good luck.
 > - Taleb treats Seneca as the philosophical version of what Fat Tony does by instinct.
-> - Stoicism matters here not as moral comfort, but as a practical way to reduce dependence, limit losses, and stay open to gains.
+> - Stoicism matters here not as emotional numbness, but as a practical way to reduce dependence, limit losses, and stay open to gains.
 
 > [!info]- Grounding
 > **Grounding.** Locators: PDF pp. 169-175; chapter map: PDF p. 13 (2012 English *Antifragile*). This repository does not redistribute the book; verify with your own licensed copy.
@@ -42,6 +42,7 @@ mode: chapter
 
 - Taleb is not praising Stoicism as pure moral self-denial. He cares about the exposure pattern: less downside, open upside.
 - He is also not saying wealth is bad in itself. His point is that wealth becomes dangerous when it turns into dependence and fear of loss.
+- He is not saying a Stoic should feel nothing after loss. His point is that training can stop pain from taking total control of judgment and life.
 
 ## Core concepts
 
@@ -50,7 +51,7 @@ mode: chapter
 > [!concept]
 > **Claim.** The central Stoic move is to arrange life so that bad outcomes hurt less than good outcomes can help. That asymmetry turns uncertainty from a threat into something potentially favorable.
 >
-> **Example.** Taleb introduces Seneca as both a philosopher and one of the richest men in the Roman Empire. He then contrasts him with Professor Triffat, the modern decision theorist who teaches risk formulas but refuses to use them when making a serious career choice.
+> **Example.** Taleb introduces Seneca as more than a philosopher. He was also a rich Roman statesman exposed to court politics, exile, and danger. Taleb then contrasts him with Professor Triffat, the modern decision theorist who teaches risk formulas but refuses to use them when making a serious career choice.
 >
 > **Why this example matters.** This matters because Taleb wants a thinker who actually lived under risk, wealth, politics, and danger. Seneca becomes credible here because his ideas were tested in serious life, not just in academic diagrams.
 >
@@ -65,7 +66,7 @@ mode: chapter
 > [!concept]
 > **Claim.** By mentally degrading the importance of possessions and rehearsing loss, Stoicism reduces the damage inflicted by adverse outcomes.
 >
-> **Example.** Taleb uses Zeno's shipwreck as the classic Stoic scene: Zeno loses his cargo and treats the disaster as release rather than total ruin. He then gives Seneca-style modern scenes, like traveling with almost nothing or writing a resignation letter before starting a job so the job cannot own your mind.
+> **Example.** Taleb starts with Zeno, the founder of Stoicism. After a shipwreck destroys his cargo, Zeno treats the loss as release rather than total ruin. Taleb then gives Seneca-style modern scenes, like traveling with almost nothing or writing a resignation letter before starting a job so the job cannot own your mind.
 >
 > **Why this example matters.** This matters because the method works before the bad event arrives. By practicing less dependence in advance, you shrink the emotional and practical downside of loss.
 >
@@ -94,7 +95,7 @@ mode: chapter
 
 - Is Stoicism a genuine ancestor of antifragility, or a convenient precursor Taleb recruits after the fact?
 - Does rehearsing loss protect freedom, or can it also reduce ambition and appetite?
-- How well does Senecas method fit with the later optionality chapters rather than just with personal austerity?
+- How well does Seneca's method fit with the later optionality chapters rather than just with personal austerity?
 
 ## Why this chapter matters in the whole book
 

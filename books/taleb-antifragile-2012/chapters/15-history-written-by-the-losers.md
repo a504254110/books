@@ -51,7 +51,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Many historical accounts are written from the perspective of later interpreters who attribute success to the kinds of knowledge they personally value.
 >
-> **Example.** Taleb starts with derivatives traders using complex option payoffs successfully before the academic formulas were derived. He and Espen Haug then trace how academics later packaged those formulas as if traders had been using theory first. Taleb even describes an editor trying to rewrite his firsthand account so the academic arrow would point the preferred way.
+> **Example.** Taleb starts with derivatives traders using complex option payoffs successfully before the academic formulas were derived. He and derivatives practitioner and historian Espen Haug then trace how academics later packaged those formulas as if traders had been using theory first. Taleb even describes an editor trying to rewrite his firsthand account so the academic arrow would point the preferred way.
 >
 > **Why this example matters.** This matters because it shows the mechanism of expropriation directly. Once practice works, the cleaner written account often overwrites the actual order of events.
 >
@@ -109,7 +109,7 @@ mode: chapter
 ## Points to debate
 
 - Does Taleb overcorrect against theory by treating after-the-fact explanation as mostly distortion?
-- How much of historys bias is unavoidable simplification rather than ideological capture?
+- How much of history's bias is unavoidable simplification rather than ideological capture?
 - Can narrative ever be repaired enough to become genuinely useful in uncertain domains?
 
 ## Why this chapter matters in the whole book

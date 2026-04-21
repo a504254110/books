@@ -65,7 +65,7 @@ mode: chapter
 > [!concept]
 > **Claim.** The more learning is standardized, packaged, and scripted, the less room remains for the kind of exploratory exposure that builds real-world judgment.
 >
-> **Example.** Taleb uses the `soccer mom` as the symbol of overmanaged childhood. He contrasts children pushed through mapped activities with children exposed to biophilia, ambiguity, street-level messiness, and trial and error. He pushes the contrast further with lions in captivity, which live longer and more safely but in a degraded form.
+> **Example.** Taleb uses the `soccer mom` as a symbol for overmanaged childhood: a parent who drives the child from one supervised activity to another and tries to remove dirt, uncertainty, and unscripted time. He contrasts that child with one who still gets biophilia, street-level messiness, and trial and error. He then adds lions in captivity, which live longer and more safely but in a thinner, degraded way.
 >
 > **Why this example matters.** This matters because overprotection removes the very stressors and ambiguity that teach adaptation. Safety can quietly turn into domestication and fragility.
 >

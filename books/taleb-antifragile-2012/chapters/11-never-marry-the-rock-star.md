@@ -43,6 +43,7 @@ mode: chapter
 
 - The barbell is not a fixed `90/10` formula. The point is structural separation of safety and upside, not one magic percentage.
 - Taleb's mating example is descriptive, not moral advice. He is using it to show a two-part strategy, not to recommend behavior.
+- The bird example is about social pairing plus occasional extra-pair mating in some species. It is not a claim that apparent monogamy always means strict genetic monogamy.
 
 ## Core concepts
 
@@ -51,7 +52,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Antifragility begins with not being destroyed. Before optimizing for upside, one must first reduce exposure to terminal or irreversible harm.
 >
-> **Example.** Taleb returns to the broken package from chapter 1 and adds other path-dependent scenes. A kidney-stone operation before anesthesia is not the same as anesthesia before surgery. A university endowment can report years of strong returns, then lose everything in one bad year if the hidden fragility was large enough.
+> **Example.** Taleb returns to the broken package from chapter 1 and adds other path-dependent scenes. A kidney-stone operation before anesthesia means the patient suffers the cutting while still conscious; anesthesia before surgery means protection comes first. He then gives a financial version: a university endowment can report years of strong returns, then lose everything in one bad year if the hidden fragility was large enough.
 >
 > **Why this example matters.** This matters because the sequence of events changes everything. Once ruin or irreversible harm happens, later good conditions do not fully repair the damage.
 >
@@ -66,7 +67,7 @@ mode: chapter
 > [!concept]
 > **Claim.** A barbell strategy pairs one very safe side with one highly optional side, avoiding the illusion of security in the middle.
 >
-> **Example.** Taleb uses monogamous birds as a caricature of the barbell. The stable mate provides safety and support, while the occasional "rock star" mate provides a shot at better genes or extra upside. He gives the same logic in finance: keep most funds in something very safe and use a small part for highly speculative bets.
+> **Example.** Taleb uses some socially monogamous birds as a caricature of the barbell. One stable mate provides nesting support and continuity, while occasional mating outside the pair can still create a shot at better genes or extra upside. He gives the same logic in finance: keep most funds in something very safe and use a small part for highly speculative bets.
 >
 > **Why this example matters.** This matters because the barbell is not moderation. It is separation. One side protects survival; the other side keeps exposure to good surprises.
 >
@@ -81,7 +82,7 @@ mode: chapter
 > [!concept]
 > **Claim.** For creative or highly uncertain work, a stable base plus an open-ended side pursuit often dominates trying to make both functions depend on the same risky stream.
 >
-> **Example.** Taleb lists writers and thinkers who kept a secure base while protecting their real work: diplomats like Claudel and Saint-John Perse, Trollope in the post office, Kafka in an insurance company, and Spinoza as a lens maker. He also uses his own life as a trader who wrote on his own time.
+> **Example.** Taleb lists writers and thinkers who kept a secure base while protecting their real work. Paul Claudel and Saint-John Perse wrote while serving as diplomats. Trollope worked in the post office, Kafka in an insurance office, and Spinoza earned money by grinding lenses. Taleb adds his own version: trading paid the bills while writing stayed free.
 >
 > **Why this example matters.** This matters because the stable side is not dead weight. It buys freedom. When livelihood and speculation are not tied to one fragile stream, a person can take creative risks without being owned by them.
 >

@@ -4,16 +4,16 @@
 
 ## Core idea
 
-Institutional knowledge often takes credit for skills, technologies, and successes that actually came from practice, apprenticeship, and trial and error. 
+Institutional knowledge often takes credit for skills, technologies, and successes that actually came from practice, apprenticeship, and trial and error.
 
 ## Detailed explanation
 
-This matters because it names the exact institutional error Taleb wants the reader to notice: explanation shows up next to success, then claims authorship of the success. 
+It names the exact institutional error Taleb wants the reader to notice: explanation shows up next to success, then claims authorship of the success.
 
-This chapter supplies the social mechanism behind later arguments about green lumber and history written by the losers. The same credit-taking pattern keeps reappearing. 
+This chapter supplies the social mechanism behind later arguments about green lumber and history written by the losers. The same credit-taking pattern keeps reappearing.
 
 ## What this example is really showing
 
-Taleb imagines Harvard ornithologists lecturing birds on how to fly, then publishing papers that treat the lecture as the cause of flight. He uses this satire to attack the Baconian story that academia produces technology first and practice later. 
+Taleb imagines Harvard ornithologists lecturing birds on how to fly, then publishing papers that treat the lecture as the cause of flight. He uses this satire to attack the Baconian story that academia produces technology first and practice later.
 
-What the reader should notice in this scene is this: This matters because it names the exact institutional error Taleb wants the reader to notice: explanation shows up next to success, then claims authorship of the success. 
+The point of the scene: It names the exact institutional error Taleb wants the reader to notice: explanation shows up next to success, then claims authorship of the success.

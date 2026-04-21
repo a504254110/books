@@ -4,16 +4,16 @@
 
 ## Core idea
 
-Public opinion becomes dangerous when the speaker can be wrong for free while other people pay for acting on his words. 
+Public opinion becomes dangerous when the speaker can be wrong for free while other people pay for acting on his words.
 
 ## Detailed explanation
 
-This matters because it shows why Taleb keeps returning to talkers. Words can move armies, policies, portfolios, and public fear, yet the speaker often pays nothing when the result is catastrophic. 
+Taleb keeps returning to talkers. Words can move armies, policies, portfolios, and public fear, yet the speaker often pays nothing when the result is catastrophic.
 
-This is the ethical version of chapter 9's attack on fragilistas. Taleb now adds a penalty rule: if talk can impose downside, talk should not remain free of downside. 
+This is the ethical version of chapter 9's attack on fragilistas. Taleb now adds a penalty rule: if talk can impose downside, talk should not remain free of downside.
 
 ## What this example is really showing
 
-Taleb uses Thomas Friedman on the Iraq war and then broadens the attack to pundits and forecasters who can keep writing, advising, and posturing after their advice harms others. 
+Taleb uses Thomas Friedman, the newspaper columnist who argued for the Iraq war without having to bear the battlefield downside himself. He then broadens the attack to pundits and forecasters who keep writing, advising, and posturing after their advice harms others.
 
-What the reader should notice in this scene is this: This matters because it shows why Taleb keeps returning to talkers. Words can move armies, policies, portfolios, and public fear, yet the speaker often pays nothing when the result is catastrophic. 
+The point of the scene: Taleb keeps returning to talkers. Words can move armies, policies, portfolios, and public fear, yet the speaker often pays nothing when the result is catastrophic.

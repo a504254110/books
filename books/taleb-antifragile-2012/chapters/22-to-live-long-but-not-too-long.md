@@ -99,7 +99,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Length of life is not the only serious objective. Vitality, toughness, dignity, and contribution to something larger can matter more than mere extension.
 >
-> **Example.** Taleb contrasts modern immortality fantasies, including Kurzweil-style pill-and-gadget life extension, with older ideals of honorable death, offspring, books, and information that outlive the individual. He also contrasts subtractive fitness with the softer life of wealthy overmanaged elites.
+> **Example.** Taleb contrasts modern immortality fantasies, including Ray Kurzweil-style hopes that technology and pills will push life far past its normal span, with older ideals of honorable death, offspring, books, and information that outlive the individual. He also contrasts subtractive fitness with the softer life of wealthy overmanaged elites.
 >
 > **Why this example matters.** This matters because the chapter is not just about health tactics. It is about the end goal. Taleb thinks a tube-filled long life can be worse than a shorter but stronger and freer one.
 >

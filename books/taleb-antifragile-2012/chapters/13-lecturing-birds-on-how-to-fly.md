@@ -66,7 +66,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Trial and error works because each attempt changes what you know. Good search keeps the upside of discovery while learning from failure.
 >
-> **Example.** Taleb gives two search scenes. If you are looking for a lost wallet in your living room, you do not search the same place twice. Greg Stemm's treasure hunts work the same way: each failed search removes territory and raises the value of the next search step.
+> **Example.** Taleb starts with a simple room search. If you are looking for a lost wallet in your living room, you do not keep checking the same corner. He then gives Greg Stemm, an underwater explorer who hunts old shipwrecks such as the Spanish frigate *Nuestra Señora de las Mercedes*. Each failed search removes part of the map, so the next search is less blind than the last.
 >
 > **Why this example matters.** This matters because the process looks messy from the outside, but it is disciplined. Losses from search are not pure waste if they help narrow the field and preserve the chance of a large find.
 >

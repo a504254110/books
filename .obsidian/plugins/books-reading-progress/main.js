@@ -1,4 +1,4 @@
-const { Plugin, MarkdownRenderer } = require('obsidian');
+const { Plugin, MarkdownRenderer, MarkdownRenderChild } = require('obsidian');
 
 const DEFAULT_STATE = { progress: {} };
 
@@ -53,9 +53,18 @@ module.exports = class BooksReadingProgressPlugin extends Plugin {
         }
         await this.renderChapterStatus(el, ctx.sourcePath, config);
       };
+      const child = new MarkdownRenderChild(el);
+      child.onunload = () => {
+        this.renderers.delete(render);
+      };
+      ctx.addChild(child);
       this.renderers.add(render);
       await render();
     });
+  }
+
+  onunload() {
+    this.renderers?.clear();
   }
 
   async migrateLegacyPrivateState() {

@@ -67,7 +67,7 @@ mode: chapter
 > [!concept]
 > **Claim.** For nonperishable things, additional survival can increase expected future life instead of shortening it.
 >
-> **Example.** Taleb contrasts people with nonperishable things. A forty-year-old person has less life ahead than he did last year. But a forty-year-old book that is still in print can be expected to last longer than a ten-year-old book. Richard Gott's comparison between the Great Pyramid and the Berlin Wall makes the same point in a vivid way.
+> **Example.** Taleb contrasts people with nonperishable things. A forty-year-old person has less life ahead than he did last year. But a forty-year-old book that is still in print can be expected to last longer than a ten-year-old book. He then cites the physicist Richard Gott, who uses old monuments to make the same point: something like the Great Pyramid has already survived so long that it is a stronger longevity bet than a much younger structure such as the Berlin Wall.
 >
 > **Why this example matters.** This matters because it explains why age can be evidence in books, ideas, and technologies. Survival itself filters out hidden weakness.
 >
@@ -99,7 +99,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Hype is fragile. Time is often the only force that can separate durable knowledge from attention-seeking noise.
 >
-> **Example.** Taleb compares old textbooks and classics that remain readable to conference proceedings and academic hype that feel stale after only a few years. He also uses Judah Folkman's much-hyped cancer theory, which looked decisive at first but ended up being most useful somewhere else.
+> **Example.** Taleb compares old textbooks and classics that remain readable to conference proceedings and academic hype that feel stale after only a few years. He also uses Judah Folkman, a cancer researcher whose theory that tumors could be fought by cutting off their blood supply looked decisive at first but ended up finding its clearest success elsewhere, in macular degeneration.
 >
 > **Why this example matters.** This matters because it shows how opacity works in knowledge. A result that looks brilliant today may still be mostly noise, and only time can expose that.
 >

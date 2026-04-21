@@ -52,7 +52,7 @@ mode: chapter
 > [!concept]
 > **Claim.** You can often detect fragility without a full forecast by checking whether losses accelerate as conditions move against you.
 >
-> **Example.** Alex Berenson brought Taleb internal Fannie Mae risk reports from a defector. In the report, one move in an economic variable produced small profits in one direction, but much larger losses in the other direction. A further move made the losses grow even faster.
+> **Example.** Alex Berenson, then a *New York Times* journalist, brought Taleb internal risk reports from Fannie Mae, the giant government-backed mortgage firm. In the report, one move in an economic variable produced small profits in one direction, but much larger losses in the other direction. A further move made the losses grow even faster.
 >
 > **Why this example matters.** This matters because Taleb did not need to know the full macro story or the exact timing of the collapse. The response curve was enough. Small upside and accelerating downside meant hidden concavity.
 >

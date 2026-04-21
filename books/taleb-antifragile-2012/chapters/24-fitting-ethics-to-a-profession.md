@@ -82,7 +82,7 @@ mode: chapter
 > [!concept]
 > **Claim.** The more complex the regulatory system, the easier it is for former insiders to use privileged knowledge to extract optionality from the public.
 >
-> **Example.** Taleb's flagship case is Alan Blinder's deposit-insurance product. Wealthy clients could split large deposits into many insured pieces, get full government protection, and then argue that broader protection for ordinary citizens was bad policy.
+> **Example.** Taleb's flagship case is Alan Blinder's deposit-insurance product. Blinder, a former vice chair of the Federal Reserve, was linked to a service that split a wealthy client's large cash deposit into many smaller insured accounts, so the client could get near-total government protection beyond the normal cap. The same circle could then argue that broader protection for ordinary citizens was bad policy.
 >
 > **Why this example matters.** This matters because it shows the gap between legal and ethical. The transaction may fit the letter of the system while violating its purpose and using public office experience as a private franchise.
 >

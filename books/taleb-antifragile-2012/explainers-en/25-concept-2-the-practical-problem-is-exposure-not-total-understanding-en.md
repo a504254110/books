@@ -4,16 +4,16 @@
 
 ## Core idea
 
-Even when we do not fully understand the world, we can still improve our position by changing our exposure to it. 
+Even when we do not fully understand the world, we can still improve our position by changing our exposure to it.
 
 ## Detailed explanation
 
-This matters because the book is not really offering omniscience. It is offering a way to live and decide under uncertainty by changing the shape of the payoff. 
+The book is not really offering omniscience. It is offering a way to live and decide under uncertainty by changing the shape of the payoff.
 
-This ties the conclusion back to Thales, options, the barbell, medicine, and every chapter where Taleb preferred payoff design to explanatory confidence. 
+This ties the conclusion back to Thales, options, the barbell, medicine, and every chapter where Taleb preferred payoff design to explanatory confidence.
 
 ## What this example is really showing
 
-Taleb restates one of the book's key moves: we may never know `x` in full, but we can reshape `f(x)`. The barbell is the practical example of this move, because it changes the payoff without requiring total prediction. 
+Taleb restates one of the book's key moves: we may never know `x` in full, but we can reshape `f(x)`. The barbell is the practical example of this move, because it changes the payoff without requiring total prediction.
 
-What the reader should notice in this scene is this: This matters because the book is not really offering omniscience. It is offering a way to live and decide under uncertainty by changing the shape of the payoff. 
+The point of the scene: The book is not really offering omniscience. It is offering a way to live and decide under uncertainty by changing the shape of the payoff.

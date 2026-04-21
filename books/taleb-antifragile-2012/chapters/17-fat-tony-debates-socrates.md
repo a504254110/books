@@ -50,7 +50,7 @@ mode: chapter
 > [!concept]
 > **Claim.** A practice can be sound even if its reasons are unavailable, incomplete, or impossible to state neatly. Failure to explain is not proof of stupidity.
 >
-> **Example.** Taleb rewrites the `Euthyphro` as a dialogue between Socrates and Fat Tony. Tony's answer is that a child does not need to define mother's milk to know to drink it, and a bicycle rider may fall if you force him to explain the theory of balance while he is riding.
+> **Example.** Taleb rewrites Plato's `Euthyphro` as a dialogue between Socrates and Fat Tony. In Plato's dialogue, Socrates keeps pressing Euthyphro to define `piety` exactly. Taleb imagines Fat Tony answering back: a baby does not need a definition of mother's milk to know to drink it, and a person riding a bicycle may fall if you force him to explain the theory of balance while riding.
 >
 > **Why this example matters.** This matters because it attacks the deepest Socratic habit: if you cannot define it, you do not really know it. Taleb's answer is that life often works the other way around.
 >
@@ -65,7 +65,7 @@ mode: chapter
 > [!concept]
 > **Claim.** The demand for reasons often comes after practice and can misidentify what actually made the practice work.
 >
-> **Example.** Taleb uses Socrates' treatment of Euthyphro and of the poets as the main scene. Socrates keeps demanding definitions of piety and explanations of poetry, while Fat Tony's side says this pressure can confuse people about things they had been doing adequately all along.
+> **Example.** Taleb uses two scenes from Socrates' life. In `Euthyphro`, Socrates keeps demanding a strict definition of piety. In the `Apology`, he says he questioned poets and found that they could not fully explain their own poems. Taleb's answer is that this verbal pressure can misread practices that were working before the questioning began.
 >
 > **Why this example matters.** This matters because Taleb is not just criticizing one philosopher. He is criticizing the whole tradition that treats verbal clarity as the test of real knowledge.
 >
@@ -80,7 +80,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Traditions, heuristics, and opaque customs can carry filtered collective intelligence even when no single person can state the full theory behind them.
 >
-> **Example.** Taleb lines up several defenders of this view. Nietzsche says what is not intelligible is not necessarily unintelligent and contrasts the Apollonian with the Dionysian. Cato fears Socrates is weakening civic custom. Burke, Oakeshott, and Wittgenstein each defend the intelligence of practice or tradition against naive rationalism.
+> **Example.** Taleb first uses Nietzsche, who says that what is not intelligible to me is not necessarily unintelligent and contrasts orderly Apollonian reason with the darker Dionysian force. He then adds Cato, Burke, Oakeshott, and Wittgenstein as thinkers who each defend custom or practice as a carrier of intelligence that no one person can fully spell out.
 >
 > **Why this example matters.** This matters because it gives Taleb a positive alternative to explanation-first culture. A tradition can survive because it works, not because it has already been converted into a lecture.
 >

@@ -51,7 +51,7 @@ mode: chapter
 > [!concept]
 > **Claim.** A fragile system is concave to shocks: as the stressor grows, harm rises faster than linearly. An antifragile system is convex over some range: variation can create net benefit.
 >
-> **Example.** Taleb starts with the king who promised to crush his son with a large stone, then solved the oath by breaking the stone into many tiny pebbles. He adds everyday cases: a car hitting a wall at 50 mph does far more than ten crashes at 5 mph, and seven bottles of wine in one sitting hurt far more than one bottle a day for a week.
+> **Example.** Taleb starts with a rabbinical story. A king swears that he will punish his son by crushing him with a large stone. After he calms down, he keeps the oath in a different way: he breaks the stone into many tiny pebbles and throws them one by one. Taleb then gives everyday dose cases: a car hitting a wall at 50 mph does far more than ten crashes at 5 mph, and seven bottles of wine in one sitting hurt far more than one bottle a day for a week.
 >
 > **Why this example matters.** This matters because it turns fragility into something operational. You do not have to guess abstractly. You can ask whether larger doses create more-than-proportional harm.
 >
@@ -81,7 +81,7 @@ mode: chapter
 > [!concept]
 > **Claim.** More is not just more. In many systems, doubling exposure more than doubles harm, which means size itself creates fragility.
 >
-> **Example.** Taleb uses squeezes to show this. Owning an elephant is far riskier than owning a cat when water suddenly gets expensive. A giant bank with one Jérôme Kerviel creates disaster when it must dump tens of billions at once; ten small banks with ten `micro-Kerviels` would not create the same fire sale. He makes the same point with mergers and movie theaters with bottleneck exits.
+> **Example.** Taleb uses three squeeze scenes. A person can keep a cat when resources tighten, but an elephant becomes a disaster. A giant bank hit by one rogue trader, Jérôme Kerviel at Société Générale, must unwind tens of billions in a hurry and crashes the price against itself. He makes the same point with crowded theaters and stadiums: if too many people depend on the same narrow exit, one disturbance becomes a bottleneck.
 >
 > **Why this example matters.** This matters because size creates squeezes. Large units lose options faster, and when stress arrives they must act at the worst possible moment and price.
 >

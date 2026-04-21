@@ -8,19 +8,19 @@ Obsidian vault for **reader-written** book summaries and chapter navigation. Pro
 2. Open Obsidian and choose **Open folder as vault**.
 3. Select this repository folder as the vault root.
 4. When Obsidian asks about community plugins, allow them for this vault.
-5. Open **Settings → Community plugins** and make sure these are enabled:
-   - `Books Reading Progress`
-   - `Dataview`
-   - `Editing Toolbar`
-   - `Hover Editor`
+5. Open **Settings → Community plugins** and make sure `Books Reading Progress` is enabled.
+6. Optional plugins:
+   - `Hover Editor` if you want resizable hover previews for explainer notes
    - `Excalidraw` if you want to open the diagram files
-6. Open [Home.md](Home.md). This is the main entry page for reading.
+   - `Editing Toolbar` only if you plan to edit notes inside Obsidian
+7. Open [Home.md](Home.md). This is the main entry page for reading.
 
 ## Recommended Obsidian settings
 
 - Use `Reading view` as the default note view.
 - Keep `Outline` open so you can jump between concept cards quickly.
 - Enable `Page Preview` for hover previews on chapter links and explainer links.
+- Use `Hover Editor` only if you want larger, draggable previews than the built-in `Page Preview`.
 - If a custom plugin or style update does not appear immediately, run `Developer: Reload app`.
 
 ## How to read this vault

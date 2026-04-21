@@ -4,16 +4,16 @@
 
 ## Core idea
 
-Errors are beneficial only when they remain local, partial, and nonterminal. When the same mistake is spread across a tightly connected system, the learning benefit disappears. 
+Errors are beneficial only when they remain local, partial, and nonterminal. When the same mistake is spread across a tightly connected system, the learning benefit disappears.
 
 ## Detailed explanation
 
-The chapter's real distinction is here. A small failure is useful only when it stays local enough to teach. Once the error spreads through the whole network, the learning benefit is replaced by contagion. 
+The chapter's real distinction is here. A small failure is useful only when it stays local enough to teach. Once the error spreads through the whole network, the learning benefit is replaced by contagion.
 
-This is Taleb's bridge from evolutionary and business examples into engineering, finance, and policy. In the whole book, the distinction between local error and systemic synchronization leads directly into the political and economic arguments of Book II. 
+This is Taleb's bridge from evolutionary and business examples into engineering, finance, and policy. In the whole book, the distinction between local error and systemic synchronization leads directly into the political and economic arguments of Book II.
 
 ## What this example is really showing
 
-Taleb compares aviation with finance. A crash such as Swissair 111, TWA 800, or Air France 447 is tragic, but it is studied and does not shut down all aviation. By contrast, bank failures in a tightly connected system spread and make the next failure more likely instead of less likely. He also uses the Titanic and Fukushima as cases where one disaster taught the system before an even bigger one could happen. 
+Taleb compares aviation with finance. When Swissair 111, TWA 800, or Air France 447 crashed, investigators studied the accident and the rest of aviation learned without shutting the whole system down. He then uses the Titanic and Fukushima the same way: one disaster exposed a design weakness before an even larger wave of similar failures could accumulate. By contrast, a tightly linked banking system spreads the mistake instead of learning from it.
 
-What the reader should notice in this scene is this: The chapter's real distinction is here. A small failure is useful only when it stays local enough to teach. Once the error spreads through the whole network, the learning benefit is replaced by contagion. 
+The point of the scene: The chapter's real distinction is here. A small failure is useful only when it stays local enough to teach. Once the error spreads through the whole network, the learning benefit is replaced by contagion.

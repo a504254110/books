@@ -4,16 +4,16 @@
 
 ## Core idea
 
-Traditions, heuristics, and opaque customs can carry filtered collective intelligence even when no single person can state the full theory behind them. 
+Traditions, heuristics, and opaque customs can carry filtered collective intelligence even when no single person can state the full theory behind them.
 
 ## Detailed explanation
 
-This matters because it gives Taleb a positive alternative to explanation-first culture. A tradition can survive because it works, not because it has already been converted into a lecture. 
+It gives Taleb a positive alternative to explanation-first culture. A tradition can survive because it works, not because it has already been converted into a lecture.
 
-This widens the argument from individual skill to social memory. Later chapters on medicine, ethics, and via negativa all rely on the idea that survival can certify a practice before theory does. 
+This widens the argument from individual skill to social memory. Later chapters on medicine, ethics, and via negativa all rely on the idea that survival can certify a practice before theory does.
 
 ## What this example is really showing
 
-Taleb lines up several defenders of this view. Nietzsche says what is not intelligible is not necessarily unintelligent and contrasts the Apollonian with the Dionysian. Cato fears Socrates is weakening civic custom. Burke, Oakeshott, and Wittgenstein each defend the intelligence of practice or tradition against naive rationalism. 
+Taleb first uses Nietzsche, who says that what is not intelligible to me is not necessarily unintelligent and contrasts orderly Apollonian reason with the darker Dionysian force. He then adds Cato, Burke, Oakeshott, and Wittgenstein as thinkers who each defend custom or practice as a carrier of intelligence that no one person can fully spell out.
 
-What the reader should notice in this scene is this: This matters because it gives Taleb a positive alternative to explanation-first culture. A tradition can survive because it works, not because it has already been converted into a lecture. 
+The point of the scene: It gives Taleb a positive alternative to explanation-first culture. A tradition can survive because it works, not because it has already been converted into a lecture.

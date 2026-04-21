@@ -4,16 +4,16 @@
 
 ## Core idea
 
-A fragile system is concave to shocks: as the stressor grows, harm rises faster than linearly. An antifragile system is convex over some range: variation can create net benefit. 
+A fragile system is concave to shocks: as the stressor grows, harm rises faster than linearly. An antifragile system is convex over some range: variation can create net benefit.
 
 ## Detailed explanation
 
-This matters because it turns fragility into something operational. You do not have to guess abstractly. You can ask whether larger doses create more-than-proportional harm. 
+It turns fragility into something operational. You do not have to guess abstractly. You can ask whether larger doses create more-than-proportional harm.
 
-This is Taleb's major formalization. It turns earlier metaphors into a general diagnostic rule. In the whole book, chapter 19 deepens this into a detection method for hidden blowups. 
+This is Taleb's major formalization. It turns earlier metaphors into a general diagnostic rule. In the whole book, chapter 19 deepens this into a detection method for hidden blowups.
 
 ## What this example is really showing
 
-Taleb starts with the king who promised to crush his son with a large stone, then solved the oath by breaking the stone into many tiny pebbles. He adds everyday cases: a car hitting a wall at 50 mph does far more than ten crashes at 5 mph, and seven bottles of wine in one sitting hurt far more than one bottle a day for a week. 
+Taleb starts with a rabbinical story. A king swears that he will punish his son by crushing him with a large stone. After he calms down, he keeps the oath in a different way: he breaks the stone into many tiny pebbles and throws them one by one. Taleb then gives everyday dose cases: a car hitting a wall at 50 mph does far more than ten crashes at 5 mph, and seven bottles of wine in one sitting hurt far more than one bottle a day for a week.
 
-What the reader should notice in this scene is this: This matters because it turns fragility into something operational. You do not have to guess abstractly. You can ask whether larger doses create more-than-proportional harm. 
+The point of the scene: It turns fragility into something operational. You do not have to guess abstractly. You can ask whether larger doses create more-than-proportional harm.

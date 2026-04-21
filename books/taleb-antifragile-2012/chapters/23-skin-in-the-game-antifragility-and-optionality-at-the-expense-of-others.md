@@ -67,7 +67,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Public opinion becomes dangerous when the speaker can be wrong for free while other people pay for acting on his words.
 >
-> **Example.** Taleb uses Thomas Friedman on the Iraq war and then broadens the attack to pundits and forecasters who can keep writing, advising, and posturing after their advice harms others.
+> **Example.** Taleb uses Thomas Friedman, the newspaper columnist who argued for the Iraq war without having to bear the battlefield downside himself. He then broadens the attack to pundits and forecasters who keep writing, advising, and posturing after their advice harms others.
 >
 > **Why this example matters.** This matters because it shows why Taleb keeps returning to talkers. Words can move armies, policies, portfolios, and public fear, yet the speaker often pays nothing when the result is catastrophic.
 >
@@ -82,7 +82,7 @@ mode: chapter
 > [!concept]
 > **Claim.** In uncertain domains the cleanest way to judge belief is to inspect what a person actually risked and what actually happened, not the story he tells later.
 >
-> **Example.** Taleb's flagship case is Joseph Stiglitz and the Fannie Mae report. Stiglitz helped bless the system before it blew up, then later wrote as if he had predicted the crisis. Taleb's rule follows directly: do not ask for the opinion first; ask what is in the person's portfolio.
+> **Example.** Taleb's flagship case is Joseph Stiglitz and the Fannie Mae report. Before the crisis, Stiglitz and coauthors described the risk of a default by the government-backed mortgage firms as effectively zero. After the system blew up, Stiglitz wrote as if he had predicted the crisis. Taleb's rule follows directly: do not ask for the opinion first; ask what the person actually risked and what record he leaves behind.
 >
 > **Why this example matters.** This matters because postdiction has a free option built into it. A speaker can forget wrong forecasts, keep the few statements that fit the present, and look wise after the event.
 >
@@ -99,7 +99,7 @@ mode: chapter
 > [!concept]
 > **Claim.** The modern corporate and banking system often gives managers a convex upside while society eats the concave downside.
 >
-> **Example.** Taleb uses two linked scenes. First, stock-option managers benefit more from a jagged up-then-down market path than from a flat one, because they can cash out during the rise. Second, Robert Rubin kept about $120 million from Citibank while taxpayers absorbed the collapse.
+> **Example.** Taleb uses two linked scenes. First, stock-option managers benefit more from a jagged up-then-down market path than from a flat one, because they can cash out during the rise. Second, Robert Rubin, a former U.S. Treasury secretary who later worked at Citibank, kept about $120 million from the bank while taxpayers absorbed the collapse.
 >
 > **Why this example matters.** This matters because it shows optionality at scale. Volatility helps the manager, hurts the public, and turns the rhetoric of `incentives` into legalized transfer of fragility.
 >

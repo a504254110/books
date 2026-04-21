@@ -4,16 +4,16 @@
 
 ## Core idea
 
-Optionality is valuable because it allows action under opacity. You do not need a full causal map if you have exposure that captures upside while capping downside. 
+Many of the most useful options in life are ordinary arrangements that keep your downside small while preserving meaningful choice.
 
 ## Detailed explanation
 
-This matters because it shows that optionality is not rare or exotic. It often hides inside ordinary arrangements that keep your downside limited while preserving choice. 
+Optionality is not rare or exotic. It often hides inside simple arrangements that cost little, commit you weakly, and still preserve a valuable next move.
 
-Taleb will use this logic again when he talks about free options in search, technology, and personal freedom. The key move is always the same: keep the right, avoid the obligation. 
+Taleb uses this logic again when he talks about search, technology, and personal freedom. The repeated move is the same: keep the right, avoid the full obligation.
 
 ## What this example is really showing
 
-Taleb gives daily-life cases rather than abstract finance only. A loose invitation to a better party in London costs nothing until you decide whether to use it. A rent-controlled apartment in New York lets you stay if rents rise or leave if rents fall. In both cases you keep the right without equal obligation. 
+Taleb gives daily-life cases, not just finance contracts. First, someone in London says `drop by if you want` to a party. If nothing better appears, you can still go. If something better appears, you can skip it. Second, a rent-controlled apartment in New York lets you stay if rents rise, but you can leave if rents fall or if you want another life. In both cases, you keep a useful right without equal obligation.
 
-What the reader should notice in this scene is this: This matters because it shows that optionality is not rare or exotic. It often hides inside ordinary arrangements that keep your downside limited while preserving choice. 
+The point of the scene: Optionality is not rare or exotic. It often hides inside simple arrangements that cost little, commit you weakly, and still preserve a valuable next move.

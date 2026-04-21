@@ -92,6 +92,7 @@ test('plugin main exports a plugin class for Obsidian to load', () => {
         return {
           Plugin: class {},
           MarkdownRenderer: { render: async () => {} },
+          MarkdownRenderChild: class {},
           Notice: class {},
         };
       }
@@ -160,6 +161,18 @@ test('chapter status processor still renders when container is not yet connected
     }
   }
 
+  class FakeMarkdownRenderChild {
+    constructor(containerEl) {
+      this.containerEl = containerEl;
+    }
+
+    unload() {
+      if (typeof this.onunload === 'function') {
+        this.onunload();
+      }
+    }
+  }
+
   try {
     delete require.cache[pluginPath];
     Module._load = function patchedLoad(request, parent, isMain) {
@@ -167,6 +180,7 @@ test('chapter status processor still renders when container is not yet connected
         return {
           Plugin: FakePlugin,
           MarkdownRenderer: { render: async () => {} },
+          MarkdownRenderChild: FakeMarkdownRenderChild,
         };
       }
       return originalLoad.call(this, request, parent, isMain);
@@ -187,12 +201,19 @@ test('chapter status processor still renders when container is not yet connected
     await plugin.onload();
 
     const el = new FakeElement();
-    await plugin._processor('mode: chapter', el, {
+    const ctx = {
       sourcePath: 'books/taleb-antifragile-2012/chapters/01-between-damocles-and-hydra.md',
-    });
+      addChild(child) {
+        this.child = child;
+      },
+    };
+    await plugin._processor('mode: chapter', el, ctx);
 
     assert.ok(el.children.length > 0);
     assert.equal(plugin.renderers.size, 1);
+    assert.ok(ctx.child);
+    ctx.child.unload();
+    assert.equal(plugin.renderers.size, 0);
   } finally {
     Module._load = originalLoad;
     delete require.cache[pluginPath];
@@ -257,6 +278,12 @@ test('table renderer marks rows and buttons with explicit read status', async ()
     }
   }
 
+  class FakeMarkdownRenderChild {
+    constructor(containerEl) {
+      this.containerEl = containerEl;
+    }
+  }
+
   try {
     delete require.cache[pluginPath];
     Module._load = function patchedLoad(request, parent, isMain) {
@@ -264,6 +291,7 @@ test('table renderer marks rows and buttons with explicit read status', async ()
         return {
           Plugin: FakePlugin,
           MarkdownRenderer: { render: async (_app, markdown, el) => { el.textContent = markdown; } },
+          MarkdownRenderChild: FakeMarkdownRenderChild,
         };
       }
       return originalLoad.call(this, request, parent, isMain);
@@ -297,6 +325,7 @@ test('table renderer marks rows and buttons with explicit read status', async ()
     const el = new FakeElement();
     await plugin._processor('mode: table\nbook: books/taleb-antifragile-2012/chapters', el, {
       sourcePath: 'Home.md',
+      addChild() {},
     });
 
     const table = el.children[0];

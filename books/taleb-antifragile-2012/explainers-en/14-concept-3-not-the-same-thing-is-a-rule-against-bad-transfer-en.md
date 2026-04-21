@@ -4,16 +4,16 @@
 
 ## Core idea
 
-People often assume that because two things share a label or a surface feature, the same reasoning applies to both. In practice, that shortcut is often where error starts. 
+People often assume that because two things share a label or a surface feature, the same reasoning applies to both. In practice, that shortcut is often where error starts.
 
 ## Detailed explanation
 
-This matters because Taleb is not just warning against one bad trade. He is giving a general heuristic: when people move too quickly from story to payoff, they often miss the function in the middle. 
+Taleb is not just warning against one bad trade. He is giving a general heuristic: when people move too quickly from story to payoff, they often miss the function in the middle.
 
-This is Taleb's broader philosophical point: precision begins by refusing bad equivalences. In the whole book, this concern about false transfer later reappears in medicine, where surrogate measures are mistaken for real health. 
+This is Taleb's broader philosophical point: precision begins by refusing bad equivalences. In the whole book, this concern about false transfer later reappears in medicine, where surrogate measures are mistaken for real health.
 
 ## What this example is really showing
 
-Fat Tony's Kuwait trade is the cleanest case. Everyone around him knew there was going to be war and inferred that oil had to rise. Tony's answer was simple: "Kuwait and oil are not the same thing." War had already been priced in, and oil collapsed instead. Taleb then generalizes the same rule to theory versus price, idea versus function, and school knowledge versus practical success. 
+During the Kuwait crisis, many analysts knew war was coming and concluded that oil had to rise. Fat Tony made the opposite trade. His answer was simple: `Kuwait and oil are not the same thing.` The fear of war was already in the oil price before the shooting started, so oil fell instead of rising. Taleb then generalizes the same rule to theory versus price, idea versus function, and school knowledge versus practical success.
 
-What the reader should notice in this scene is this: This matters because Taleb is not just warning against one bad trade. He is giving a general heuristic: when people move too quickly from story to payoff, they often miss the function in the middle. 
+The point of the scene: Taleb is not just warning against one bad trade. He is giving a general heuristic: when people move too quickly from story to payoff, they often miss the function in the middle.

@@ -50,7 +50,7 @@ mode: chapter
 > [!concept]
 > **Claim.** People can be highly effective in a domain while lacking the kinds of facts that outsiders assume must matter. The knowledge that pays is often operational rather than discursive.
 >
-> **Example.** Joe Siegel became a star trader in green lumber while mistakenly thinking "green" meant painted green rather than freshly cut wood. Taleb then gives his own version from foreign exchange: top traders could not place Switzerland on a map or talk economics elegantly, yet they still outperformed polished theorists.
+> **Example.** Joe Siegel was a successful trader in green lumber, meaning freshly cut wood that has not yet been dried. He reportedly thought `green lumber` meant lumber painted green. Even so, he understood the market well enough to make money. Taleb then gives his own foreign-exchange version: some top currency traders could not place Switzerland on a map or speak economics elegantly, yet they still outperformed polished theorists.
 >
 > **Why this example matters.** This matters because outsiders keep looking for the wrong exam. They test for narratable facts and miss the local, practical cues that actually determine survival and profit.
 >
@@ -80,7 +80,7 @@ mode: chapter
 > [!concept]
 > **Claim.** People often assume that because two things share a label or a surface feature, the same reasoning applies to both. In practice, that shortcut is often where error starts.
 >
-> **Example.** Fat Tony's Kuwait trade is the cleanest case. Everyone around him knew there was going to be war and inferred that oil had to rise. Tony's answer was simple: "Kuwait and oil are not the same thing." War had already been priced in, and oil collapsed instead. Taleb then generalizes the same rule to theory versus price, idea versus function, and school knowledge versus practical success.
+> **Example.** During the Kuwait crisis, many analysts knew war was coming and concluded that oil had to rise. Fat Tony made the opposite trade. His answer was simple: `Kuwait and oil are not the same thing.` The fear of war was already in the oil price before the shooting started, so oil fell instead of rising. Taleb then generalizes the same rule to theory versus price, idea versus function, and school knowledge versus practical success.
 >
 > **Why this example matters.** This matters because Taleb is not just warning against one bad trade. He is giving a general heuristic: when people move too quickly from story to payoff, they often miss the function in the middle.
 >

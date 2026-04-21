@@ -4,16 +4,16 @@
 
 ## Core idea
 
-In biological and evolutionary settings, elimination is not an accidental by-product. It is a core mechanism through which systems discover what works. 
+In biological and evolutionary settings, elimination is not an accidental by-product. It is a core mechanism through which systems discover what works.
 
 ## Detailed explanation
 
-These examples clarify the level where the gain appears. The individual organism or bacterium may die, but the larger population learns through selection. 
+These examples clarify the level where the gain appears. The individual organism or bacterium may die, but the larger population learns through selection.
 
-Taleb is making the reader accept a harsher consequence of antifragility: the replacement of parts is often the price of renewal. In the whole book, this logic returns in the later discussions of optionality, trial and error, and the danger of protecting failing institutions from consequences. 
+Taleb is making the reader accept a harsher consequence of antifragility: the replacement of parts is often the price of renewal. In the whole book, this logic returns in the later discussions of optionality, trial and error, and the danger of protecting failing institutions from consequences.
 
 ## What this example is really showing
 
-Taleb contrasts hormesis with evolution. In hormesis, the organism survives and gets stronger. In evolution, the organism often dies, but the gene pool gains because weaker forms disappear and surviving forms reproduce. He also uses antibiotic resistance: the harder you hit bacteria without fully eradicating them, the stronger the survivors become. 
+Taleb contrasts two levels. In hormesis, the same organism survives a small stress and gets stronger. In evolution, many organisms do not survive; instead the population gains because weaker variants disappear and stronger ones reproduce. He then adds antibiotic resistance: if treatment kills weak bacteria but leaves some alive, the surviving strain becomes harder to kill next time.
 
-What the reader should notice in this scene is this: These examples clarify the level where the gain appears. The individual organism or bacterium may die, but the larger population learns through selection. 
+The point of the scene: These examples clarify the level where the gain appears. The individual organism or bacterium may die, but the larger population learns through selection.

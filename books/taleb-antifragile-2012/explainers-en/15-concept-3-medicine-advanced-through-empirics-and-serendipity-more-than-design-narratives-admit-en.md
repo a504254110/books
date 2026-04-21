@@ -4,16 +4,16 @@
 
 ## Core idea
 
-Medical progress is often retold as science-led design, but many of the major gains came from blind chemistry, side effects, and practical uptake of accidental findings. 
+Medical progress is often retold as science-led design, but many of the major gains came from blind chemistry, side effects, and practical uptake of accidental findings.
 
 ## Detailed explanation
 
-This matters because medicine is one of the places where people most want to believe in top-down design. Taleb uses it to show that even high-stakes progress often came from messy discovery, adoption, and drift. 
+Medicine is one of the places where people most want to believe in top-down design. Taleb uses it to show that even high-stakes progress often came from messy discovery, adoption, and drift.
 
-The medical case is important because Taleb will later attack iatrogenics, interventionism, and overconfidence in formal experts. This chapter gives the historical background for those later attacks. 
+The medical case is important because Taleb will later attack iatrogenics, interventionism, and overconfidence in formal experts. This chapter gives the historical background for those later attacks.
 
 ## What this example is really showing
 
-Taleb points to chemotherapy emerging from mustard-gas effects, drugs finding major uses other than the ones they were designed for, and the postwar therapeutic revolution coming from synthetic chemistry that blindly delivered remedies before anyone had a neat story for them. 
+Taleb points to chemotherapy emerging from mustard-gas effects, drugs finding major uses other than the ones they were designed for, and the postwar therapeutic revolution coming from synthetic chemistry that blindly delivered remedies before anyone had a neat story for them.
 
-What the reader should notice in this scene is this: This matters because medicine is one of the places where people most want to believe in top-down design. Taleb uses it to show that even high-stakes progress often came from messy discovery, adoption, and drift. 
+The point of the scene: Medicine is one of the places where people most want to believe in top-down design. Taleb uses it to show that even high-stakes progress often came from messy discovery, adoption, and drift.

@@ -4,16 +4,16 @@
 
 ## Core idea
 
-A system becomes morally distorted when one person enjoys the upside while another person, often unknowingly, absorbs the downside. 
+A system becomes morally distorted when one person enjoys the upside while another person, often unknowingly, absorbs the downside.
 
 ## Detailed explanation
 
-This matters because it defines the moral contrast for the whole chapter. Heroism is the inverse of the agency problem: one person accepts downside for others instead of pushing it onto them. 
+It defines the moral contrast for the whole chapter. Heroism is the inverse of the agency problem: one person accepts downside for others instead of pushing it onto them.
 
-This is where the book's asymmetry logic becomes openly ethical. The same structure that explained fragility in finance and medicine now explains moral distortion. 
+This is where the book's asymmetry logic becomes openly ethical. The same structure that explained fragility in finance and medicine now explains moral distortion.
 
 ## What this example is really showing
 
-Taleb starts with heroism and sacrifice. He recalls a nanny who died saving a child from a car and describes older societies in which the most respected people were those willing to take real risk for others, not those who hid from it. 
+Taleb starts with heroism and sacrifice. He recalls a nanny who died saving a child from a car and describes older societies in which the most respected people were those willing to take real risk for others, not those who hid from it.
 
-What the reader should notice in this scene is this: This matters because it defines the moral contrast for the whole chapter. Heroism is the inverse of the agency problem: one person accepts downside for others instead of pushing it onto them. 
+The point of the scene: It defines the moral contrast for the whole chapter. Heroism is the inverse of the agency problem: one person accepts downside for others instead of pushing it onto them.

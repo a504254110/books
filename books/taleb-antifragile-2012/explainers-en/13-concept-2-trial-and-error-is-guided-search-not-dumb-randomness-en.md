@@ -4,16 +4,16 @@
 
 ## Core idea
 
-Trial and error works because each attempt changes what you know. Good search keeps the upside of discovery while learning from failure. 
+Trial and error works because each attempt changes what you know. Good search keeps the upside of discovery while learning from failure.
 
 ## Detailed explanation
 
-This matters because the process looks messy from the outside, but it is disciplined. Losses from search are not pure waste if they help narrow the field and preserve the chance of a large find. 
+The process looks messy from the outside, but it is disciplined. Losses from search are not pure waste if they help narrow the field and preserve the chance of a large find.
 
-This is Taleb's model of rational action under opacity. It supports the later defense of experimentation, venture-style bets, and search processes that outsiders wrongly call irrational. 
+This is Taleb's model of rational action under opacity. It supports the later defense of experimentation, venture-style bets, and search processes that outsiders wrongly call irrational.
 
 ## What this example is really showing
 
-Taleb gives two search scenes. If you are looking for a lost wallet in your living room, you do not search the same place twice. Greg Stemm's treasure hunts work the same way: each failed search removes territory and raises the value of the next search step. 
+Taleb starts with a simple room search. If you are looking for a lost wallet in your living room, you do not keep checking the same corner. He then gives Greg Stemm, an underwater explorer who hunts old shipwrecks such as the Spanish frigate *Nuestra Señora de las Mercedes*. Each failed search removes part of the map, so the next search is less blind than the last.
 
-What the reader should notice in this scene is this: This matters because the process looks messy from the outside, but it is disciplined. Losses from search are not pure waste if they help narrow the field and preserve the chance of a large find. 
+The point of the scene: The process looks messy from the outside, but it is disciplined. Losses from search are not pure waste if they help narrow the field and preserve the chance of a large find.

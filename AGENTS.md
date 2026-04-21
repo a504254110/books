@@ -28,6 +28,8 @@ Single source of project instructions: **Codex**, **Cursor**, and other agents t
 - After each major example, explain what the example proves. Do not leave examples as unprocessed anecdotes.
 - Do not refer to examples by label alone when a first-time reader would not recognize them. Write examples as self-contained mini-scenes, not shorthand such as `the package example` or `the turkey example`.
 - In `Example`, restate the concrete setup of the scene in 1-2 sentences so a reader who has not read the chapter can still understand why the example matters.
+- If an example depends on a named story, person, place, or text from the source, introduce that story setup before analyzing it. Do not assume the reader already knows who `Thales`, `Seneca`, `Fat Tony`, `Mithridates`, or similar named examples are.
+- If the concept turns on a proper noun or canonical story, the first sentence of `Example` should identify what it is in plain English before moving to the payoff, contrast, or lesson.
 - In `Why this example matters`, make the contrast explicit. Prefer formulations like `A is not just B; the difference is ...` or `This matters because ...`, instead of assuming the reader already remembers the source context.
 - Default to ESL-friendly plain English. Keep Taleb's key vocabulary when it matters, but explain it with short sentences, common words, and direct contrasts.
 - Avoid elegant but compressed phrasing when a simpler sentence would be easier for a second-language reader to understand.
@@ -55,6 +57,8 @@ Single source of project instructions: **Codex**, **Cursor**, and other agents t
 - Keep the main chapter note English-first. Do not turn chapter notes into mixed bilingual pages when a linked explainer can provide the same help with less reading noise.
 - Each explainer note should link back to the exact concept heading in the source chapter so readers can return to the same place quickly.
 - Treat the explainer note as an explanation layer, not a translation layer. The goal is to help the reader truly understand the concept, not to mirror every sentence in the concept card.
+- Treat the explainer as a second-pass aid, not the primary reading path. A reader should usually read the concept card first and open the explainer only when the card leaves a real point unclear.
+- An explainer must clarify more than the concept card. If it only restates the card with longer sentences or different section labels, it should be rewritten.
 - Use the same interaction model for `explainers-en/` and `explainers-zh/`: one concept, one explainer note, one top back link to the exact concept heading, and one light link from the concept card.
 - Do not store personal reading progress directly in shared chapter notes. Shared content should remain Git-safe and identical across readers.
 - Store personal reading progress in the local data file of the bundled `books-reading-progress` community plugin.
@@ -103,6 +107,12 @@ Single source of project instructions: **Codex**, **Cursor**, and other agents t
   - one short `Core idea` block
   - one `Detailed explanation` block
   - one `What this example is really showing` block
+- In both English and Chinese explainers, let the sections do different jobs:
+  - `Core idea` / `核心意思`: the shortest plain-language statement of the concept
+  - `Detailed explanation` / `详细解释`: unpack the hidden move, contrast, or likely confusion in the concept
+  - `What this example is really showing` / `这个例子到底在说明什么`: restate the concrete scene with enough setup, then explain what the scene proves
+- Do not use whole-book connection as filler in explainers. Whole-book positioning belongs mainly in the chapter note; only keep it in an explainer when it is necessary to clarify the concept itself.
+- Do not repeat `Why this example matters` verbatim after already stating it elsewhere. The explainer should redistribute the idea into a clearer explanation, not echo the same sentence twice.
 - Keep English explainers tightly focused on explanation. They should deepen the concept without duplicating the entire chapter note.
 - Keep Chinese explainers tightly focused on explanation. Do not add extra sections such as cross-chapter links, discussion prompts, or essay-like digressions unless the user asks for them.
 
@@ -146,6 +156,7 @@ Single source of project instructions: **Codex**, **Cursor**, and other agents t
   - `**Example.**`
   - `Example` should be self-contained and understandable without having read the original chapter
   - `Example` should name a concrete scene, case, or thought experiment from the chapter rather than a paraphrased abstraction
+  - If the example uses a named story, historical figure, or famous anecdote, explain who or what it is before drawing the lesson from it
   - Use multiple tightly linked examples only when they clarify the contrast better than a single example
   - If the example depends on timing, dose, or sequence, explain that sequence directly
   - `**Why this example matters.**`

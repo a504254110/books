@@ -4,16 +4,16 @@
 
 ## Core idea
 
-Optionality cares less about average outcomes than about favorable extremes. A few strong wins can dominate many ordinary cases. 
+Optionality cares less about average outcomes than about favorable extremes. A few strong wins can dominate many ordinary cases.
 
 ## Detailed explanation
 
-This matters because optionality wins through asymmetry. A few favorable outcomes can matter far more than the average case, so the right tail is what counts. 
+The average outcome can hide what really drives success. In these cases, a few favorable extremes matter more than the middle of the distribution, so the right tail counts more than the average.
 
-This is the bridge from the single Thales story to the general mathematics of convex payoff. Later chapters formalize why right-tail exposure matters more than average-looking balance. 
+This is the bridge from the single Thales story to Taleb's more general mathematics of convex payoff. Later chapters formalize why right-tail exposure can matter more than average-looking balance.
 
 ## What this example is really showing
 
-Taleb applies this to several domains. An author or philosopher is better off with a small number of intense supporters than with a large number of mild admirers. Wittgenstein had few followers, but some were very influential. Luxury-goods sellers also live off the rich tail of the distribution, not the average buyer. 
+Taleb applies this beyond Thales. An author or philosopher can be better off with a small number of intense supporters than with a large number of mild admirers. Wittgenstein had few followers, but some were highly influential. Luxury-goods businesses also depend more on very rich buyers at the high end than on the average income of the whole population.
 
-What the reader should notice in this scene is this: This matters because optionality wins through asymmetry. A few favorable outcomes can matter far more than the average case, so the right tail is what counts. 
+The point of the scene: The average outcome can hide what really drives success. In these cases, a few favorable extremes matter more than the middle of the distribution, so the right tail counts more than the average.

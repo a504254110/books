@@ -4,16 +4,16 @@
 
 ## Core idea
 
-People frequently insure or smooth the wrong risks, protecting against small frequent losses while leaving themselves open to rare ruin. 
+People frequently insure or smooth the wrong risks, protecting against small frequent losses while leaving themselves open to rare ruin.
 
 ## Detailed explanation
 
-This matters because the calm middle is often misframed as prudence. In reality it can mean you are exposed to blowups without enough compensation for taking that risk. 
+The calm middle is often misframed as prudence. In reality it can mean you are exposed to blowups without enough compensation for taking that risk.
 
-This explains why the barbell can look extreme while actually being safer than moderate-looking strategies. In the whole book, the optionality discussion in chapter 12 explains why preserved upside matters once the left tail is clipped. 
+This explains why the barbell can look extreme while actually being safer than moderate-looking strategies. In the whole book, the optionality discussion in chapter 12 explains why preserved upside matters once the left tail is clipped.
 
 ## What this example is really showing
 
-Taleb quotes the Yiddish rule "Provide for the worst; the best can take care of itself" and then says people do the reverse. They insure small probable losses, but leave themselves exposed to large infrequent ones. He applies the same logic to policy, work, exercise, and even drinking patterns. 
+Taleb quotes the Yiddish rule "Provide for the worst; the best can take care of itself" and then says people do the reverse. They insure small probable losses, but leave themselves exposed to large infrequent ones. He applies the same logic to policy, work, exercise, and even drinking patterns.
 
-What the reader should notice in this scene is this: This matters because the calm middle is often misframed as prudence. In reality it can mean you are exposed to blowups without enough compensation for taking that risk. 
+The point of the scene: The calm middle is often misframed as prudence. In reality it can mean you are exposed to blowups without enough compensation for taking that risk.

@@ -4,16 +4,16 @@
 
 ## Core idea
 
-Many health improvements come from removing harmful modern additions rather than layering on more engineered solutions. 
+Many health improvements come from removing harmful modern additions rather than layering on more engineered solutions.
 
 ## Detailed explanation
 
-This matters because it turns `via negativa` into a daily practice. Removing a clear irritant is often more robust than adding a new product with unclear second-order effects. 
+It turns `via negativa` into a daily practice. Removing a clear irritant is often more robust than adding a new product with unclear second-order effects.
 
-This is the lifestyle version of the anti-intervention logic from chapter 21. It also echoes the whole book's distrust of additive optimization. 
+This is the lifestyle version of the anti-intervention logic from chapter 21. It also echoes the whole book's distrust of additive optimization.
 
 ## What this example is really showing
 
-Taleb gives a long subtractive list: less sunscreen, less air-conditioning, no soft drinks, no orange juice, fewer gadgets that remove exertion, and even less exposure to irritants like newspapers, commuting, and market noise. 
+Taleb gives a long subtractive list: less sunscreen, less air-conditioning, no soft drinks, no orange juice, fewer gadgets that remove exertion, and even less exposure to irritants like newspapers, commuting, and market noise.
 
-What the reader should notice in this scene is this: This matters because it turns `via negativa` into a daily practice. Removing a clear irritant is often more robust than adding a new product with unclear second-order effects. 
+The point of the scene: It turns `via negativa` into a daily practice. Removing a clear irritant is often more robust than adding a new product with unclear second-order effects.

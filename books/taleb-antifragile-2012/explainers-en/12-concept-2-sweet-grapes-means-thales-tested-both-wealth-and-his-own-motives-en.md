@@ -4,16 +4,16 @@
 
 ## Core idea
 
-Optionality does more than create profit. It also reveals what a person really wants by showing that he had genuine alternatives. 
+Optionality does more than create profit. It also reveals whether a person's stated preference is real or just a rationalization.
 
 ## Detailed explanation
 
-This matters because optionality produces independence. When you have another viable path, your stated preference means more and your life is less trapped by necessity. 
+Saying `I do not want money` means little when money was never really available to you. The option changes that. Once Thales showed he could have pursued wealth, walking away from it became stronger evidence of genuine preference.
 
-Taleb will keep linking freedom to optionality. The idea returns later when he treats financial independence, career flexibility, and freedom from dependence as practical antifragility. 
+Taleb keeps linking freedom to optionality. Later chapters treat financial independence, career flexibility, and freedom from dependence as practical forms of antifragility.
 
 ## What this example is really showing
 
-Taleb contrasts Thales with the classic sour-grapes move. After making money from the olive presses, Thales goes back to philosophy. Because he proved he could earn wealth and still walked away, his choice of philosophy now counts as real preference instead of excuse. 
+In Aesop's sour-grapes fable, someone cannot reach the grapes and then says they were probably bad anyway. Taleb says Thales shows the opposite case. Thales first proves that he can make money from the olive presses. Then he goes back to philosophy. Because wealth was available to him and he still walked away, his return to philosophy now looks like a real choice rather than an excuse.
 
-What the reader should notice in this scene is this: This matters because optionality produces independence. When you have another viable path, your stated preference means more and your life is less trapped by necessity. 
+The point of the scene: Saying `I do not want money` means little when money was never really available to you. The option changes that. Once Thales showed he could have pursued wealth, walking away from it became stronger evidence of genuine preference.

@@ -47,7 +47,7 @@ mode: chapter
 > [!concept]
 > **Claim.** `Everything gains or loses from volatility` is Taleb's generator sentence for the whole book, not just a catchy closing line.
 >
-> **Example.** At the end of the manuscript Shaiy Pilpel asks Taleb to explain the book standing on one leg. Taleb answers immediately because he now sees each chapter as a derivation of one central asymmetry.
+> **Example.** At the end of the manuscript Taleb's friend Shaiy Pilpel, a probabilist, asks him to explain the book standing on one leg. Taleb answers immediately because he now sees each chapter as a derivation of one central asymmetry.
 >
 > **Why this example matters.** This matters because it tells the reader how to use the book after finishing it. Taleb wants one simple question to regenerate the rest of the argument in new domains.
 >
