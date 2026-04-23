@@ -67,7 +67,7 @@ mode: chapter
 > [!concept]
 > **Claim.** A person is free in public judgment only when he cannot easily be squeezed by status needs, debt, employers, or social treadmill pressure.
 >
-> **Example.** Taleb gives several linked scenes: wealthy people in Greenwich still trapped by a treadmill of comparison, Fat Tony calling necktie-wearers modern slaves, and the Greek idea that a free man is one who owns his own time and opinion.
+> **Example.** Taleb gives several linked scenes. Wealthy residents of Greenwich, a well-off Connecticut suburb of New York that houses many finance professionals, are still trapped by a treadmill of status comparison against each other. Fat Tony, the streetwise Brooklyn-Italian character Taleb uses throughout the book to voice practical wisdom against theorists, calls necktie-wearing office workers modern slaves, since their income and social standing depend on pleasing an employer every day. And the ancient Greek idea that a free man is one who owns his own time and opinion stands behind both scenes as the older standard Taleb wants to recover.
 >
 > **Why this example matters.** This matters because it prevents a shallow reading of independence. Money alone does not make someone free if his entire life still depends on pleasing the system around him.
 >

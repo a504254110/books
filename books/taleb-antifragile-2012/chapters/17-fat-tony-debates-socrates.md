@@ -50,7 +50,7 @@ mode: chapter
 > [!concept]
 > **Claim.** A practice can be sound even if its reasons are unavailable, incomplete, or impossible to state neatly. Failure to explain is not proof of stupidity.
 >
-> **Example.** Taleb rewrites Plato's `Euthyphro` as a dialogue between Socrates and Fat Tony. In Plato's dialogue, Socrates keeps pressing Euthyphro to define `piety` exactly. Taleb imagines Fat Tony answering back: a baby does not need a definition of mother's milk to know to drink it, and a person riding a bicycle may fall if you force him to explain the theory of balance while riding.
+> **Example.** Taleb rewrites Plato's `Euthyphro` as a dialogue between Socrates and Fat Tony, his recurring streetwise-Brooklyn character who voices practical know-how. In Plato's original dialogue, Socrates keeps pressing Euthyphro to define `piety` exactly. Taleb imagines Fat Tony answering back: a baby does not need a definition of mother's milk to know to drink it, and a person riding a bicycle may fall if you force him to explain the theory of balance while riding.
 >
 > **Why this example matters.** This matters because it attacks the deepest Socratic habit: if you cannot define it, you do not really know it. Taleb's answer is that life often works the other way around.
 >
@@ -80,7 +80,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Traditions, heuristics, and opaque customs can carry filtered collective intelligence even when no single person can state the full theory behind them.
 >
-> **Example.** Taleb first uses Nietzsche, who says that what is not intelligible to me is not necessarily unintelligent and contrasts orderly Apollonian reason with the darker Dionysian force. He then adds Cato, Burke, Oakeshott, and Wittgenstein as thinkers who each defend custom or practice as a carrier of intelligence that no one person can fully spell out.
+> **Example.** Taleb first uses the 19th-century German philosopher Friedrich Nietzsche, who says that what is not intelligible to him is not necessarily unintelligent, and who contrasts orderly Apollonian reason with the darker, ecstatic Dionysian force. He then adds the Roman statesman Cato the Elder, the 18th-century Anglo-Irish conservative writer Edmund Burke, the 20th-century English political philosopher Michael Oakeshott, and the Austrian philosopher Ludwig Wittgenstein as later thinkers who each, in his own way, defend custom or practice as a carrier of intelligence that no one person can fully spell out.
 >
 > **Why this example matters.** This matters because it gives Taleb a positive alternative to explanation-first culture. A tradition can survive because it works, not because it has already been converted into a lecture.
 >

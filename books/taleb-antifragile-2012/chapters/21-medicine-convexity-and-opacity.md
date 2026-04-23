@@ -52,7 +52,7 @@ mode: chapter
 > [!concept]
 > **Claim.** In medicine we often do not fully see delayed harm, side effects, or causal chains, so an unnatural intervention must prove clear benefit before it overrides nature.
 >
-> **Example.** Taleb breaks his nose while walking on uneven ground, goes to the emergency room, and asks the doctor for evidence that icing his swollen nose helps. He then broadens the point with smoking, trans fat, thalidomide, and diethylstilbestrol, a synthetic hormone once given to pregnant women. Each looked acceptable for a time before hidden harms became visible.
+> **Example.** Taleb breaks his nose while walking on uneven ground, goes to the emergency room, and asks the doctor for evidence that icing his swollen nose helps. He then broadens the point with interventions that once looked safe or helpful and only later revealed delayed harm: smoking, long endorsed by doctors before its cancer link became undeniable; trans fat, promoted as a healthy substitute for butter before it was tied to heart disease; thalidomide, a sedative prescribed to pregnant women in the late 1950s that caused severe birth defects in thousands of babies; and diethylstilbestrol, a synthetic hormone once given to pregnant women that later raised cancer risk in their daughters. Each looked acceptable for a time before hidden harms became visible.
 >
 > **Why this example matters.** This matters because it shows Taleb's core standard. Lack of visible harm now is not enough. In opaque systems, the real damage can arrive late and still be large.
 >

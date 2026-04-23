@@ -82,7 +82,7 @@ mode: chapter
 > [!concept]
 > **Claim.** In uncertain domains the cleanest way to judge belief is to inspect what a person actually risked and what actually happened, not the story he tells later.
 >
-> **Example.** Taleb's flagship case is Joseph Stiglitz and the Fannie Mae report. Before the crisis, Stiglitz and coauthors described the risk of a default by the government-backed mortgage firms as effectively zero. After the system blew up, Stiglitz wrote as if he had predicted the crisis. Taleb's rule follows directly: do not ask for the opinion first; ask what the person actually risked and what record he leaves behind.
+> **Example.** Taleb's flagship case is the Nobel-laureate economist Joseph Stiglitz and the Fannie Mae report. In a 2002 paper, Stiglitz and two coauthors described the risk of a default by the government-backed U.S. mortgage firms as effectively zero. A few years later, in the 2008 financial crisis, those same firms collapsed and had to be rescued by taxpayers. Afterward, Stiglitz wrote as if he had predicted the crisis rather than having reassured readers about exactly this risk. Taleb's rule follows directly: do not ask for the opinion first; ask what the person actually risked and what record he leaves behind.
 >
 > **Why this example matters.** This matters because postdiction has a free option built into it. A speaker can forget wrong forecasts, keep the few statements that fit the present, and look wise after the event.
 >

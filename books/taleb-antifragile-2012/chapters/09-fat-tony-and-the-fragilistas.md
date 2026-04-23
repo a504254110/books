@@ -50,7 +50,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Useful judgment in opaque domains often begins with fast, embodied recognition of vulnerability rather than explicit theory.
 >
-> **Example.** Taleb describes Fat Tony meeting people at restaurants and almost sniffing them like a dog. He also shows Tony reading the room at lunch: he trusts the person who is relaxed, socially grounded, and not dripping with office stress more than the polished person rushing back to a meeting.
+> **Example.** Taleb describes Fat Tony — the streetwise Brooklyn-Italian character he uses throughout the book to voice practical wisdom against theorists — meeting people at restaurants and almost sniffing them like a dog. He also shows Tony reading the room at lunch: he trusts the person who is relaxed, socially grounded, and not dripping with office stress more than the polished person rushing back to a meeting.
 >
 > **Why this example matters.** This matters because Fat Tony is not running a formal model in his head. He is reading signs of fragility in behavior, incentives, and social position before anyone starts explaining.
 >
@@ -80,7 +80,7 @@ mode: chapter
 > [!concept]
 > **Claim.** In real life, the best heuristic is not "Who sounds right?" but "Who is exposed to being wrong?" Fat Tony's strength comes from tracking consequences rather than debate performance.
 >
-> **Example.** Fat Tony does not believe in prediction in the grand expert sense. Instead, he bets that the people who rely on prediction and ignore fragility will eventually blow up. Taleb also describes Nero opening the account statement from the "Fat Tony bet" as a reminder that real action, not praise, is the final test.
+> **Example.** Fat Tony does not believe in prediction in the grand expert sense. Instead, he bets that the people who rely on prediction and ignore fragility will eventually blow up. Taleb also describes Nero Tulip — another recurring character across Taleb's books, a disciplined trader-philosopher who stands for steady risk awareness — opening the account statement from that successful "Fat Tony bet" as a reminder that real action, not praise, is the final test.
 >
 > **Why this example matters.** This matters because Taleb's rule is not "never predict." It is "watch who becomes fragile by pretending to predict." The profitable move is often to stand on the other side of overconfidence.
 >

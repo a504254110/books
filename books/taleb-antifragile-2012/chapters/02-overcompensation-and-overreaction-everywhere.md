@@ -52,7 +52,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Taleb says people pay too much attention to damage after a shock and too little attention to growth after a shock.
 >
-> **Example.** David Halpern points Taleb to research on post-traumatic growth. After a serious shock, some people do not only suffer. They also report clearer priorities, stronger relationships, or greater inner strength.
+> **Example.** The researcher David Halpern points Taleb to work on post-traumatic growth. After a serious shock, some people do not only suffer. They also report clearer priorities, stronger relationships, or greater inner strength.
 >
 > **Why this example matters.** The point is not that trauma is good. The point is that one shock can lead to two different outcomes: damage in some cases, growth in others. Taleb uses this to show that beneficial stress is a real pattern, not just a metaphor.
 >
@@ -67,7 +67,7 @@ mode: chapter
 > [!concept]
 > **Claim.** A limited shock can trigger a response that goes beyond repair. The system comes back with extra strength.
 >
-> **Example.** Taleb describes watching Lenny Cake train with maximum lifts. The body is pushed by a short, heavy load, then allowed to rest. Taleb connects that pattern to redundancy more broadly: an extra kidney, Hydra's extra head, or extra cash in reserve all show a system holding more capacity than the minimum it needed yesterday.
+> **Example.** Taleb describes watching a weightlifter, Lenny Cake, train with maximum lifts. The body is pushed by a short, heavy load, then allowed to rest. Taleb connects that pattern to redundancy more broadly: an extra kidney, Hydra's extra head, or extra cash in reserve all show a system holding more capacity than the minimum it needed yesterday.
 >
 > **Why this example matters.** The key difference is between fixing damage and overshooting past the old level. Taleb uses redundancy to show that extra capacity is not waste; it is the form overcompensation takes.
 >

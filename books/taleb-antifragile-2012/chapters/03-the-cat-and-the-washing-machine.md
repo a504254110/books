@@ -82,7 +82,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Modern systems increasingly script experience, remove uncertainty, and treat people as if they had simple mechanical inputs and outputs. That process weakens the very systems it intends to protect.
 >
-> **Example.** Taleb gives two linked travel scenes. Chad improves his Russian after being trapped in a Moscow hospital quarantine and forced to deal with confusion, pressure, and Tolstoy in the original. Taleb then contrasts that with modern travel assistants who remove ambiguity, solve everything in English, and leave the traveler with comfort but less exposure and less learning.
+> **Example.** Taleb gives two linked travel scenes. In one, a traveler named Chad improves his Russian after being trapped in a Moscow hospital quarantine and forced to deal with confusion, pressure, and Tolstoy in the original. Taleb then contrasts that with modern travel assistants who remove ambiguity, solve everything in English, and leave the traveler with comfort but less exposure and less learning.
 >
 > **Why this example matters.** These scenes show why Taleb attacks touristification. The friction is not valuable because it is annoying; it is valuable because it forces attention, improvisation, and skill-building that a fully managed script removes.
 >

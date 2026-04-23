@@ -80,7 +80,7 @@ mode: chapter
 > [!concept]
 > **Claim.** People often assume that because two things share a label or a surface feature, the same reasoning applies to both. In practice, that shortcut is often where error starts.
 >
-> **Example.** During the Kuwait crisis, many analysts knew war was coming and concluded that oil had to rise. Fat Tony made the opposite trade. His answer was simple: `Kuwait and oil are not the same thing.` The fear of war was already in the oil price before the shooting started, so oil fell instead of rising. Taleb then generalizes the same rule to theory versus price, idea versus function, and school knowledge versus practical success.
+> **Example.** During the 1990–1991 Kuwait crisis, when Iraq had invaded Kuwait and a US-led war looked inevitable, many analysts concluded that oil had to rise. Fat Tony, Taleb's recurring streetwise-trader character, made the opposite trade. His answer was simple: `Kuwait and oil are not the same thing.` The fear of war was already in the oil price before the shooting started, so oil fell instead of rising. Taleb then generalizes the same rule to theory versus price, idea versus function, and school knowledge versus practical success.
 >
 > **Why this example matters.** This matters because Taleb is not just warning against one bad trade. He is giving a general heuristic: when people move too quickly from story to payoff, they often miss the function in the middle.
 >

@@ -84,7 +84,7 @@ mode: chapter
 > [!concept]
 > **Claim.** Modern systems often replace old practices because the new version looks cleaner or more rational, even when the old one fits human use better.
 >
-> **Example.** Taleb uses several linked cases. The metric system tries to replace pounds, feet, inches, and miles with cleaner units, but the old units match ordinary human perception. Brasilia and top-down urban redesign look neat on a map, while old neighborhoods that evolved slowly remain more livable and more valuable.
+> **Example.** Taleb uses two domains to show the pattern. First, the metric system tries to replace pounds, feet, inches, and miles with cleaner decimal units. The older units were calibrated over centuries to match ordinary human perception, so they still persist in daily speech even in countries where metric is the official standard. Second, Brasilia — Brazil's capital, designed from scratch on empty land in the late 1950s and built to a single master plan — was meant as a rational improvement over organically grown cities. Decades later, residents still find it less walkable and less lively than older Brazilian cities that grew neighborhood by neighborhood. The planned version looks cleaner on a map, but the slowly-grown version fits daily life better.
 >
 > **Why this example matters.** This matters because the chapter is not only about age. It is also about fit. Old forms often survive because they match real life in ways abstract redesign does not notice.
 >

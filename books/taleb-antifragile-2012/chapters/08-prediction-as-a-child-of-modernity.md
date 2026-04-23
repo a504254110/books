@@ -51,7 +51,7 @@ mode: chapter
 > [!concept]
 > **Claim.** In domains dominated by significant rare events, experts do not merely perform poorly; their long-range forecasting record is effectively nil.
 >
-> **Example.** Taleb recalls a conference in Korea where Takatoshi Kato presented economic projections for 2010 through 2014. Taleb rushed to the podium and told the audience to ask for the same institution's forecasts for 2008 and 2009 made years earlier, because that is where the record would expose itself.
+> **Example.** Taleb recalls a conference in Korea where the senior IMF official Takatoshi Kato presented economic projections for 2010 through 2014. Taleb rushed to the podium and told the audience to ask for the same institution's forecasts for 2008 and 2009 made years earlier, because that is where the record would expose itself.
 >
 > **Why this example matters.** The scene shows why Taleb attacks prestige before method. A polished forecast for five years ahead means little if the same forecaster completely missed the last major shock.
 >
@@ -66,7 +66,7 @@ mode: chapter
 > [!concept]
 > **Claim.** The real cost of prediction is not embarrassment after error; it is the false confidence that encourages people to build systems with no margin for surprise.
 >
-> **Example.** Taleb cites evidence, shown to him by Kahneman, that even random numerical forecasts increase risk taking. He compares this to snake-oil medicine: the false remedy is dangerous not because it is merely wrong, but because it changes behavior in the wrong direction.
+> **Example.** Taleb cites evidence, shown to him by the psychologist and behavioral-economics pioneer Daniel Kahneman, that even random numerical forecasts increase risk taking. He compares this to snake-oil medicine: the false remedy is dangerous not because it is merely wrong, but because it changes behavior in the wrong direction.
 >
 > **Why this example matters.** This matters because prediction is not neutral. A bad forecast can actively increase fragility by making people take extra risk, invest with less margin, or trust a system that should have been redesigned.
 >

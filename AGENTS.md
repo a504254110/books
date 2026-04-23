@@ -34,6 +34,27 @@ Single source of project instructions: **Codex**, **Cursor**, and other agents t
 - Default to ESL-friendly plain English. Keep Taleb's key vocabulary when it matters, but explain it with short sentences, common words, and direct contrasts.
 - Avoid elegant but compressed phrasing when a simpler sentence would be easier for a second-language reader to understand.
 
+### First-time reader test
+
+Every `Example` in a concept card must pass this test before the card is considered done. The test has three parts.
+
+**Default to a single example.** Write one concrete scene, case, or thought experiment per `Example`. Do not list several linked cases in one field unless each case independently passes the self-check below. When multiple cases crowd a single field, compression wins over setup and named cases lose the context that makes them legible.
+
+**Self-check (run before finalizing each card).** Ask these three questions about the exact text in `Example`:
+
+- **Who or what is this?** Can a reader who has never read the chapter and does not recognize the proper nouns still identify the scene from this text alone?
+- **Where is the setup?** Is there a 1-2 sentence concrete setup before the lesson or contrast? If the example depends on timing, dose, sequence, or a named story, is that spelled out?
+- **Does the scene stand alone?** If the reader stops after `Example` and never reads `Why this example matters`, do they still understand what happened in the scene?
+
+If any answer is no, the example fails. Expand the setup, drop the weaker linked cases, or move overflow into an `explainers-en/` note.
+
+**Bad vs good (anchor).**
+
+- **Bad.** `Brasilia and top-down urban redesign look neat on a map, while old neighborhoods that evolved slowly remain more livable.` Fails the self-check: a reader who does not already know that Brasilia is a capital built from empty land in the late 1950s cannot see why the contrast works. The proper noun carries the argument without any setup, and `old neighborhoods that evolved slowly` names no specific place.
+- **Good.** `Brasilia is Brazil's capital, designed from scratch on empty land in the late 1950s and built to a single master plan. Decades later, residents still find it less walkable and less lively than older Brazilian cities that grew neighborhood by neighborhood. The planned version looks cleaner on a map, but the slowly-grown version fits daily use better.` Passes: the proper noun is identified, the scene is concrete, and the contrast is legible without prior knowledge.
+
+When an example requires this much setup to pass, that is a signal to use it alone in the card, not to pair it with other named cases in the same field.
+
 ## Obsidian-first reading model
 
 - Assume the vault is read primarily in Obsidian `Reading view`, with `Outline`, `Page Preview`, bookmarks, and Dataview-style dashboards.
@@ -84,7 +105,7 @@ Single source of project instructions: **Codex**, **Cursor**, and other agents t
 - Keep the jobs of these fields separate:
   - `Claim`: one simple sentence with the main idea only
   - `Example`: one concrete scene, case, or thought experiment from the chapter, not a paraphrased abstraction
-  - `Example` may contain more than one tightly linked example when that set makes the contrast clearer or more memorable than a single scene
+  - `Example` defaults to a single scene. Allow more than one linked scene in one field only when each scene independently passes the `First-time reader test`; otherwise move the overflow into botb `explainers-en/` and `explainers-zh/` note
   - If the example depends on timing, dose, sequence, or contrast between short and long exposure, spell that out in plain English. The reader should not need the source chapter to infer which part is brief, repeated, delayed, or chronic.
   - `Why this example matters`: explain the lesson or contrast inside the example; do not restate the claim in different words
   - `Whole-book connection`: explain where this idea matters later in the book or in discussion of the full argument
@@ -157,7 +178,7 @@ Single source of project instructions: **Codex**, **Cursor**, and other agents t
   - `Example` should be self-contained and understandable without having read the original chapter
   - `Example` should name a concrete scene, case, or thought experiment from the chapter rather than a paraphrased abstraction
   - If the example uses a named story, historical figure, or famous anecdote, explain who or what it is before drawing the lesson from it
-  - Use multiple tightly linked examples only when they clarify the contrast better than a single example
+  - Default to a single example. Only use multiple tightly linked examples when each one independently passes the `First-time reader test`
   - If the example depends on timing, dose, or sequence, explain that sequence directly
   - `**Why this example matters.**`
   - This field should explain the lesson, contrast, or mistake corrected by the example. It should not simply repeat the `Claim`.
