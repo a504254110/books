@@ -144,6 +144,26 @@ When an example requires this much setup to pass, that is a signal to use it alo
 - Use `status: reviewed` only after a deliberate cleanup or refinement pass beyond the first grounded summary.
 - Avoid leaving completed chapter notes at `drafted`; dashboards should treat finished first-pass notes as `summarized`.
 
+## Standalone HTML reader
+
+- The standalone HTML reader is an export layer, not the source of truth. Keep source summaries in `books/<slug>/chapters/` and source explainers in `books/<slug>/explainers-en/` / `books/<slug>/explainers-zh/`; generate HTML assets from those files.
+- Put standalone reader files under `antifragile-html/`. Keep `index.html` as the shell and shared navigation; put chapter payloads in `antifragile-html/assets/chapter-NN.js`; keep shared interaction in `antifragile-html/assets/app.js`; keep shared design in `antifragile-html/assets/styles.css`.
+- The HTML folder should remain portable. A reader should be able to receive the folder and open `index.html` directly without installing Obsidian or a build tool. Do not depend on remote fonts, remote scripts, package managers, or fetch calls.
+- Do not store personal reading progress in the standalone HTML reader unless the user explicitly requests a local-only browser storage feature. By default, omit reading status from the HTML export.
+- Keep the HTML visual direction editorial and minimal: strong serif headings, readable line length, high contrast, restrained motion, and semantic color. Avoid dashboard density and decorative icon spam.
+- Use the same chapter order in HTML as in Obsidian: top orientation, core concepts, lighter after-reading appendix, then navigation.
+- The first screen of each HTML chapter should contain only the chapter header, locator, and `Chapter in one minute`. Move discussion handles and supporting lists below `Core concepts`.
+- Render `Chapter in one minute` as numbered abstract cards.
+- Render each concept as a primary concept card. Preserve the field order from the markdown source: `Claim`, `Example`, `Why this example matters`, `Whole-book connection`, optional `Possible confusion`, optional `Grounding`, then deep-dive buttons.
+- Use stable concept keys in HTML explainers, such as `chapter02-concept1`, so drawer state does not collide across chapters.
+- Render English and Chinese explainers in the drawer from the source explainer markdown. The drawer should be a second-pass aid, not the main reading path.
+- Render `What you should be able to say out loud`, `Key distinctions`, optional `Common confusions in this chapter`, `Points to debate`, and `Why this chapter matters in the whole book` inside one lower-weight `After Reading / Review appendix` container after `Core concepts`.
+- The after-reading appendix should look secondary: one muted outer container, lighter headings, low-saturation accents, and numbered items. Do not give every item its own strong color block. Do not use CSS grid on list items when the item contains inline elements such as `<code>`; keep the text in normal inline flow and position the number marker separately.
+- Keep `Navigate` outside the after-reading appendix. Use clear Previous / Home / Next cards with simple inline SVG icons and text labels. Disable unavailable previous or next chapters until their HTML payload exists.
+- The left sidebar should have one active navigation item at a time. Do not duplicate the same chapter in both `Views` and `Chapters` if that creates two selected states.
+- Use lightweight view transitions only: opacity and very small vertical movement, around 150-220 ms. Respect `prefers-reduced-motion`.
+- If the user asks not to use browser testing, do not use browser automation. Verify with static checks such as `node --check`, generated-structure counts, and source-to-output coverage checks.
+
 ## Templates (shape)
 
 **`book-overview.md`:** Purpose/audience → Core argument → Key concepts (each with Author’s examples) → Optional “how to use” → **Chapter coverage**.
