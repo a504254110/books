@@ -38,6 +38,18 @@
     const quizProgressBar = document.getElementById("quizProgressBar");
     const quizJump = document.getElementById("quizJump");
     const quizCard = document.getElementById("quizCard");
+    const quizRelatedViews = [
+      "chapter-1", "chapter-1", "chapter-1", "chapter-1",
+      "chapter-1", "chapter-1", "chapter-2", "chapter-2",
+      "chapter-6", "chapter-3", "chapter-4", "chapter-5",
+      "chapter-5", "chapter-7", "chapter-7", "chapter-7",
+      "chapter-8", "chapter-8", "chapter-9", "chapter-9",
+      "chapter-10", "chapter-11", "chapter-11", "chapter-12",
+      "chapter-12", "chapter-13", "chapter-13", "chapter-17",
+      "chapter-18", "chapter-19", "chapter-19", "chapter-20",
+      "chapter-20", "chapter-22", "chapter-21", "chapter-23",
+      "chapter-23", "chapter-23", "chapter-24", "chapter-25"
+    ];
     const sidebar = document.getElementById("sidebar");
     const menuButton = document.getElementById("menuButton");
     const drawer = document.getElementById("drawer");
@@ -108,6 +120,7 @@
         target.setAttribute("aria-hidden", String(!state.chaptersExpanded));
         button.closest(".nav-group")?.classList.toggle("collapsed", !state.chaptersExpanded);
       });
+      if (state.chaptersExpanded) syncActiveNavPosition(state.currentView);
     }
 
     function loadSavedView() {
@@ -124,6 +137,42 @@
       return views.some((view) => view.id === viewId);
     }
 
+    function isChapterView(viewId) {
+      return /^chapter-\d+$/.test(viewId) || viewId === "epilogue";
+    }
+
+    function getViewLabel(viewId) {
+      const navButton = navButtons.find((button) => button.dataset.viewTarget === viewId);
+      if (navButton) return navButton.textContent.trim().replace(/\s+/g, " ");
+      return viewId === "overview" ? "Overview" : "Related chapter";
+    }
+
+    function getNavScrollBehavior() {
+      return window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+    }
+
+    function centerActiveNavInList(viewId) {
+      if (!isChapterView(viewId)) return;
+      const activeButton = navButtons.find((button) => button.dataset.viewTarget === viewId);
+      const navList = activeButton?.closest(".nav-list");
+      if (!activeButton || !navList || navList.getAttribute("aria-hidden") === "true") return;
+      if (navList.clientHeight <= 0) return;
+      const listRect = navList.getBoundingClientRect();
+      const buttonRect = activeButton.getBoundingClientRect();
+      const buttonCenter = buttonRect.top - listRect.top + navList.scrollTop + buttonRect.height / 2;
+      const centeredTop = buttonCenter - navList.clientHeight / 2;
+      const maxScroll = Math.max(0, navList.scrollHeight - navList.clientHeight);
+      const targetTop = Math.max(0, Math.min(centeredTop, maxScroll));
+      if (Math.abs(navList.scrollTop - targetTop) < 1) return;
+      navList.scrollTo({ top: targetTop, behavior: getNavScrollBehavior() });
+    }
+
+    function syncActiveNavPosition(viewId) {
+      if (!isChapterView(viewId)) return;
+      requestAnimationFrame(() => centerActiveNavInList(state.currentView));
+      setTimeout(() => centerActiveNavInList(state.currentView), 260);
+    }
+
     function setView(viewId, persist = true) {
       if (!isKnownView(viewId)) return;
       state.currentView = viewId;
@@ -133,6 +182,7 @@
           button.classList.toggle("active", button.dataset.viewTarget === viewId);
         }
       });
+      syncActiveNavPosition(viewId);
       if (persist) {
         try {
           localStorage.setItem(viewStorageKey, viewId);
@@ -235,6 +285,9 @@
       const item = quizData[state.currentQuizIndex];
       const questionNumber = state.currentQuizIndex + 1;
       const paddedNumber = String(questionNumber).padStart(2, "0");
+      const relatedView = item.relatedView || quizRelatedViews[state.currentQuizIndex] || "overview";
+      const relatedLabel = item.relatedLabel || getViewLabel(relatedView);
+      const relatedPrefix = isChapterView(relatedView) ? "Related chapter" : "Related reading";
       quizPosition.textContent = `Question ${questionNumber} / ${quizData.length}`;
       quizScope.textContent = item.scope;
       quizProgressBar.style.width = `${(questionNumber / quizData.length) * 100}%`;
@@ -246,6 +299,7 @@
         <div class="quiz-card-head">
           <span class="quiz-number">${paddedNumber}</span>
           <span class="quiz-scope">${escapeHtml(item.scope)}</span>
+          <button class="quiz-related-button" type="button" data-quiz-action="go-related" data-related-view="${escapeHtml(relatedView)}">${escapeHtml(relatedPrefix)}: ${escapeHtml(relatedLabel)}</button>
         </div>
         <h3 class="quiz-question">${escapeHtml(item.question)}</h3>
         <div class="quiz-actions">
@@ -278,8 +332,9 @@
         if (button.disabled) return;
         const viewId = button.dataset.viewTarget;
         const targetId = button.dataset.scrollTarget;
+        const shouldExpandChapters = button.dataset.expandChapters === "true" || (button.classList.contains("chapter-nav-card") && isChapterView(viewId));
+        if (shouldExpandChapters) setChaptersExpanded(true);
         if (viewId) setView(viewId);
-        if (button.dataset.expandChapters === "true") setChaptersExpanded(true);
         if (targetId) requestAnimationFrame(() => scrollToTarget(targetId));
       });
     });
@@ -315,6 +370,12 @@
       if (action === "next") setQuizIndex(state.currentQuizIndex + 1);
       if (action === "jump") setQuizIndex(Number(button.dataset.quizIndex));
       if (action === "toggle-answer") toggleQuizAnswer();
+      if (action === "go-related") {
+        const relatedView = button.dataset.relatedView;
+        if (!isKnownView(relatedView)) return;
+        if (isChapterView(relatedView)) setChaptersExpanded(true);
+        setView(relatedView);
+      }
     });
 
     menuButton.addEventListener("click", () => {
