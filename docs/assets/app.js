@@ -1,4 +1,4 @@
-    const APP_VERSION = "2026-05-18-mobile-3";
+    const APP_VERSION = "2026-05-18-zh-titles-1";
     const appVersionStorageKey = "antifragile-html-reader:app-version";
 
     try {
