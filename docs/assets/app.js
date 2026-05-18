@@ -1,3 +1,20 @@
+    const APP_VERSION = "2026-05-18-cache-1";
+    const appVersionStorageKey = "antifragile-html-reader:app-version";
+
+    try {
+      const currentUrl = new URL(window.location.href);
+      const currentUrlVersion = currentUrl.searchParams.get("v");
+      if (localStorage.getItem(appVersionStorageKey) !== APP_VERSION || currentUrlVersion !== APP_VERSION) {
+        localStorage.setItem(appVersionStorageKey, APP_VERSION);
+        if (currentUrlVersion !== APP_VERSION) {
+          currentUrl.searchParams.set("v", APP_VERSION);
+          window.location.replace(currentUrl.toString());
+        }
+      }
+    } catch {
+      // Some local-file privacy settings block storage. Versioned asset URLs still handle cache busting.
+    }
+
     const chapterMount = document.getElementById("chapterMount");
     if (chapterMount && window.ANTIFRAGILE_CHAPTERS) {
       const chapters = Object.entries(window.ANTIFRAGILE_CHAPTERS)

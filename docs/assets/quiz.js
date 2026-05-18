@@ -569,11 +569,11 @@ window.ANTIFRAGILE_TRANSLATIONS = Object.assign(window.ANTIFRAGILE_TRANSLATIONS 
       },
       {
         selector: "#quiz .quiz-hero h2",
-        html: "检查这些想法是否真正留下来了。"
+        html: "看看你是否真的读懂了这本书。"
       },
       {
         selector: "#quiz .quiz-hero p",
-        html: "先读题，尽量先口头回答，再打开答案。强回答应该使用 Taleb 的关键词，并能带出书中的一个具体例子。"
+        html: "先看问题，试着用自己的话回答，再打开参考答案。好的回答应该能用上 Taleb 的关键词，并说出书里的一个具体例子。"
       },
       {
         selector: "#quiz .quiz-cockpit .section-label",
