@@ -488,14 +488,6 @@ window.ANTIFRAGILE_TRANSLATIONS = Object.assign(window.ANTIFRAGILE_TRANSLATIONS 
   overview: {
     zh: [
       {
-        selector: ".nav-group[aria-label='Quiz'] .nav-title",
-        html: "测验"
-      },
-      {
-        selector: ".nav-button[data-view-target='quiz'] span",
-        html: "全书测验"
-      },
-      {
         selector: "#overview .hero h2",
         html: "用概念、例子和深度解释来读这本书。"
       },

@@ -1,4 +1,4 @@
-    const APP_VERSION = "2026-05-18-cache-1";
+    const APP_VERSION = "2026-05-18-mobile-3";
     const appVersionStorageKey = "antifragile-html-reader:app-version";
 
     try {
@@ -37,13 +37,19 @@
       currentLang: "en",
       contentLang: "en",
       theme: "light",
+      sidebarCollapsed: false,
       chaptersExpanded: false,
       currentQuizIndex: 0,
-      quizAnswerVisible: false
+      quizAnswerVisible: false,
+      searchOpen: false,
+      searchQuery: "",
+      searchResults: [],
+      searchActiveIndex: 0
     };
 
     const themeStorageKey = "antifragile-html-reader:theme";
     const languageStorageKey = "antifragile-html-reader:language";
+    const sidebarStorageKey = "antifragile-html-reader:sidebar-collapsed";
     const chapterNavStorageKey = "antifragile-html-reader:chapters-expanded";
     const viewStorageKey = "antifragile-html-reader:last-view";
     const quizStorageKey = "antifragile-html-reader:quiz-index";
@@ -54,6 +60,8 @@
     const navButtons = Array.from(document.querySelectorAll("[data-nav-item]"));
     const themeButtons = Array.from(document.querySelectorAll("[data-theme-toggle]"));
     const languageButtons = Array.from(document.querySelectorAll("[data-language-toggle]"));
+    const sidebarCollapseButton = document.getElementById("sidebarCollapseButton");
+    const sidebarExpandButton = document.getElementById("sidebarExpandButton");
     const collapseButtons = Array.from(document.querySelectorAll("[data-collapse-toggle]"));
     const quizPosition = document.getElementById("quizPosition");
     const quizScope = document.getElementById("quizScope");
@@ -79,6 +87,63 @@
     const drawerContent = document.getElementById("drawerContent");
     const drawerTitle = document.getElementById("drawerTitle");
     const drawerSubtitle = document.getElementById("drawerSubtitle");
+    const searchTrigger = document.getElementById("searchTrigger");
+    const searchPanel = document.getElementById("searchPanel");
+    const searchBackdrop = document.getElementById("searchBackdrop");
+    const searchInput = document.getElementById("searchInput");
+    const searchResults = document.getElementById("searchResults");
+    const searchHelp = document.getElementById("searchHelp");
+    const searchTriggerCopy = document.querySelector("[data-search-trigger-copy]");
+    const searchShortcutLabels = Array.from(document.querySelectorAll("[data-search-shortcut]"));
+    let searchIndex = [];
+
+    function getPlatformSearchShortcutLabel() {
+      const platform = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || "";
+      return /mac|iphone|ipad|ipod/i.test(platform) ? "Command + K" : "Control + K";
+    }
+
+    function applyPlatformShortcutLabels() {
+      const label = getPlatformSearchShortcutLabel();
+      searchShortcutLabels.forEach((shortcut) => {
+        shortcut.textContent = label;
+      });
+    }
+
+    function loadSidebarCollapsedState() {
+      try {
+        state.sidebarCollapsed = localStorage.getItem(sidebarStorageKey) === "true";
+      } catch {
+        state.sidebarCollapsed = false;
+      }
+      applySidebarCollapsedState();
+    }
+
+    function setSidebarCollapsed(collapsed, persist = true) {
+      state.sidebarCollapsed = collapsed;
+      if (persist) {
+        try {
+          localStorage.setItem(sidebarStorageKey, String(collapsed));
+        } catch {
+          // Local-file privacy settings can block storage; the current sidebar state still updates.
+        }
+      }
+      applySidebarCollapsedState();
+    }
+
+    function applySidebarCollapsedState() {
+      document.documentElement.dataset.sidebarCollapsed = String(state.sidebarCollapsed);
+      if (sidebarCollapseButton) {
+        sidebarCollapseButton.setAttribute("aria-expanded", String(!state.sidebarCollapsed));
+        sidebarCollapseButton.setAttribute("aria-label", state.sidebarCollapsed ? "Show sidebar" : "Hide sidebar");
+        sidebarCollapseButton.setAttribute("title", state.sidebarCollapsed ? "Show sidebar" : "Hide sidebar");
+      }
+      if (sidebarExpandButton) {
+        sidebarExpandButton.setAttribute("aria-expanded", String(!state.sidebarCollapsed));
+        sidebarExpandButton.setAttribute("aria-label", state.sidebarCollapsed ? "Show sidebar" : "Sidebar is visible");
+        sidebarExpandButton.setAttribute("title", state.sidebarCollapsed ? "Show sidebar" : "Sidebar is visible");
+      }
+      if (!state.sidebarCollapsed && state.chaptersExpanded) syncActiveNavPosition(state.currentView);
+    }
 
     function loadTheme() {
       try {
@@ -148,6 +213,317 @@
       applyChapterTranslations();
       applyGeneratedChineseChapterLayer();
       renderQuiz();
+      applySearchLanguage();
+      if (state.searchOpen) renderSearchResults();
+    }
+
+    function applySearchLanguage() {
+      const isChinese = state.contentLang === "zh";
+      const placeholder = isChinese ? "搜索概念、答案、解释" : "Search concepts, answers, explanations";
+      if (searchTriggerCopy) searchTriggerCopy.textContent = placeholder;
+      if (searchInput) searchInput.placeholder = placeholder;
+      if (searchHelp) {
+        searchHelp.textContent = isChinese
+          ? "搜索范围包括概念卡、quiz 答案，以及英文或中文 deep dive 解释。"
+          : "Search across concept cards, quiz answers, and English or Chinese explainers.";
+      }
+    }
+
+    function buildSearchIndex() {
+      const entries = [];
+      document.querySelectorAll(".concept[data-concept]").forEach((concept) => {
+        const view = concept.closest(".view");
+        const heading = concept.querySelector("h3");
+        const conceptKey = concept.dataset.concept;
+        const explainer = explainers[conceptKey];
+        const title = (heading ? heading.textContent.trim() : "") || (explainer && explainer.title) || "Concept";
+        const cardText = Array.from(concept.querySelectorAll("h3, p"))
+          .map((node) => stripHtml(node.dataset.originalHtml || node.innerHTML || node.textContent))
+          .join(" ");
+        const enSections = getExplainerSections(explainer, "en");
+        const zhSections = getExplainerSections(explainer, "zh");
+        const explainerText = [...enSections, ...zhSections]
+          .map(([sectionTitle, body]) => `${sectionTitle} ${body}`)
+          .join(" ");
+        entries.push(createSearchEntry({
+          type: "concept",
+          title,
+          text: `${title} ${cardText} ${(explainer && explainer.title) || ""} ${explainerText}`,
+          viewId: (view && view.id) || "overview",
+          targetId: concept.id,
+          conceptKey
+        }));
+
+        [["en", enSections], ["zh", zhSections]].forEach(([lang, sections]) => {
+          sections.forEach(([sectionTitle, body], sectionIndex) => {
+            entries.push(createSearchEntry({
+              type: "explainer",
+              title: `${(explainer && explainer.title) || title} · ${sectionTitle}`,
+              text: `${(explainer && explainer.title) || title} ${sectionTitle} ${body}`,
+              viewId: (view && view.id) || "overview",
+              targetId: concept.id,
+              conceptKey,
+              lang,
+              sectionIndex
+            }));
+          });
+        });
+      });
+
+      quizData.forEach((item, index) => {
+        const zh = quizTranslationsZh[index] || {};
+        entries.push(createSearchEntry({
+          type: "quiz",
+          title: item.question,
+          text: [
+            item.scope,
+            item.question,
+            item.expected,
+            item.signal,
+            zh.scope,
+            zh.question,
+            zh.expected,
+            zh.signal
+          ].filter(Boolean).join(" "),
+          viewId: "quiz",
+          quizIndex: index
+        }));
+      });
+
+      searchIndex = entries;
+    }
+
+    function safelyBuildSearchIndex() {
+      try {
+        buildSearchIndex();
+      } catch (error) {
+        searchIndex = [];
+        if (searchHelp) {
+          searchHelp.textContent = state.contentLang === "zh"
+            ? "搜索索引暂时不可用，但阅读、菜单、语言和主题控制仍可使用。"
+            : "Search index is unavailable, but reading, menu, language, and theme controls still work.";
+        }
+      }
+    }
+
+    function createSearchEntry(entry) {
+      return {
+        ...entry,
+        normalizedTitle: normalizeSearch(entry.title),
+        normalizedText: normalizeSearch(`${entry.title} ${entry.text}`)
+      };
+    }
+
+    function getExplainerSections(explainer, lang) {
+      const data = explainer ? explainer[lang] : null;
+      if (!data) return [];
+      return Array.isArray(data) ? data : data.sections || [];
+    }
+
+    function stripHtml(value = "") {
+      const element = document.createElement("div");
+      element.innerHTML = value;
+      return element.textContent || element.innerText || "";
+    }
+
+    function normalizeSearch(value = "") {
+      return String(value)
+        .normalize("NFKC")
+        .toLowerCase()
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function openSearch() {
+      if (!searchPanel || !searchBackdrop || !searchInput) return;
+      state.searchOpen = true;
+      searchPanel.hidden = false;
+      searchBackdrop.hidden = false;
+      renderSearchResults();
+      requestAnimationFrame(() => {
+        searchPanel.classList.add("open");
+        searchBackdrop.classList.add("open");
+        searchInput.focus();
+        searchInput.select();
+      });
+    }
+
+    function closeSearch() {
+      if (!searchPanel || !searchBackdrop) return;
+      state.searchOpen = false;
+      searchPanel.classList.remove("open");
+      searchBackdrop.classList.remove("open");
+      setTimeout(() => {
+        searchPanel.hidden = true;
+        searchBackdrop.hidden = true;
+      }, 160);
+      if (searchTrigger) searchTrigger.focus();
+    }
+
+    function setSearchQuery(query) {
+      state.searchQuery = query;
+      state.searchActiveIndex = 0;
+      renderSearchResults();
+    }
+
+    function renderSearchResults() {
+      if (!searchResults) return;
+      const query = state.searchQuery.trim();
+      if (!query) {
+        state.searchResults = [];
+        searchResults.innerHTML = renderSearchEmpty(
+          state.contentLang === "zh" ? "输入关键词开始搜索" : "Start with a keyword",
+          state.contentLang === "zh"
+            ? "可以搜索 barbell、iatrogenics、Thales、脆弱性、答案或中文解释。"
+            : "Try barbell, iatrogenics, Thales, fragility, answers, or Chinese explanations."
+        );
+        return;
+      }
+      const results = getSearchResults(query);
+      state.searchResults = results;
+      state.searchActiveIndex = Math.min(state.searchActiveIndex, Math.max(results.length - 1, 0));
+      if (!results.length) {
+        searchResults.innerHTML = renderSearchEmpty(
+          state.contentLang === "zh" ? "没有找到结果" : "No results found",
+          state.contentLang === "zh"
+            ? "换一个更短的关键词，或直接搜书中的英文术语。"
+            : "Try a shorter keyword or one of Taleb's technical terms."
+        );
+        return;
+      }
+      searchResults.innerHTML = results.map((entry, index) => renderSearchResult(entry, index, query)).join("");
+    }
+
+    function getSearchResults(query) {
+      const normalizedQuery = normalizeSearch(query);
+      const tokens = normalizedQuery.split(" ").filter(Boolean);
+      return searchIndex
+        .map((entry) => ({ entry, score: scoreSearchEntry(entry, normalizedQuery, tokens) }))
+        .filter((result) => result.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 12)
+        .map((result) => result.entry);
+    }
+
+    function scoreSearchEntry(entry, query, tokens) {
+      if (!tokens.every((token) => entry.normalizedText.includes(token))) return 0;
+      let score = 0;
+      if (entry.normalizedTitle.includes(query)) score += 36;
+      if (entry.normalizedText.includes(query)) score += 16;
+      tokens.forEach((token) => {
+        if (entry.normalizedTitle.includes(token)) score += 8;
+        if (entry.normalizedText.includes(token)) score += 2;
+      });
+      if (entry.type === "concept") score += 6;
+      if (entry.type === "quiz") score += 4;
+      return score;
+    }
+
+    function renderSearchResult(entry, index, query) {
+      const display = getSearchDisplay(entry);
+      const active = index === state.searchActiveIndex;
+      return `
+        <button class="search-result${active ? " active" : ""}" type="button" role="option" aria-selected="${String(active)}" data-search-index="${index}">
+          <span class="search-result-meta">
+            <span class="search-result-type">${escapeHtml(display.typeLabel)}</span>
+            <span>${escapeHtml(display.location)}</span>
+          </span>
+          <span class="search-result-title">${highlightSearchText(display.title, query)}</span>
+          <span class="search-result-snippet">${highlightSearchText(display.snippet, query)}</span>
+        </button>
+      `;
+    }
+
+    function getSearchDisplay(entry) {
+      const isChinese = state.contentLang === "zh";
+      if (entry.type === "quiz") {
+        const item = getLocalizedQuizItem(quizData[entry.quizIndex], entry.quizIndex);
+        return {
+          typeLabel: isChinese ? "答案" : "Answer",
+          location: isChinese ? `Quiz · 第 ${entry.quizIndex + 1} 题` : `Quiz · Question ${entry.quizIndex + 1}`,
+          title: item.question,
+          snippet: `${isChinese ? "参考答案：" : "Expected answer:"} ${item.expected}`
+        };
+      }
+      if (entry.type === "explainer") {
+        const explainer = explainers[entry.conceptKey];
+        const sections = getExplainerSections(explainer, entry.lang);
+        const section = sections[entry.sectionIndex] || [];
+        return {
+          typeLabel: entry.lang === "zh" ? "中文解释" : "Explainer",
+          location: `${localizeSearchViewLabel(entry.viewId)} · ${entry.lang.toUpperCase()}`,
+          title: section[0] || (explainer && explainer.title) || entry.title,
+          snippet: firstParagraph(section[1] || entry.text)
+        };
+      }
+      const concept = document.getElementById(entry.targetId);
+      const conceptHeading = concept ? concept.querySelector("h3") : null;
+      const visibleParagraph = Array.from(concept ? concept.querySelectorAll("p:not(.grounding)") : [])
+        .find((paragraph) => !paragraph.hidden);
+      const title = (conceptHeading ? conceptHeading.textContent.trim() : "") || entry.title;
+      const firstBody = visibleParagraph ? visibleParagraph.textContent.trim() : "";
+      return {
+        typeLabel: isChinese ? "概念卡" : "Concept card",
+        location: localizeSearchViewLabel(entry.viewId),
+        title,
+        snippet: firstBody || entry.text
+      };
+    }
+
+    function localizeSearchViewLabel(viewId) {
+      if (state.contentLang !== "zh") return getViewLabel(viewId);
+      if (viewId === "overview") return "总览";
+      if (viewId === "quiz") return "全书测验";
+      if (viewId === "epilogue") return "尾声";
+      const chapterMatch = viewId.match(/^chapter-(\d+)$/);
+      const chapter = chapterMatch ? chapterMatch[1] : "";
+      return chapter ? `第 ${Number(chapter)} 章` : getViewLabel(viewId);
+    }
+
+    function renderSearchEmpty(title, body) {
+      return `<div class="search-empty"><strong>${escapeHtml(title)}</strong><span>${escapeHtml(body)}</span></div>`;
+    }
+
+    function highlightSearchText(value, query) {
+      const text = String(value || "");
+      const normalizedQuery = query.trim();
+      if (!normalizedQuery) return escapeHtml(text);
+      const tokens = normalizedQuery.split(/\s+/).filter(Boolean).slice(0, 4);
+      if (!tokens.length) return escapeHtml(text);
+      const pattern = tokens.map(escapeRegExp).join("|");
+      return escapeHtml(text).replace(new RegExp(`(${pattern})`, "gi"), "<mark>$1</mark>");
+    }
+
+    function escapeRegExp(value) {
+      return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    }
+
+    function activateSearchResult(index) {
+      const entry = state.searchResults[index];
+      if (!entry) return;
+      closeSearch();
+      if (entry.type === "quiz") {
+        setView("quiz");
+        setQuizIndex(entry.quizIndex);
+        state.quizAnswerVisible = true;
+        renderQuiz();
+        return;
+      }
+      if (entry.viewId && isChapterView(entry.viewId)) setChaptersExpanded(true);
+      if (entry.viewId) setView(entry.viewId);
+      requestAnimationFrame(() => {
+        const target = document.getElementById(entry.targetId);
+        if (target) target.scrollIntoView({ behavior: getNavScrollBehavior(), block: "start" });
+        if (entry.type === "explainer") openDrawer(entry.conceptKey, entry.lang || state.contentLang);
+      });
+    }
+
+    function moveSearchSelection(delta) {
+      if (!state.searchResults.length) return;
+      state.searchActiveIndex = (state.searchActiveIndex + delta + state.searchResults.length) % state.searchResults.length;
+      renderSearchResults();
+      const activeResult = searchResults ? searchResults.querySelector(`[data-search-index="${state.searchActiveIndex}"]`) : null;
+      if (activeResult) activeResult.scrollIntoView({ block: "nearest" });
     }
 
     function applyChapterTranslations() {
@@ -157,7 +533,7 @@
         view.classList.toggle("zh-content", state.contentLang === "zh" && Boolean(viewTranslations.zh));
         const entries = viewTranslations[state.contentLang] || [];
         const translatedSelectors = new Set(entries.map((entry) => entry.selector));
-        const fallbackEntries = Object.values(viewTranslations).flat();
+        const fallbackEntries = Object.keys(viewTranslations).reduce((items, key) => items.concat(viewTranslations[key]), []);
         fallbackEntries.forEach((entry) => {
           const target = document.querySelector(entry.selector);
           if (!target) return;
@@ -172,7 +548,7 @@
     function applyGeneratedChineseChapterLayer() {
       const isChinese = state.contentLang === "zh";
       document.querySelectorAll(".view.chapter").forEach((view) => {
-        const hasExplicitTranslations = Boolean(translations[view.id]?.zh);
+        const hasExplicitTranslations = Boolean(translations[view.id] && translations[view.id].zh);
         if (hasExplicitTranslations) return;
         view.classList.toggle("zh-content", isChinese);
         applyGeneratedChineseScaffold(view, isChinese);
@@ -234,16 +610,18 @@
     function applyGeneratedChineseConcepts(view, isChinese) {
       view.querySelectorAll(".concept[data-concept]").forEach((concept) => {
         const explainer = explainers[concept.dataset.concept];
-        if (!explainer?.zh) return;
+        if (!explainer || !explainer.zh) return;
         const sections = Array.isArray(explainer.zh) ? explainer.zh : explainer.zh.sections;
-        if (!sections?.length) return;
+        if (!sections || !sections.length) return;
 
         const heading = concept.querySelector("h3");
         if (heading) {
           if (!heading.dataset.originalText) heading.dataset.originalText = heading.textContent.trim();
           if (isChinese) {
-            const conceptNumber = heading.dataset.originalText.match(/^Concept\s+(\d+)/)?.[1] || "";
-            const title = explainer.titleZh || shortenText(firstParagraph(sections[0]?.[1] || "概念解释"), 54);
+            const conceptNumberMatch = heading.dataset.originalText.match(/^Concept\s+(\d+)/);
+            const conceptNumber = conceptNumberMatch ? conceptNumberMatch[1] : "";
+            const firstSectionText = sections[0] ? sections[0][1] : "";
+            const title = explainer.titleZh || shortenText(firstParagraph(firstSectionText || "概念解释"), 54);
             heading.textContent = conceptNumber ? `概念 ${conceptNumber}：${title}` : title;
           } else {
             heading.textContent = heading.dataset.originalText;
@@ -280,9 +658,9 @@
     function applyGeneratedChineseReadingLists(view, isChinese) {
       const conceptSections = getChineseConceptSections(view);
       if (!conceptSections.length) return;
-      const coreIdeas = conceptSections.map((sections) => sections[0]?.[1]).filter(Boolean);
-      const details = conceptSections.map((sections) => firstParagraph(sections[1]?.[1])).filter(Boolean);
-      const examples = conceptSections.map((sections) => firstParagraph(sections[2]?.[1])).filter(Boolean);
+      const coreIdeas = conceptSections.map((sections) => sections[0] && sections[0][1]).filter(Boolean);
+      const details = conceptSections.map((sections) => firstParagraph((sections[1] && sections[1][1]) || "")).filter(Boolean);
+      const examples = conceptSections.map((sections) => firstParagraph((sections[2] && sections[2][1]) || "")).filter(Boolean);
       applyListTranslation(view.querySelectorAll(".abstract li"), coreIdeas, isChinese, true);
       applyListTranslation(view.querySelectorAll(".insight-section--say .insight-list li"), coreIdeas, isChinese);
       applyListTranslation(view.querySelectorAll(".insight-section--distinctions .insight-list li"), details, isChinese);
@@ -295,10 +673,10 @@
       return Array.from(view.querySelectorAll(".concept[data-concept]"))
         .map((concept) => {
           const explainer = explainers[concept.dataset.concept];
-          const sections = explainer?.zh;
-          return Array.isArray(sections) ? sections : sections?.sections;
+          const sections = explainer && explainer.zh;
+          return Array.isArray(sections) ? sections : (sections && sections.sections);
         })
-        .filter((sections) => sections?.length);
+        .filter((sections) => sections && sections.length);
     }
 
     function applyListTranslation(items, values, isChinese, isAbstract = false) {
@@ -368,7 +746,8 @@
         button.setAttribute("aria-expanded", String(state.chaptersExpanded));
         button.setAttribute("aria-label", state.chaptersExpanded ? "Collapse chapters" : "Expand chapters");
         target.setAttribute("aria-hidden", String(!state.chaptersExpanded));
-        button.closest(".nav-group")?.classList.toggle("collapsed", !state.chaptersExpanded);
+        const group = button.closest(".nav-group");
+        if (group) group.classList.toggle("collapsed", !state.chaptersExpanded);
       });
       if (state.chaptersExpanded) syncActiveNavPosition(state.currentView);
     }
@@ -404,7 +783,7 @@
     function centerActiveNavInList(viewId) {
       if (!isChapterView(viewId)) return;
       const activeButton = navButtons.find((button) => button.dataset.viewTarget === viewId);
-      const navList = activeButton?.closest(".nav-list");
+      const navList = activeButton ? activeButton.closest(".nav-list") : null;
       if (!activeButton || !navList || navList.getAttribute("aria-hidden") === "true") return;
       if (navList.clientHeight <= 0) return;
       const listRect = navList.getBoundingClientRect();
@@ -427,9 +806,10 @@
       document.querySelectorAll(".chapter .deep-row").forEach((row) => {
         if (row.querySelector("[data-open-deep-auto='true']")) return;
         const deepButtons = Array.from(row.querySelectorAll("[data-open-deep]"));
-        const concept = deepButtons[0]?.dataset.openDeep;
+        const concept = deepButtons[0] ? deepButtons[0].dataset.openDeep : "";
         if (!concept) return;
-        row.querySelector("span")?.remove();
+        const label = row.querySelector("span");
+        if (label) label.remove();
         deepButtons.forEach((button) => button.remove());
         const button = document.createElement("button");
         button.className = "deep-button";
@@ -615,7 +995,7 @@
     }
 
     function escapeHtml(value) {
-      return value
+      return String(value == null ? "" : value)
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")
@@ -625,6 +1005,54 @@
 
     function toggleCollapsedNav(button) {
       setChaptersExpanded(button.getAttribute("aria-expanded") !== "true");
+    }
+
+    function isMobileViewport() {
+      return window.matchMedia("(max-width: 760px)").matches;
+    }
+
+    function closeMobileSidebar() {
+      sidebar.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+    }
+
+    if (searchTrigger) searchTrigger.addEventListener("click", openSearch);
+    const closeSearchButton = document.getElementById("closeSearch");
+    if (closeSearchButton) closeSearchButton.addEventListener("click", closeSearch);
+    if (searchBackdrop) searchBackdrop.addEventListener("click", closeSearch);
+    if (searchInput) {
+      searchInput.addEventListener("input", () => setSearchQuery(searchInput.value));
+      searchInput.addEventListener("keydown", (event) => {
+        if (event.isComposing) return;
+        if (event.key === "ArrowDown") {
+          event.preventDefault();
+          moveSearchSelection(1);
+        }
+        if (event.key === "ArrowUp") {
+          event.preventDefault();
+          moveSearchSelection(-1);
+        }
+        if (event.key === "Enter") {
+          event.preventDefault();
+          activateSearchResult(state.searchActiveIndex);
+        }
+        if (event.key === "Escape") {
+          event.preventDefault();
+          closeSearch();
+        }
+      });
+    }
+    if (searchResults) {
+      searchResults.addEventListener("click", (event) => {
+        const result = event.target.closest("[data-search-index]");
+        if (!result) return;
+        activateSearchResult(Number(result.dataset.searchIndex));
+      });
+      searchResults.addEventListener("mousemove", (event) => {
+        const result = event.target.closest("[data-search-index]");
+        if (!result) return;
+        state.searchActiveIndex = Number(result.dataset.searchIndex);
+      });
     }
 
     viewTargetButtons.forEach((button) => {
@@ -664,6 +1092,16 @@
     languageButtons.forEach((button) => {
       button.addEventListener("click", toggleLanguage);
     });
+    if (sidebarCollapseButton) {
+      sidebarCollapseButton.addEventListener("click", () => {
+        if (isMobileViewport()) {
+          closeMobileSidebar();
+          return;
+        }
+        setSidebarCollapsed(true);
+      });
+    }
+    if (sidebarExpandButton) sidebarExpandButton.addEventListener("click", () => setSidebarCollapsed(false));
     collapseButtons.forEach((button) => {
       button.addEventListener("click", () => toggleCollapsedNav(button));
     });
@@ -690,6 +1128,15 @@
     });
 
     document.addEventListener("keydown", (event) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        openSearch();
+        return;
+      }
+      if (event.key === "Escape" && state.searchOpen) {
+        closeSearch();
+        return;
+      }
       if (event.key === "Escape") {
         if (!drawer.hidden) closeDrawer();
         sidebar.classList.remove("open");
@@ -697,8 +1144,11 @@
       }
     });
 
+    safelyBuildSearchIndex();
+    applyPlatformShortcutLabels();
     loadTheme();
     loadLanguage();
+    loadSidebarCollapsedState();
     loadChapterNavState();
     loadQuizState();
     loadSavedView();

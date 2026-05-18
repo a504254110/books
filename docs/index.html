@@ -7,7 +7,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Antifragile Reader</title>
-  <link rel="stylesheet" href="assets/styles.css?v=2026-05-18-cache-1">
+  <link rel="stylesheet" href="assets/styles.css?v=2026-05-18-mobile-3">
 </head>
 <body>
   <div class="app">
@@ -46,6 +46,14 @@
                 <circle cx="12" cy="12" r="4"></circle>
                 <path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"></path>
               </svg>
+            </button>
+            <button class="sidebar-toggle" id="sidebarCollapseButton" type="button" data-sidebar-collapse aria-label="Hide sidebar" title="Hide sidebar" aria-controls="sidebar" aria-expanded="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 5h16M4 19h16"></path>
+                <path d="M10 9l-3 3 3 3"></path>
+                <path d="M15 9v6"></path>
+              </svg>
+              <span class="sidebar-toggle-label">Close</span>
             </button>
           </div>
         </div>
@@ -159,8 +167,29 @@
       </nav>
 
     </aside>
+    <button class="sidebar-restore" id="sidebarExpandButton" type="button" data-sidebar-expand aria-label="Show sidebar" title="Show sidebar" aria-controls="sidebar" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 5h16M4 19h16"></path>
+        <path d="M8 9l3 3-3 3"></path>
+        <path d="M15 9v6"></path>
+      </svg>
+      <span>Navigation</span>
+    </button>
 
     <main class="main" id="main">
+      <section class="global-search" aria-label="Reader search">
+        <button class="search-trigger" id="searchTrigger" type="button" aria-haspopup="dialog" aria-controls="searchPanel" aria-keyshortcuts="Meta+K Control+K">
+          <span class="search-trigger-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <circle cx="10.8" cy="10.8" r="6.2"></circle>
+              <path d="m16 16 4.2 4.2"></path>
+            </svg>
+          </span>
+          <span class="search-trigger-copy" data-search-trigger-copy>Search concepts, answers, explanations</span>
+          <kbd class="shortcut-key" data-search-shortcut>Command + K</kbd>
+        </button>
+      </section>
+
       <section class="view active" id="overview" data-view>
         <div class="hero">
           <div class="eyebrow">Nassim Nicholas Taleb</div>
@@ -225,6 +254,26 @@
 
   </div>
 
+  <div class="search-backdrop" id="searchBackdrop" hidden></div>
+  <aside class="search-panel" id="searchPanel" role="dialog" aria-modal="true" aria-labelledby="searchTitle" hidden>
+    <h2 class="sr-only" id="searchTitle">Search the reader</h2>
+    <div class="search-panel-head">
+      <label class="search-input-shell" for="searchInput">
+        <span class="search-input-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <circle cx="10.8" cy="10.8" r="6.2"></circle>
+            <path d="m16 16 4.2 4.2"></path>
+          </svg>
+        </span>
+        <input id="searchInput" type="search" autocomplete="off" spellcheck="false" placeholder="Search concepts, answers, explanations">
+        <kbd class="shortcut-key">Esc</kbd>
+      </label>
+      <button class="close-button" type="button" id="closeSearch" aria-label="Close search">×</button>
+    </div>
+    <p class="search-help" id="searchHelp">Search across concept cards, quiz answers, and English or Chinese explainers.</p>
+    <div class="search-results" id="searchResults" role="listbox" aria-label="Search results"></div>
+  </aside>
+
   <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
   <aside class="drawer" id="drawer" aria-modal="true" aria-labelledby="drawerTitle" role="dialog" hidden>
     <div class="drawer-header">
@@ -242,33 +291,33 @@
     <div class="drawer-content" id="drawerContent"></div>
   </aside>
 
-  <script src="assets/chapter-01.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-02.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-03.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-04.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-05.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-06.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-07.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-08.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-09.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-10.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-11.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-12.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-13.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-14.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-15.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-16.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-17.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-18.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-19.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-20.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-21.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-22.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-23.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-24.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/chapter-25.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/epilogue.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/quiz.js?v=2026-05-18-cache-1"></script>
-  <script src="assets/app.js?v=2026-05-18-cache-1"></script>
+  <script src="assets/chapter-01.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-02.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-03.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-04.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-05.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-06.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-07.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-08.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-09.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-10.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-11.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-12.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-13.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-14.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-15.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-16.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-17.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-18.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-19.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-20.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-21.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-22.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-23.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-24.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/chapter-25.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/epilogue.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/quiz.js?v=2026-05-18-mobile-3"></script>
+  <script src="assets/app.js?v=2026-05-18-mobile-3"></script>
 </body>
 </html>
