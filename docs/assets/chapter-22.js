@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter22 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter22-concept1": {
     "title": "Life expectancy gains do not defend every medical addition",
-    "titleZh": "寿命延长不能为每一项医疗加项背书",
+    "titleZh": "寿命(life expectancy)的延长，并不能为每一项医疗加项背书",
+    "bodyZh": [
+      [
+        "主张",
+        "寿命(life expectancy)的提升并不证明每一项现代干预(intervention)都是好的——因为这种提升来自一份混杂的成因清单，以及少数几个极大的胜利。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)抨击那种常见的论证：「我们现在活得更久，所以现代干预一定是好的」。他回答：那些重大收益来自卫生设施(sanitation)、急救与重大外科手术等环节，而不是来自后来添加的每一颗药、每一项指标，或每一种以舒适为导向的加项。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它堵住了一种偷懒的推断：一项广义的历史改善，不是任何打着同一旗号的新干预的空白支票。"
+      ],
+      [
+        "全书联结",
+        "这避免了让第 21 章的医学不对称(medical asymmetry)规则被人口学修辞淹没。塔勒布(Taleb)仍在追问：哪些干预拥有可见且巨大的上行(upside)？哪些干预却偷运了隐藏的下行(downside)？"
+      ]
+    ],
     "chapterLabel": "Chapter 22",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "现代人寿命变长，并不能替每一个新增的 health intervention 背书。很多 gains 来自少数几个大改进，而不是所有小加法。"
+        "核心观点",
+        "寿命的提升并不证明每一项现代干预(intervention)都是好的——因为这种提升来自一份混杂的成因清单，以及少数几个极大的胜利。"
       ],
       [
         "详细解释",
-        "Taleb 反对一种偷换：因为今天平均寿命更长，所以凡是打着 health 名义的新东西都更好。\n\n他认为这把一整个历史 bundle 混成了一个结论。寿命上升里确实有重大进步，比如 sanitation、急诊、手术，但这不等于后来每一个 pill、metric-driven intervention 都同样有价值。\n\n所以历史总成果，不能被拿来给每一个局部干预做广告。"
+        "它堵住了一种偷懒的推断。一项广义的历史改善，不是任何打着同一旗号的新干预的空白支票。\n\n这避免了让第 21 章的医学不对称(medical asymmetry)规则被人口学修辞淹没。塔勒布(Taleb)仍在追问：哪些干预拥有可见且巨大的上行(upside)？哪些干预却偷运了隐藏的下行(downside)？"
       ],
       [
-        "这个例子到底在说明什么",
-        "Taleb 直接攻击那种 `we live longer now, so modern intervention must be good` 的论证。他把 sanitation、emergency medicine 这些大赢面单独拿出来。这个例子说明的是：一个总体进步，不等于里面每一个 component 都值得被信任。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)抨击那种常见的论证：「我们现在活得更久，所以现代干预一定是好的」。他回答：那些重大收益来自卫生设施(sanitation)、急救与重大外科手术等环节，而不是来自后来添加的每一颗药、每一项指标，或每一种以舒适为导向的加项。\n\n这一情境的重点是：它堵住了一种偷懒的推断——一项广义的历史改善，不是任何打着同一旗号的新干预的空白支票。"
       ]
     ]
   },
   "chapter22-concept2": {
     "title": "In daily life, subtraction is often the safer health strategy",
-    "titleZh": "日常生活里减法是更安全的健康策略",
+    "titleZh": "在日常生活中，减法(subtraction)往往是更安全的健康策略",
+    "bodyZh": [
+      [
+        "主张",
+        "许多健康改善来自去掉有害的现代添加物，而不是堆叠更多经过工程设计的解决方案。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)给出一份长长的「减法清单」：少用防晒霜(sunscreen)、少用空调；不喝汽水、不喝橙汁；少用那些把劳作免去的电子设备；甚至减少接触报纸、通勤(commuting)和市场噪声(market noise)这些刺激物。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它把「减法路径(via negativa)」转化为一种日常实践。去掉一个明确的刺激物，往往比加上一个有不清楚二阶效应(second-order effects)的新产品更稳健(robust)。"
+      ],
+      [
+        "全书联结",
+        "这是第 21 章「反干预(anti-intervention)」逻辑的生活方式版本。它也呼应了全书对「加法式优化」的不信任。"
+      ]
+    ],
     "chapterLabel": "Chapter 22",
     "en": [
       [
@@ -59,22 +95,44 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在日常健康里，`via negativa` 往往比不断加新产品更稳。先减去明确的 irritant，通常比再加一个 optimization 更可靠。"
+        "核心观点",
+        "许多健康改善来自去掉有害的现代添加物，而不是堆叠更多经过工程设计的解决方案。"
       ],
       [
         "详细解释",
-        "Taleb 把 chapter 21 的医疗逻辑，推进到 everyday life。很多现代 health problem，未必需要先靠一个新方案去解，可能先把制造问题的现代习惯拿掉就已经大幅改善。\n\n这种 subtractive approach 的优势在于：你去掉的是已经相对清楚的 harm，而不是再引入一个 second-order effects 不透明的新变量。\n\n所以这章的 `health` 不是更多管理，而往往是更少人工添加。"
+        "它把「减法路径(via negativa)」转化为一种日常实践。去掉一个明确的刺激物，往往比加上一个有不清楚二阶效应(second-order effects)的新产品更稳健(robust)。\n\n这是第 21 章「反干预(anti-intervention)」逻辑的生活方式版本。它也呼应了全书对「加法式优化」的不信任。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Taleb 列了一串要减掉的东西：soft drinks、orange juice、过多空调、过多 gadget、市场噪音、通勤刺激等等。这个例子要说明的是：健康改善不一定来自加法，常常只是把现代生活里多出来的 irritant 拿掉。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)给出一份长长的「减法清单」：少用防晒霜(sunscreen)、少用空调；不喝汽水、不喝橙汁；少用那些把劳作免去的电子设备；甚至减少接触报纸、通勤(commuting)和市场噪声(market noise)这些刺激物。\n\n这一情境的重点是：它把减法路径(via negativa)转化为日常实践——去掉一个明确的刺激物，往往比加上一个有不清楚二阶效应的新产品更稳健。"
       ]
     ]
   },
   "chapter22-concept3": {
     "title": "Intermittent deprivation can be healthier than steady abundance",
-    "titleZh": "间歇性匮乏比持续丰盛更健康",
+    "titleZh": "间歇性匮乏(intermittent deprivation)可能比稳定富足更健康",
+    "bodyZh": [
+      [
+        "主张",
+        "身体可以从食物和舒适的不规则性中获益，而不只是从精心平衡的稳定摄入中获益。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)用希腊东正教(Greek Orthodox)的禁食(fasting)、四旬期(Lent)，以及古老的「盛宴—禁食(feast-and-fast)」生活模式，来挑战现代那种「每一餐都必须均衡、每一天的营养都必须平滑」的想法。他把这与捕食者和食草动物的进食节奏并列，并附上他对「早餐先于工作」习惯的攻击。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它把凸性(convexity)应用到普通生活。随机性(randomness)、断口和暂时缺席，能以一种「稳定舒适的常规」无法做到的方式触发适应。"
+      ],
+      [
+        "全书联结",
+        "这把早先关于兴奋效应(hormesis)和过度补偿(overcompensation)的章节直接带入食物、能量和日常习惯之中。它是本书中反脆弱性(antifragility)最清晰的可操作应用之一。"
+      ],
+      [
+        "常见误解",
+        "塔勒布(Taleb)并不是在主张每一次禁食或每一次匮乏都是好事。本章依赖的是「有限度的压力(bounded stress)加上恢复(recovery)」，而不是慢性短缺。"
+      ]
+    ],
     "chapterLabel": "Chapter 22",
     "en": [
       [
@@ -92,22 +150,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "intermittent deprivation 可能比持续丰足更适合身体。关键不是长期缺乏，而是有节奏的缺失与恢复。"
+        "核心观点",
+        "身体可以从食物和舒适的不规则性中获益，而不只是从精心平衡的稳定摄入中获益。"
       ],
       [
         "详细解释",
-        "Taleb 在这里把 hormesis 和 convexity 直接带进饮食与日常节奏。身体并不是按永远均衡、永远平滑、永远舒适的模式进化出来的。\n\n相反，短期 fasting、暂时 hunger、节律性的 abundance 和 absence，可能更贴近 organism 熟悉的环境。\n\n所以他不是在赞美贫困，而是在区分 bounded deprivation 和 chronic deprivation。"
+        "它把凸性(convexity)应用到普通生活。随机性(randomness)、断口和暂时缺席，能以一种「稳定舒适的常规」无法做到的方式触发适应。\n\n塔勒布(Taleb)并不是在主张每一次禁食或每一次匮乏都是好事。本章依赖的是「有限度的压力(bounded stress)加上恢复(recovery)」，而不是慢性短缺。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Greek Orthodox fasting、Lent、feast-and-fast、捕食者式的随机进食节奏，是他最重要的几组例子。它们共同要说明的是：身体可能从 `间歇性缺失` 中得到 adaptive signal，而不是只能从稳定供给中受益。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)用希腊东正教(Greek Orthodox)的禁食、四旬期(Lent)，以及古老的「盛宴—禁食(feast-and-fast)」生活模式，来挑战现代那种「每一餐都必须均衡、每一天的营养都必须平滑」的想法。他把这与捕食者和食草动物的进食节奏并列，并附上他对「早餐先于工作」习惯的攻击。\n\n这一情境的重点是：它把凸性应用到普通生活——随机性、断口与暂时缺席能以稳定舒适的常规所做不到的方式触发适应。"
       ]
     ]
   },
   "chapter22-concept4": {
     "title": "A long life is not worth much if it becomes a fragile life",
-    "titleZh": "活得久但脆弱并不值得追求",
+    "titleZh": "长寿如果伴随脆弱(fragile)，并不值得多少",
+    "bodyZh": [
+      [
+        "主张",
+        "寿命长度并不是唯一严肃的目标。生命力、坚韧、尊严，以及对超越自身之物的贡献，可能比单纯的「延长」更重要。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)把现代的不朽幻想——包括雷·库兹韦尔(Ray Kurzweil)式希望「技术和药丸把寿命远远推过自然年限」——与更古老的理想对照：体面地死亡、留下子嗣、留下书籍、留下能比个体活得更久的信息。他还把「减法式的体能」与那种被过度管理的有钱精英的柔软生活作对比。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为本章不只是在谈健康策略，更是在谈最终目标。塔勒布(Taleb)认为：插满管子的长寿，可能比一段更短、却更强健、更自由的人生更糟。"
+      ],
+      [
+        "全书联结",
+        "这通过把医学、生活方式与伦理联系起来，合上了第 6 部分(Book VI)。它为进入「切肤之痛(skin in the game)」的过渡做铺垫——在那里，脆弱(fragility)与道德彻底融合。"
+      ]
+    ],
     "chapterLabel": "Chapter 22",
     "en": [
       [
@@ -125,16 +201,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "Taleb 反对把 `尽量延长寿命` 当成唯一目标。若生命被管理成极其脆弱、无尊严、无活力，再长也不一定值得。"
+        "核心观点",
+        "寿命长度并不是唯一严肃的目标。生命力、坚韧、尊严，以及对超越自身之物的贡献，可能比单纯的「延长」更重要。"
       ],
       [
         "详细解释",
-        "这一章后段其实已经不只是 health tactics，而是在问 life goal。Taleb 认为现代人很容易把 `活得更久` 变成一个脱离其他价值的单目标函数。\n\n但人的生活还包含 vitality、freedom、dignity、contribution，以及对死亡本身的接受方式。若为了延寿把人生变成高度脆弱、过度管理、失去精神张力的状态，他觉得这是代价太大的交换。\n\n所以 `longer` 和 `better` 必须分开。"
+        "塔勒布(Taleb)在区分现代健康文化经常合并的两个目标：延长生物学上的持续时间(duration)，以及保留一种「值得延长」的强健生命形态。一旦把两者分开，更多的治疗与更多的年份就不再是自动的好东西。\n\n他的目标不是「医学本身」，而是那种把任何额外存活时间都视为成功的心态——哪怕这种延长伴随着依赖、管子、被动和生命力的丧失。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Taleb 把 Kurzweil 式的 immortality fantasy，与古典英雄对 honorable death 的想法放在一起对照。他还提到插满管子的退休院长寿场景。这个例子要说明的是：`活着更久` 和 `活得更好` 不是同一件事，前者甚至可能伤害后者。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)把现代的不朽幻想——包括雷·库兹韦尔(Ray Kurzweil)式希望「技术和药丸把寿命远远推过自然年限」——与更古老的理想相对照：体面地死亡、留下子嗣、留下书籍、留下能比个体活得更久的信息。他还把「减法式的体能」与那种被过度管理的有钱精英的柔软生活作对比。\n\n这一切要证明的是：「更长」和「更好」并不是同一目标。一种生命可以被延长到这样的程度——延长本身让这条生命变得更脆弱、更不值得追求。"
       ]
     ]
   }

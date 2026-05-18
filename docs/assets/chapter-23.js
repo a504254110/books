@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter23 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter23-concept1": {
     "title": "Skin in the game is the ethical opposite of the agency problem",
-    "titleZh": "切肤之痛是代理问题的伦理对立面",
+    "titleZh": "切肤之痛(skin in the game)是「代理问题(agency problem)」的伦理反面",
+    "bodyZh": [
+      [
+        "主张",
+        "当一个人享受着上行(upside)，而另一个人——通常并不知情——却在承担下行(downside)时，整个系统就在道德上扭曲了。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)从英雄主义和牺牲开始。他回忆一位救一个孩子免于被车撞而死去的保姆；他也描述了一些更古老的社会——在那里最受尊敬的人是愿意为他人承担真实风险(risk)的人，而不是躲开风险的人。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它为整章设定了道德上的对比关系。英雄主义(heroism)是「代理问题(agency problem)」的反面：一个人替别人承担下行(downside)，而不是把下行推给别人。"
+      ],
+      [
+        "全书联结",
+        "这就是本书的不对称(asymmetry)逻辑公开变成伦理的地方。同样的结构——曾经解释了金融和医学中的脆弱(fragility)——现在用来解释道德上的扭曲。"
+      ]
+    ],
     "chapterLabel": "Chapter 23",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "`skin in the game` 的伦理核心，是不能让别人替你承担 downside。它是 agency problem 的反面。"
+        "核心观点",
+        "当一个人享受着上行(upside)，而另一个人——通常并不知情——却在承担下行(downside)时，整个系统就在道德上扭曲了。"
       ],
       [
         "详细解释",
-        "Taleb 到这里把全书的 asymmetry 彻底伦理化。之前说的 fragility、optionality、concavity，到了这里不再只是 technical shape，而是 moral structure。\n\n如果一个人拿走 upside，却把 downside 推给别人，这就是最深的 distortion。反过来，真正高贵的 arrangement 是自己承担风险，甚至替别人承担风险。\n\n所以 `skin in the game` 不是一句励志口号，而是对称性的伦理要求。"
+        "它为整章设定了道德上的对比关系。英雄主义(heroism)是「代理问题(agency problem)」的反面：一个人替别人承担下行(downside)，而不是把下行推给别人。\n\n这就是本书的不对称(asymmetry)逻辑公开变成伦理的地方。同样的结构——曾经解释了金融和医学中的脆弱(fragility)——现在用来解释道德上的扭曲。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Taleb 从 nanny 为了救孩子而死的故事讲起，再说古代社会如何尊敬那些真正替别人承担风险的人。这个例子要说明的是：heroism 的结构，正好和 agency problem 相反。前者是自己承担 downside 保护别人，后者是把 downside 转嫁出去。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)从英雄主义和牺牲开始。他回忆一位救一个孩子免于被车撞而死去的保姆；他也描述了一些更古老的社会——在那里最受尊敬的人是愿意为他人承担真实风险(risk)的人，而不是躲开风险的人。\n\n这一情境的重点是：它为整章设定了道德上的对比——英雄主义是代理问题(agency problem)的反面，一个人替别人承担下行(downside)，而不是把下行推给别人。"
       ]
     ]
   },
   "chapter23-concept2": {
     "title": "Talk without risk is a free option",
-    "titleZh": "没风险的言论是免费的期权",
+    "titleZh": "「无风险的发言」是一种免费期权(free option)",
+    "bodyZh": [
+      [
+        "主张",
+        "当一个发言者可以「错了不付代价」、而别人却要为按他的话行事付出代价时，公共舆论就变得危险。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)以报纸专栏作家托马斯·弗里德曼(Thomas Friedman)为例——他鼓吹伊拉克(Iraq)战争，自己却不必承担战场上的下行(downside)。他随后把攻击扩展到那些在自己的建议伤害别人之后，仍然继续写作、当顾问、装姿态的评论员与预测者。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它说明塔勒布(Taleb)为何不断回到「说话的人」身上。话语能够调动军队、改变政策、影响投资组合，也能左右公众的恐惧；然而当结果灾难性时，说话者却常常一无所失。"
+      ],
+      [
+        "全书联结",
+        "这是第 9 章对脆弱论者(fragilistas)攻击的伦理版本。塔勒布(Taleb)现在加上一条惩罚规则：如果发言能给别人强加下行(downside)，那么发言本身就不应免于下行。"
+      ]
+    ],
     "chapterLabel": "Chapter 23",
     "en": [
       [
@@ -59,22 +95,44 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "没有风险暴露的 public speech，其实是一种 free option。说错了别人付钱，说对了自己拿名声。"
+        "核心观点",
+        "当一个发言者可以「错了不付代价」、而别人却要为按他的话行事付出代价时，公共舆论就变得危险。"
       ],
       [
         "详细解释",
-        "Taleb 强烈攻击 pundits、评论家、政策鼓吹者，核心原因不是他讨厌说话的人，而是他们的 downside 太小。\n\n只要一个人的 words 可以推动战争、政策、投资或公众恐慌，而他说错后几乎不承担损失，那么这些 words 本身就构成了 asymmetric payoff。\n\n所以问题不在于 speech，而在于 speech 是否和 exposure 对齐。"
+        "塔勒布(Taleb)不断回到「说话的人」身上。话语能够调动军队、改变政策、影响投资组合，也能左右公众的恐惧；然而当结果灾难性时，说话者却常常一无所失。\n\n这是第 9 章对脆弱论者(fragilistas)攻击的伦理版本。塔勒布(Taleb)现在加上一条惩罚规则：如果发言能给别人强加下行(downside)，那么发言本身就不应免于下行。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Thomas Friedman 支持伊拉克战争，是 Taleb 最典型的案例。战争的后果由士兵、平民、纳税人承担，而 pundit 继续写专栏、继续有 platform。这个例子要说明的是：当 talk 没有 downside，它就变成了一种免费 option。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)以报纸专栏作家托马斯·弗里德曼(Thomas Friedman)为例——他鼓吹伊拉克(Iraq)战争，自己却不必承担战场上的下行(downside)。他随后把攻击扩展到那些在自己的建议伤害别人之后，仍然继续写作、当顾问、装姿态的评论员与预测者。\n\n这一情境的重点是：塔勒布(Taleb)不断回到说话的人身上——话语能够调动军队、改变政策、影响投资组合，也能左右公众的恐惧；然而当结果灾难性时，说话者却常常一无所失。"
       ]
     ]
   },
   "chapter23-concept3": {
     "title": "Track record and portfolio reveal more than postdiction",
-    "titleZh": "履历和组合比事后解释更可靠",
+    "titleZh": "履历(track record)和投资组合比「事后预言(postdiction)」更能揭示真相",
+    "bodyZh": [
+      [
+        "主张",
+        "在不确定的(uncertain)领域，判断一个人信念最干净的方式，是去检查他实际押上了什么、实际发生了什么，而不是听他事后编的故事。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)的旗舰案例是诺贝尔经济学奖得主约瑟夫·斯蒂格利茨(Joseph Stiglitz)与房利美(Fannie Mae)报告。在 2002 年的一篇论文中，斯蒂格利茨(Stiglitz)和两位合作者把这些由政府背书的美国按揭公司违约风险描述为「实际上为零」。几年之后，在 2008 年金融危机中，这些公司崩溃、不得不由纳税人救助。事后，斯蒂格利茨(Stiglitz)写得仿佛自己早就预测了这场危机——而实际上他当年正是在让读者放心、说这种风险不存在。塔勒布(Taleb)的规则因此而来：不要先问别人的观点，要问他实际押了什么、留下了什么记录。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为「事后预言(postdiction)」本身就内置了一份免费期权(free option)。发言者可以忘掉错误的预测、保留少数与现状合拍的句子，然后在事后看上去英明。"
+      ],
+      [
+        "全书联结",
+        "这给读者提供了一套可操作的审计工具，用以审视专家、经济学家、新闻工作者和医生。它也连回到泰勒斯(Thales)、胖东尼(Fat Tony)，以及塔勒布(Taleb)对「收益(payoff)优先于修辞正确」的偏好。"
+      ],
+      [
+        "常见误解",
+        "投资组合的对齐(portfolio alignment)并不能证明这个人是对的——它只能证明他暴露(exposed)得够多，使他的观点比「廉价的发言」要值钱一些。"
+      ]
+    ],
     "chapterLabel": "Chapter 23",
     "en": [
       [
@@ -92,22 +150,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在不确定环境里，真正比 opinion 更值得看的，是 record、portfolio 和是否真的承担过后果。"
+        "核心观点",
+        "在不确定的(uncertain)领域，判断一个人信念最干净的方式，是去检查他实际押上了什么、实际发生了什么，而不是听他事后编的故事。"
       ],
       [
         "详细解释",
-        "Taleb 不否认人会说得很好，但他说在 high uncertainty domain 里，语言的可操纵性太强。人可以事后改口、挑选记忆、把错话埋掉，只留下看起来像先见之明的部分。\n\n因此，比起先听他怎么说，更有信息量的是看他之前做过什么、押过什么、承担过什么。\n\n这就是他把 judgment 转向 track record 的原因。"
+        "「事后预言(postdiction)」本身就内置了一份免费期权(free option)。一个发言者可以忘掉错误的预测、保留少数与现状合拍的句子，然后在事后看上去英明。\n\n投资组合的对齐(portfolio alignment)并不能证明这个人是对的——它只能证明他暴露(exposed)得够多，使他的观点比「廉价的发言」要值钱一些。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Taleb 用 Stiglitz 和 Fannie Mae 做核心案例：先前帮系统背书，事后却能写得像自己早就看穿风险一样。这个例子说明的是：postdiction 给了说话者一个免费 option，而 portfolio 和 record 更难被事后重写。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)的旗舰案例是约瑟夫·斯蒂格利茨(Joseph Stiglitz)与房利美(Fannie Mae)报告。危机之前，斯蒂格利茨(Stiglitz)和合作者把这些政府背书的按揭公司违约风险描述为「实际上为零」。系统爆掉之后，斯蒂格利茨写得仿佛他早就预测了这场危机。塔勒布(Taleb)的规则因此而来：不要先问别人的观点，要问他实际押了什么，留下了什么记录。\n\n这一情境的重点是：事后预言(postdiction)本身就内置了一份免费期权——发言者可以忘掉错误的预测、保留少数与现状合拍的句子，然后在事后看上去英明。"
       ]
     ]
   },
   "chapter23-concept4": {
     "title": "Modern corporations and banks industrialize transferred antifragility",
-    "titleZh": "现代公司与银行把转嫁的反脆弱工业化了",
+    "titleZh": "现代公司与银行把「转嫁的反脆弱(transferred antifragility)」工业化了",
+    "bodyZh": [
+      [
+        "主张",
+        "现代公司与银行系统经常把凸的(convex)上行(upside)给经理人，而让社会去吃凹的(concave)下行(downside)。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)用两个相互呼应的场景。其一：股票期权(stock-option)激励的经理人，从「先涨后跌」这种锯齿状(jagged)的市场路径中获益，多于从平稳路径中获益——因为他们可以在上涨阶段套现。其二：曾任美国财政部长、后来加入花旗银行(Citibank)的罗伯特·鲁宾(Robert Rubin)从这家银行拿走了约 1.2 亿美元，而崩溃则由纳税人承担。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它把期权性(optionality)放在制度规模上展示出来。波动(volatility)帮到了经理，伤害了公众，并把「激励(incentives)」的说辞变成对脆弱(fragility)的合法化转嫁。"
+      ],
+      [
+        "全书联结",
+        "这把期权性(optionality)、隐藏的下行(downside)与伦理在一个制度案例中联系起来。第 24 章会把同样的问题从金融延伸到职业、监管和公职。"
+      ]
+    ],
     "chapterLabel": "Chapter 23",
     "en": [
       [
@@ -125,16 +201,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "现代 corporation 和 bank 会把 `transferred antifragility` 工业化：manager 拿 convex upside，society 吃 concave downside。"
+        "核心观点",
+        "现代公司与银行系统经常把凸的(convex)上行(upside)给经理人，而让社会去吃凹的(concave)下行(downside)。"
       ],
       [
         "详细解释",
-        "Taleb 在这里把 optionality 放进机构设计。只要管理者能在上升阶段套现，却在崩盘时不承担对称损失，那么 volatility 对他就是好事，对公众却是坏事。\n\n这不只是 incentive 问题，而是 payoff shape 被制度化地扭曲了。管理者喜欢更大的波动，因为那扩大了自己的 option value；纳税人和社会则暴露在尾部损失里。\n\n所以 `too big to fail` 在 Taleb 看来，本质上就是 organized asymmetry。"
+        "它把期权性(optionality)放在制度规模上展示出来。波动(volatility)帮到了经理，伤害了公众，并把「激励(incentives)」的说辞变成对脆弱(fragility)的合法化转嫁。\n\n这把期权性、隐藏的下行(downside)与伦理在一个制度案例中联系起来。第 24 章会把同样的问题从金融延伸到职业、监管和公职。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Taleb 一方面讲 stock option manager 如何在上涨时 cash out，另一方面举 Robert Rubin 从 Citibank 带走巨额收入、而 taxpayers 吃下后果的案例。这个例子要说明的是：这里的 optionality 不是抽象数学，而是制度允许某些人 privatize upside、socialize downside。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)用两个相互呼应的场景。其一：股票期权(stock-option)激励的经理人，从「先涨后跌」这种锯齿状(jagged)的市场路径中获益，多于从平稳路径中获益——因为他们可以在上涨阶段套现。其二：曾任美国财政部长、后来加入花旗银行(Citibank)的罗伯特·鲁宾(Robert Rubin)从这家银行拿走了约 1.2 亿美元，而崩溃则由纳税人承担。\n\n这一情境的重点是：它把期权性(optionality)放在制度规模上展示出来——波动(volatility)帮到了经理，伤害了公众，并把「激励」的说辞变成对脆弱(fragility)的合法化转嫁。"
       ]
     ]
   }

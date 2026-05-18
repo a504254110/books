@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter15 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter15-concept1": {
     "title": "Official histories retrofit theory onto practical success",
-    "titleZh": "官方历史把理论后贴到实践成功上",
+    "titleZh": "官方历史(official histories)把理论事后贴到实践成功上",
+    "bodyZh": [
+      [
+        "主张",
+        "许多历史记述是从后来的诠释者(later interpreters)角度写的——这些人会把成功归因于他们自己看重的那种知识。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)从衍生品(derivatives)交易员入手——他们在学术公式被推导出来之前，就已经在成功使用复杂的期权(option)收益结构(payoff)。他和衍生品从业者兼历史学家埃斯彭·豪格(Espen Haug)一起追溯：学者随后如何把那些公式包装得好像「交易员一直是先用理论再交易」一样。塔勒布(Taleb)甚至描述了一位编辑试图改写他的亲历叙述，让学术的箭头指向「更受偏爱的方向」。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它直接呈现出「征用(expropriation)」的机制。一旦实践奏效，写得更整洁的版本就往往改写事件真正的顺序。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)在揭穿那种保护学术声望、却贬低实践者的「叙事漂白(narrative laundering)」。在全书层面，这为后来「对那些不付代价却靠扭曲获利的职业」的伦理批评做铺垫。"
+      ]
+    ],
     "chapterLabel": "Chapter 15",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "很多 official history 是 later interpreter 写出来的，他们会把成功归功于自己偏爱的知识类型，于是 theory 被 retrofitted 到先前已经成功的 practice 上。"
+        "核心观点",
+        "许多历史记述是从后来的诠释者角度写的——这些人会把成功归因于他们自己看重的那种知识。"
       ],
       [
         "详细解释",
-        "Taleb 这里关心的是 narrative laundering。等 practice 已经成功之后，institutional narrator 会把故事重写成“理论先来，实践后来验证”。这样不仅保护了 academic prestige，也会让真正的形成过程被抹掉。\n\n所以历史记录本身也带有结构性偏见。"
+        "它直接呈现出「征用(expropriation)」的机制。一旦实践奏效，写得更整洁的版本往往就改写了事件真正的顺序。\n\n塔勒布(Taleb)在揭穿那种保护学术声望、却贬低实践者的「叙事漂白(narrative laundering)」。在全书层面，这为后来「对那些不付出代价却靠扭曲获利的职业」的伦理批评做铺垫。"
       ],
       [
-        "这个例子到底在说明什么",
-        "derivatives trader 先在实践中使用复杂 payoff，后来 academic formula 才被写出来，但 official story 喜欢把因果顺序倒过来。Taleb 甚至提到 editor 想改写他的 firsthand account，让理论看起来像原始引擎。\n\n这个例子真正要说明的是：成功之后，话语权常常会把故事洗成更体面的版本。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)从衍生品(derivatives)交易员入手——他们在学术公式被推导出来之前，就已经在成功使用复杂的期权(option)收益结构(payoff)。他和衍生品从业者兼历史学家埃斯彭·豪格(Espen Haug)一起追溯：学者随后如何把那些公式包装得好像「交易员一直是先用理论再交易」一样。塔勒布(Taleb)甚至描述了一位编辑试图改写他的亲历叙述，让学术的箭头指向「更受偏爱的方向」。\n\n这一情境的重点是：它直接呈现出征用的机制——一旦实践奏效，更整洁的书面版本就往往改写了事件真正的顺序。"
       ]
     ]
   },
   "chapter15-concept2": {
     "title": "Engineering and architecture often worked before theory caught up",
-    "titleZh": "工程与建筑常常先行于理论",
+    "titleZh": "工程与建筑往往先于理论起作用",
+    "bodyZh": [
+      [
+        "主张",
+        "理论上的清晰表述常常跟在实际问题解决之后，而不是导致它。「什么管用」往往是在事后才变得可被读懂。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)堆叠多个领域的例子：喷气发动机(jet engines)是通过试验和调整造出来的，理论后来才能完全解释它；控制论(cybernetics)早在被归功于维纳(Wiener)的「创立」之前就已在实践中存在；中世纪的工匠造起了大教堂(cathedrals)，罗马工程师建起了渡槽(aqueducts)——而正式数学要在很久以后才成为核心。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它打破了那种默认的「学校式叙事」。在许多领域里，实践不是理论的最后一步，而是后来理论被抽象出来的源头。"
+      ],
+      [
+        "全书联结",
+        "这是塔勒布(Taleb)对那种「科学→技术→财富」线性模型(linear model)最直接的挑战。在全书层面，这强化了第 12 章和第 13 章的期权性(optionality)与「修修补补(tinkering)」逻辑。"
+      ]
+    ],
     "chapterLabel": "Chapter 15",
     "en": [
       [
@@ -59,22 +95,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "很多 engineering 和 architecture 的成功，并不是 theory 先想清楚再落地，而是 practice 先工作起来，theory 后来才追上来解释。"
+        "核心观点",
+        "理论上的清晰表述常常跟在实际问题解决之后，而不是导致它。「什么管用」往往是在事后才变得可被读懂。"
       ],
       [
         "详细解释",
-        "Taleb 要打破的是 linear model：science → technology → wealth。很多时候顺序恰好相反。先是 heuristic、trial、adjustment 把东西做出来，之后 formal articulation 才慢慢补齐。\n\n所以 theory 经常是事后抽象，而不是一开始的 driver。"
+        "它打破了那种默认的「学校式叙事」。在许多领域里，实践并不是理论的最后一步；它反而是后来理论被抽象出来的源头。\n\n这是塔勒布(Taleb)对那种「科学→技术→财富」线性模型(linear model)最直接的挑战。在全书层面，这强化了第 12 章和第 13 章的期权性(optionality)与「修修补补(tinkering)」逻辑。"
       ],
       [
-        "这个例子到底在说明什么",
-        "jet engine、cybernetics、medieval cathedral、Roman aqueduct 这些例子放在一起，就是为了说明：人类早就在做很多复杂工程了，并不需要先把全部理论写出来才开始行动。\n\n这些例子真正要说明的是：workability 常常先于 explainability。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)堆叠多个领域的例子：喷气发动机是通过试验和调整造出来的，理论后来才能完全解释它；控制论(cybernetics)早在被归功于维纳(Wiener)的「创立」之前就已在实践中存在；中世纪的工匠造起了大教堂(cathedrals)，罗马工程师建起了渡槽(aqueducts)——而正式数学要在很久以后才成为核心。\n\n这一情境的重点是：它打破了默认的学校式叙事——在许多领域里，实践不是理论的最后一步，而是后来理论被抽象出来的源头。"
       ]
     ]
   },
   "chapter15-concept3": {
     "title": "Medicine advanced through empirics and serendipity more than design narratives admit",
-    "titleZh": "医学进步多靠经验和偶然，而非设计",
+    "titleZh": "医学的进展更多靠经验(empirics)和偶然发现，而非「设计叙事」所承认的那样",
+    "bodyZh": [
+      [
+        "主张",
+        "医学进展常常被重述为「由科学主导的设计」，但许多重大收益其实来自盲目化学反应、副作用，以及对偶然发现的实际采用。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)指出化疗(chemotherapy)源自芥子气(mustard-gas)的效果；许多药物的主要用途与最初的设计用途不同；战后的「治疗革命(therapeutic revolution)」来自合成化学(synthetic chemistry)——它在没人能给出整洁故事之前，就盲目地交付了一批解药。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为医学是人们最希望相信「自上而下设计(top-down design)」的领域之一。塔勒布(Taleb)用它来说明：即便是关乎重大利害的进展，也常常来自杂乱的发现、采用和漂移(drift)。"
+      ],
+      [
+        "全书联结",
+        "医学这个案例之所以重要，是因为塔勒布(Taleb)后续会攻击医源性伤害(iatrogenics)、干预主义(interventionism)和对形式化专家的过度自信。这一章为后续的这些攻击提供了历史背景。"
+      ]
+    ],
     "chapterLabel": "Chapter 15",
     "en": [
       [
@@ -92,22 +146,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "medical progress 经常被讲成科学设计的结果，但 Taleb 认为很多重大进步其实更像 empirics、side effects 和 serendipity 的产物。"
+        "核心观点",
+        "医学进展常常被重述为「由科学主导的设计」，但许多重大收益其实来自盲目化学反应、副作用，以及对偶然发现的实际采用。"
       ],
       [
         "详细解释",
-        "medicine 是最容易让人相信 top-down design 的领域，所以 Taleb 特别要在这里拆故事。他不是否认 science，而是说很多关键改善并不是先由 clean theory 设计出来，而是先在 messy discovery 和 practical uptake 中出现。\n\n这让后面的 anti-intervention 和 anti-overconfidence 批评更有历史背景。"
+        "医学是人们最希望相信「自上而下设计(top-down design)」的领域之一。塔勒布(Taleb)用它来说明：即便是关乎重大利害的进展，也常常来自杂乱的发现、采用和漂移(drift)。\n\n医学这个案例之所以重要，是因为塔勒布(Taleb)随后会攻击医源性伤害(iatrogenics)、干预主义(interventionism)和对形式化专家的过度自信。这一章为后续的这些攻击提供了历史背景。"
       ],
       [
-        "这个例子到底在说明什么",
-        "chemotherapy 和 mustard gas 的关系、drug 后来找到比原设计更重要的用途、postwar therapeutic revolution 来自 blind synthetic chemistry，这些例子都说明同一件事：医学很多进展并不是 textbook 里那种 tidy design story。\n\n这个例子真正要说明的是：高风险领域的进步，也常常是从偶然和实证里长出来的。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)指出化疗(chemotherapy)源自芥子气(mustard-gas)的效果；许多药物的主要用途与最初的设计用途不同；战后的「治疗革命(therapeutic revolution)」来自合成化学(synthetic chemistry)——它在没人能给出整洁故事之前，就盲目地交付了一批解药。\n\n这一情境的重点是：医学是人们最希望相信「自上而下设计」的领域之一；塔勒布(Taleb)用它来说明——即便是关乎重大利害的进展，也常常来自杂乱的发现、采用和漂移。"
       ]
     ]
   },
   "chapter15-concept4": {
     "title": "Optional progress looks messy to planners and statisticians",
-    "titleZh": "依靠期权的进步看上去乱糟糟",
+    "titleZh": "依靠期权的进步，在规划者和统计学家眼里很乱",
+    "bodyZh": [
+      [
+        "主张",
+        "在依靠期权(optional)的领域里，漂移(drift)、偏斜的收益(skewed payoffs)和反复重新发明本来就是常态。只看平均或固定计划的人，会错读这个过程。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)用那些「在漂移中转向」的公司来说明：可口可乐(Coca-Cola)最初是药用产品，蒂芙尼(Tiffany)最初卖文具，诺基亚(Nokia)最初是造纸厂，雅芳(Avon)起家于上门卖书。他随后警告：在生物技术(biotech)这种依靠期权的行业里，许多公司可以毫无利润，而极少数巨型赢家却能贡献全部的总结果。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为依靠期权的进步在发生时并不整洁。计划在变，多数尝试看起来平平无奇，上行(upside)集中在少数容易被过早否定的结果之中。"
+      ],
+      [
+        "全书联结",
+        "这就是塔勒布(Taleb)把「被重写的历史」与他关于期权性(optionality)的统计观点连起来的地方。后续章节会以凸性(convexity)和「反向火鸡(inverse turkey)」逻辑形式化同一直觉：好消息可以一直藏在过去的样本里。"
+      ]
+    ],
     "chapterLabel": "Chapter 15",
     "en": [
       [
@@ -125,16 +197,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在 optional domain 里，进步看起来常常很乱：多数尝试平庸、路径不断漂移、真正的 upside 集中在少数 outcome 上。planner 和 statistician 很容易误读这个过程。"
+        "核心观点",
+        "在依靠期权(optional)的领域里，漂移(drift)、偏斜的收益(skewed payoffs)和反复重新发明本来就是常态。只看平均或固定计划的人，会错读这个过程。"
       ],
       [
         "详细解释",
-        "Taleb 在这里要读者从 tidy average 转向 skewed process。可选性的世界不是按计划稳步前进的，而是 through drift、reinvention 和 a few giant winners 推动整体结果。\n\n所以如果你太早用均值、计划、稳定路线来评判，通常会看错。"
+        "依靠期权的进步在发生时并不整洁。计划在变，多数尝试看起来平平无奇，上行(upside)集中在少数容易被过早否定的结果之中。\n\n这就是塔勒布(Taleb)把「被重写的历史」与他关于期权性(optionality)的统计观点连起来的地方。后续章节会以凸性(convexity)和「反向火鸡(inverse turkey)」逻辑形式化同一直觉：好消息可以一直藏在过去的样本里。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Coca-Cola、Tiffany、Nokia、Avon 这些公司的起点和后来完全不同，说明 progress 经常不是沿着最初 blueprint 走。biotech 里许多公司长期不盈利，但少数 winner 足以决定总结果，也是一样的结构。\n\n这个例子真正要说明的是：optional progress 在发生时通常不像 progress。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)用那些「在漂移中转向」的公司来说明：可口可乐(Coca-Cola)最初是药用产品，蒂芙尼(Tiffany)最初卖文具，诺基亚(Nokia)最初是造纸厂，雅芳(Avon)起家于上门卖书。他随后警告：在生物技术(biotech)这种依靠期权的行业里，许多公司可以毫无利润，而极少数巨型赢家却能贡献全部的总结果。\n\n这一情境的重点是：依靠期权的进步在发生时并不整洁——计划在变，多数尝试看起来平平无奇，上行集中在少数容易被过早否定的结果之中。"
       ]
     ]
   }

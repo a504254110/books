@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter4 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter04-concept1": {
     "title": "The whole can be antifragile because the parts are fragile",
-    "titleZh": "整体反脆弱，靠的是局部脆弱",
+    "titleZh": "整体可以反脆弱(antifragile)，正是因为局部脆弱",
+    "bodyZh": [
+      [
+        "主张",
+        "反脆弱性(antifragility)往往是集体的属性，而非每一个个体单元的属性。必须允许某些部分失败，整体才能够适应。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)以创业公司和餐馆为例。单一的创业公司或餐馆是脆弱的(fragile)，常常失败；但正是这种脆弱让许多实验能够同时运行。更好的想法存活下来，弱的想法消失，更广义的经济因此获得多样性，而不是被一份永远不变的菜单冻住。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这些情境说明塔勒布(Taleb)为何反复谈到「层级(layers)」。失败损害的是个体生意，但更大的系统反而获益，因为同一时间里有许多小实验在测试环境。"
+      ],
+      [
+        "全书联结",
+        "这避免了把反脆弱性(antifragility)误解为对个人生存的保证。塔勒布(Taleb)的框架经常在群体层面、而非个体层面上起作用。在全书层面，这种分层视角对后续关于「谁可以失败，谁被保护」的伦理论证至关重要。"
+      ]
+    ],
     "chapterLabel": "Chapter 4",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "antifragility 往往不是每个 individual unit 的属性，而是整个 collective 的属性。部分单元可以失败，整体反而因此适应。"
+        "核心观点",
+        "反脆弱性(antifragility)往往是集体的属性，而非每一个个体单元的属性。必须允许某些部分失败，整体才能够适应。"
       ],
       [
         "详细解释",
-        "这一节最重要的是分层。Taleb 不想让读者以为 antifragility 等于“每个人都不会受伤”。很多时候，individual part 很脆弱，正因为它们能失败，整个 system 才能通过 selection 和 experimentation 学到东西。\n\n所以这里的 gain 常常发生在更高一层，而不是发生在失败的那个人身上。"
+        "塔勒布(Taleb)反复谈到「层级(layers)」。失败损害的是个体生意，但更大的系统反而获益，因为同一时间里有许多小实验在测试环境。\n\n这避免了把反脆弱性(antifragility)误解为对个人生存的保证。塔勒布(Taleb)的框架经常在群体层面、而非个体层面上起作用。在全书层面，这种分层视角对后续讨论「谁可以失败，谁被保护」的伦理论证至关重要。"
       ],
       [
-        "这个例子到底在说明什么",
-        "startup 和 restaurant 的例子说明：单个 business 会倒，但很多小实验同时存在时，好的模式能留下来，差的模式会被淘汰。wide economy 因此得到 variety，而不是被一个僵死方案锁住。\n\n这些例子真正要说明的是：局部脆弱不一定是坏事，它可能是整体学习机制的一部分。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)以创业公司和餐馆为例。单一的创业公司或餐馆是脆弱的(fragile)，经常失败；但正是这种脆弱使得众多实验能够同时运行。更好的想法存活下来，弱的想法消失，更广义的经济因此获得多样性，而不是被某一份永远不变的菜单冻住。\n\n这一情境的重点是：塔勒布(Taleb)反复谈到「层级」。失败损害的是个体生意，但更大的系统反而获益，因为同一时间里有许多小实验在测试环境。"
       ]
     ]
   },
   "chapter04-concept2": {
     "title": "Death and error are part of how living systems learn",
-    "titleZh": "死亡和错误是系统学习的一部分",
+    "titleZh": "死亡与错误是生命系统学习方式的一部分",
+    "bodyZh": [
+      [
+        "主张",
+        "在生物和演化(evolution)情境中，淘汰不是偶然的副产品，而是系统借以发现「什么有用」的核心机制。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)对比两个层级。在兴奋效应(hormesis)中，同一个有机体在小压力(stress)下存活并变得更强。在演化(evolution)中，许多有机体并不能存活；相反，群体通过弱变体消失、强变体繁殖而得到提升。他又加上抗生素耐药(antibiotic resistance)：如果治疗杀死了弱菌、却让一些活了下来，存活下来的菌株下次会更难被杀死。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这些例子把「收益出现在哪个层级」讲清楚了。单个有机体或细菌可能死去，但更大的群体通过自然选择(selection)学到了东西。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)要让读者接受反脆弱性(antifragility)的一个更艰难的后果：「部件被替换」往往是更新的代价。在全书层面，这一逻辑会回到关于期权性(optionality)、试错(trial and error)，以及保护衰败机构不承担后果之危险性的讨论中。"
+      ]
+    ],
     "chapterLabel": "Chapter 4",
     "en": [
       [
@@ -59,22 +95,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在 biological 和 evolutionary 的语境里，死亡与淘汰并不是偶然副作用，而是系统学习和筛选的一部分。"
+        "核心观点",
+        "在生物和演化(evolution)情境中，淘汰不是偶然的副产品，而是系统借以发现「什么有用」的核心机制。"
       ],
       [
         "详细解释",
-        "Taleb 在这里要读者区分 hormesis 和 evolution。前者是同一个 organism 在小压力下活下来并变强；后者则常常是 individual 死掉，但 population 或 gene pool 因 selection 而更适应。\n\n这也是为什么他会说 gain 出现在系统层，而不是总出现在个体层。"
+        "这些例子把「收益出现在哪个层级」讲清楚了。单个有机体或细菌可能死去，但更大的群体通过自然选择(selection)学到了东西。\n\n塔勒布(Taleb)要让读者接受反脆弱性(antifragility)的一个更艰难的后果：「部件被替换」往往是更新的代价。在全书层面，这一逻辑会回到关于期权性(optionality)、试错(trial and error)，以及保护衰败机构不承担后果之危险性的讨论中。"
       ],
       [
-        "这个例子到底在说明什么",
-        "antibiotic resistance 的例子很清楚：你没有把 bacteria 全部清掉，结果活下来的那部分更强。evolution 也是同样逻辑，弱的 form 被淘汰，存活者继续 reproduce。\n\n这些例子真正要说明的是：某些系统的学习机制，本身就带有 elimination。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)对比了两个层级。在兴奋效应(hormesis)中，同一个有机体在小压力(stress)下存活并变得更强。在演化(evolution)中，许多有机体并不能存活；相反，群体因弱的变体消失、强的变体繁殖而得到提升。他又加上抗生素耐药(antibiotic resistance)的例子：如果治疗杀死了弱菌，却让一些活了下来，那么存活下来的菌株下次会更难被杀死。\n\n这一情境的重点是：这些例子把「收益出现在哪个层级」讲清楚了。单个有机体或细菌可能死去，但更大的群体通过自然选择(selection)学到了东西。"
       ]
     ]
   },
   "chapter04-concept3": {
     "title": "Small isolated mistakes teach; synchronized mistakes blow up",
-    "titleZh": "分散的小错有教益，同步的错会爆雷",
+    "titleZh": "分散的小错误能教育人；同步的错误则会引爆",
+    "bodyZh": [
+      [
+        "主张",
+        "只有当错误保持局部、部分、不致命时，它才有益处。一旦同样的错误传遍紧耦合的系统，学习效益就会消失。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)把航空业与金融业对比。当瑞士航空 111 号(Swissair 111)、环球航空 800 号(TWA 800)或法航 447 号(Air France 447)坠毁时，调查者研究事故，整个航空业从中学习，而不必关停整个系统。他用泰坦尼克号(Titanic)和福岛(Fukushima)做同样的处理：一次灾难暴露了一个设计弱点，避免了规模更大的同类失败累积下来。相比之下，一个紧密相连的银行系统会扩散错误，而不是从中学习。"
+      ],
+      [
+        "为什么这个例子重要",
+        "本章真正的区分就在这里。一次小失败只有在保持足够局部时才有教学价值。一旦错误在整个网络中扩散，学习效益就被传染(contagion)取代。"
+      ],
+      [
+        "全书联结",
+        "这是塔勒布(Taleb)从演化(evolution)和商业例子通往工程、金融和政策的桥梁。在全书层面，「局部错误」与「系统性同步(systemic synchronization)」的区分直接通向第二部(Book II)的政治与经济论证。"
+      ]
+    ],
     "chapterLabel": "Chapter 4",
     "en": [
       [
@@ -92,22 +146,44 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "错误只有在保持 local、partial、nonterminal 的时候才有学习价值；一旦错误被同步扩散到整个系统，学习价值就会变成 contagion 风险。"
+        "核心观点",
+        "只有当错误保持局部、部分、不致命时，它才有益处。一旦同样的错误传遍紧耦合的系统，学习效益就会消失。"
       ],
       [
         "详细解释",
-        "Taleb 这里真正关心的不是“失败本身有没有用”，而是失败发生在什么结构里。local error 可以被研究、被吸收、被改进；synchronized error 则会让整个 network 一起出问题。\n\n所以 small failure 和 systemic failure 不是同一种东西。"
+        "本章真正的区分就在这里。一次小失败只有在保持足够局部时才有教学价值。一旦错误在整个网络中扩散，学习效益就会被传染(contagion)所取代。\n\n这是塔勒布(Taleb)从演化(evolution)和商业例子通往工程、金融和政策的桥梁。在全书层面，「局部错误」与「系统性同步(systemic synchronization)」的区分直接通向第二部(Book II)的政治与经济论证。"
       ],
       [
-        "这个例子到底在说明什么",
-        "aviation 的 crash 很惨，但一次 crash 不会让整个行业一起停摆，反而会带来新的 safety learning。finance 则不同，bank 之间高度连接，一个 failure 往往会放大下一个 failure。Titanic 和 Fukushima 的例子也在说明：一次 disaster 如果是局部的，可能让系统在更大的 disaster 之前学到教训。\n\n这些例子真正要说明的是：错误有没有益处，关键不在于“错了”，而在于错误有没有被限制在局部。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)把航空业与金融业做对比。当瑞士航空 111 号(Swissair 111)、环球航空 800 号(TWA 800)或法航 447 号(Air France 447)坠毁时，调查者研究事故，整个航空业从中学到东西，而不必把整个系统关停。他又以类似方式使用了泰坦尼克号(Titanic)和福岛(Fukushima)：一次灾难暴露了一个设计弱点，避免了规模更大的同类失败累积下来。相比之下，一个紧密连接的银行系统会把错误扩散，而不是从中学习。\n\n这一情境的重点是：本章真正的区分就在这里。一次小失败只有在保持足够局部时才有教学价值。一旦错误在整个网络中扩散，学习效益就会被传染(contagion)所取代。"
       ]
     ]
   },
   "chapter04-concept4": {
     "title": "Entrepreneurs matter because they carry real downside",
-    "titleZh": "企业家的意义在于承担真实风险",
+    "titleZh": "企业家(entrepreneurs)之所以重要，是因为他们承担真实的下行(downside)",
+    "bodyZh": [
+      [
+        "主张",
+        "风险承担者(risk takers)在社会上是有价值的——不是因为他们从不失败，而是因为他们把自己置于风险(risk)之中，从而让实验成为可能。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)请读者把破产的企业家(entrepreneur)与受保护的经理人或知识分子作对比。一位失败的餐馆老板可能最终穷到只能吃罐装金枪鱼；正是因为他的失败实验让市场知道「什么行不通」，其他人后来才享受到更好的咖啡机、菜品或商业模式。塔勒布(Taleb)随后把这一观点推到极致：他想象一个「全国企业家日(National Entrepreneur Day)」，社会会以纪念阵亡军人的方式感谢失败的企业家。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这些情境说明塔勒布(Taleb)为何把企业家精神(entrepreneurship)视为一种暴露(exposure)角色，而不是一个声望标签。企业家(entrepreneur)之所以重要，是因为下行(downside)落在下注的人身上，而失败所产生的知识则扩散给其他人。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)想把企业家精神(entrepreneurship)从「创新」这种浪漫化的抽象中救出来，把它与真实的暴露(exposure)挂钩。在全书层面，这成为第 23 章的伦理骨架——塔勒布(Taleb)在那里抨击「把上行(upside)私有化、把下行(downside)社会化」的安排。"
+      ],
+      [
+        "常见误解",
+        "塔勒布(Taleb)并不是在赞美每一个风险承担者(risk taker)。他的赞美依赖于本章相同的规则：风险承担者必须亲自承担下行(downside)，而不是把它转嫁给别人。"
+      ]
+    ],
     "chapterLabel": "Chapter 4",
     "en": [
       [
@@ -125,16 +201,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "Taleb 看重 entrepreneur，不是因为他们总会成功，而是因为他们真的把 downside 扛在自己身上，从而让实验得以发生。"
+        "核心观点",
+        "风险承担者(risk takers)在社会上是有价值的——不是因为他们从不失败，而是因为他们把自己置于风险之中，从而让实验成为可能。"
       ],
       [
         "详细解释",
-        "这一节要把 innovation 这种漂亮口号拉回到真实 exposure。真正重要的不是“有创意的人”这个抽象形象，而是那个承担失败成本的人。如果失败的成本由本人承担，而系统获得了知识和改进，这个角色就有社会价值。\n\n这也解释了为什么 Taleb 后面会把 ethical 问题和 risk exposure 绑在一起。"
+        "塔勒布(Taleb)把企业家精神(entrepreneurship)视为一种暴露(exposure)角色，而不是一个声望标签。企业家(entrepreneur)之所以重要，是因为下行(downside)落在下注的人身上，而失败所产生的知识则扩散给其他人。\n\n塔勒布(Taleb)并不是在赞美每一个风险承担者(risk taker)。他的赞美依赖于全章相同的规则：风险承担者必须亲自承担下行(downside)，而不是把它转嫁给别人。"
       ],
       [
-        "这个例子到底在说明什么",
-        "failed restaurant owner 可能在吃 canned tuna，而其他人却在享受更好的 coffee machines 和 meals。Taleb 的 National Entrepreneur Day 甚至把这个逻辑推到极致：社会应该感谢那些失败的 entrepreneur，因为他们用自己的 downside 换来了 collective learning。\n\n这个例子真正要说明的是：创业者的重要性不在 glamour，而在于他们承担了真实损失。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)让读者把破产的企业家(entrepreneur)与受保护的经理人或知识分子作对比。一位失败的餐馆老板可能最终穷到只能吃罐装金枪鱼；而正是因为他的失败实验让市场知道了「什么行不通」，其他人后来才享受到更好的咖啡机、菜品或商业模式。塔勒布(Taleb)随后把这一观点推到极致：他想象一个「全国企业家日(National Entrepreneur Day)」，社会会以纪念阵亡军人的方式来感谢失败的企业家。\n\n这一情境的重点是：塔勒布(Taleb)把企业家精神(entrepreneurship)视为一种暴露(exposure)角色，而不是一个声望标签。企业家之所以重要，是因为下行(downside)落在下注的人身上，而失败所产生的知识则扩散给其他人。"
       ]
     ]
   }

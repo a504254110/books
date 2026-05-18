@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter10 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter10-concept1": {
     "title": "Seneca solves antifragility as asymmetry",
-    "titleZh": "塞内卡把反脆弱写成不对称",
+    "titleZh": "塞内卡(Seneca)把反脆弱性(antifragility)解为不对称(asymmetry)",
+    "bodyZh": [
+      [
+        "主张",
+        "斯多葛派(Stoic)的核心动作，是把生活安排成「坏结果造成的伤害小于好结果带来的好处」。这种不对称(asymmetry)把不确定性(uncertainty)从威胁变成了潜在的有利因素。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)把塞内卡(Seneca)介绍为不只是哲学家。他还是一位富有的罗马政治家，长期暴露在宫廷政治、流放和危险之中。塔勒布(Taleb)随后将他与现代决策理论家「特里法特教授(Professor Triffat)」对比——后者教授风险(risk)公式，却在自己面临严肃的职业选择时拒绝运用它们。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为塔勒布(Taleb)想找一位真正在风险(risk)、财富、政治与危险中生活过的思想家。塞内卡(Seneca)在此处显得可信，因为他的观念是在认真的人生中受过检验的，而不只是出现在学术示意图中。"
+      ],
+      [
+        "全书联结",
+        "第 9 章给了塔勒布(Taleb)一个能感知脆弱(fragility)的人物；塞内卡(Seneca)则给了他第一条关于「如何安排暴露(exposure)」的清晰规则。这条规则随后成为第 11 章「杠铃策略(barbell)」的基础。"
+      ]
+    ],
     "chapterLabel": "Chapter 10",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "Seneca 给 Taleb 的价值，在于他把 antifragility 表达成一个 exposure rule：让 downside 尽量小，同时保留 upside。"
+        "核心观点",
+        "斯多葛派(Stoic)的核心动作，是把生活安排成「坏结果造成的伤害小于好结果带来的好处」。这种不对称(asymmetry)把不确定性(uncertainty)从威胁变成了潜在的有利因素。"
       ],
       [
         "详细解释",
-        "Taleb 不是把 Stoicism 当纯 moral teaching 来读，而是把它当作一种 risk structure。真正重要的不是“苦行”，而是 life arrangement：坏结果对你的伤害有限，而好结果仍然可以进入。\n\n这样，不确定性就不再只是 threat，而会带来 favorable asymmetry。"
+        "塔勒布(Taleb)想找一位真正在风险(risk)、财富、政治与危险中生活过的思想家。塞内卡(Seneca)在此处显得可信，因为他的观念是在认真的人生中受过检验的，而不只是出现在学术示意图中。\n\n第 9 章给了塔勒布(Taleb)一个能感知脆弱(fragility)的人物；塞内卡(Seneca)则给了他第一条关于「如何安排暴露(exposure)」的清晰规则。这条规则随后成为第 11 章「杠铃策略(barbell)」的基础。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Seneca 既是 philosopher 又是富人，这对 Taleb 很关键，因为这说明他的 ideas 是在 wealth、power、danger 里被测试过的。与之相反，Professor Triffat 只会教 risk formula，却不愿意在 serious life choice 上真的使用它们。\n\n这个例子真正要说明的是：可信的 antifragility rule 应该来自被现实检验过的人，而不是只停留在 diagram 上。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)把塞内卡(Seneca)介绍为不只是哲学家。他还是一位富有的罗马政治家，长期暴露在宫廷政治、流放和危险之中。塔勒布(Taleb)随后将他与现代决策理论家「特里法特教授(Professor Triffat)」对比——后者教授风险公式，却在自己面临严肃的职业选择时拒绝运用它们。\n\n这一情境的重点是：塔勒布(Taleb)想找一位真正在风险、财富、政治与危险中生活过的思想家。塞内卡(Seneca)在此处显得可信，因为他的观念是在认真的人生中受过检验的，而不只是出现在学术示意图中。"
       ]
     ]
   },
   "chapter10-concept2": {
     "title": "Stoic practice lowers the emotional downside of loss",
-    "titleZh": "斯多葛修炼降低损失的情绪下行",
+    "titleZh": "斯多葛(Stoic)实践降低损失带来的情绪下行(downside)",
+    "bodyZh": [
+      [
+        "主张",
+        "通过在心理上贬低拥有物的重要性，并提前预演损失，斯多葛主义(Stoicism)降低了不利结果造成的伤害。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)从斯多葛派(Stoic)创始人芝诺(Zeno)开始。一次海难毁掉了他的货物，芝诺把这种损失当作「解脱」，而不是彻底的毁灭(ruin)。塔勒布(Taleb)随后给出塞内卡(Seneca)式的现代场景：几乎什么都不带就出门旅行；或者在开始一份工作之前就先写好辞职信，这样这份工作就无法支配你的心。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为这种方法在坏事发生之前就已经起作用。通过提前练习「减少依赖」，你能缩小损失带来的情绪下行(downside)和实际下行。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)在把斯多葛主义(Stoicism)转化为应用性的风险管理(risk management)。这为后续关于减法路径(via negativa)的章节做铺垫：减法、克制、移除依赖，都会成为实用的工具。"
+      ]
+    ],
     "chapterLabel": "Chapter 10",
     "en": [
       [
@@ -59,22 +95,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "Stoic practice 的作用，是在坏事发生之前先降低 loss 对你的 emotional 和 practical downside。"
+        "核心观点",
+        "通过在心理上贬低拥有物的重要性，并提前预演损失，斯多葛主义(Stoicism)降低了不利结果造成的伤害。"
       ],
       [
         "详细解释",
-        "Taleb 在这里强调的是 pre-adjustment。通过提前练习失去、降低依赖、给 possessions 去魅，你会在真正遭遇 adverse event 时受伤更少。重点不是假装什么都不在乎，而是把自己从完全被拥有的状态里拉出来。\n\n所以 Stoicism 在这里更像一种 downside engineering。"
+        "这种方法在坏事发生之前就已经起作用。通过提前练习「减少依赖」，你能缩小损失带来的情绪下行(downside)和实际下行。\n\n塔勒布(Taleb)在把斯多葛主义(Stoicism)转化为应用性的风险管理(risk management)。这为后续关于减法路径(via negativa)的章节做铺垫：减法、克制、移除依赖，都会成为实用的工具。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Zeno 的 shipwreck 场景说明，灾难发生后他没有把自己定义成彻底毁掉的人。Taleb 进一步用 traveling light、先写 resignation letter 这些现代场景说明：如果你事先练习不依赖，job 或 possession 就很难彻底控制你。\n\n这些例子真正要说明的是：loss 的破坏力，很大一部分来自你事前的依赖程度。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)从斯多葛派(Stoic)创始人芝诺(Zeno)开始。一次海难毁掉了他的货物，芝诺把这种损失当作「解脱」，而不是彻底的毁灭(ruin)。塔勒布(Taleb)随后给出塞内卡(Seneca)式的现代场景：几乎什么都不带就出门旅行；或者在开始一份工作之前就先写好辞职信，这样这份工作就无法支配你的心。\n\n这一情境的重点是：这种方法在坏事发生之前就已经起作用。通过提前练习「减少依赖」，你能缩小损失带来的情绪下行(downside)和实际下行。"
       ]
     ]
   },
   "chapter10-concept3": {
     "title": "Dependence itself is a source of fragility",
-    "titleZh": "依赖本身就是脆弱的来源",
+    "titleZh": "依赖本身就是一种脆弱(fragility)的来源",
+    "bodyZh": [
+      [
+        "主张",
+        "一个人被环境、奢华和情感依赖所支配得越深，他人生的下行(downside)就越大。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)以特定方式解读塞内卡(Seneca)对奢华的攻击：一旦财富让你有许多东西要去保护，你就睡得更差、忧虑更多，并被你所拥有的东西反过来支配。塞内卡(Seneca)因此保留财富的上行(upside)，却试图剔除通常随之而来的奴役感。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为问题不在于财富本身。问题在于当舒适、地位或拥有物把你的下行(downside)放大、让你害怕失去它们时。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)在把脆弱(fragility)从外部系统扩展到内在生活。后续关于匮乏(deprivation)、减法(subtraction)和伦理暴露(ethical exposure)的章节，都建立在「依赖会悄悄放大下行」这一想法之上。"
+      ]
+    ],
     "chapterLabel": "Chapter 10",
     "en": [
       [
@@ -92,16 +146,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "真正让人变 fragile 的，不一定是贫穷或痛苦，而可能是 dependence 本身：你有越多必须保护的东西，downside 就越大。"
+        "核心观点",
+        "一个人被环境、奢华和情感依赖所支配得越深，他人生的下行(downside)就越大。"
       ],
       [
         "详细解释",
-        "Taleb 对 luxury 的批评不是道德洁癖，而是 exposure analysis。wealth 本身不一定危险，危险的是你开始被 wealth 和 status 反过来支配，于是越来越怕失去它们。\n\n这样一来，comfort 就从 upside 变成了 hidden fragility。"
+        "问题不在于财富本身。问题在于：当舒适、地位或拥有物把你的下行(downside)放大、让你害怕失去它们时，麻烦就来了。\n\n塔勒布(Taleb)在把脆弱(fragility)从外部系统扩展到内在生活。后续关于匮乏(deprivation)、减法(subtraction)和伦理暴露(ethical exposure)的章节，都建立在这个想法之上：依赖会悄悄放大下行。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Seneca 对 luxury 的警惕，并不是说财富天然邪恶，而是说一旦 possessions 变成你心理上的主人，你就会为了保住它们而睡不好、担心更多、决策更差。\n\n这个例子真正要说明的是：dependence 会悄悄放大 downside。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)以特定方式解读塞内卡(Seneca)对奢华的攻击：一旦财富让你有许多东西要去保护，你就睡得更差、忧虑更多，并被你所拥有的东西反过来支配。塞内卡(Seneca)因此保留财富的上行(upside)，却试图剔除通常随之而来的奴役感。\n\n这一情境的重点是：问题不在于财富本身。问题在于当舒适、地位或拥有物把你的下行(downside)放大、让你害怕失去它们时，麻烦就来了。"
       ]
     ]
   }

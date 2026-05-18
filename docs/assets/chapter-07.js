@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter7 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter07-concept1": {
     "title": "Naive intervention mistakes the urge to help for actual benefit",
-    "titleZh": "天真干预把“想帮忙”误当成“真有用”",
+    "titleZh": "天真干预(naive intervention)把「想出手」当成「真正有用」",
+    "bodyZh": [
+      [
+        "主张",
+        "在许多领域，尤其是医学和政策中，人们出手干预(intervene)，是因为「做点什么」让人觉得负责，而不是因为认真比较过预期收益(payoff)与可能的伤害。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)以 1930 年代一项扁桃体切除术(tonsillectomy)研究开篇。一组医生为 174 个孩子推荐了手术；第二组又为剩下的孩子里的 99 个推荐了手术；第三组再为剩下的孩子里的 52 个推荐了手术。同样这些孩子仅仅因为被不同医生看过，就在「需要做手术」和「不需要做手术」之间反复滑动。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一情境说明塔勒布(Taleb)为何坚持要问「盈亏平衡点」的问题。当决策规则如此不稳定时，干预(intervention)可能更多由「想行动」的冲动驱动，而不是由清晰的净收益驱动。"
+      ],
+      [
+        "全书联结",
+        "这是塔勒布(Taleb)对现代过度管理(overmanagement)的主要诊断。问题不仅是错误的行动，更是那种未经审视、对「必须做点什么」的强迫感。在全书层面，这成为第 21 章和第 22 章中医学不对称(medical asymmetry)规则的基础。"
+      ]
+    ],
     "chapterLabel": "Chapter 7",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在 medicine 和 policy 里，人们常常因为“做点什么”看起来更负责，就选择 intervention，但并没有真正比较 expected benefit 和 hidden harm。"
+        "核心观点",
+        "在许多领域，尤其是医学和政策中，人们之所以出手干预(intervention)，是因为「做点什么」让人觉得负责，而不是因为认真地把预期收益(payoff)与可能的伤害比较过。"
       ],
       [
         "详细解释",
-        "Taleb 把这种冲动叫做 naive interventionism。问题不是 intervention 一定错，而是很多时候 action 被道德直觉、职业习惯、或角色期待推动，而不是被真正的 break-even analysis 推动。\n\n因此，这一节是在逼读者先问一个问题：你到底是在帮忙，还是只是因为不作为看起来不体面？"
+        "这一情境说明了塔勒布(Taleb)为何坚持要问「盈亏平衡点」的问题。当决策规则如此不稳定时，干预可能更多由「想行动」的冲动所驱动，而不是由清晰的净收益所驱动。\n\n这是塔勒布(Taleb)对现代过度管理(overmanagement)的主要诊断。问题不仅是错误的行动，更是那种未经审视、对「必须做点什么」的强迫感。在全书层面，这一观点成为第 21 章和第 22 章中医学不对称性(medical asymmetry)规则的基础。"
       ],
       [
-        "这个例子到底在说明什么",
-        "tonsillectomy 的研究最有力的地方，在于同一批孩子会因为换一组 doctor 就从“需要手术”变成“不需要手术”。这说明 decision rule 本身并不稳，intervention 很可能不是建立在 clear net benefit 上。\n\n这个例子真正要说明的是：当判断标准这么摇摆时，手术也许更多是在满足“必须行动”的冲动。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)以 1930 年代一项扁桃体切除术(tonsillectomy)研究开篇。一组医生为 174 个孩子推荐了手术。第二组医生又为剩下的孩子中的 99 个推荐了手术。第三组医生再为剩下的孩子中的 52 个推荐了手术。同样这些孩子，仅仅因为被不同医生看过，就在「需要做手术」和「不需要做手术」之间反复滑动。\n\n这一情境的重点是：当决策规则如此不稳定时，干预(intervention)可能更多由「想行动」的冲动所驱动，而不是由清晰的净收益所驱动。"
       ]
     ]
   },
   "chapter07-concept2": {
     "title": "Iatrogenics is hidden harm caused by the helper",
-    "titleZh": "医源性伤害：帮助者造成的隐性伤害",
+    "titleZh": "医源性伤害(iatrogenics)是助人者造成的隐性伤害",
+    "bodyZh": [
+      [
+        "主张",
+        "干预(intervention)造成的伤害往往是延迟的、扩散的，或难以归因的——这就是为什么「助人者」会系统性地低估它。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)用乔治·华盛顿(George Washington)在大量放血治疗(bloodletting)后去世的案例，以及 19 世纪医生伊格纳兹·塞麦尔维斯(Ignaz Semmelweis)发现医院通过「产褥热(hospital fever)」杀死产妇的案例。在两个案例里，治疗和医疗机构在看似提供照护的同时，实际上在增加伤害。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这些案例说明，为什么医源性伤害(iatrogenics)会长期被掩盖。治疗者在社会上被编码为「帮助者」，所以治疗带来的伤害更难被看见，也更慢被承认。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)需要一个概念，既要涵盖「帮助失败」，更要涵盖「试图帮助所造成的伤害」。在全书层面，整个第六部(Book VI)后来都把这一观点发展为一套关于医学和生活方式的启发式规则。"
+      ]
+    ],
     "chapterLabel": "Chapter 7",
     "en": [
       [
@@ -59,22 +95,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "iatrogenics 指的是“由 healer 造成的伤害”。这种 harm 往往延迟出现、分散出现、难以归因，所以特别容易被低估。"
+        "核心观点",
+        "干预(intervention)造成的伤害往往是延迟的、扩散的，或难以归因的——这就是为什么「助人者」会系统性地低估它。"
       ],
       [
         "详细解释",
-        "Taleb 这里想让读者看见一个反直觉事实：helper 不只是可能“没帮上忙”，还可能主动制造新的损害。因为社会默认 healer 是在帮助人，所以这类 harm 更不容易被看见。\n\n这也是为什么 iatrogenics 往往会长期存在而不被承认。"
+        "这些案例说明，为什么医源性伤害(iatrogenics)会长期被掩盖。治疗者在社会上被编码为「帮助者」，所以治疗带来的伤害更难被看见，也更难被承认。\n\n塔勒布(Taleb)需要一个概念，既要涵盖「帮助失败」，更要涵盖「试图帮助所造成的伤害」。在全书层面，整个第六部(Book VI)后来都把这一观点发展为一套关于医学和生活方式的启发式规则。"
       ],
       [
-        "这个例子到底在说明什么",
-        "George Washington 因 bloodletting 而死，Semmelweis 则发现 hospital 本身在把疾病带给产妇。这两个例子都说明，treatment 和 institution 都可能一边被当成帮助，一边在制造新的伤害。\n\n这些例子真正要说明的是：intervention 的 harm 往往藏在“帮助”的名义之下。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)用了乔治·华盛顿(George Washington)在大量放血治疗(bloodletting)后去世的案例，以及塞麦尔维斯(Semmelweis)发现医院通过「产褥热(hospital fever)」杀死产妇的案例。在两个案例中，治疗和医疗机构在看似提供照护的同时，实际上在增加伤害。\n\n这一情境的重点是：这些案例说明医源性伤害(iatrogenics)为何会长期被掩盖。治疗者在社会上被编码为「帮助者」，所以治疗带来的伤害更难被看见，也更难被承认。"
       ]
     ]
   },
   "chapter07-concept3": {
     "title": "In opaque systems, delay can be disciplined restraint",
-    "titleZh": "不透明系统里，延后行动也是一种纪律",
+    "titleZh": "在不透明的(opaque)系统里，延迟可以是一种有纪律的克制",
+    "bodyZh": [
+      [
+        "主张",
+        "当系统本身不透明(opaque)、干预(intervention)的下行(downside)又被隐藏时，等待往往优于行动。延迟不总是软弱；它可以是一种有纪律的克制。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)赞扬那些避免不必要腰椎手术的医生，并提到拖延者法比乌斯(Fabius Cunctator)——他靠拒绝匆忙交战，把汉尼拔(Hannibal)逼疯。他还提到自己推迟脊椎手术的经历，转而通过徒步与负重训练得以恢复。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这些案例说明，为什么延迟可以成为一种过滤器。通过等待，决策者给系统一个自我修复的机会，或让它揭示「行动是否真的必要」。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)在颠倒现代专业主义的声望等级——在那种等级里，「可见的行动」被奖励，而「被避免的伤害」却保持隐形。在全书层面，这预示了塔勒布(Taleb)的减法路径(via negativa)策略：减法式行动往往比加法式行动更严格。"
+      ]
+    ],
     "chapterLabel": "Chapter 7",
     "en": [
       [
@@ -92,22 +146,44 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在 opaque system 里，delay 不一定是软弱，它可能是一种有纪律的 restraint。"
+        "核心观点",
+        "当系统本身并不透明、干预(intervention)的下行(downside)又被隐藏时，等待往往优于行动。延迟不总是软弱；它可以是一种有纪律的克制。"
       ],
       [
         "详细解释",
-        "Taleb 想反转现代职业世界里对行动的偏爱。很多时候，尤其在系统不透明而 intervention downside 难以看清时，等待本身就是更严谨的策略，因为它给系统自我恢复和暴露真实信号的机会。\n\n所以这里的重点是：不做，并不等于什么都没判断。"
+        "这些案例说明，为什么延迟可以成为一种过滤器。通过等待，决策者给系统一个自我修复的机会，或让它揭示「行动是否真的必要」。\n\n塔勒布(Taleb)在此颠倒了现代专业主义的声望等级——在那种等级里，「可见的行动」被奖励，而「被避免的伤害」却保持隐形。在全书层面，这预示了塔勒布(Taleb)的减法路径(via negativa)策略：减法式行动往往比加法式行动更严格。"
       ],
       [
-        "这个例子到底在说明什么",
-        "避免不必要的 back surgery、Fabius 对 Hannibal 的拖延、以及 Taleb 自己延后 spinal surgery 的经历，都说明一件事：如果系统自己可能修复，那么 delay 会像一个 filter，先让不必要的 intervention 被筛掉。\n\n这些例子真正要说明的是：有时候，晚一点做，反而比立刻做更理性。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)赞扬那些避免不必要腰椎手术的医生，并提到拖延者法比乌斯(Fabius Cunctator)——他靠拒绝匆忙交战，把汉尼拔(Hannibal)逼疯。他还提到自己推迟脊椎手术的经历，转而通过徒步与负重训练得以恢复。\n\n这一情境的重点是：这些案例说明延迟为何可以成为一种过滤器。通过等待，决策者给系统一个自我修复的机会，或让它揭示行动是否真的必要。"
       ]
     ]
   },
   "chapter07-concept4": {
     "title": "Too much information makes people overreact to noise",
-    "titleZh": "信息过载让人对噪声过度反应",
+    "titleZh": "过多的信息让人对噪声(noise)过度反应",
+    "bodyZh": [
+      [
+        "主张",
+        "干预主义者(interventionists)之所以过度反应(overreact)，是因为他们对那些没有信息量的波动也做出反应。他们把随机变化误当成有意义的信号，因此觉得自己有理由出手。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)对比那种把每一颗痘痘都视为癌症的神经质者，与那种只对真实危险作出反应的冷静者。他随后给出现代版本：一个不断出手以证明自身存在价值的私人医生；长期担任美国联邦储备委员会主席的艾伦·格林斯潘(Alan Greenspan)，盯着克利夫兰(Cleveland)的吸尘器(vacuum-cleaner)销量，仿佛它们能告诉他全国经济的情况；以及每天用零碎逸闻填满版面的报纸。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这些情境解释了为什么现代干预主义者(interventionists)会做出那么多糟糕的判断。他们越频繁地采样嘈杂的数据，就越容易把背景波动当成有意义的信息，并在本应忽略时反而出手。"
+      ],
+      [
+        "全书联结",
+        "这解释了为什么现代机构即便出于好意，仍会过于频繁地干预——它们的信息过滤器坏了。在全书层面，下一章从干预转向预测(prediction)，说明虚假的信号提取(false signal extraction)同样在腐蚀预测。"
+      ],
+      [
+        "常见误解",
+        "塔勒布(Taleb)并不是要人们忽视强信号。他是在说，专业人士经常对那种根本不值得出手的微小波动作出反应。"
+      ]
+    ],
     "chapterLabel": "Chapter 7",
     "en": [
       [
@@ -125,16 +201,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "很多 intervention 之所以错，不是因为人什么都不知道，而是因为他们拿到太多 noisy data，把 noise 当成 signal 来反应。"
+        "核心观点",
+        "干预主义者(interventionists)之所以过度反应(overreact)，是因为他们对那些根本没有信息量的波动也做出反应。他们把随机变化误当成有意义的信号，于是觉得自己有理由出手。"
       ],
       [
         "详细解释",
-        "Taleb 的意思不是反信息，而是反对错误的信息过滤。采样太频繁、看得太细、每一点微小波动都想解释，最后只会让 decision maker 过度反应。\n\n所以这节其实在说：错误的 action 很多时候是错误的 attention 造成的。"
+        "这些情境解释了为什么现代干预主义者(interventionists)会做出那么多糟糕的判断。他们越频繁地采样嘈杂的数据，就越容易把背景波动当成有意义的信息，并在本应忽略时反而出手。\n\n塔勒布(Taleb)并不是要人们忽视强信号。他是在说，专业人士经常对那种根本不值得出手的微小波动作出反应。"
       ],
       [
-        "这个例子到底在说明什么",
-        "把每个 pimple 都看成 cancer 的 neurotic person、不断 intervention 的 private doctor、Greenspan 去盯 Cleveland 的 vacuum-cleaner sales，这些例子都说明同一个问题：人会把 tiny fluctuation 当成 meaningful information。\n\n这些例子真正要说明的是：如果分不清 signal 和 noise，就会在最不该行动的时候行动。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)对比了那种把每一颗痘痘都视为癌症的神经质者，与那种只对真实危险作出反应的冷静者。他随后给出现代版本：一个不断出手以证明自身存在价值的私人医生；格林斯潘(Greenspan)盯着克利夫兰(Cleveland)的吸尘器(vacuum-cleaner)销量；以及每天用零碎逸闻填满版面的报纸。\n\n这一情境的重点是：这些情境解释了现代干预主义者为何会做出那么多糟糕的判断。他们越频繁地采样嘈杂的数据，就越容易把背景波动当成有意义的信息，并在本应忽略时反而出手。"
       ]
     ]
   }

@@ -1,4 +1,4 @@
-    const APP_VERSION = "2026-05-18-zh-titles-1";
+    const APP_VERSION = "89a1ba93-4249-45ed-8cc1-fdf7a69904c7";
     const appVersionStorageKey = "antifragile-html-reader:app-version";
 
     try {
@@ -254,20 +254,10 @@
           conceptKey
         }));
 
-        [["en", enSections], ["zh", zhSections]].forEach(([lang, sections]) => {
-          sections.forEach(([sectionTitle, body], sectionIndex) => {
-            entries.push(createSearchEntry({
-              type: "explainer",
-              title: `${(explainer && explainer.title) || title} · ${sectionTitle}`,
-              text: `${(explainer && explainer.title) || title} ${sectionTitle} ${body}`,
-              viewId: (view && view.id) || "overview",
-              targetId: concept.id,
-              conceptKey,
-              lang,
-              sectionIndex
-            }));
-          });
-        });
+        // Explainer entries are intentionally omitted from the search index now
+        // that the deep-dive UI is hidden. The explainer data is retained in the
+        // chapter files but is no longer surfaced to users via search either.
+        void enSections; void zhSections;
       });
 
       quizData.forEach((item, index) => {
@@ -514,7 +504,8 @@
       requestAnimationFrame(() => {
         const target = document.getElementById(entry.targetId);
         if (target) target.scrollIntoView({ behavior: getNavScrollBehavior(), block: "start" });
-        if (entry.type === "explainer") openDrawer(entry.conceptKey, entry.lang || state.contentLang);
+        // Explainer entries are no longer added to the search index, but this
+        // guard remains in case stale entries arrive from cached state.
       });
     }
 
@@ -613,6 +604,10 @@
         if (!explainer || !explainer.zh) return;
         const sections = Array.isArray(explainer.zh) ? explainer.zh : explainer.zh.sections;
         if (!sections || !sections.length) return;
+        // `bodyZh` (when present) is the 1:1 paragraph translation of the chapter
+        // body's <p> elements (Claim / Example / Why / Whole-book / Possible confusion).
+        // `zh` keeps the curated 3-section deep-dive layout for the drawer.
+        const bodySections = Array.isArray(explainer.bodyZh) && explainer.bodyZh.length ? explainer.bodyZh : sections;
 
         const heading = concept.querySelector("h3");
         if (heading) {
@@ -636,7 +631,7 @@
             paragraph.innerHTML = paragraph.dataset.originalHtml;
             return;
           }
-          const section = sections[index];
+          const section = bodySections[index];
           if (!section) {
             paragraph.hidden = true;
             return;
@@ -711,10 +706,9 @@
     }
 
     function formatTextAsInlineHtml(value) {
-      return value
-        .split("\n\n")
-        .map((paragraph) => escapeHtml(paragraph))
-        .join("<br><br>");
+      const parts = String(value == null ? "" : value).split("\n\n").map((paragraph) => escapeHtml(paragraph));
+      if (parts.length <= 1) return parts[0] || "";
+      return parts[0] + parts.slice(1).map((paragraph) => `<span class="zh-paragraph-break">${paragraph}</span>`).join("");
     }
 
     function loadChapterNavState() {

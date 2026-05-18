@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter12 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter12-concept1": {
     "title": "Thales mattered because he had an option, not because he had a theory",
-    "titleZh": "泰勒斯赢在拿到了期权，而不是理论",
+    "titleZh": "泰勒斯(Thales)之所以重要，是因为他拥有一个期权(option)，而非一个理论",
+    "bodyZh": [
+      [
+        "主张",
+        "塔勒布(Taleb)说，泰勒斯(Thales)之所以重要，是因为他构建了一笔不对称的交易(asymmetric deal)，而不是因为他对未来有一个完美的理论。"
+      ],
+      [
+        "例子",
+        "米利都的泰勒斯(Thales of Miletus)是一位贫穷的哲学家，因为不会赚钱而被嘲笑。当时仍是冬天，橄榄(olive)收获季节尚未到来。他用一些小额定金，预定了米利都(Miletus)和希俄斯(Chios)周边榨油机的季节性使用权。如果收成依然疲弱，他主要损失这些小额定金；但如果收成意外强劲，种植者会突然需要榨油机，他就掌握了一种值钱的东西。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为这个故事不是「聪明的预测带来利润」，而是「先预付小额损失，换取可能的巨大上行(upside)」。泰勒斯(Thales)不需要精确的确定性。他需要的只是这样一个位置：错了只伤一点点，对了却能大赚。"
+      ],
+      [
+        "全书联结",
+        "这是塔勒布(Taleb)最干净的早期陈述——期权性(optionality)胜过预测(prediction)。后续章节会在技术、投资、修修补补(tinkering)和职业设计中复用同样的结构。"
+      ]
+    ],
     "chapterLabel": "Chapter 12",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "Thales 故事真正重要的地方，不是他猜中了 harvest，而是他拿到了一个 asymmetrical option：错了亏得少，对了赚得多。"
+        "核心观点",
+        "塔勒布(Taleb)说，泰勒斯(Thales)之所以重要，是因为他构建了一笔不对称的交易(asymmetric deal)，而不是因为他对未来有一个完美的理论。"
       ],
       [
         "详细解释",
-        "Taleb 在这里想把注意力从 theory 拉到 payoff shape。你不需要把未来说得特别准，只要你设计出来的 exposure 是 right when right, little loss when wrong，就足够强。\n\n所以 optionality 的关键不在于解释世界，而在于把自己放进有利的 payoff structure。"
+        "塔勒布(Taleb)想让读者把崇拜对象从「预测(prediction)」转向「收益结构(payoff design)」。一个关于收成的理论可能不完整、脆弱(fragile)，甚至根本无法辩护。只要交易本身的结构是对的，泰勒斯(Thales)依然能赢。\n\n这就是为什么关键的对比不是「好理论 vs 坏理论」，而是「普通的有风险下注 vs 不对称的期权(asymmetrical option)」。泰勒斯(Thales)不需要精确——他需要的是这样一个位置：错了能活下来，对了则有巨大的上行(upside)。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Thales 提前付出小额 deposit，锁定了使用 olive presses 的权利。等到 harvest 变好、demand 上来时，他的 upside 就被放大。要是 harvest 不如预期，他损失的只是前面的低 rent 成本。\n\n这个例子真正要说明的是：Thales 的胜利来自 option，不来自 prophecy。"
+        "这个例子在说明什么",
+        "米利都的泰勒斯(Thales of Miletus)是一位贫穷的哲学家，因为不会赚钱而被嘲笑。当时仍是冬天，橄榄(olive)收获季节尚未到来。他用一些小额定金，预定了米利都和希俄斯(Chios)周边榨油机的季节性使用权。如果收成依然疲弱，他主要损失这些小额定金；但如果收成意外强劲，种植者会突然需要榨油机，而他就掌握了一种值钱的东西。\n\n所以这个故事不是说泰勒斯(Thales)比所有人都更完美地看到了未来，而是说他在不确定性(uncertainty)解决之前，就提前安排好了不对称(asymmetry)。"
       ]
     ]
   },
   "chapter12-concept2": {
     "title": "Sweet grapes means Thales tested both wealth and his own motives",
-    "titleZh": "酸葡萄的反面：他在测试自己的动机",
+    "titleZh": "「甜葡萄」意味着泰勒斯(Thales)既检验了财富、也检验了自己的动机",
+    "bodyZh": [
+      [
+        "主张",
+        "期权性(optionality)所做的事不止于「创造利润」。它还能揭示：一个人所声称的偏好，到底是真实的，还是只是一种合理化(rationalization)。"
+      ],
+      [
+        "例子",
+        "在伊索(Aesop)的「酸葡萄(sour grapes)」寓言中，一个人够不到葡萄，便说葡萄反正可能是坏的。塔勒布(Taleb)说，泰勒斯(Thales)展示了相反的情况。泰勒斯(Thales)先证明自己可以从橄榄榨油机赚到钱，然后他回到哲学。因为财富本来在他手上，他仍然走开了——他回到哲学这一举动看起来就更像一个真实的选择，而不是一个借口。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为在你从未真正拥有过钱的时候说「我不想要钱」，并没有多少分量。期权(option)改变了这一点。一旦泰勒斯(Thales)证明自己原本可以追逐财富，他选择转身离开，就成为「真实偏好」的更强证据。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)不断把自由与期权性(optionality)绑定在一起。后续章节把财务独立、职业灵活性和对依赖的解脱，都视为反脆弱性(antifragility)的可操作形式。"
+      ]
+    ],
     "chapterLabel": "Chapter 12",
     "en": [
       [
@@ -59,22 +95,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "`Sweet grapes` 的意思是：Thales 不只是赚到了钱，他还证明了自己有别的路可走，因此后来回去做哲学才算真实偏好，而不是失败后的借口。"
+        "核心观点",
+        "期权性(optionality)所做的事不止于「创造利润」。它还能揭示：一个人所声称的偏好，到底是真实的，还是只是一种合理化(rationalization)。"
       ],
       [
         "详细解释",
-        "Taleb 很在意 optionality 带来的 independence。一个人如果从未证明自己能去做另一件事，那么他说“我其实不想要这个”时，别人很难分清那是 preference 还是 sour grapes。可一旦 alternatives 被真实打开，选择就更有分量。\n\n所以 optionality 还能揭示 motive。"
+        "在你从未真正拥有过钱的时候说「我不想要钱」，并没有多少分量。期权(option)改变了这一点。一旦泰勒斯(Thales)证明自己原本可以去追逐财富，他选择转身离开，就成为「真实偏好」的更强证据。\n\n塔勒布(Taleb)不断把自由与期权性(optionality)绑定在一起。后续章节把财务独立、职业灵活性和对依赖的解脱，都视为反脆弱性(antifragility)的可操作形式。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Thales 先通过 olive presses 证明自己可以赚钱，然后仍然回去做 philosophy。这样一来，他的选择就不再像失败者事后的自我安慰。\n\n这个例子真正要说明的是：当你真的有 other viable path 时，你的偏好才更可信。"
+        "这个例子在说明什么",
+        "在伊索(Aesop)的「酸葡萄(sour grapes)」寓言中，一个人够不到葡萄，便说葡萄反正可能是坏的。塔勒布(Taleb)说，泰勒斯(Thales)展示了相反的情况。泰勒斯(Thales)先证明自己可以从橄榄榨油机赚到钱，然后他回到哲学。因为财富本来在他手上，他仍然走开了——他回到哲学这一举动看起来就更像一个真实的选择，而不是一个借口。\n\n这一情境的重点是：在你从未真正拥有过钱时说「我不想要钱」，并没有多少分量。期权(option)改变了这一点。一旦泰勒斯(Thales)证明自己原本可以追逐财富，他选择转身离开，就成为「真实偏好」的更强证据。"
       ]
     ]
   },
   "chapter12-concept3": {
     "title": "Many of the best options in life are embedded, free, or cheap",
-    "titleZh": "生活里最好的期权往往便宜或免费",
+    "titleZh": "生活中许多最好的期权(options)是嵌入的、免费的或便宜的",
+    "bodyZh": [
+      [
+        "主张",
+        "生活中最有用的许多期权(options)，其实是日常的安排——它们让你的下行(downside)保持很小，同时仍然保留有意义的选择权。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)给出的是日常场景，而不是金融合约。第一个：在伦敦，有人对你说「想来就来」的派对。如果没有别的更好的安排出现，你仍然可以去；如果有更好的事，你可以不去。第二个：纽约一处租金管制(rent-controlled)的公寓让你在房租上涨时仍能留下，但当房租下跌、或你想换种生活时，你可以离开。两种情境里，你都保留了有用的权利，却没有相应等量的义务。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为期权性(optionality)并不罕见或异国情调。它常常藏在那些花费很少、承诺很弱、却仍能保留一手「值钱的下一步」的简单安排里。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)在讨论搜索、技术和个人自由时反复使用这一逻辑。他重复的动作是同一个：保留权利，避免完全的义务。"
+      ]
+    ],
     "chapterLabel": "Chapter 12",
     "en": [
       [
@@ -92,22 +146,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "很多最有价值的 option 并不昂贵，也不一定长得像金融产品；它们常常 embedded 在日常 arrangement 里，而且成本很低。"
+        "核心观点",
+        "生活中最有用的许多期权(options)，其实是日常的安排——它们让你的下行(downside)保持很小，同时仍然保留有意义的选择权。"
       ],
       [
         "详细解释",
-        "Taleb 想让读者不要把 optionality 狭义地理解成 Wall Street 工具。真正有力量的 option，往往只是你保留了一项权利，却没有背上对称的 obligation。这样一来，在 opacity 下你仍然能对有利变化做出反应。\n\n所以 optionality 其实比大多数人想的更贴近日常生活。"
+        "期权性(optionality)并不罕见或异国情调。它常常藏在那些花费很少、承诺很弱、却仍能保留一手「值钱的下一步」的简单安排里。\n\n塔勒布(Taleb)在讨论搜索、技术和个人自由时反复使用这一逻辑。他重复的动作是同一个：保留权利，避免完全的义务。"
       ],
       [
-        "这个例子到底在说明什么",
-        "London 的 party invitation、New York 的 rent-controlled apartment，都是这种结构：你保留了进入更好局面的可能性，但没有承担同等程度的 downside obligation。\n\n这个例子真正要说明的是：很多 option 就藏在 ordinary arrangement 里，关键是你有没有把 choice 保留下来。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)给出的是日常场景，而不是金融合约。第一个：在伦敦，有人对你说「想来就来」的派对。如果没有别的更好的安排出现，你仍然可以去；如果有更好的事，你可以不去。第二个：纽约一处租金管制(rent-controlled)的公寓让你在房租上涨时仍能留下，但当房租下跌、或你想换种生活时，你可以离开。两个情境中，你都保留了有用的权利，却没有相应等量的义务。\n\n这一情境的重点是：期权性(optionality)并不罕见或异国情调。它常常藏在那些花费很少、承诺很弱、却仍能保留一手值钱下一步的简单安排里。"
       ]
     ]
   },
   "chapter12-concept4": {
     "title": "Options like dispersion, fanatics, and favorable extremes",
-    "titleZh": "分散、狂热者与有利极端这些期权",
+    "titleZh": "像「分散、狂热者、有利极端」这样的期权(options)",
+    "bodyZh": [
+      [
+        "主张",
+        "期权性(optionality)关心的不是平均结果，而是有利的极端(favorable extremes)。少数几次强力胜出，可能主宰许多普通情况。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)把这一逻辑扩展到泰勒斯(Thales)之外。一位作者或哲学家可能因为「少数几个高强度支持者」而比「大量温和爱好者」更受益。维特根斯坦(Wittgenstein)的追随者很少，但其中一些极具影响力。奢侈品行业也是如此：它更依赖高端的极富买家，而不是整体人口的平均收入。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为平均结果可能掩盖真正驱动成功的东西。在这些情况下，少数有利的极端(favorable extremes)比分布的中间更重要——所以右尾(right tail)比平均更重要。"
+      ],
+      [
+        "全书联结",
+        "这是从单一的泰勒斯(Thales)故事，通向塔勒布(Taleb)更一般的凸性收益(convex payoff)数学的桥梁。后续章节会形式化地说明：右尾暴露(right-tail exposure)为何可能比看似平衡的平均更重要。"
+      ]
+    ],
     "chapterLabel": "Chapter 12",
     "en": [
       [
@@ -125,16 +197,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "option 不太关心 average result，它更关心 favorable extreme。少数很强的正面结果，往往就足以压过大量普通结果。"
+        "核心观点",
+        "期权性(optionality)关心的不是平均结果，而是有利的极端(favorable extremes)。少数几次强力胜出，可能主宰许多普通情况。"
       ],
       [
         "详细解释",
-        "Taleb 要读者从 average thinking 转到 tail thinking。真正有 optionality 的系统，不需要每次都赢，也不需要大多数人都很喜欢你；它只需要 right tail 足够强，能把其余平庸结果全部盖过去。\n\n这就是为什么 dispersion 和 fanatic supporters 反而可能很有价值。"
+        "平均结果可能掩盖了真正驱动成功的东西。在这些情况下，少数有利的极端比分布的中间更重要——所以右尾(right tail)比平均更重要。\n\n这是从单一的泰勒斯(Thales)故事，通向塔勒布(Taleb)更一般的凸性收益(convex payoff)数学的桥梁。后续章节会形式化地说明：右尾暴露(right-tail exposure)为何可能比看似平衡的平均更重要。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Wittgenstein 不是靠大量温和粉丝产生影响，而是靠少数非常强的 follower。luxury goods 也不是靠 average buyer，而是靠 rich tail。Taleb 用这些例子说明，有时候 system 的命运由少数极端正收益决定。\n\n这些例子真正要说明的是：在 optional world 里，右尾比平均值重要得多。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)把这一逻辑扩展到泰勒斯(Thales)之外。一位作者或哲学家可能因为「少数几个高强度支持者」而比「大量温和爱好者」更受益。维特根斯坦(Wittgenstein)的追随者很少，但其中一些极具影响力。奢侈品行业也是如此：它更依赖高端的极富买家，而不是整体人口的平均收入。\n\n这一情境的重点是：平均结果可能掩盖真正驱动成功的东西。在这些情况下，少数有利的极端(favorable extremes)比分布的中间更重要——所以右尾(right tail)比平均更重要。"
       ]
     ]
   }

@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.epilogue = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "epilogue-concept1": {
     "title": "The book ends with a cycle of loss followed by renewal",
-    "titleZh": "本书以损失—更新的循环作结",
+    "titleZh": "本书以「损失—更新」的循环作结",
+    "bodyZh": [
+      [
+        "主张",
+        "塔勒布(Taleb)以「循环(recurrence)」的意象、而不是某种最终证明，为整本书收尾。"
+      ],
+      [
+        "例子",
+        "内罗(Nero)身处黎凡特(Levant)，参加阿多尼斯(Adonis)祭仪——女子们先为这位神的死亡而哀悼，然后在冬去春来、河水因山上融雪而泛红时，庆祝他的复活。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它重新演绎了本书最深的模式：系统、季节与世代是在「毁灭—更新」之间运行的，而不是通过「永久保留每一个组件」运行。"
+      ],
+      [
+        "全书联结",
+        "这呼应了第 1 章关于达摩克利斯(Damocles)、凤凰(Phoenix)和海德拉(Hydra)的意象，也呼应了第 4 章那个论证：生命常常通过「替换」来更新自身。"
+      ]
+    ],
     "chapterLabel": "Epilogue",
     "en": [
       [
@@ -26,22 +44,44 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "epilogue 用的是象征而不是新论证：loss 之后接 renewal，死亡之后接 continuity。"
+        "核心观点",
+        "塔勒布(Taleb)以「循环(recurrence)」的意象、而不是某种最终证明，为整本书收尾。"
       ],
       [
         "详细解释",
-        "Taleb 在 epilogue 里没有继续加理论，而是把全书的深层 pattern 放回一个神话和季节循环的场景。\n\n这里的重点不是证明，而是让读者用 image 记住：很多 system 的延续，不靠永久保留每一个 component，而靠 death、replacement、rebirth 的循环。\n\n所以这一页更像象征性压缩，而不是概念推进。"
+        "它重新演绎了本书最深的模式：系统、季节与世代是在「毁灭—更新」之间运行的，而不是通过「永久保留每一个组件」运行。\n\n这呼应了第 1 章关于达摩克利斯(Damocles)、凤凰(Phoenix)和海德拉(Hydra)的意象，也呼应了第 4 章那个论证：生命常常通过「替换」来更新自身。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Nero 在 Levant 观看 Adonis rites：先 mourning，再 resurrection，河水因为山上融雪而发红，像神话里的血。这个例子要说明的是：自然和文化都在通过 `死亡—更新` 的循环向前走，而不是靠静止保存。"
+        "这个例子在说明什么",
+        "内罗(Nero)身处黎凡特(Levant)，参加阿多尼斯(Adonis)祭仪——女子们先为这位神的死亡而哀悼，然后在冬去春来、河水因山上融雪而泛红时，庆祝他的复活。\n\n这一情境的重点是：它重新演绎了本书最深的模式——系统、季节与世代是在毁灭—更新之间运行的，而不是通过永久保留每一个组件运行。"
       ]
     ]
   },
   "epilogue-concept2": {
     "title": "Fat Tony's last act is still downside-first prudence",
-    "titleZh": "胖东尼的最后一幕仍是“先看下行”的审慎",
+    "titleZh": "胖东尼(Fat Tony)最后的动作，仍然是「下行(downside)优先的审慎」",
+    "bodyZh": [
+      [
+        "主张",
+        "即便在身后，胖东尼(Fat Tony)仍被呈现为：在下行(downside)重要的地方保守谨慎，而在「明文规则太僵硬」的地方仍信任判断。"
+      ],
+      [
+        "例子",
+        "内罗(Nero)发现胖东尼(Tony)的遗产没有负债、风格保守、分配公平。然后是一桩死后的小恶作剧：胖东尼(Tony)留给内罗(Nero) 2000 万美元，让他执行一项高尚但秘密且危险的任务——并相信内罗能读懂他的心意。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它浓缩了胖东尼(Tony)在整本书中的角色：能控制毁灭(ruin)的地方他控制，但仍为判断、期权性(optionality)和「无脚本的行动」留有余地。"
+      ],
+      [
+        "全书联结",
+        "遗产场景连回到塞内卡(Seneca)、杠铃(barbell)和切肤之痛(skin in the game)。胖东尼(Tony)对内罗(Nero)最后的信任，也契合塔勒布(Taleb)对「具身判断(embodied judgment)」优于「官僚指令」的偏好。"
+      ],
+      [
+        "常见误解",
+        "尾声(epilogue)更具文学性、不那么分析性。这是刻意的：它的任务是让本书以一种「活着的画面」收束，而不是再证明一条定理。"
+      ]
+    ],
     "chapterLabel": "Epilogue",
     "en": [
       [
@@ -59,16 +99,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "Fat Tony 的最后一幕，依然在展示 downside-first prudence：该保守的地方极保守，该留给 judgment 的地方又不写成死规则。"
+        "核心观点",
+        "即便在身后，胖东尼(Fat Tony)仍被呈现为：在下行(downside)重要的地方保守谨慎，而在「明文规则太僵硬」的地方仍信任判断。"
       ],
       [
         "详细解释",
-        "Taleb 借 Tony 的遗产安排，给这个人物一个最后的收束。Tony 死后留下的是一个 debt-free、保守、清楚分配的 estate，这和他全书的风险观完全一致。\n\n但同时，他又留下一笔秘密任务式的 bequest，要求 Nero 自己判断如何执行。这里既有 downside discipline，也有对具体情境判断的信任。\n\n所以 Tony 的结尾不是 bureaucratic order，而是 prudence 加 judgment。"
+        "它浓缩了胖东尼(Tony)在整本书中的角色。能控制毁灭(ruin)的地方，他控制；但他仍为判断、期权性(optionality)和「无脚本的行动」留有余地。\n\n尾声是文学性而非分析性的——这是刻意的。它的任务是让本书以一种「活着的画面」收束，而不是再证明一条定理。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Nero 先发现 Tony 的 estate 保守而无债，接着又发现 Tony 留给自己一笔钱和一个 noble but dangerous 的秘密任务。这个例子要说明的是：Tony 控制 ruin 的方式很严格，但并不把一切写成僵硬指令，他仍相信有经验的人能在现场判断。"
+        "这个例子在说明什么",
+        "内罗(Nero)发现胖东尼(Fat Tony)的遗产没有负债、风格保守、分配公平。然后是一桩死后的小恶作剧：胖东尼留给内罗 2000 万美元，让他执行一项高尚但秘密且危险的任务——并相信内罗能读懂他的心意。\n\n这一情境的重点是：它浓缩了胖东尼(Tony)在整本书中的角色——能控制毁灭(ruin)的地方他控制，但仍为判断、期权性和「无脚本的行动」留有余地。"
       ]
     ]
   }

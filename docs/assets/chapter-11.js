@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter11 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter11-concept1": {
     "title": "The first step is to remove catastrophic downside",
-    "titleZh": "第一步是先消除致命下行",
+    "titleZh": "第一步是先去除会毁灭(catastrophic downside)的下行",
+    "bodyZh": [
+      [
+        "主张",
+        "反脆弱性(antifragility)始于「不被毁灭(destroyed)」。在追逐上行(upside)之前，必须先降低对终局性或不可逆伤害(irreversible harm)的暴露(exposure)。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)回到第 1 章那只破损的包裹，并加入更多「路径依赖(path-dependent)」的情境。在麻醉(anesthesia)被发明之前做肾结石手术，意味着病人要在清醒状态下承受切割；先用麻醉再手术，意味着保护先到位。他随后给出金融版本：一所大学的捐赠基金可以连续多年呈现亮眼回报，但只要隐藏的脆弱(fragility)足够大，一次糟糕的年份就能让它全部输掉。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为事件的顺序会改变一切。一旦毁灭(ruin)或不可逆伤害发生，后来的好条件无法完全修复损失。"
+      ],
+      [
+        "全书联结",
+        "这是塔勒布(Taleb)对那些「听到『从失序中获益』就立刻联想到鲁莽冒险」的人所做的可操作纠正。在全书层面，对「不可逆伤害」的强调会在后续非线性(nonlinear)章节中重新出现——塔勒布(Taleb)在那里形式化地说明下行(downside)为何会主导一切。"
+      ]
+    ],
     "chapterLabel": "Chapter 11",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "Taleb 认为 antifragility 的第一步不是追求 upside，而是先把 catastrophic downside 拿掉。"
+        "核心观点",
+        "反脆弱性(antifragility)始于「不被毁灭(ruin)」。在追逐上行(upside)之前，必须先降低对终局性或不可逆伤害(irreversible harm)的暴露(exposure)。"
       ],
       [
         "详细解释",
-        "这里的重点是 `irreversible harm`。一旦 system 被 terminal damage 打中，后面的好消息并不能把它完全补回来。所以在任何谈 gain from disorder 之前，先要保证自己不会被一个坏结果直接抹掉。\n\n这也是 Taleb 对很多“看起来中庸”的策略不信任的原因。"
+        "事件的顺序会改变一切。一旦毁灭(ruin)或不可逆伤害发生，后来的好条件无法完全修复损失。\n\n这是塔勒布(Taleb)对「听到『从失序中获益』就立刻联想到鲁莽冒险」的人所做的可操作纠正。在全书层面，对「不可逆伤害」的强调会在后续非线性(nonlinear)章节中重新出现——塔勒布(Taleb)在那里形式化地说明了下行(downside)为何会主导一切。"
       ],
       [
-        "这个例子到底在说明什么",
-        "broken package、先有 anesthesia 再有 surgery、以及 university endowment 前面很多年都赚得很好但最后一年崩掉，这些例子都说明 sequence matters。只要 ruin 先发生，后面的顺境就没有补救空间。\n\n这些例子真正要说明的是：先活下来，比后面怎么优化更重要。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)回到第 1 章那只破损的包裹，并加入更多「路径依赖(path-dependent)」的情境。在麻醉(anesthesia)被发明之前做肾结石手术，意味着病人要在清醒状态下承受切割；先用麻醉再手术，意味着保护先到位。他随后给出金融版本：一所大学的捐赠基金可以连续多年呈现亮眼回报，但只要隐藏的脆弱(fragility)足够大，一次糟糕的年份就能让它全部输掉。\n\n这一情境的重点是：事件的顺序会改变一切。一旦毁灭(ruin)或不可逆伤害发生，后来的好条件无法完全修复损失。"
       ]
     ]
   },
   "chapter11-concept2": {
     "title": "The barbell combines safety and speculation",
-    "titleZh": "杠铃策略：把安全与投机分开组合",
+    "titleZh": "杠铃策略(barbell)把安全与投机组合起来",
+    "bodyZh": [
+      [
+        "主张",
+        "杠铃策略(barbell strategy)把一侧极度安全的部分与另一侧高度具有期权性(optional)的部分配对，避开中间那种看似安全的幻觉。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)用一些社会一夫一妻制的鸟类作为杠铃(barbell)的漫画化例子。一位稳定的伴侣提供筑巢支持与连续性，而偶尔的配对外交配仍能创造获取更好基因或额外上行(upside)的机会。他在金融上给出同样的逻辑：把大部分资金放在极度安全的东西里，用一小部分进行高度投机的下注。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为杠铃(barbell)不是「适度」，而是「分离」。一侧保护生存，另一侧保留对好意外的暴露(exposure)。"
+      ],
+      [
+        "全书联结",
+        "这是塔勒布(Taleb)在「不假装预测未来」的前提下构建反脆弱性(antifragility)的主要可操作方式。在全书层面，第 12 章会通过期权性(optionality)把同样的结构进一步推广。"
+      ]
+    ],
     "chapterLabel": "Chapter 11",
     "en": [
       [
@@ -59,22 +95,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "`barbell` 不是 moderation，而是把 very safe 的一端和 highly optional 的一端分开保留，主动避开看似稳妥的中间地带。"
+        "核心观点",
+        "杠铃策略(barbell strategy)把一侧极度安全的部分与另一侧高度具有期权性(optional)的部分配对，避开中间那种看似安全的幻觉。"
       ],
       [
         "详细解释",
-        "Taleb 这里最在乎的是 separation。一个部分负责 survival，另一个部分负责 exposure to good surprises。这样做的关键，不是平均分配风险，而是把 ruin risk 和 upside exposure 拆开。\n\n所以 barbell 看起来极端，实际上常常比“中间路线”更安全。"
+        "杠铃(barbell)不是「适度」，而是「分离」。一侧保护生存，另一侧保留对好意外的暴露(exposure)。\n\n这是塔勒布(Taleb)在「不假装预测未来」的前提下构建反脆弱性(antifragility)的主要可操作方式。在全书层面，第 12 章会通过期权性(optionality)把同样的结构进一步推广。"
       ],
       [
-        "这个例子到底在说明什么",
-        "monogamous birds 配合偶尔 `rock star` mate 的比喻，说明的是双结构策略：一边保安全，一边追求高回报。finance 版本也是一样，大部分资金放在 very safe 的地方，小部分拿去做 highly speculative bets。\n\n这个例子真正要说明的是：barbell 的本质是结构分离，而不是比例魔法。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)用一些社会一夫一妻制的鸟类作为杠铃(barbell)的漫画化例子。一位稳定的伴侣提供筑巢支持与连续性，而偶尔的配对外交配仍能创造获取更好基因或额外上行(upside)的机会。他在金融上给出同样的逻辑：把大部分资金放在极度安全的东西里，用一小部分进行高度投机的下注。\n\n这一情境的重点是：杠铃(barbell)不是适度，而是分离。一侧保护生存，另一侧保留对好意外的暴露(exposure)。"
       ]
     ]
   },
   "chapter11-concept3": {
     "title": "Many careers work best when income security and upside are separated",
-    "titleZh": "把收入安全与上行分开的事业更稳",
+    "titleZh": "许多职业在收入安全与上行(upside)被分开时反而更好",
+    "bodyZh": [
+      [
+        "主张",
+        "对于创造性或高度不确定的工作，一份稳定的基础(stable base)加上一个开放式的副业，往往胜过让两件事都依赖同一条充满风险(risky)的收入流。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)列举了一些在保护真正作品的同时仍保留稳定基础的作家与思想家：保罗·克洛岱尔(Paul Claudel)和圣琼·佩斯(Saint-John Perse)在担任外交官的同时写作。特罗洛普(Trollope)在邮局工作，卡夫卡(Kafka)在保险公司，斯宾诺莎(Spinoza)靠磨镜片谋生。塔勒布(Taleb)再加上自己的版本：交易支付账单，而写作保留自由。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为稳定的一侧并不是无用的负担。它换来的是自由。当生计和投机不被绑在同一条脆弱(fragile)的收入流上时，一个人就可以承担创造性的风险(risk)，而不会被它支配。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)希望读者把杠铃(barbell)逻辑视为一种生活方式，而不仅是金融组合的构造。在全书层面，这直接预示了后续关于修修补补(tinkering)、实验和「利用意外的自由」的期权性(optionality)章节。"
+      ]
+    ],
     "chapterLabel": "Chapter 11",
     "en": [
       [
@@ -92,22 +146,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "对 creative 或 high-uncertainty 的工作来说，把 income security 和 upside 分开，往往比让两者都绑在同一条 fragile stream 上更好。"
+        "核心观点",
+        "对于创造性或高度不确定的工作，一份稳定的基础(stable base)加上一个开放式的副业，往往胜过让两件事都依赖同一条充满风险(risky)的收入流。"
       ],
       [
         "详细解释",
-        "Taleb 想说明，稳定 base 不是 dead weight，而是 freedom 的来源。只要 livelihood 不完全依赖高风险输出，人就有余地去做更大胆的 creative experiment，而不会被短期现金流绑死。\n\n这就是把 barbell 从 portfolio 带到 life design。"
+        "塔勒布(Taleb)的观点是：一条收入流常常被要求同时做两件互不兼容的事——既要让你「现在活下去」，又要让你「以后暴露(exposed)在巨大上行(upside)中」。当同一条脆弱(fragile)的收入流必须同时承担这两件事时，两件事通常都被削弱了。你会更难等待、更难实验、更难得罪市场，也更难承受失败。\n\n把稳定的基础与投机性的一侧分开，会改变压力的结构。安全的一侧保护生存。开放的一侧为意外保留空间。这就是为什么塔勒布(Taleb)把稳定一侧视为自由的来源，而不是浪费的精力。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Trollope、Kafka、Spinoza、以及 Taleb 自己的例子，都说明很多有创造力的工作并不是“all in 才伟大”。相反，一个稳定 base 常常保护了真正有 upside 的 side pursuit。\n\n这些例子真正要说明的是：安全的一端，不是为了保守，而是为了给另一端的探索买时间和空间。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)的清单并不只是「碰巧有日常工作的名人名单」。保罗·克洛岱尔(Paul Claudel)和圣琼·佩斯(Saint-John Perse)在担任外交官的同时写作。特罗洛普(Trollope)在邮局工作，卡夫卡(Kafka)在保险公司，斯宾诺莎(Spinoza)靠磨镜片谋生。塔勒布(Taleb)再加上自己的版本：交易支付账单，而写作保留自由。\n\n这些情境真正要证明的是：稳定的基础并不是与创造性工作无关的副产品，而正是它让创造性工作不必听命于短期收入压力。"
       ]
     ]
   },
   "chapter11-concept4": {
     "title": "The middle is often more dangerous than the extremes",
-    "titleZh": "中间地带常比两端更危险",
+    "titleZh": "中间往往比两端更危险",
+    "bodyZh": [
+      [
+        "主张",
+        "人们经常对错误的风险(risk)进行保险或平滑：他们防范小而频繁的损失，却把自己暴露(exposed)在罕见的毁灭(ruin)之下。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)引用意第绪语(Yiddish)规则——「为最糟的情况做准备，最好的会自己照顾自己」，并指出人们恰恰反着做：他们为概率小的损失买保险，却把自己暴露在罕见但巨大的损失之下。他把同样的逻辑应用到政策、工作、锻炼，甚至饮酒模式上。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为看起来平静的「中间」常常被错误地包装成「审慎」。实际上它可能意味着你正在承担会爆掉的风险，却没有得到与之相称的回报。"
+      ],
+      [
+        "全书联结",
+        "这解释了为什么杠铃(barbell)看起来极端，实际上却比那些「看起来温和」的策略更安全。在全书层面，第 12 章关于期权性(optionality)的讨论会解释——一旦左尾(left tail)被剪掉，保留的上行(upside)为何变得重要。"
+      ]
+    ],
     "chapterLabel": "Chapter 11",
     "en": [
       [
@@ -125,16 +197,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "Taleb 认为很多人所谓的“中间路线”并不真的稳妥，它常常只是看起来温和，实际上却暴露在大 blowup 里而没有足够补偿。"
+        "核心观点",
+        "人们经常对错误的风险(risk)进行保险或平滑：他们防范小而频繁的损失，却把自己暴露(exposed)在罕见的毁灭(ruin)之下。"
       ],
       [
         "详细解释",
-        "这里最重要的是误判 risk 的位置。人们喜欢给小而常见的损失买保险，却把 rare but ruinous loss 留在自己身上。结果那个看起来不极端的 middle，反而成了最危险的位置。\n\n所以 barbell 看似极端，实际上是在剪掉左尾。"
+        "看起来平静的「中间」常常被错误地包装成「审慎」。实际上它可能意味着：你正在承担会爆掉的风险，却没有得到与之相称的回报。\n\n这解释了为什么杠铃(barbell)看起来极端，实际上却比那些「看起来温和」的策略更安全。在全书层面，第 12 章关于期权性(optionality)的讨论会解释——一旦左尾(left tail)被剪掉，保留的上行(upside)为何变得重要。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Yiddish rule 说的是“先为最坏情况做准备”，Taleb 认为大多数人恰好反过来做。他们防小风险，不防大风险；平滑小波动，却暴露在大断裂里。\n\n这个例子真正要说明的是：真正危险的，常常不是极端，而是伪装成温和的脆弱。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)引用意第绪语(Yiddish)规则——「为最糟的情况做准备，最好的会自己照顾自己」，并指出人们恰恰反着做：他们为概率小的损失买保险，却把自己暴露在罕见但巨大的损失之下。他把同样的逻辑应用到政策、工作、锻炼，甚至饮酒模式上。\n\n这一情境的重点是：看起来平静的「中间」常常被错误地包装成「审慎」。实际上它可能意味着你正在承担会爆掉的风险，却没有得到与之相称的回报。"
       ]
     ]
   }

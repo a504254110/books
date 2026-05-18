@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter21 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter21-concept1": {
     "title": "Under opacity, the burden of proof falls on the unnatural intervention",
-    "titleZh": "不透明时，举证责任落在反自然干预上",
+    "titleZh": "在不透明(opaque)的医学里，举证责任落在「反自然干预(unnatural intervention)」一方",
+    "bodyZh": [
+      [
+        "主张",
+        "在医学里我们经常看不到延迟的伤害、副作用或因果链。所以一项「反自然」的干预(intervention)必须先证明它有清晰的好处，才能取代自然。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)在崎岖地面上行走时摔断了鼻子，去急诊室，并向医生要「冰敷肿鼻子有用」的证据。他随后用一组「曾经看似安全或有益、后来才暴露出延迟伤害」的干预把观点扩大：吸烟——曾被医生背书很久，直到致癌联系无法否认；反式脂肪(trans fat)——曾被推广为黄油的健康替代品，后来被证实与心脏病相关；沙利度胺(thalidomide)——1950 年代末作为镇静剂被开给孕妇，造成数千婴儿严重畸形；以及己烯雌酚(diethylstilbestrol)——曾给孕妇使用的一种合成激素，后来被证实会增加其女儿的癌症风险。每一种在一段时间里看起来都「可接受」，直到隐藏的伤害变得可见。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它表达了塔勒布(Taleb)的核心标准：「现在没看见伤害」是不够的。在不透明(opaque)系统里，真正的伤害可以来得很晚，而且依然很大。"
+      ],
+      [
+        "全书联结",
+        "这是把「减法路径(via negativa)」带入医学。它也呼应了全书对「没有切肤之痛(skin in the game)的干预」的怀疑。"
+      ]
+    ],
     "chapterLabel": "Chapter 21",
     "en": [
       [
@@ -26,22 +44,44 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在 medicine 这种 opaque system 里，`看不见 harm` 不等于 `没有 harm`。所以 burden of proof 应该落在 unnatural intervention 上。"
+        "核心观点",
+        "在医学里我们经常看不到延迟的伤害、副作用或因果链。所以一项「反自然」的干预(intervention)必须先证明它有清晰的好处，才能取代自然。"
       ],
       [
         "详细解释",
-        "Taleb 的核心不是反医学，而是反对在因果链不透明、side effect 可能延迟出现的地方，把 intervention 当成默认正义。\n\n因为在这种系统里，许多 harm 要多年后才暴露，甚至很难被追溯回原始 intervention。此时如果继续坚持 `先拿出 harm 的证据再怀疑`，就会系统性偏向干预。\n\n所以他的 rule 是：natural baseline 不需要先自证安全，破坏它的一方才需要先证明收益明显超过潜在 downside。"
+        "它表达了塔勒布(Taleb)的核心标准。「现在没看见伤害」是不够的。在不透明(opaque)系统里，真正的伤害可以来得很晚，而且依然很大。\n\n这是把「减法路径(via negativa)」带入医学。它也呼应了全书对「没有切肤之痛(skin in the game)的干预」的怀疑。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Taleb 在急诊室里被要求给摔坏的鼻子冰敷，于是反问医生：有没有 evidence 证明这真的有帮助。随后他把问题扩展到 smoking、trans fat、thalidomide、DES 这些例子。这个例子要说明的是：很多 intervention 一开始都看起来 harmless，真正的问题是 hidden harm 往往来得晚。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)在崎岖地面上行走时摔断了鼻子，去急诊室，并向医生要「冰敷肿鼻子有用」的证据。他随后用吸烟、反式脂肪(trans fat)、沙利度胺(thalidomide)和己烯雌酚(diethylstilbestrol)——这种曾被开给孕妇的合成激素——把观点扩大。每一种在一段时间里看起来都是「可接受的」，直到隐藏的伤害变得可见。\n\n这一情境的重点是：它表达了塔勒布(Taleb)的核心标准——现在没看见伤害并不够，因为在不透明系统里真正的伤害可以来得很晚而且依然很大。"
       ]
     ]
   },
   "chapter21-concept2": {
     "title": "Iatrogenics is nonlinear, so treatment should focus on severe cases",
-    "titleZh": "医源性伤害非线性，治疗应聚焦重症",
+    "titleZh": "医源性伤害(iatrogenics)是非线性的——所以治疗应聚焦于重症",
+    "bodyZh": [
+      [
+        "主张",
+        "随着病情严重程度上升，医疗收益往往急剧上升；而医源性风险(iatrogenic risk)始终存在。这就是为什么积极治疗对于重症患者比对于「接近健康」的人更合理。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)用血压治疗的概率把观点具体化。在轻度病例中，大约只有十八分之一的人受益；而在严重病例中，受益率上升得更快。他随后把这与创伤(trauma)手术对比——在创伤的情况下，自然显然无法独自完成任务。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它解释了为什么同样的干预(intervention)在不同情况下意义不同。一种药物或手术在「接近毁灭」时是合理的，但对一个只是「略微偏离正常范围」的人来说，可能是一笔愚蠢的交易。"
+      ],
+      [
+        "全书联结",
+        "这是塔勒布(Taleb)收益结构(payoff)逻辑的医学版本。它把凸性(convexity)和凹性(concavity)翻译成一条实际的决策规则。"
+      ],
+      [
+        "常见误解",
+        "这并不是号召忽视早期预警信号。它是号召把「稳健的生活方式改变」与「带有隐藏下行(downside)的药物或操作」区分开来。"
+      ]
+    ],
     "chapterLabel": "Chapter 21",
     "en": [
       [
@@ -59,22 +99,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "iatrogenics 不是线性的。同一种 treatment，对重症病人可能合理，对轻症或临界病人却可能完全不值。"
+        "核心观点",
+        "随着病情严重程度上升，医疗收益往往急剧上升；而医源性风险(iatrogenic risk)始终存在。这就是为什么积极治疗对于重症患者比对于「接近健康」的人更合理。"
       ],
       [
         "详细解释",
-        "Taleb 在这里把 convexity 引入医疗决策。病情越重，治疗带来的 benefit 可能上升得很快；但副作用和 intervention risk 并不会因为病人只是轻症就自动消失。\n\n因此，`统一 treatment` 的思路是有问题的。真正合理的办法，是看 severity 是否已经高到足以让 upside 明显压过 hidden downside。\n\n这让医学决策从 `有没有这个病` 变成 `处在什么程度的 risk zone`。"
+        "同样的干预(intervention)在不同情况下意义不同。一种药物或手术在「接近毁灭」时是合理的，但对一个只是「略微偏离正常范围」的人来说，可能是一笔愚蠢的交易。\n\n这并不是号召忽视早期预警信号。它是号召把「稳健的生活方式改变」与「带有隐藏下行(downside)的药物或操作」区分开来。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Taleb 用高血压药举例：轻度高血压时，真正获益的人比例很低；但到重度区间，benefit 会明显上升。他同时又承认严重创伤时 surgery 是必要的。这个例子说明的是：同一个 intervention 在不同 severity 下，不是同一个 decision。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)用血压治疗的概率把观点具体化。在轻度病例中，大约只有十八分之一的人受益；而在严重病例中，受益率显著上升。他随后把这与创伤(trauma)手术作对比——在创伤的情况下，自然显然无法独自完成任务。\n\n这一情境的重点是：同样的干预在不同情况下意义不同——它在接近毁灭时是合理的，但对一个只是略微偏离正常范围的人来说，可能是愚蠢的交易。"
       ]
     ]
   },
   "chapter21-concept3": {
     "title": "In biology, irregular stress can beat steady optimization",
-    "titleZh": "生物学里不规则压力胜于稳定优化",
+    "titleZh": "在生物学(biology)里，不规则的压力(stress)往往胜过稳定的优化",
+    "bodyZh": [
+      [
+        "主张",
+        "因为生物反应是非线性的(nonlinear)，不规则的暴露(exposure)往往比稳定的平均暴露效果更好。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)以肺部呼吸机为例。恒定压力看似合理，但「交替的较高与较低压力」反而让医生能输送更多容量、打开塌陷的肺泡(alveoli)，并降低死亡率。健康的肺本身就以波动方式工作，而不是平稳规律。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它把詹森不等式(Jensen's inequality)放进医学，而不只是抽象数学。当身体对「脉冲式刺激」的反应不同于对「平稳规律」时，平均值会误导。"
+      ],
+      [
+        "全书联结",
+        "这把医学论证连回到第 18 和第 19 章。同样的凸性(convexity)逻辑，先解释了期权性(optionality)和脆弱(fragility)，现在又解释了为什么某些生物压力(stress)模式反而有益。"
+      ]
+    ],
     "chapterLabel": "Chapter 21",
     "en": [
       [
@@ -92,22 +150,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在 biology 里，平滑和恒定不一定最好。某些 irregular stress pattern 反而更适合身体。"
+        "核心观点",
+        "因为生物反应是非线性的(nonlinear)，不规则的暴露(exposure)往往比稳定的平均暴露效果更好。"
       ],
       [
         "详细解释",
-        "Taleb 在这里反对一种工程师直觉：既然稳定听起来更优雅，那医疗设备也应该尽量保持 steady。\n\n但 biological system 往往是 nonlinear 的。身体对脉冲式、间歇式刺激的 response，可能比对持续恒定刺激更好。\n\n所以一味追求 smooth optimization，可能恰恰忽视了 organism 本来的反应结构。"
+        "它把詹森不等式(Jensen's inequality)放进医学，而不只是抽象数学。当身体对「脉冲式刺激」的反应不同于对「平稳规律」的反应时，平均值会误导。\n\n这把医学论证连回到第 18 和第 19 章。同样的凸性(convexity)逻辑，先解释了期权性(optionality)和脆弱(fragility)，现在又解释了为什么某些生物压力模式反而有益。"
       ],
       [
-        "这个例子到底在说明什么",
-        "他用机械通气举例。早期直觉觉得恒定压力更理性，但后来发现交替高低压力，反而更能打开塌陷的肺泡、降低死亡率。这个例子说明的是：对身体来说，steady 不自动等于 optimal，pattern 本身会改变结果。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)以肺部呼吸机为例。恒定压力看似合理，但「交替的较高与较低压力」反而让医生能输送更多容量、打开塌陷的肺泡(alveoli)，并降低死亡率。健康的肺本身就以波动方式工作，而不是平稳规律。\n\n这一情境的重点是：它把詹森不等式放进医学，而不只是抽象数学——当身体对脉冲式刺激的反应不同于对平稳规律时，平均值会误导。"
       ]
     ]
   },
   "chapter21-concept4": {
     "title": "Metric improvement is not the same thing as patient improvement",
-    "titleZh": "指标改善不等于病人改善",
+    "titleZh": "「指标改善」不等于「病人改善」",
+    "bodyZh": [
+      [
+        "主张",
+        "降低一项临床标志物(clinical marker)并不自动等同于让病人变得更健康。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)用他汀类药物(statins)和胆固醇说明这个陷阱。这种药能改善被跟踪的数字，但对许多低风险人群来说，真正的收益很弱，而隐藏的伤害依然不确定。他把这与「为了让婴儿不哭就把婴儿的嘴堵上、却不解决真正原因」对比。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为医学可能变成一种「测量游戏」。某个数字在纸面上变好了，但病人却在承担那些被延迟、扩散或在法律上看不见的代价。"
+      ],
+      [
+        "全书联结",
+        "这是塔勒布(Taleb)「不是同一回事」警告的另一种版本。它也预示了第 22 章——在那里他主张，健康往往更多通过减法、而非通过「以指标驱动的加法」得到改善。"
+      ]
+    ],
     "chapterLabel": "Chapter 21",
     "en": [
       [
@@ -125,16 +201,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "把某个 metric 调漂亮，不等于病人真的更健康。`number improved` 和 `person improved` 不是同一件事。"
+        "核心观点",
+        "降低一项临床标志物(clinical marker)并不自动等同于让病人变得更健康。"
       ],
       [
         "详细解释",
-        "Taleb 批评的是 surrogate thinking：医生、药厂和制度很容易围绕一个容易测量的数字行动，然后把那个数字当成最终目标。\n\n但在 opaque system 里，一个指标下降，可能只是 symptom 被压住了，或者 paper 上更好看了，而真正的 human outcome 并没有同步改善。\n\n所以他要求读者不断问：这个 metric 是真正 cause，还是只是 correlated sign？"
+        "医学可能变成一种「测量游戏」。某个数字在纸面上变好了，但病人却在承担那些被延迟、扩散或在法律上看不见的代价。\n\n这是塔勒布(Taleb)「不是同一回事」警告的另一种版本。它也预示了第 22 章：在那里他主张，健康往往更多通过减法而非通过「以指标驱动的加法」得到改善。"
       ],
       [
-        "这个例子到底在说明什么",
-        "statins 和 cholesterol 是他的主要例子。药可能把数字降下来了，但对很多低风险人群，真实 benefit 很弱，hidden side effects 却未必小。他还说这像给婴儿戴口罩让他不哭。这个例子说明的是：你可以压住可见指标，却没有真正解决 underlying condition。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)用他汀类药物(statins)和胆固醇说明这个陷阱。这种药能改善被跟踪的数字，但对许多低风险人群来说，真正的收益很弱，而隐藏的伤害依然不确定。他把这与「为了让婴儿不哭就把婴儿的嘴堵上」作对比——并没有解决真正的原因。\n\n这一情境的重点是：医学可能变成一种测量游戏——某个数字在纸面上变好了，但病人却在承担那些被延迟、扩散或在法律上看不见的代价。"
       ]
     ]
   }

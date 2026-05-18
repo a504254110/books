@@ -157,36 +157,45 @@ def test_overview_start_quiz(page: Page, ctx: dict) -> None:
     assert "1" in (page.locator("#quizPosition").inner_text() or "")
 
 
-def test_deep_dive_drawer(page: Page, ctx: dict) -> None:
+def test_deep_dive_ui_is_hidden(page: Page, ctx: dict) -> None:
+    """Deep dive was removed from the UI. Buttons, drawer, and backdrop must not be visible.
+    The underlying data (`explainer.zh`) is still kept in the JS files for archival."""
     reset_storage(page)
     page.locator("#overview button[data-view-target='chapter-1']").click()
     page.wait_for_timeout(250)
-    page.locator("#chapter-1 #concept-1 [data-open-deep]").first.click()
-    page.wait_for_timeout(300)
-    assert not page.locator("#drawer").evaluate("n => n.hidden"), "Drawer did not open"
-    assert "Antifragility" in (page.locator("#drawerTitle").inner_text() or "")
-    # Switch to Chinese tab
-    page.locator("[data-drawer-lang='zh']").click()
+    state = page.evaluate(
+        """
+        () => {
+          const row = document.querySelector('#chapter-1 .deep-row');
+          const drawer = document.getElementById('drawer');
+          const backdrop = document.getElementById('drawerBackdrop');
+          return {
+            row_display: row ? getComputedStyle(row).display : 'missing',
+            drawer_display: getComputedStyle(drawer).display,
+            backdrop_display: getComputedStyle(backdrop).display,
+          };
+        }
+        """
+    )
+    assert state["row_display"] == "none", f".deep-row should be hidden, got {state['row_display']!r}"
+    assert state["drawer_display"] == "none", f"#drawer should be hidden, got {state['drawer_display']!r}"
+    assert state["backdrop_display"] == "none", f"#drawerBackdrop should be hidden, got {state['backdrop_display']!r}"
+
+
+def test_search_excludes_explainer_results(page: Page, ctx: dict) -> None:
+    reset_storage(page)
+    page.locator("#searchTrigger").click()
     page.wait_for_timeout(200)
-    zh_class = page.locator("#drawerContent").get_attribute("class") or ""
-    assert "zh" in zh_class, f"Drawer did not switch to Chinese content, class={zh_class!r}"
-    # Close via backdrop. The drawer overlays the backdrop's center, so we tap the
-    # backdrop near the top-left corner where only the backdrop should be at that point.
-    page.locator("#drawerBackdrop").click(position={"x": 2, "y": 2})
+    page.locator("#searchInput").fill("antifragility")
     page.wait_for_timeout(300)
-    assert page.locator("#drawer").evaluate("n => n.hidden"), "Drawer should hide after backdrop click"
-
-
-def test_drawer_closes_on_escape(page: Page, ctx: dict) -> None:
-    reset_storage(page)
-    page.locator("#overview button[data-view-target='chapter-1']").click()
-    page.wait_for_timeout(250)
-    page.locator("#chapter-1 #concept-1 [data-open-deep]").first.click()
-    page.wait_for_timeout(300)
-    assert not page.locator("#drawer").evaluate("n => n.hidden")
-    page.keyboard.press("Escape")
-    page.wait_for_timeout(300)
-    assert page.locator("#drawer").evaluate("n => n.hidden"), "Drawer should close on Escape"
+    type_labels = page.evaluate(
+        """
+        () => Array.from(document.querySelectorAll('[data-search-index] .search-result-type'))
+                   .map(el => el.textContent.trim())
+        """
+    )
+    bad = [t for t in type_labels if t in {"Explainer", "中文解释"}]
+    assert not bad, f"Search should not surface explainer/deep-dive entries, got {bad}"
 
 
 def test_quiz_navigation_and_reveal(page: Page, ctx: dict) -> None:
@@ -312,7 +321,7 @@ def test_chapter_collapse_toggle(page: Page, ctx: dict) -> None:
 
 
 def test_no_console_errors_on_main_paths(page: Page, ctx: dict) -> None:
-    """Quick smoke walk: overview -> chapter 1 -> deep dive -> quiz -> search."""
+    """Smoke walk: overview -> chapter 1 -> quiz -> search. Deep dive removed from UI."""
     events = {"errors": [], "pageerrors": []}
     page.on("console", lambda msg: events["errors"].append(f"{msg.type}: {msg.text}") if msg.type == "error" else None)
     page.on("pageerror", lambda exc: events["pageerrors"].append(str(exc)))
@@ -320,10 +329,9 @@ def test_no_console_errors_on_main_paths(page: Page, ctx: dict) -> None:
     reset_storage(page)
     page.locator("#overview button[data-view-target='chapter-1']").click()
     page.wait_for_timeout(200)
-    page.locator("#chapter-1 #concept-1 [data-open-deep]").first.click()
-    page.wait_for_timeout(200)
-    page.keyboard.press("Escape")
-    page.wait_for_timeout(200)
+    # Scroll through the chapter (used to open drawer here, but drawer is removed)
+    page.evaluate("() => window.scrollBy(0, 500)")
+    page.wait_for_timeout(150)
     open_sidebar_if_mobile(page, ctx)
     page.locator("#sidebar button[data-view-target='quiz']").click()
     page.wait_for_timeout(200)
@@ -392,20 +400,18 @@ def test_mobile_sidebar_closes_on_navigation(page: Page, ctx: dict) -> None:
     assert "open" not in cls, "Sidebar should auto-close on mobile after navigation"
 
 
-def test_mobile_drawer_fits_viewport(page: Page, ctx: dict) -> None:
+def test_mobile_deep_dive_not_triggerable(page: Page, ctx: dict) -> None:
+    """On mobile, confirm the deep-dive button row is gone — no way for users to surface
+    the drawer. (The drawer DOM element remains for archival but is display:none.)"""
     if not ctx["is_mobile"]:
         return
     reset_storage(page)
     page.locator("#overview button[data-view-target='chapter-1']").click()
     page.wait_for_timeout(200)
-    page.locator("#chapter-1 #concept-1 [data-open-deep]").first.click()
-    page.wait_for_timeout(300)
-    box = page.locator("#drawer").bounding_box()
-    vp = ctx["viewport"]
-    assert box is not None, "Drawer has no bounding box"
-    assert box["x"] >= 0 and box["x"] + box["width"] <= vp["width"] + 1, (
-        f"Drawer overflows viewport horizontally: x={box['x']}, w={box['width']}, vp={vp['width']}"
+    rows_visible = page.evaluate(
+        "() => Array.from(document.querySelectorAll('#chapter-1 .deep-row')).filter(r => getComputedStyle(r).display !== 'none').length"
     )
+    assert rows_visible == 0, f"Expected 0 visible .deep-row on mobile, got {rows_visible}"
 
 
 def test_mobile_topbar_visible(page: Page, ctx: dict) -> None:
@@ -469,8 +475,8 @@ TESTS: list[Callable[[Page, dict], None]] = [
     test_language_toggle,
     test_overview_start_chapter_one,
     test_overview_start_quiz,
-    test_deep_dive_drawer,
-    test_drawer_closes_on_escape,
+    test_deep_dive_ui_is_hidden,
+    test_search_excludes_explainer_results,
     test_quiz_navigation_and_reveal,
     test_quiz_related_navigation,
     test_quiz_persistence,
@@ -484,7 +490,7 @@ TESTS: list[Callable[[Page, dict], None]] = [
     test_mobile_menu_button_clickable,
     test_mobile_sidebar_open_close,
     test_mobile_sidebar_closes_on_navigation,
-    test_mobile_drawer_fits_viewport,
+    test_mobile_deep_dive_not_triggerable,
     test_mobile_topbar_visible,
     # desktop-only
     test_desktop_topbar_hidden,

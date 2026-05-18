@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter14 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter14-concept1": {
     "title": "Relevant knowledge is often not narratable knowledge",
-    "titleZh": "真正有用的知识常常说不清楚",
+    "titleZh": "真正有用的知识，往往不是「能讲出来」的知识",
+    "bodyZh": [
+      [
+        "主张",
+        "一个人可以在某个领域非常有效，却缺乏外人觉得「肯定重要」的那种事实。真正能赚钱的知识，往往是操作性(operational)的，而不是论述性(discursive)的。"
+      ],
+      [
+        "例子",
+        "乔·西格尔(Joe Siegel)是绿木材(green lumber)——即刚锯下、尚未干燥的木材——的一位成功交易员。据说他以为「green lumber」是被刷成绿色的木材。即便如此，他对这个市场的理解仍足以让他赚钱。塔勒布(Taleb)随后给出自己外汇方面的版本：一些顶级的货币交易员甚至无法在地图上指出瑞士(Switzerland)的位置，也无法优雅地谈论经济学，他们的表现却仍超过那些言辞光鲜的理论家。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为外行人总是在用错的考试。他们考的是「能讲出来的事实」，却漏掉了真正决定生存与盈利的、那些本地的、实操的线索。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)想把「可用的知识(usable knowledge)」和「声望式知识(prestige knowledge)」分开，并说明为什么外行人不断把它们混为一谈。在全书层面，这一论证直接通向第 17 章对不透明启发式(opaque heuristics)和非叙事性能力(nonnarrative competence)的辩护。"
+      ]
+    ],
     "chapterLabel": "Chapter 14",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "一个人在某个 domain 里真正有用的 knowledge，常常不是他能漂亮讲出来的那部分，而是 operational、local、难叙述的那部分。"
+        "核心观点",
+        "一个人可以在某个领域非常有效，却缺乏外人觉得「肯定重要」的那种事实。真正能赚钱的知识，往往是操作性(operational)的，而不是论述性(discursive)的。"
       ],
       [
         "详细解释",
-        "Taleb 想把 `usable knowledge` 和 `prestige knowledge` 分开。很多 outsiders 喜欢考察 narratable facts，因为这最像学校考试；但真实 payoff 可能来自 local cues、手感、经验结构，而不是会不会讲一套体面的解释。\n\n所以 relevant knowledge 很多时候并不 narratable。"
+        "外行人总是在用错的考试。他们考的是「能讲出来的事实」，却漏掉了真正决定生存与盈利的、那些本地的、实操的线索。\n\n塔勒布(Taleb)想把「可用的知识(usable knowledge)」和「声望式知识(prestige knowledge)」分开，并说明为什么外行人不断把它们混为一谈。在全书层面，这一论证直接通向第 17 章对不透明启发式(opaque heuristics)和非叙事性能力(nonnarrative competence)的辩护。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Joe Siegel 做 green lumber 很成功，却误以为 `green` 是“涂成绿色”。外汇 trader 甚至连 Switzerland 在地图上都说不清，但仍然 outperform polished theorists。\n\n这些例子真正要说明的是：会说，不等于会做；而会做的人，也未必要会说。"
+        "这个例子在说明什么",
+        "乔·西格尔(Joe Siegel)是绿木材(green lumber)——即刚锯下、尚未干燥的木材——的一位成功交易员。据说他以为「green lumber」是被刷成绿色的木材。即便如此，他对这个市场的理解仍足以让他赚钱。塔勒布(Taleb)随后给出自己外汇方面的版本：一些顶级的货币交易员甚至无法在地图上指出瑞士(Switzerland)的位置，也无法优雅地谈论经济学，他们的表现却仍超过那些言辞光鲜的理论家。\n\n这一情境的重点是：外行人总是在用错的考试。他们考的是能讲出来的事实，却漏掉了真正决定生存与盈利的、那些本地的、实操的线索。"
       ]
     ]
   },
   "chapter14-concept2": {
     "title": "Correlation between universities and wealth does not settle causation",
-    "titleZh": "大学与财富的相关性不等于因果",
+    "titleZh": "大学(universities)与财富的相关性，并不证明因果",
+    "bodyZh": [
+      [
+        "主张",
+        "因为繁荣的地方常常有高声望的教育机构，就以为「把这些机构搬过来」会复制出繁荣——这是一个错误。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)以阿布扎比(Abu Dhabi)开篇——他看着石油财富把一整批外国大学搬进来，仿佛把声望校园倾倒在沙漠里就能变成有机的知识。他随后用国家级对比：台湾(Taiwan)与菲律宾(Philippines)、韩国(Korea)与阿根廷(Argentina)，来说明上升的教育水平并不会整齐地映射为上升的国民财富。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它把两个不同方向的箭头(arrows)分开了。财富可以买来教育和文凭，但这并不能证明教育在最初创造了财富。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)在攻击一个被现代人偏爱的捷径：把成功的象征性标记当作成功的引擎。在全书层面，下一章把这种怀疑扩展为对「技术与科学叙事」的彻底改写。"
+      ]
+    ],
     "chapterLabel": "Chapter 14",
     "en": [
       [
@@ -59,22 +95,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "prosperity 和 prestigious university 经常一起出现，但这并不证明把 university 搬过去，就能复制 prosperity。"
+        "核心观点",
+        "因为繁荣的地方常常有高声望的教育机构，就以为「把这些机构搬过来」会复制出繁荣，这是一个错误。"
       ],
       [
         "详细解释",
-        "Taleb 这里是在拆现代世界很爱的 shortcut：把 symbolic marker of success 当成 success 的发动机。wealth 可以买 campus、credential 和 imported prestige，但这不等于这些东西最初创造了 wealth。\n\n所以 correlation 在这里不能直接当成 causation。"
+        "它把两个不同方向的箭头(arrows)分开了。财富可以买来教育和文凭，但这并不能证明教育在最初创造了财富。\n\n塔勒布(Taleb)在攻击一个被现代人偏爱的捷径：把成功的象征性标记当作成功的引擎。在全书层面，下一章把这种怀疑扩展为对「技术与科学叙事」的彻底改写。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Abu Dhabi 把 foreign university 整体搬进沙漠，就是这种思路的夸张版。Taiwan vs Philippines、Korea vs Argentina 的对比，则说明 rising education levels 和 rising national wealth 并没有那么简单的一一对应关系。\n\n这些例子真正要说明的是：同处一个成功场景里的东西，不一定就是成功的原因。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)以阿布扎比(Abu Dhabi)开篇——他看着石油财富把一整批外国大学搬进来，仿佛把声望校园倾倒在沙漠里就能变成有机的知识。他随后用国家级对比，比如台湾(Taiwan)与菲律宾(Philippines)、韩国(Korea)与阿根廷(Argentina)，来说明上升的教育水平并不会整齐地映射为上升的国民财富。\n\n这一情境的重点是：它把两个方向的箭头分开了——财富可以买来教育和文凭，但这并不能证明教育在最初创造了财富。"
       ]
     ]
   },
   "chapter14-concept3": {
     "title": "\"Not the same thing\" is a rule against bad transfer",
-    "titleZh": "“不是同一回事”：警惕错误类比",
+    "titleZh": "「不是同一回事」是一条对抗错误迁移(bad transfer)的规则",
+    "bodyZh": [
+      [
+        "主张",
+        "人们经常因为两件事共享同一个标签或同一个表面特征，就假定可以套用同样的推理。在实践中，这种捷径常常正是错误发生的地方。"
+      ],
+      [
+        "例子",
+        "在 1990–1991 年的科威特(Kuwait)危机期间——伊拉克(Iraq)入侵科威特、由美国领导的战争看起来不可避免——许多分析师断定石油必然上涨。塔勒布(Taleb)反复出现的街头交易员人物胖东尼(Fat Tony)做了相反的交易。他的答案很简单：「科威特和石油不是同一回事」。在开火之前，对战争的恐惧已经体现在油价里，所以战争来时油价不升反降。塔勒布(Taleb)随后把这一规则推广到「理论 vs 价格」、「想法 vs 功能」，以及「学校知识 vs 实际成功」。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为塔勒布(Taleb)不只是在警告一次糟糕的交易。他在提出一个一般性的启发式：当人们从「故事」太快跳到「收益(payoff)」时，常常漏掉了夹在中间的「功能」。"
+      ],
+      [
+        "全书联结",
+        "这是塔勒布(Taleb)更广义的哲学观点：精确始于「拒绝错误等同」。在全书层面，这种对「错误迁移」的担忧后来会回到医学领域——在那里，替代指标(surrogate measures)被误当成真正的健康。"
+      ]
+    ],
     "chapterLabel": "Chapter 14",
     "en": [
       [
@@ -92,16 +146,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "`not the same thing` 是 Taleb 的一条防错规则：两个东西名字相近、故事相连、看起来有关，不代表同样的 reasoning 就能直接 transfer 过去。"
+        "核心观点",
+        "人们经常因为两件事共享同一个标签或同一个表面特征，就假定可以套用同样的推理。在实践中，这种捷径常常正是错误发生的地方。"
       ],
       [
         "详细解释",
-        "Taleb 这里要阻止的是从 narrative 直接跳到 payoff。只要中间 function 没看清，表面上的“同一件事”往往就是错觉。真正的 precision，很多时候来自先拒绝 bad equivalence。\n\n所以这是一条反直觉但很实用的认知规则。"
+        "塔勒布(Taleb)不只是在警告一次糟糕的交易。他在提出一个一般性的启发式：当人们从「故事」太快跳到「收益(payoff)」时，常常漏掉了夹在中间的「功能」。\n\n这是塔勒布(Taleb)更广义的哲学观点：精确始于「拒绝错误等同」。在全书层面，这种对「错误迁移」的担忧后来会回到医学领域——在那里，替代指标(surrogate measures)被误当成真正的健康。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Kuwait war 的 trade 最能说明问题。大家都觉得“要打仗了，oil 一定涨”，Fat Tony 却说 `Kuwait and oil are not the same thing`，因为 war 早已被 price in。最后 oil 反而跌了。\n\n这个例子真正要说明的是：story 和 payoff 之间隔着 function，不能一句话就跳过去。"
+        "这个例子在说明什么",
+        "在科威特(Kuwait)危机期间，许多分析师知道战争即将到来，于是断定石油必然上涨。胖东尼(Fat Tony)却做了相反的交易。他的答案很简单：「科威特和石油不是同一回事」。在开火之前，关于战争的恐惧已经体现在油价里，所以战争来时油价不升反降。塔勒布(Taleb)随后把同一规则推广到「理论 vs 价格」、「想法 vs 功能」，以及「学校知识 vs 实际成功」。\n\n这一情境的重点是：塔勒布(Taleb)不只是在警告一次糟糕的交易。他在提出一个一般性的启发式——当人们从故事太快跳到收益(payoff)时，常常漏掉了夹在中间的功能。"
       ]
     ]
   }

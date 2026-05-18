@@ -25,3 +25,7 @@ books/**/source/extracted-pages.json
 !.obsidian/plugins/books-reading-progress/manifest.json
 !.obsidian/plugins/books-reading-progress/styles.css
 .obsidian/plugins/books-reading-progress/data.json
+
+# test
+tests/screenshots/*
+tests/results.json

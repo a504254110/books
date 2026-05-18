@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter9 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter09-concept1": {
     "title": "Fat Tony reads people and systems through fragility cues",
-    "titleZh": "胖东尼靠脆弱信号读人和系统",
+    "titleZh": "胖东尼(Fat Tony)通过脆弱(fragility)的线索读人和系统",
+    "bodyZh": [
+      [
+        "主张",
+        "在不透明(opaque)的领域里，可用的判断往往始于对脆弱性(vulnerability)的快速、具身化的识别，而不是从显式的理论开始。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)描述胖东尼(Fat Tony)——他贯穿全书使用的那位布鲁克林意大利裔街头智慧人物，用来对抗理论家——在餐馆里见人的方式：几乎像一只狗那样去嗅对方。他还展示午餐时胖东尼如何「读」整个房间：他更信任那种放松、社交根基稳、身上没有办公室紧绷气息的人；而不是那种打磨光鲜、急着赶回会议的人。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为胖东尼(Fat Tony)的脑子里并没有在跑一个正式模型。他是在别人开始解释之前，就已经从行为、激励和社会地位中读出脆弱(fragility)的迹象。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)希望读者首先把反脆弱性(antifragility)看作一种可操作的识别技巧。后续章节通过不对称(asymmetry)、期权性(optionality)和切肤之痛(skin in the game)为这种直觉提供正式语言。"
+      ]
+    ],
     "chapterLabel": "Chapter 9",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在 opaque domain 里，有用的判断往往不是先从理论开始，而是先从 fragility cues 的直觉识别开始。"
+        "核心观点",
+        "在不透明(opaque)的领域里，可用的判断往往始于对脆弱性的快速、具身化的识别，而不是从显式的理论开始。"
       ],
       [
         "详细解释",
-        "Taleb 借 Fat Tony 说的是一种 embodied judgment。Tony 不是先搭公式，而是先看一个人紧不紧绷、有没有真实社会接触、是不是被自己的 position 绑得太死。这种判断并不优雅，但它常常先抓到 vulnerability。\n\n所以这里是在替 practical detection 技能正名。"
+        "胖东尼(Fat Tony)的脑子里并没有在跑一个正式模型。他是在别人开始解释之前，就已经从行为、激励和社会地位中读出了脆弱(fragility)的迹象。\n\n塔勒布(Taleb)希望读者首先把反脆弱性(antifragility)看作一种可操作的「识别技巧」。后续章节通过不对称(asymmetry)、期权性(optionality)和切肤之痛(skin in the game)为这种直觉提供正式语言。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Tony 在餐馆里看人、闻人、读 room 的场景，不是在表演粗鲁，而是在扫描 fragility 的信号。他更信任那个放松、接地气、没有一身 office stress 的人，而不是那个 polished 但非常脆弱的人。\n\n这个例子真正要说明的是：在很多领域里，先看一个系统容易在哪里断，比先听它怎么解释自己更重要。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)描述胖东尼(Fat Tony)在餐馆见人的方式——几乎像一只狗那样去嗅对方。他还展示午餐时胖东尼如何「读」整个房间：他更信任那种放松、社交根基稳、身上没有办公室紧绷气息的人；而不是那种打磨光鲜、急着赶回会议的人。\n\n这一情境的重点是：胖东尼(Fat Tony)脑子里并没有在跑一个正式模型。他是在别人开始解释之前，就已经从行为、激励和社会地位中读出了脆弱(fragility)的迹象。"
       ]
     ]
   },
   "chapter09-concept2": {
     "title": "Fragilistas substitute polish for contact with reality",
-    "titleZh": "脆弱派用漂亮论述代替真实接触",
+    "titleZh": "脆弱论者(Fragilistas)用「漂亮话」代替与现实的接触",
+    "bodyZh": [
+      [
+        "主张",
+        "脆弱论者(fragilista)并不只是「会思考的人」。他是那种把流畅的话术、模型和办公室抽象，误当成「经过真实暴露(exposure)检验的知识」的人。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)把胖东尼(Fat Tony)与一个由银行家、行政人员、媒体人和学院专家构成的世界对比——后者源源不断地输出谈话、报告和模型。他说，整整几座经济学和社会科学的图书馆，仍可能漏掉胖东尼在午饭桌上一眼就能看出的那种基本脆弱(fragility)。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为塔勒布(Taleb)攻击的是一种社会角色，而不只是一份糟糕的预测。脆弱论者(fragilista)在机构内部显得聪明，因为那里语言和身份比「在真实压力下存活」更值钱。"
+      ],
+      [
+        "全书联结",
+        "这一章给塔勒布(Taleb)提供了贯穿全书的对手。这种类型在预测、干预(intervention)和政策章节里反复出现——只要受保护的专家把声望误当成稳健(robustness)，这种人物就会出场。"
+      ]
+    ],
     "chapterLabel": "Chapter 9",
     "en": [
       [
@@ -59,22 +95,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "fragilista 不是单纯“爱思考的人”，而是那种把 polished discourse、model 和 office abstraction 错当成真实知识的人。"
+        "核心观点",
+        "脆弱论者(fragilista)并不只是「会思考的人」。他是那种把流畅的话术、模型和办公室抽象，误当成「经过真实暴露(exposure)检验的知识」的人。"
       ],
       [
         "详细解释",
-        "Taleb 攻击的不是 thinking 本身，而是一种 social type：在 institution 里靠语言、头衔、报告和模型看起来非常聪明，但其实没有经过真实 exposure 的人。这样的人在体制内部会显得很强，因为那里奖励的是话语和形象，而不是 survival under stress。\n\n所以 fragilista 更像一种角色诊断，而不是一个性格标签。"
+        "塔勒布(Taleb)攻击的是一种社会角色，而不只是一份糟糕的预测。脆弱论者(fragilista)在机构内部显得聪明，因为那里语言和身份比「在真实压力下存活」更值钱。\n\n这一章给塔勒布(Taleb)提供了一个贯穿全书的对手。这种类型在预测、干预和政策章节里反复出现——只要受保护的专家把声望误当成稳健(robustness)，这种人物就会出场。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Fat Tony 和 banker、administrator、media expert、academic expert 的对比，说明同一个人可以在办公室里很有 prestige，但在真实的 fragility test 里却很弱。大量 talk 和 paper 并不能自动带来 contact with reality。\n\n这个例子真正要说明的是：很多人最擅长的，其实是看起来像知道，而不是在真实风险下活下来。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)把胖东尼(Fat Tony)与一个由银行家、行政人员、媒体人和学院专家构成的世界作对比——后者源源不断地输出谈话、报告和模型。他说，整整几座经济学和社会科学的图书馆，仍可能漏掉胖东尼在午饭桌上一眼就能看出的那种基本脆弱(fragility)。\n\n这一情境的重点是：塔勒布(Taleb)攻击的是一种社会角色，而不只是一份糟糕的预测。脆弱论者(fragilista)在机构内部显得聪明，因为那里语言和身份比「在真实压力下存活」更值钱。"
       ]
     ]
   },
   "chapter09-concept3": {
     "title": "Consequences matter more than elegant arguments",
-    "titleZh": "后果比漂亮论证更重要",
+    "titleZh": "后果比漂亮的论证更重要",
+    "bodyZh": [
+      [
+        "主张",
+        "在现实生活中，最好的启发式不是「谁听上去对？」，而是「谁会因为出错而真正暴露(exposed)？」胖东尼(Fat Tony)的力量来自跟踪后果，而不是辩论表演。"
+      ],
+      [
+        "例子",
+        "胖东尼(Fat Tony)并不相信那种宏大的「专家式预测」。相反，他下注：那些依赖预测、忽视脆弱(fragility)的人，最终会爆掉。塔勒布(Taleb)也描述了内罗·都利普(Nero Tulip)——塔勒布(Taleb)多本书中反复出现的人物，一位有纪律的交易员-哲学家，代表稳健的风险(risk)意识——翻看那笔成功的「胖东尼下注(Fat Tony bet)」对账单的场景，以此提醒：真正的行动、而不是赞美，才是最终的检验。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为塔勒布(Taleb)的规则不是「永远不要预测(predict)」。他的规则是「盯着那些靠假装预测而变得脆弱(fragile)的人」。最有利可图的动作，往往是站到过度自信的另一边。"
+      ],
+      [
+        "全书联结",
+        "这一章开始从「人物肖像」转向「决策规则」。它是非预测式(nonpredictive)世界观第一次落地的表达。在全书层面，这一逻辑会在第 23 章发展为完整的「切肤之痛(skin in the game)」教义。"
+      ]
+    ],
     "chapterLabel": "Chapter 9",
     "en": [
       [
@@ -92,16 +146,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在现实里，更好的问题不是“谁讲得更像对的”，而是“谁真的暴露在 being wrong 的后果里”。"
+        "核心观点",
+        "在现实生活中，最好的启发式不是「谁听上去对？」，而是「谁会因为出错而真正暴露(exposed)？」胖东尼(Fat Tony)的力量来自跟踪后果，而不是辩论表演。"
       ],
       [
         "详细解释",
-        "Taleb 想把判断标准从 debate performance 换成 consequence。好听的 argument 可能完全不承担代价；真正有价值的判断，往往来自那些会因为判断错而付出代价的人。\n\n这也是 Fat Tony 为什么重要：他追踪的是 exposure，而不是 rhetoric。"
+        "塔勒布(Taleb)的规则不是「永远不要预测」。他的规则是「盯着那些靠假装预测而变得脆弱(fragile)的人」。最有利可图的动作，往往是站到过度自信的另一边。\n\n这一章开始从「人物肖像」转向「决策规则」。它是非预测式(nonpredictive)世界观第一次落地的表达。在全书层面，这一逻辑会在第 23 章发展为完整的「切肤之痛(skin in the game)」教义。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Tony 不靠 grand prediction 来证明自己，他更愿意站在 overconfident forecaster 的反面，等现实来揭示谁 fragile。Nero 打开 Fat Tony bet 的 account statement，也是同一个意思：最终检验不是 applause，而是 payoff。\n\n这个例子真正要说明的是：被现实结算过的判断，比优雅的解释更值得信。"
+        "这个例子在说明什么",
+        "胖东尼(Fat Tony)并不相信那种宏大的「专家式预测」。相反，他会下注：那些依赖预测、忽视脆弱(fragility)的人，最终会爆掉。塔勒布(Taleb)也描述内罗(Nero)翻看那笔「胖东尼下注(Fat Tony bet)」对账单的场景——以此提醒：真正的行动、而不是赞美，才是最终的检验。\n\n这一情境的重点是：塔勒布(Taleb)的规则不是「永远不要预测」。他的规则是「盯着那些靠假装预测而变得脆弱的人」。最有利可图的动作，往往是站到过度自信的另一边。"
       ]
     ]
   }

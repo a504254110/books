@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter24 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter24-concept1": {
     "title": "Profession often reshapes ethics instead of merely expressing it",
-    "titleZh": "职业会重塑伦理，而不只是表达伦理",
+    "titleZh": "职业(profession)经常在重塑伦理，而不只是表达伦理",
+    "bodyZh": [
+      [
+        "主张",
+        "一旦一个人深深嵌入某个职业(profession)，他在公共事务上的信念就可能在自己尚未完全察觉的情况下，变成自利的。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)以华盛顿的烟草游说者开篇，随后回忆自己在华尔街(Wall Street)第一份工作——员工被告知要向那些「对投行有利」的政客捐款。两种情境里，私人角色都在悄悄地把自己包装成「公共原则」。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它回答了本章的主要问题：塔勒布(Taleb)认为这支箭头常常是从「职业」指向「伦理」，而不是相反。"
+      ],
+      [
+        "全书联结",
+        "这一章把第 23 章的「切肤之痛(skin in the game)」拿来应用到普通的职业生活。它在追问：什么时候，个人角色会让一个人的公共观点变得不可靠？"
+      ]
+    ],
     "chapterLabel": "Chapter 24",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "人并不只是把既有伦理带进 profession，profession 本身也会反过来塑造人的伦理判断。"
+        "核心观点",
+        "一旦一个人深深嵌入某个职业，他在公共事务上的信念就可能在自己尚未完全察觉的情况下，变成自利的。"
       ],
       [
         "详细解释",
-        "Taleb 这一章的起点是：不能把 ethics 当成漂浮在职业结构之上的纯净东西。一个人长期处在某种 incentive、status need、client pressure、career ladder 里，他看世界的方式会被慢慢改写。\n\n而且这种改写常常不是故意作恶，而是职业角色慢慢把私人利益包装成公共原则。\n\n所以判断一个 profession 的 public judgment 时，不能假设它天然超然。"
+        "它回答了本章的主要问题。塔勒布(Taleb)认为：这支箭头常常是从「职业」指向「伦理」，而不是相反。\n\n这一章把第 23 章的「切肤之痛(skin in the game)」拿来应用到普通的职业生活。它在追问：什么时候，个人角色会让一个人的公共观点变得不可靠？"
       ],
       [
-        "这个例子到底在说明什么",
-        "Taleb 从 Washington 的 tobacco lobbyist 说起，又回忆自己在华尔街第一份工作里被要求给对投行有利的政客捐款。这个例子要说明的是：职业角色会悄悄把 `对我有利` 包装成 `对公共有利`。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)以华盛顿的烟草游说者开篇，随后回忆自己在华尔街(Wall Street)第一份工作——员工被告知要向那些「对投行有利」的政客捐款。两种情境里，私人角色都在悄悄地把自己包装成「公共原则」。\n\n这一情境的重点是：它回答了本章的主要问题——塔勒布(Taleb)认为这支箭头常常是从职业指向伦理，而不是相反。"
       ]
     ]
   },
   "chapter24-concept2": {
     "title": "Free opinion requires self-ownership, not just wealth",
-    "titleZh": "言论自由靠自主，不只是靠财富",
+    "titleZh": "自由表态需要「拥有自己」，而不只是拥有财富",
+    "bodyZh": [
+      [
+        "主张",
+        "一个人只有当他不容易被身份需求、债务、雇主或社会的「攀比跑步机(treadmill)」挤压时，他才在公共判断上是自由的。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)给出一组相互呼应的场景。格林尼治(Greenwich)——纽约附近一个富裕的康涅狄格(Connecticut)郊区，居住着许多金融从业者——的富人仍被「相互之间的身份攀比跑步机」困住。胖东尼(Fat Tony)——塔勒布(Taleb)贯穿全书用来对抗理论家、为实际智慧发声的布鲁克林意大利裔街头人物——把那些系领带的办公室上班族称作「现代奴隶」，因为他们的收入和社会地位每天都要靠取悦雇主。古希腊(Greek)那个「自由人是拥有自己时间与观点的人」的观念，则站在这两幅场景背后，作为塔勒布(Taleb)想要恢复的更古老的标准。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它防止了对「独立」的浅薄解读。光有钱并不能让人自由——如果他的整个生活仍然依赖于讨好周围的系统。"
+      ],
+      [
+        "全书联结",
+        "这避免了塔勒布(Taleb)的伦理塌缩成简单的「反富人修辞」。真正的问题是：一个人能不能在不被职业惩罚的情况下，说出真话。"
+      ]
+    ],
     "chapterLabel": "Chapter 24",
     "en": [
       [
@@ -59,22 +95,44 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "真正的自由判断需要 self-ownership，而不只是有钱。只要你还被 debt、status 或职业 treadmill 卡住，你的 opinion 就不够自由。"
+        "核心观点",
+        "一个人只有当他不容易被身份需求、债务、雇主或社会的「攀比跑步机(treadmill)」挤压时，他才在公共判断上是自由的。"
       ],
       [
         "详细解释",
-        "Taleb 在这里不想让读者把 independence 浅化成 net worth。很多人即使很富，也仍然被比较、社会地位、消费习惯、职业网络牢牢拴住。\n\n所以真正自由的人，不只是账户余额够大，而是能承担说真话的后果，不必为了保住位置而弯曲判断。\n\n这也是他为什么总把时间所有权、节奏所有权、言论后果承担能力放在财富前面。"
+        "它防止了对「独立」的一种浅薄解读。光有钱并不能让人自由——如果他的整个生活仍然依赖于讨好周围的系统。\n\n这避免了塔勒布(Taleb)的伦理塌缩成简单的「反富人修辞」。真正的问题是：一个人能不能在不被职业惩罚的情况下，说出真话。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Greenwich 的富人仍活在比较的 treadmill 上；Fat Tony 则把打领带上班的人叫作现代奴隶。这个例子要说明的是：`有钱` 和 `自由` 不是同一个概念，真正关键的是你是否拥有自己的时间和判断。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)给出一组相互呼应的场景：格林尼治(Greenwich)的富人仍被攀比的跑步机困住；胖东尼(Fat Tony)把那些系领带的人称作「现代奴隶」；古希腊(Greek)的观念把自由人定义为拥有自己时间和观点的人。\n\n这一情境的重点是：它防止了对独立的浅薄解读——光有钱并不能让人自由，如果他的整个生活仍然依赖于讨好周围的系统。"
       ]
     ]
   },
   "chapter24-concept3": {
     "title": "Complex regulation gives insiders legal ways to exploit the public",
-    "titleZh": "复杂监管给内部人合法的剥削路径",
+    "titleZh": "复杂监管(complex regulation)给内部人合法剥削公众的路径",
+    "bodyZh": [
+      [
+        "主张",
+        "监管(regulatory)系统越复杂，前内部人就越容易用特权知识从公众那里榨取期权性(optionality)。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)的旗舰案例是艾伦·布林德(Alan Blinder)的存款保险产品。布林德(Blinder)曾任美联储(Federal Reserve)副主席，与一项服务相关——这项服务能把一位富有客户的大额现金存款拆成许多更小的、受保险的账户，让客户获得几乎全额的政府保护，远超过通常的上限。同一圈子的人随后还可以主张：把更广泛的保护延伸给普通公民才是「糟糕的政策」。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它展示了「合法」与「合伦理」之间的鸿沟。一笔交易可能在字面上符合系统规则，却在违背规则的本意，并把公职经验当成私人特许权使用。"
+      ],
+      [
+        "全书联结",
+        "这是塔勒布(Taleb)为「简单启发式(simple heuristics)优于庞大监管法规」给出的最强例证。复杂性并不能消除代理问题(agency problems)，它往往在喂养这些问题。"
+      ],
+      [
+        "常见误解",
+        "塔勒布(Taleb)并不是说所有规则都应该消失。他是在说：规则应当简单到「内部人无法独占这座迷宫」。"
+      ]
+    ],
     "chapterLabel": "Chapter 24",
     "en": [
       [
@@ -92,22 +150,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "regulation 一旦复杂化，就会变成 insider 的迷宫。熟悉规则的人更容易合法地把 optionality 从公众手里拿走。"
+        "核心观点",
+        "监管系统越复杂，前内部人就越容易用特权知识从公众那里榨取期权性(optionality)。"
       ],
       [
         "详细解释",
-        "Taleb 不是说规则没用，而是说复杂规则很容易被最懂它的人反向利用。\n\n一个巨大的 regulatory maze，看起来精致，实际上给 insider 留出了大量 legal but unethical 的 extraction 空间。外部人看不懂，内部人却知道怎么钻。\n\n所以他的 preference 是 simple heuristics，而不是无限增厚的 rulebook。"
+        "塔勒布(Taleb)并不是在喊「所有监管都是坏的」口号。他在指出一种关于复杂性的结构性问题。迷宫越细致，内部知识就越值钱；把「公共系统知识」转化为「私人优势」也就越容易。\n\n所以这里关键的区分不是「监管 vs 不监管」，而是「外人能理解的简单规则」与「内部人在仍然形式合法的同时还能套利的繁复系统」之间的区别。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Alan Blinder 的存款保险产品允许富人把大额存款拆成很多受保小块，从而拿到全面政府保护，然后又在公共讨论里反对更广泛的保护。这个例子要说明的是：同一套复杂制度，可以被 insider 用来私有化安全，同时把风险和不公留给系统。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)的旗舰案例是艾伦·布林德(Alan Blinder)的存款保险产品。布林德(Blinder)曾任美联储(Federal Reserve)副主席，与一项服务相关——这项服务能把一位富有客户的大额现金存款拆成许多更小的、受保险的账户，让客户获得几乎全额的政府保护，远超过通常的上限。同一圈子的人随后还可以主张：把更广泛的保护延伸给普通公民才是「糟糕的政策」。\n\n这一情境的重点是：滥用并不需要违法，仍然可以是剥削——复杂性让内部人把「安全」私有化，而把公众继续留在承担风险的系统里。"
       ]
     ]
   },
   "chapter24-concept4": {
     "title": "Organized knowledge creates a researcher's free option",
-    "titleZh": "组织化知识给研究者制造了免费期权",
+    "titleZh": "组织化的知识(organized knowledge)给了研究者一份「免费期权」",
+    "bodyZh": [
+      [
+        "主张",
+        "研究者和院系可以从「可发表的结果」里获得职业上的上行(upside)，而真相则在承担「数据挑拣(cherry-picking)」、不可复现(nonreplication)和集体一致性所带来的下行(downside)。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)攻击「大数据(Big Data)」中的挑拣、薄弱的观察性研究(observational studies)，以及那些继续教授已破产的风险方法的经济学系——因为学生需要工作，而当社会替错误付账时，教授并不会被惩罚。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为同样的代理问题(agency problem)也出现在知识本身。研究者可以在拿到一份「可发表的结果」时就停手，而公众则继承那份「虚假信心(false confidence)」。"
+      ],
+      [
+        "全书联结",
+        "这把本书的伦理重新带回科学、统计与专家文化。它也呼应塔勒布(Taleb)早先对脆弱论者(fragilistas)、「教鸟飞」以及理论先行(theory-first)职业的攻击。"
+      ]
+    ],
     "chapterLabel": "Chapter 24",
     "en": [
       [
@@ -125,16 +201,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在 organized knowledge 里，researcher 也可能拥有 free option：career 拿 upside，truth 吃 downside。"
+        "核心观点",
+        "研究者和院系可以从「可发表的结果」里获得职业上的上行(upside)，而真相则在承担「数据挑拣(cherry-picking)」、不可复现(nonreplication)和集体一致性所带来的下行(downside)。"
       ],
       [
         "详细解释",
-        "Taleb 把 skin in the game 推进到 research。数据越多、变量越多、发表压力越大，研究者就越容易 cherry-pick、停在一个 publishable result 上，然后把这个结果包装成知识进展。\n\n问题是，论文发表的 upside 很私人，而错误结论造成的集体误导，往往由社会和学科本身承担。\n\n所以他在这里攻击的不是 data 本身，而是 incentive 下的 knowledge production。"
+        "同样的代理问题(agency problem)也出现在知识本身。研究者可以在拿到一份「可发表的结果」时就停手，而公众则继承那份「虚假信心(false confidence)」。\n\n这把本书的伦理重新带回科学、统计与专家文化。它也呼应塔勒布(Taleb)早先对脆弱论者(fragilistas)、「教鸟飞」以及理论先行(theory-first)职业的攻击。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Big Data cherry-picking、不可复制的 observational study、明知 fat tails 问题仍继续教学的经济系，是 Taleb 的主要例子。它们要说明的是：当研究者没有为错结论付对称代价时，学术系统也会形成自己的 agency problem。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)攻击「大数据(Big Data)」中的挑拣、薄弱的观察性研究(observational studies)，以及那些继续教授已破产的风险方法的经济学系——因为学生需要工作，而当社会替错误付账时，教授并不会被惩罚。\n\n这一情境的重点是：同样的代理问题也出现在知识本身——研究者可以在拿到一份可发表的结果时就停手，而公众继承那份虚假信心。"
       ]
     ]
   }

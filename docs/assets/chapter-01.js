@@ -5,296 +5,32 @@ window.ANTIFRAGILE_CHAPTERS.chapter1 = {
   "title": "Between Damocles and Hydra"
 };
 
-window.ANTIFRAGILE_TRANSLATIONS = window.ANTIFRAGILE_TRANSLATIONS || {};
-window.ANTIFRAGILE_TRANSLATIONS["chapter-1"] = {
-  "zh": [
-    {
-      "selector": "#chapter-1 .chapter-header .eyebrow",
-      "html": "第 1 章"
-    },
-    {
-      "selector": "#chapter-1 .chapter-header .muted",
-      "html": "第一卷 · 反脆弱：导论 · 全书 25 章中的第 1 章"
-    },
-    {
-      "selector": "#chapter-1 .locator",
-      "html": "第一卷 · 核心词汇"
-    },
-    {
-      "selector": "#chapter-1 #one-minute h2",
-      "html": "一分钟读懂本章"
-    },
-    {
-      "selector": "#chapter-1 #concepts > h2",
-      "html": "核心概念"
-    },
-    {
-      "selector": "#chapter-1 #concept-1 h3",
-      "html": "概念 1：反脆弱（Antifragility）需要自己的词"
-    },
-    {
-      "selector": "#chapter-1 #concept-2 h3",
-      "html": "概念 2：达摩克利斯、凤凰和九头蛇海德拉区分了脆弱、复原力和反脆弱"
-    },
-    {
-      "selector": "#chapter-1 #concept-3 h3",
-      "html": "概念 3：有限压力可以制造过度补偿（overcompensation）"
-    },
-    {
-      "selector": "#chapter-1 #concept-4 h3",
-      "html": "概念 4：领域依赖（domain dependence）会让人看不见跨领域的明显模式"
-    },
-    {
-      "selector": "#chapter-1 #one-minute .abstract li:nth-child(1) span:last-child",
-      "html": "标题用三个形象说明三种面对伤害的方式：达摩克利斯（Damocles）代表 hidden fragility，凤凰（Phoenix）代表恢复原状，九头蛇海德拉（Hydra）代表因为伤害而变强。"
-    },
-    {
-      "selector": "#chapter-1 #one-minute .abstract li:nth-child(2) span:last-child",
-      "html": "塔勒布（Taleb）从一个词汇问题开始。<code>robust</code> 不是 <code>fragile</code> 的真正反面；他需要一个词，表示某个东西会因为 stress、error、volatility 而变得更好。"
-    },
-    {
-      "selector": "#chapter-1 #one-minute .abstract li:nth-child(3) span:last-child",
-      "html": "<code>米特里达梯化（Mithridatization）</code> 和 <code>毒物兴奋效应（hormesis）</code> 给出第一个机制：有限度的压力，有时会让 living system 变得更强。"
-    },
-    {
-      "selector": "#chapter-1 #one-minute .abstract li:nth-child(4) span:last-child",
-      "html": "本章最后指出：人们常常在一个领域能理解“压力有益”，但换到另一个领域就看不见同样的 pattern。"
-    },
-    {
-      "selector": "#chapter-1 #concept-1 p:nth-of-type(1)",
-      "html": "<strong>核心观点：</strong> 塔勒布（Taleb）说普通语言缺少一个重要类别：一个东西可以是 <code>fragile</code>、<code>robust</code>，也可以是 <code>antifragile</code>。"
-    },
-    {
-      "selector": "#chapter-1 #concept-1 p:nth-of-type(2)",
-      "html": "<strong>例子：</strong> 一个普通包裹如果写着 <code>fragile</code>，意思是摇晃或摔落会损坏里面的东西，所以需要小心搬运。塔勒布（Taleb）接着让读者想象真正相反的包裹：它不是只会“没坏”，而是被摇晃或摔落以后反而变得更好。"
-    },
-    {
-      "selector": "#chapter-1 #concept-1 p:nth-of-type(3)",
-      "html": "<strong>这个例子为什么重要：</strong> 这个例子把 <code>robust</code> 和 <code>antifragile</code> 分开。Robust package 只是能承受粗暴搬运；antifragile package 会从粗暴搬运中获益。"
-    },
-    {
-      "selector": "#chapter-1 #concept-1 p:nth-of-type(4)",
-      "html": "<strong>和整本书的关系：</strong> 这是整本书的基础区分。如果读者把 <code>antifragile</code> 当成 <code>resilient</code> 的同义词，后面关于 optionality、medicine、ethics 的讨论都会被压扁。"
-    },
-    {
-      "selector": "#chapter-1 #concept-1 p:nth-of-type(5)",
-      "html": "<strong>可能的误解：</strong> 常见误解是：塔勒布（Taleb）只是换一个词来讲 resilience。其实他的重点是：resilience 回到原点，antifragility 通过压力变得更好。"
-    },
-    {
-      "selector": "#chapter-1 #concept-2 p:nth-of-type(1)",
-      "html": "<strong>核心观点：</strong> 塔勒布（Taleb）用达摩克利斯（Damocles）、凤凰（Phoenix）和九头蛇海德拉（Hydra）说明系统面对压力时的三种不同反应。"
-    },
-    {
-      "selector": "#chapter-1 #concept-2 p:nth-of-type(2)",
-      "html": "<strong>例子：</strong> 达摩克利斯（Damocles）在宴会上享受荣华，但头顶有一把剑只靠一根马鬃悬着，所以表面平静里藏着危险。凤凰（Phoenix）被烧毁后重生为同一只鸟。九头蛇海德拉（Hydra）被砍掉一个头后长出两个头。塔勒布（Taleb）还提到贝鲁特（Beirut）：它在毁坏后重建，并且比以前更好。"
-    },
-    {
-      "selector": "#chapter-1 #concept-2 p:nth-of-type(3)",
-      "html": "<strong>这个例子为什么重要：</strong> 这三个形象承担不同功能。达摩克利斯（Damocles）表示 hidden fragility，凤凰（Phoenix）表示 recovery，九头蛇海德拉（Hydra）表示通过 damage 得到 improvement。塔勒布（Taleb）一开始就要读者把“恢复”和“变强”分开。"
-    },
-    {
-      "selector": "#chapter-1 #concept-2 p:nth-of-type(4)",
-      "html": "<strong>和整本书的关系：</strong> 后面的章节会不断换方式问同一个问题：一个系统只是 survive disorder，还是 gain from disorder？整本书偏爱的模型是九头蛇海德拉（Hydra），不是凤凰（Phoenix）。"
-    },
-    {
-      "selector": "#chapter-1 #concept-2 p:nth-of-type(5)",
-      "html": "<strong>可能的误解：</strong> 这些是象征性例子，不是完整证明。读者可以接受这个区分，同时继续追问：现实中到底哪些系统真的像九头蛇海德拉（Hydra）？"
-    },
-    {
-      "selector": "#chapter-1 #concept-3 p:nth-of-type(1)",
-      "html": "<strong>核心观点：</strong> 塔勒布（Taleb）给出的第一个 antifragility 机制是 overcompensation：有限度的压力会让系统建立额外强度。"
-    },
-    {
-      "selector": "#chapter-1 #concept-3 p:nth-of-type(2)",
-      "html": "<strong>例子：</strong> 塔勒布（Taleb）从米特里达梯（Mithridates）讲起：他通过小剂量服毒，让自己逐渐能承受更大剂量。然后他讲 <code>毒物兴奋效应（hormesis）</code>：雨果·舒尔茨（Hugo Schulz）观察到，小剂量毒物会刺激 yeast growth，而更大剂量会造成伤害。他还加入热量限制（caloric restriction）的例子：有限饥饿可能比持续丰足触发更健康的反应。"
-    },
-    {
-      "selector": "#chapter-1 #concept-3 p:nth-of-type(3)",
-      "html": "<strong>这个例子为什么重要：</strong> 这些场景把本章从神话推进到机制。它们说明同一种 harmful force 在不同 dose 下可能有不同效果；有限的冲击可能触发额外强度，而不只是修复。"
-    },
-    {
-      "selector": "#chapter-1 #concept-3 p:nth-of-type(4)",
-      "html": "<strong>和整本书的关系：</strong> 这是从 vocabulary 到 mechanism 的桥。它直接引向 chapter 2，也支撑塔勒布（Taleb）后面对 overprotection 和 excessive intervention 的批评。"
-    },
-    {
-      "selector": "#chapter-1 #concept-3 p:nth-of-type(5)",
-      "html": "<strong>可能的误解：</strong> 关键问题不是毒物兴奋效应（hormesis）在生物学里是否存在。更难的问题是：塔勒布（Taleb）能把这个 pattern 延伸到 politics、economics、institutions 多远。"
-    },
-    {
-      "selector": "#chapter-1 #concept-4 p:nth-of-type(1)",
-      "html": "<strong>核心观点：</strong> 人们常常能在一个领域理解 beneficial stress，却在另一个领域错过同一个 pattern。"
-    },
-    {
-      "selector": "#chapter-1 #concept-4 p:nth-of-type(2)",
-      "html": "<strong>例子：</strong> 塔勒布（Taleb）看到一个迪拜银行家（Dubai banker）先花钱让搬运工（porter）帮他提行李，后来又花钱去健身房举壶铃（kettlebell），好像在模拟提箱子。他还想象一个医生：医生认可 exercise 能让身体更强，却会很快给轻微感染（minor infection）开抗生素（antibiotics），而不是让 immune system 自己处理。"
-    },
-    {
-      "selector": "#chapter-1 #concept-4 p:nth-of-type(3)",
-      "html": "<strong>这个例子为什么重要：</strong> 问题不是完全无知。同一个人可以在 exercise 里理解 stress training，却在 medicine 里拒绝相似逻辑。塔勒布（Taleb）用这个落差说明：antifragility 往往要等你看见 domain mismatch 后才显得明显。"
-    },
-    {
-      "selector": "#chapter-1 #concept-4 p:nth-of-type(4)",
-      "html": "<strong>和整本书的关系：</strong> 这解释了塔勒布（Taleb）在全书中的方法。他不断在 biology、medicine、politics、finance 之间跳转，因为他认为同一个结构会在不同领域反复出现。"
-    },
-    {
-      "selector": "#chapter-1 #concept-4 p:nth-of-type(5)",
-      "html": "<strong>可能的误解：</strong> 跨领域出现相似 pattern，不等于每个领域的机制都完全一样。这正是有些读者会跟随塔勒布（Taleb），而有些读者会抵抗他的地方。"
-    },
-    {
-      "selector": "#chapter-1 #concept-1 .grounding",
-      "html": "依据：PDF 第 45-46 页。"
-    },
-    {
-      "selector": "#chapter-1 #concept-2 .grounding",
-      "html": "依据：PDF 第 47-48 页。"
-    },
-    {
-      "selector": "#chapter-1 #concept-3 .grounding",
-      "html": "依据：PDF 第 50-51 页。"
-    },
-    {
-      "selector": "#chapter-1 #concept-4 .grounding",
-      "html": "依据：PDF 第 52-53 页。"
-    },
-    {
-      "selector": "#chapter-1 #concept-1 .deep-button",
-      "html": "深度解释"
-    },
-    {
-      "selector": "#chapter-1 #concept-2 .deep-button",
-      "html": "深度解释"
-    },
-    {
-      "selector": "#chapter-1 #concept-3 .deep-button",
-      "html": "深度解释"
-    },
-    {
-      "selector": "#chapter-1 #concept-4 .deep-button",
-      "html": "深度解释"
-    },
-    {
-      "selector": "#chapter-1 #after-reading .section-label",
-      "html": "读后复盘"
-    },
-    {
-      "selector": "#chapter-1 #after-reading-title",
-      "html": "复盘附录"
-    },
-    {
-      "selector": "#chapter-1 #after-reading .review-appendix-header p",
-      "html": "读完核心概念（Core concepts）后再看这个较轻的部分。它提供讨论抓手（discussion handles）、关键对比、争议点，以及本章在整本书中的作用。"
-    },
-    {
-      "selector": "#chapter-1 #say-out-loud h2",
-      "html": "你应该能够直接说出来的内容"
-    },
-    {
-      "selector": "#chapter-1 #say-out-loud .insight-list li:nth-child(1)",
-      "html": "塔勒布（Taleb）认为读者常把 <code>survives stress</code> 和 <code>improves through stress</code> 混在一起。"
-    },
-    {
-      "selector": "#chapter-1 #say-out-loud .insight-list li:nth-child(2)",
-      "html": "他希望读者区分凤凰（Phoenix）和九头蛇海德拉（Hydra）。遭受伤害后恢复，不等于从伤害中获益。"
-    },
-    {
-      "selector": "#chapter-1 #say-out-loud .insight-list li:nth-child(3)",
-      "html": "他认为第一个可信模型来自 biology：有限的 poison、hunger 或 stress 有时会创造额外强度。"
-    },
-    {
-      "selector": "#chapter-1 #say-out-loud .insight-list li:nth-child(4)",
-      "html": "他还认为，人们在 exercise 和 immunity 里懂这个道理，却在 medicine、politics 或 social life 中忘掉它。"
-    },
-    {
-      "selector": "#chapter-1 #distinctions h2",
-      "html": "关键区分"
-    },
-    {
-      "selector": "#chapter-1 #distinctions .insight-list li:nth-child(1)",
-      "html": "<code>脆弱（fragile）</code> vs <code>强健（robust）</code> vs <code>反脆弱（antifragile）</code>"
-    },
-    {
-      "selector": "#chapter-1 #distinctions .insight-list li:nth-child(2)",
-      "html": "<code>凤凰（Phoenix）</code> 的 resilience vs <code>九头蛇海德拉（Hydra）</code> 的 improvement"
-    },
-    {
-      "selector": "#chapter-1 #distinctions .insight-list li:nth-child(3)",
-      "html": "有助于 adaptation 的 bounded stress vs 会摧毁系统的 damage"
-    },
-    {
-      "selector": "#chapter-1 #distinctions .insight-list li:nth-child(4)",
-      "html": "在一个领域理解 beneficial stress vs 在另一个领域错过同样 pattern"
-    },
-    {
-      "selector": "#chapter-1 #debate h2",
-      "html": "可以讨论的争议点"
-    },
-    {
-      "selector": "#chapter-1 #debate .insight-list li:nth-child(1)",
-      "html": "Chapter 1 是真的提出了一个新类别，还是只是把熟悉的 ideas 讲得更锋利？"
-    },
-    {
-      "selector": "#chapter-1 #debate .insight-list li:nth-child(2)",
-      "html": "贝鲁特（Beirut）这个例子作为 evidence 是否足够强，还是它太快地从 recovery 跳到了 antifragility？"
-    },
-    {
-      "selector": "#chapter-1 #debate .insight-list li:nth-child(3)",
-      "html": "本书能在多大程度上依靠 hormesis 这类 biological cases，再把 analogies 延伸到 economics 和 politics？"
-    },
-    {
-      "selector": "#chapter-1 #debate .insight-list li:nth-child(4)",
-      "html": "这个 word argument 是否真的这么重要，还是塔勒布（Taleb）夸大了 naming 的力量？"
-    },
-    {
-      "selector": "#chapter-1 #whole-book h2",
-      "html": "本章在整本书中的作用"
-    },
-    {
-      "selector": "#chapter-1 #whole-book .insight-list li:nth-child(1)",
-      "html": "本章给出整本书的基本 vocabulary。没有这一章，后面的 robustness、optionality、convexity、skin in the game 会难得多。"
-    },
-    {
-      "selector": "#chapter-1 #whole-book .insight-list li:nth-child(2)",
-      "html": "它把九头蛇海德拉（Hydra）而不是凤凰（Phoenix）设为核心图像：不是 disorder 后的 survival，而是 gain from disorder。"
-    },
-    {
-      "selector": "#chapter-1 #whole-book .insight-list li:nth-child(3)",
-      "html": "它引入塔勒布（Taleb）全书反复使用的两个动作：bounded stress 可以有益；人们常常不能把这个 insight 跨领域迁移。"
-    },
-    {
-      "selector": "#chapter-1 #navigate h2",
-      "html": "导航"
-    },
-    {
-      "selector": "#chapter-1 #navigate .chapter-nav-card:nth-child(1) .chapter-nav-kicker",
-      "html": "上一章"
-    },
-    {
-      "selector": "#chapter-1 #navigate .chapter-nav-card:nth-child(1) .chapter-nav-title",
-      "html": "没有上一章"
-    },
-    {
-      "selector": "#chapter-1 #navigate .chapter-nav-card:nth-child(2) .chapter-nav-kicker",
-      "html": "首页"
-    },
-    {
-      "selector": "#chapter-1 #navigate .chapter-nav-card:nth-child(2) .chapter-nav-title",
-      "html": "回到总览"
-    },
-    {
-      "selector": "#chapter-1 #navigate .chapter-nav-card:nth-child(3) .chapter-nav-kicker",
-      "html": "下一章"
-    },
-    {
-      "selector": "#chapter-1 #navigate .chapter-nav-card:nth-child(3) .chapter-nav-title",
-      "html": "第 2 章：过度补偿和到处可见的过度反应"
-    }
-  ]
-};
-
 window.ANTIFRAGILE_EXPLAINERS = {
   "concept1": {
     "title": "Antifragility needs its own word",
-    "titleZh": "反脆弱需要自己的词",
+    "titleZh": "反脆弱性(antifragility)需要属于自己的词",
+    "bodyZh": [
+      [
+        "主张",
+        "塔勒布(Taleb)认为日常语言里缺少一个重要的类别：一样东西可以是脆弱的(fragile)、稳健的(robust)，也可以是反脆弱的(antifragile)。"
+      ],
+      [
+        "例子",
+        "一只标着「易碎(fragile)」的普通包裹是在告诉人们要小心搬运，因为摇晃或跌落会损坏里面的东西。塔勒布(Taleb)接着请读者想象真正与之相反的另一种包裹：一种在被摇晃或跌落时反而变得更好的包裹。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这个例子把稳健的(robust)和反脆弱的(antifragile)分开。一个稳健的包裹可以承受粗暴搬运；一个反脆弱的包裹则能从粗暴搬运中获益。"
+      ],
+      [
+        "全书联结",
+        "这是整本书的基础区分。如果读者把反脆弱(antifragile)只当作韧性(resilient)的另一种说法，那么后续关于期权性(optionality)、医学和伦理的章节会变得平淡很多。"
+      ],
+      [
+        "常见误解",
+        "一个常见的错误是以为塔勒布(Taleb)只是把韧性(resilience)换了一个新词。他真正的意思是：韧性是回到原点，而反脆弱性(antifragility)在压力(stress)中变得更好。"
+      ]
+    ],
     "en": {
       "sections": [
         [
@@ -311,26 +47,46 @@ window.ANTIFRAGILE_EXPLAINERS = {
         ]
       ]
     },
-    "zh": {
-      "sections": [
-        [
-          "核心意思",
-          "塔勒布（Taleb）认为日常语言里少了一个很重要的类别：除了 fragile 和 robust，还需要 antifragile 这个词来表示“在压力下变得更好”的东西。"
-        ],
-        [
-          "详细解释",
-          "这一节的重点不是发明一个新词本身，而是把三种完全不同的状态分开。fragile 会被冲击伤害，robust 只是扛住冲击，antifragile 则会因为冲击而受益。\n\n如果读者一开始不把这三者分清，后面关于 optionality、medicine、ethics 的讨论都会被压扁成普通的 resilience。所以这里是在给整本书设定基本词汇表。"
-        ],
-        [
-          "这个例子到底在说明什么",
-          "包裹的例子是全书最直观的起点。写着 fragile 的包裹，意思是运输中的摇晃和跌落会伤到里面的东西。塔勒布（Taleb）要你想象真正的 opposite：不是一个“不会碎”的包裹，而是一个“被摇晃后反而更好”的包裹。\n\n这个例子真正要说明的是：robust 不是 fragile 的真正反面。真正的反面不是“扛住”，而是“从压力里获益”。"
-        ]
+    "zh": [
+      [
+        "核心观点",
+        "塔勒布(Taleb)认为日常语言里缺少一个重要的类别：一样东西可以是脆弱的(fragile)、稳健的(robust)，也可以是反脆弱的(antifragile)。"
+      ],
+      [
+        "详细解释",
+        "这个例子要把稳健的(robust)和反脆弱的(antifragile)分开。一个稳健的包裹可以承受粗暴搬运。一个反脆弱的包裹则能从粗暴搬运中获益。\n\n常见的一个误解是以为塔勒布(Taleb)只是把韧性(resilience)换了一个新名字。他真正的意思是：韧性是回到原点；而反脆弱性(antifragility)是在压力(stress)中变得更好。"
+      ],
+      [
+        "这个例子在说明什么",
+        "标注「易碎(fragile)」的普通包裹是在提醒人们小心搬运，因为摇晃或跌落会损坏里面的东西。塔勒布(Taleb)接着请读者想象真正与之相反的另一种包裹：一种在被摇晃或跌落时反而变得更好的包裹。\n\n这一情境的重点是：稳健不是脆弱真正的反面。真正的反面是这样一种结构——同样一次会伤害脆弱物体的冲击(shock)，反而能让它从中获益。"
       ]
-    }
+    ]
   },
   "concept2": {
     "title": "Damocles, Phoenix, and Hydra",
-    "titleZh": "达摩克利斯、凤凰和九头蛇海德拉",
+    "titleZh": "达摩克利斯(Damocles)、凤凰(Phoenix)与海德拉(Hydra)",
+    "bodyZh": [
+      [
+        "主张",
+        "塔勒布(Taleb)用达摩克利斯(Damocles)、凤凰(Phoenix)和海德拉(Hydra)三个意象，来展示对压力(stress)的三种不同反应。"
+      ],
+      [
+        "例子",
+        "达摩克利斯(Damocles)在宴席上享乐，一柄剑却以一根马鬃悬在他头顶——平静与危险共存于同一场景。凤凰(Phoenix)被火焚毁后又作为同一只鸟归来。海德拉(Hydra)失去一颗头便会长出两颗。塔勒布(Taleb)还加上了贝鲁特(Beirut)——这座城市被摧毁后重建得比原来更好。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这些意象各自承担不同的任务。达摩克利斯(Damocles)展示隐藏的脆弱(fragility)，凤凰(Phoenix)展示恢复(recovery)，海德拉(Hydra)则展示在伤害中变得更强。塔勒布(Taleb)希望读者从一开始就把「恢复」和「改进」严格区分开来。"
+      ],
+      [
+        "全书联结",
+        "本书余下章节会用新的形式反复问同一个问题：一个系统是仅仅在失序(disorder)中存活，还是从失序(disorder)中获益？海德拉(Hydra)、而不是凤凰(Phoenix)，才是本书更偏爱的模型。"
+      ],
+      [
+        "常见误解",
+        "这些是象征性的例子，而不是完整的证明。读者可能接受这种对比，但仍会追问：哪些现实系统真正像海德拉(Hydra)那样运作？"
+      ]
+    ],
     "en": {
       "sections": [
         [
@@ -347,26 +103,46 @@ window.ANTIFRAGILE_EXPLAINERS = {
         ]
       ]
     },
-    "zh": {
-      "sections": [
-        [
-          "核心意思",
-          "塔勒布（Taleb）用达摩克利斯（Damocles）、凤凰（Phoenix）、九头蛇海德拉（Hydra）三个形象，把 fragility、resilience 和 antifragility 分开来看。"
-        ],
-        [
-          "详细解释",
-          "这三个意象不是装饰，而是帮助读者建立直觉。达摩克利斯（Damocles）表示表面平静但头上悬着大风险；凤凰（Phoenix）表示遭受损失之后恢复原状；九头蛇海德拉（Hydra）则更进一步，表示受到打击以后反而长出更多力量。\n\n塔勒布（Taleb）特别在乎凤凰（Phoenix）和九头蛇海德拉（Hydra）的区别。很多人会把“恢复过来”和“越打越强”当成同一种事，但塔勒布认为这两者差别非常大。整本书偏爱的模型是九头蛇海德拉（Hydra），不是凤凰（Phoenix）。"
-        ],
-        [
-          "这个例子到底在说明什么",
-          "达摩克利斯（Damocles）的故事里，宴会很安稳，但一把剑一直悬在头上，所以它说明的是 hidden fragility。凤凰（Phoenix）焚烧后重生，说明的是 recovery。九头蛇海德拉（Hydra）被砍掉一个头却长出两个头，说明的是 gain from damage。\n\n这些例子放在一起，是为了让读者看到：不是所有“经历冲击后的存活”都一样。有的只是回到原点，有的则会因为冲击变得更强。"
-        ]
+    "zh": [
+      [
+        "核心观点",
+        "塔勒布(Taleb)用达摩克利斯(Damocles)、凤凰(Phoenix)和海德拉(Hydra)三个意象，来展示对压力(stress)的三种不同反应。"
+      ],
+      [
+        "详细解释",
+        "这三个意象各自承担不同的任务。达摩克利斯(Damocles)展示隐藏的脆弱(fragility)，凤凰(Phoenix)展示恢复(recovery)，海德拉(Hydra)展示在伤害中变得更强。塔勒布(Taleb)希望读者从一开始就把「恢复」和「改进」严格区分开来。\n\n这些都是象征性的例子，而不是完整的证明。读者可能接受这种对比，但仍会追问：到底哪些现实系统真正像海德拉那样运作？"
+      ],
+      [
+        "这个例子在说明什么",
+        "达摩克利斯(Damocles)在宴席上享乐，一柄剑却以一根马鬃悬在他头顶——平静与危险共存于同一场景。凤凰(Phoenix)被火焚毁后又作为同样的鸟儿归来。海德拉(Hydra)失去一颗头便会长出两颗。塔勒布(Taleb)还加上了贝鲁特(Beirut)——这座城市在被摧毁后重建得比原来更好。\n\n这一情境的重点是：从伤害中存活下来并不都是同一回事。达摩克利斯是脆弱的，凤凰是恢复的，海德拉则会变得更强。"
       ]
-    }
+    ]
   },
   "concept3": {
     "title": "Bounded stress can create overcompensation",
-    "titleZh": "有限压力可以制造过度补偿",
+    "titleZh": "有限的压力(stress)可以制造过度补偿(overcompensation)",
+    "bodyZh": [
+      [
+        "主张",
+        "塔勒布(Taleb)给出的反脆弱性(antifragility)第一个机制是过度补偿(overcompensation)：一次有限的压力(stress)可以让系统建立起额外的强度。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)从米特里达梯(Mithridates)开始，他长期小剂量服用毒药，直到能够耐受更大的剂量。接着他转向兴奋效应(hormesis)：雨果·舒尔茨(Hugo Schulz)观察到小剂量的毒药能刺激酵母生长，而大剂量则造成损害。他还加上更广义的热量限制(caloric restriction)模式——有限度的饥饿可能比持续的富足更能引发健康反应。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这些情境把本章从神话推向生物学。它们说明：同一种有害的力量在不同剂量下可能有不同的效应；一次有限的冲击(hit)可以触发额外的强度，而不仅仅是修复(repair)。"
+      ],
+      [
+        "全书联结",
+        "这是从词汇通往机制的桥梁。它直接通向第 2 章，并在后续支撑塔勒布(Taleb)对过度保护(overprotection)和过度干预(excessive intervention)的批评。"
+      ],
+      [
+        "常见误解",
+        "真正的问题不是「生物学中是否存在兴奋效应(hormesis)」。更难的问题是：塔勒布(Taleb)究竟能把这种模式延伸到政治、经济和制度多远？"
+      ]
+    ],
     "en": {
       "sections": [
         [
@@ -383,26 +159,46 @@ window.ANTIFRAGILE_EXPLAINERS = {
         ]
       ]
     },
-    "zh": {
-      "sections": [
-        [
-          "核心意思",
-          "塔勒布（Taleb）在这里第一次给出 antifragility 的机制：有限度的压力，有时会触发系统不只是修复，而是做出 overcompensation。"
-        ],
-        [
-          "详细解释",
-          "这一节最关键的是 dose。同一种东西，在不同剂量下效果可能完全不同。太大时会摧毁系统；足够小且可恢复时，反而会触发额外的防御和强化。\n\n塔勒布（Taleb）用米特里达梯化（Mithridatization）、毒物兴奋效应（hormesis）、热量限制（caloric restriction）这些例子，就是为了说明 antifragility 不是纯粹的神话比喻，而是某些 living systems 里确实会出现的模式。"
-        ],
-        [
-          "这个例子到底在说明什么",
-          "米特里达梯（Mithridates）通过小剂量毒药建立耐受，说明 repeated small exposure 可能让系统更强。毒物兴奋效应（hormesis）的例子则说明同一个 harmful force，在低剂量时可能刺激生长，在高剂量时才变成伤害。热量限制（caloric restriction）的例子也是同一个逻辑：短缺不一定只是坏事，它可能触发更健康的反应。\n\n这些例子真正要说明的是：关键不只是“有没有压力”，而是压力是否在可承受范围内，以及系统是否有恢复空间。"
-        ]
+    "zh": [
+      [
+        "核心观点",
+        "塔勒布(Taleb)给出的反脆弱性(antifragility)第一个机制就是过度补偿(overcompensation)：有限的压力(stress)可以让系统建立起额外的强度。"
+      ],
+      [
+        "详细解释",
+        "关键概念是剂量(dose)。同一种力量在高剂量下会造成伤害，但只要系统有时间恢复(recovery)，低剂量反而可能带来好处。\n\n这就是本章从神话走向生物学的原因。塔勒布(Taleb)是在试图说明，反脆弱性(antifragility)不只是一个比喻——确实有一些生命体能够通过小幅度的压力(stress)来构建额外的强度。"
+      ],
+      [
+        "这个例子在说明什么",
+        "米特里达梯(Mithridates)长期小剂量服用毒药，直到他能耐受更大剂量。兴奋效应(hormesis)给出了更宽泛的版本：雨果·舒尔茨(Hugo Schulz)观察到小剂量毒药能刺激酵母生长，而大剂量则造成损害。热量限制(caloric restriction)展现了同样模式的另一种形式——有限度的饥饿可能比持续的富足更能引发健康反应。\n\n这一情境的重点是：压力(stress)并不是一个简单的范畴。剂量(dose)、恢复窗口(recovery window)以及系统类型共同决定了压力到底是摧毁、训练，还是强化系统。"
       ]
-    }
+    ]
   },
   "concept4": {
     "title": "Domain dependence hides obvious patterns",
-    "titleZh": "领域依赖会隐藏明显模式",
+    "titleZh": "领域依赖(domain dependence)会遮蔽显而易见的模式",
+    "bodyZh": [
+      [
+        "主张",
+        "人们常常在一个领域里理解有益压力(beneficial stress)，却在另一个领域里完全错过同样的模式。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)看见一位迪拜(Dubai)的银行家先付钱让搬运工帮他搬行李，过会儿又花钱去健身房举起沉重的壶铃，仿佛在搬一只行李箱。他又设想了一位医生：这位医生赞美锻炼能让身体更强壮，转头却为一次小感染迅速开出抗生素，而不是让免疫系统自己处理。"
+      ],
+      [
+        "为什么这个例子重要",
+        "问题不是完全无知。同一个人可以在一种情境里理解压力训练(stress training)，却在另一种情境里拒绝同样的逻辑。塔勒布(Taleb)用这个缺口解释，为什么反脆弱性(antifragility)往往要等到有人指出「领域错配」之后才显得明显。"
+      ],
+      [
+        "全书联结",
+        "这解释了塔勒布(Taleb)在本书其余部分的写作方法。他不断在生物学、医学、政治和金融之间跳跃，因为他相信同一种结构在不停地重现。"
+      ],
+      [
+        "常见误解",
+        "在多个领域里反复出现的模式，并不自动意味着每个领域里运作的都是同一种机制。这是一些读者会跟随塔勒布(Taleb)、另一些读者会抗拒他的地方。"
+      ]
+    ],
     "en": {
       "sections": [
         [
@@ -419,21 +215,19 @@ window.ANTIFRAGILE_EXPLAINERS = {
         ]
       ]
     },
-    "zh": {
-      "sections": [
-        [
-          "核心意思",
-          "人们常常能在一个领域里看懂“压力有时有益”，但一换到另一个领域，就突然看不见同样的结构。"
-        ],
-        [
-          "详细解释",
-          "塔勒布（Taleb）认为，这不是因为人完全无知，而是因为人的理解被 domain 卡住了。在 exercise、training、immunity 里，大家很容易接受“小压力有帮助”；但一到 medicine、social life 或 policy，很多人又自动回到“所有压力都应该被消除”的想法。\n\n这也是塔勒布为什么喜欢跨领域跳跃。他不是单纯炫技，而是想逼读者看到同一个 pattern 在不同地方反复出现。"
-        ],
-        [
-          "这个例子到底在说明什么",
-          "迪拜银行家（Dubai banker）的场景很讽刺：他先花钱让搬运工（porter）帮自己提行李，后来又花钱去健身房（gym）举壶铃（kettlebell）。医生的想象例子也一样：他承认 exercise 能让身体更强，却不愿意承认轻微感染（minor infection）有时也可以让 immune system 自己处理。\n\n这些例子真正要说明的是：问题不一定在知识本身，而在于人不会把已经懂的结构迁移到别的领域。"
-        ]
+    "zh": [
+      [
+        "核心观点",
+        "人们常常在一个领域里理解有益压力(beneficial stress)，却在另一个领域里完全错过同样的模式。"
+      ],
+      [
+        "详细解释",
+        "问题不是完全无知。一个人可以理解锻炼中的压力训练(stress training)，却在医学或政策中拒绝类似的想法。\n\n塔勒布(Taleb)之所以强调这一点，是因为反脆弱性(antifragility)往往要等到读者注意到「领域切换」之后才变得显而易见。同样的模式可能在一个领域里清晰可见，在另一个领域里却完全隐形。"
+      ],
+      [
+        "这个例子在说明什么",
+        "塔勒布(Taleb)看见一位迪拜(Dubai)的银行家先付钱让搬运工帮他搬行李，过会儿又花钱去健身房举起沉重的壶铃，仿佛在搬一只行李箱。他又设想了一位医生：这位医生赞美锻炼能让身体更强壮，转头却为一次小感染迅速开出抗生素，而不是让免疫系统自己处理。\n\n这一情境的重点是：人们可以在一种情境中理解训练压力(training stress)，却仍然无法把这个想法迁移到另一种情境。"
       ]
-    }
+    ]
   }
 };

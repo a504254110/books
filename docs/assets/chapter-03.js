@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter3 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter03-concept1": {
     "title": "Living systems can learn from stress; machines mainly wear down",
-    "titleZh": "生命体从压力中学习，机器只会损耗",
+    "titleZh": "生命系统能从压力(stress)中学习；机器主要是被磨损",
+    "bodyZh": [
+      [
+        "主张",
+        "在一定范围内，生命系统(living systems)可以利用压力(stress)进行适应；而机器(machines)通常只会累积磨损或破损。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)给出几个身体层面的情境。在反复负重的压力(stress)下，骨头会变得更致密；而在零重力或负重不足时，骨头反而会变弱。手上的皮肤在体力劳动后会变厚。一台洗衣机在反复震动下并不会以任何方式适应——它只是被磨损。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这些情境展示了关键的对比。在生命系统中，一定程度的压力(stress)能够触发修复(repair)和增强；而在机器(machines)中，反复施加压力通常意味着损坏。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)需要在「有机的」与「工程化的」之间建立一条清晰的分界线。如果没有这条线，人们就会不断把工程化的直觉带入由生命适应所主导的领域。在全书层面，这一区分支撑了后续对政治、教育与医学中过度工程(overengineering)的批评。"
+      ]
+    ],
     "chapterLabel": "Chapter 3",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在一定范围内，living systems 会从压力里学习和适应；machines 通常不会，它们主要只会磨损。"
+        "核心观点",
+        "在一定范围内，生命系统(living systems)能够利用压力(stress)来适应；而机器(machines)通常只会累积磨损或破损。"
       ],
       [
         "详细解释",
-        "这一节是在建立一个非常硬的边界：organism 和 machine 不能用同一套直觉来理解。对 living systems 来说，一些压力会触发 repair 和 strengthening；对 machine 来说，反复冲击一般只会积累 wear。\n\nTaleb 之后很多对 overengineering 的批评，都是从这个差异出发的。"
+        "这些情境呈现了关键的对比。在生命系统中，一定程度的压力(stress)能够触发修复(repair)和增强；而在机器(machines)里，反复施加压力通常只意味着损坏。\n\n塔勒布(Taleb)需要在「有机的」与「工程化的」之间建立一条清晰的分界线。如果没有这条线，人们就会不断把工程化的直觉带入由生命适应所主导的领域。在全书层面，这一区分支撑了后续章节对政治、教育与医学中过度工程(overengineering)的批评。"
       ],
       [
-        "这个例子到底在说明什么",
-        "骨头在负重下会更密、皮肤在劳动后会变厚，说明 living system 会对 repeated stress 做出适应。washing machine 则不会长出任何对应能力，它只会越来越旧。\n\n这些例子真正要说明的是：不是所有系统都应该被当成工程物件来管理，人也是 living system。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)给出几个身体层面的情境。在反复负重的压力(stress)下，骨头会变得更致密；而在零重力或负重不足时，骨头反而会变弱。手上的皮肤在体力劳动后会变厚。一台洗衣机在反复震动下，并不会以任何方式适应——它只是被磨损。\n\n这一情境的重点是：在生命系统中，一定程度的压力能够触发修复(repair)与增强；而在机器中，反复施加压力通常意味着损坏。"
       ]
     ]
   },
   "chapter03-concept2": {
     "title": "Short stress with recovery differs from chronic stress",
-    "titleZh": "短压力加恢复 ≠ 慢性压力",
+    "titleZh": "带恢复(recovery)的短压力(stress)和慢性压力是两回事",
+    "bodyZh": [
+      [
+        "主张",
+        "反脆弱(antifragile)带来的收益通常来自短促、强烈、随后伴随恢复(recuperation)的暴露，而不是来自长期、低水平的持续压力(pressure)。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)对比两种压力(stress)。一个场景里，一条蛇从键盘里钻出来或一个吸血鬼走进房间：恐惧瞬间升起、身体被动员、危险结束、恢复(recovery)随之而来。另一个场景里压力从不停止：老板、房贷、税务焦虑、通勤、表格和邮件。他又加上「中国水刑(Chinese water torture)」的意象——水滴持续落在同一处，从不留下恢复的余地。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这里讨论的是模式，而不仅是强度。一段短促的压力(stress)在随后伴随恢复(recovery)时，可以让系统变强；温和但不间断的压力反而更具破坏性，因为系统永远没有机会重置。"
+      ],
+      [
+        "全书联结",
+        "这进一步细化了「有益失序(beneficial disorder)」的概念。并非所有失序都以同样的方式起作用，慢性压力(chronic stress)仍可能腐蚀系统。在全书层面，这一区分后来支撑了塔勒布(Taleb)对间歇性匮乏(intermittent deprivation)、断食(fasting)和有限度波动(bounded volatility)的推崇。"
+      ]
+    ],
     "chapterLabel": "Chapter 3",
     "en": [
       [
@@ -59,22 +95,44 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "能带来 antifragile gain 的，通常是短而强的 stress 加上恢复，而不是没完没了的 chronic stress。"
+        "核心观点",
+        "反脆弱性(antifragility)带来的收益，通常来自一段短暂、强烈、随后伴随恢复(recovery)的暴露；而不是来自长期、低水平的持续压力(stress)。"
       ],
       [
         "详细解释",
-        "Taleb 在这里强调的是 pattern，不只是强度。一次突然的危险会让身体 mobilize，事情过去后还会 recovery；但如果压力永远不结束，系统就没有机会 reset，结果通常是侵蚀而不是加强。\n\n所以并不是所有 stress 都有好处，关键在于 stress 的节奏和恢复窗口。"
+        "这里要讨论的是模式，而不仅仅是强度。一段短促的压力(stress)在随后伴随恢复(recovery)时，可以让系统变强。温和但不间断的压力反而可能更具破坏性，因为系统永远没有机会重置。\n\n这进一步细化了「有益失序(beneficial disorder)」的概念。并非所有失序都以同样方式起作用，慢性压力仍可能腐蚀系统。在全书层面，这一区分后来支撑了塔勒布(Taleb)对间歇性匮乏(intermittent deprivation)、断食(fasting)和有限度波动(bounded volatility)的推崇。"
       ],
       [
-        "这个例子到底在说明什么",
-        "snake 或 vampire 的例子说明的是 acute stress：危险突然出现，系统快速反应，然后事情结束。boss、mortgage、commute、email 这些则是 chronic stress，像 Chinese water torture 一样一直落下。\n\n这些例子真正要说明的是：短时冲击和长期压迫不是同一种压力，不能用同一套直觉来看。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)对比了两种压力(stress)。在一个场景里，一条蛇从键盘里钻出来或一个吸血鬼走进房间：恐惧瞬间升起、身体被动员、危险结束、随后是恢复(recovery)。在另一个场景里，压力却从不停止：老板、房贷、税务焦虑、通勤、表格和邮件。他又加上「中国水刑(Chinese water torture)」的意象——水滴持续落在同一处，从不留下恢复的余地。\n\n这一情境的重点是：这里讨论的是模式，而不仅仅是强度。短暂的一次压力(stress)在随后伴随恢复时，可以让系统变强；温和但不间断的压力反而更具破坏性，因为系统永远没有机会重置。"
       ]
     ]
   },
   "chapter03-concept3": {
     "title": "Touristification removes the randomness people use to learn",
-    "titleZh": "旅游化抹掉学习所需的随机性",
+    "titleZh": "旅游化(touristification)抹掉了人们用来学习的随机性(randomness)",
+    "bodyZh": [
+      [
+        "主张",
+        "现代系统越来越倾向于把体验写成脚本、剔除不确定性(uncertainty)，并把人当作具有简单机械输入输出的对象。这种做法削弱了它本想保护的系统本身。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)给出两段相互呼应的旅行场景。其一：一位名叫查德(Chad)的旅行者在莫斯科一家医院的隔离中被困住，被迫面对混乱、压力和托尔斯泰(Tolstoy)的原文，因此他的俄语水平有所提高。塔勒布(Taleb)随后将之与现代旅游助手对比——它们剔除一切模糊性、用英语解决一切问题，让旅行者拥有舒适，却失去了暴露(exposure)和学习。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这些情境说明塔勒布(Taleb)为何抨击旅游化(touristification)。摩擦(friction)的价值不是因为它令人讨厌，而是因为它迫使人投入注意力、临场应变、构建技能——而一份被完全管理的脚本会把这些都抹掉。"
+      ],
+      [
+        "全书联结",
+        "这是「有机 vs 机械」对比的社会与文明版本。塔勒布(Taleb)是在说明现代性如何错误地把人归类。在全书层面，这一论证通向后续关于现代性、干预(intervention)，以及中央化管理如何抑制有益失序(useful disorder)的章节。"
+      ],
+      [
+        "常见误解",
+        "塔勒布(Taleb)并不是说所有的不便都是好事。他真正针对的，是一个剔除一切不可预测性、连同对适应的需要一起抹掉的世界。"
+      ]
+    ],
     "chapterLabel": "Chapter 3",
     "en": [
       [
@@ -92,16 +150,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "现代系统越来越喜欢把一切安排好、脚本化、去掉不确定性，但 Taleb 认为这种 touristification 会削弱人的适应能力。"
+        "核心观点",
+        "现代系统越来越倾向于把体验写成脚本、剔除不确定性(uncertainty)，并把人当作具有简单机械输入输出的对象。这种做法削弱了它本想保护的系统本身。"
       ],
       [
         "详细解释",
-        "Taleb 不是单纯讨厌便利，而是觉得太多被管理好的体验，会让人失去 improvisation、attention 和真实学习。人如果被当成一个只需要 smooth input 的机器，反而会失去原本在随机环境里长出来的能力。\n\n所以这节是在批评一种被过度保护、过度脚本化的生活方式。"
+        "塔勒布(Taleb)抨击的是旅游化(touristification)。摩擦(friction)的价值不是因为它令人讨厌，而是因为它迫使人投入注意力、临场应变、构建技能——而一份被完全管理的脚本会把这些都抹掉。\n\n塔勒布(Taleb)并不是说所有的不便都是好事。他真正针对的，是一个剔除一切不可预测性、连同对适应的需要一起抹掉的世界。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Chad 在 Moscow hospital quarantine 里被迫面对 confusion 和 friction，结果俄语反而进步了。与之相反，现代旅行 assistant 把所有 ambiguity 都拿掉，旅行者舒服了，但学习也被一起拿掉。\n\n这个例子真正要说明的是：friction 的价值不在于它令人难受，而在于它逼迫人去适应和增长。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)给出两段相互呼应的旅行场景。查德(Chad)在莫斯科的医院里被隔离，被迫面对混乱、压力，以及托尔斯泰(Tolstoy)的原文，因此他的俄语水平有所提高。塔勒布(Taleb)随后将之与现代的旅游助手作对比——这些助手剔除一切模糊性、用英语解决一切问题，让旅行者拥有舒适，却失去了暴露(exposure)和学习。\n\n这一情境的重点是：塔勒布(Taleb)抨击旅游化(touristification)。摩擦(friction)的价值不是因为它令人讨厌，而是因为它迫使人投入注意力、临场应变、构建技能——而一份被完全管理的脚本会把这些都抹掉。"
       ]
     ]
   }

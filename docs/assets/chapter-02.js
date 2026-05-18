@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter2 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter02-concept1": {
     "title": "Post-traumatic growth is the neglected mirror image of trauma",
-    "titleZh": "创伤之后的成长常被忽略",
+    "titleZh": "创伤后成长(post-traumatic growth)是创伤(trauma)被忽视的镜像",
+    "bodyZh": [
+      [
+        "主张",
+        "塔勒布(Taleb)认为，人们对冲击(shock)之后的损伤关注过多，而对冲击之后的成长关注过少。"
+      ],
+      [
+        "例子",
+        "研究者戴维·哈尔彭(David Halpern)向塔勒布(Taleb)介绍了关于创伤后成长(post-traumatic growth)的研究。在一次严重冲击(shock)之后，有些人不只是承受了痛苦——他们也报告说自己有了更清晰的优先级排序、更牢固的人际关系，或更强的内在力量。"
+      ],
+      [
+        "为什么这个例子重要",
+        "重点并不是说创伤(trauma)是好事。重点是同一次冲击(shock)可能带来两种不同的结果：一些情况下是损伤，另一些情况下是成长。塔勒布(Taleb)用这一点说明，有益压力(beneficial stress)是真实存在的模式，而不只是一个比喻。"
+      ],
+      [
+        "全书联结",
+        "这是反脆弱性(antifragility)从定义走向证据的最早一批具体案例之一。后续章节会把同样的模式延展到医学、政治和经济生活。"
+      ]
+    ],
     "chapterLabel": "Chapter 2",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "Taleb 认为，人们总是先看到 trauma 带来的伤害，却很少认真看待 shock 之后也可能出现的 post-traumatic growth。"
+        "核心观点",
+        "塔勒布(Taleb)认为，人们对冲击(shock)之后的损伤关注过多，而对冲击之后的成长关注过少。"
       ],
       [
         "详细解释",
-        "这里的重点不是说 trauma 是好事，而是说同一个冲击之后，结果不一定只有损伤一种。有些人会受伤，有些人则会重新排序 priorities、加强关系，或者长出更强的 inner strength。\n\nTaleb 用这个概念，是想让读者接受一个更一般的结论：beneficial stress 不是空洞口号，它在心理层面也可能是现实模式。"
+        "重点并不是说创伤(trauma)是好事。重点是同一次冲击(shock)可能带来两种不同的结果：一些情况下是损伤，另一些情况下是成长。塔勒布(Taleb)用这一点说明，有益压力(beneficial stress)是真实存在的模式，而不只是一个比喻。\n\n这是反脆弱(antifragility)从定义走向证据的最早一批具体案例之一。后续章节会把同样的模式延展到医学、政治和经济生活。"
       ],
       [
-        "这个例子到底在说明什么",
-        "David Halpern 指给 Taleb 的研究说明，一次 serious shock 之后，结果不一定只是长期受损。有些人会在后续生活里表现出更清晰的价值判断和更强的心理结构。\n\n这个例子真正要说明的是：shock 不是单向度的。只盯着创伤的一面，会让人错过“同一次冲击也可能触发成长”的另一面。"
+        "这个例子在说明什么",
+        "戴维·哈尔彭(David Halpern)向塔勒布(Taleb)介绍了关于创伤后成长(post-traumatic growth)的研究。在一次严重冲击(shock)之后，有些人不只是承受了痛苦；他们也报告说自己有了更清晰的优先级排序、更牢固的人际关系，或更强的内在力量。\n\n这一情境想说明的是：重点不是说创伤是好事。重点是同一次冲击可能带来两种不同的结果——一些情况下是损伤，另一些情况下是成长。塔勒布用这一点说明，有益压力(beneficial stress)是真实存在的模式，而不只是一个比喻。"
       ]
     ]
   },
   "chapter02-concept2": {
     "title": "Overcompensation builds extra capacity, not just repair",
-    "titleZh": "过度补偿构建多余产能，而非只是修复",
+    "titleZh": "过度补偿(overcompensation)创造的是超额容量，而非只是修复(repair)",
+    "bodyZh": [
+      [
+        "主张",
+        "一次有限的冲击(shock)可以触发一种超出修复(repair)的反应。系统会以额外的强度恢复。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)描述他观看一位举重运动员——兰尼·凯克(Lenny Cake)——以极限重量训练的场景。身体被一次短促、大负荷的训练推到极限，随后被允许休息。塔勒布(Taleb)把这种模式与更广义的冗余(redundancy)联系起来：多出一颗肾、海德拉(Hydra)多长出来的一颗头，或者多出来的现金储备，都说明系统持有的容量(capacity)超出了它昨天所需的最低量。"
+      ],
+      [
+        "为什么这个例子重要",
+        "关键区别在于：是把损伤修补回去，还是越过原有水平、出现超额反应(overshooting)。塔勒布(Taleb)用冗余(redundancy)说明额外容量(capacity)不是浪费，而是过度补偿(overcompensation)所采取的形式。"
+      ],
+      [
+        "全书联结",
+        "这给本书第一次提供了反脆弱性(antifragility)的可操作机制。后续章节在讨论兴奋效应(hormesis)、期权性(optionality)以及从变化中学习的系统时，会复用同样的逻辑。"
+      ]
+    ],
     "chapterLabel": "Chapter 2",
     "en": [
       [
@@ -59,22 +95,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "有限的冲击有时不会只让系统修回原状，而会让系统额外多长出一层 capacity，这就是 overcompensation。"
+        "核心观点",
+        "一次有限的冲击(shock)可以触发一种超出修复(repair)的反应。系统会以额外的强度恢复。"
       ],
       [
         "详细解释",
-        "Taleb 这里要区分的是 repair 和 overshoot。repair 是把损失补回去；overcompensation 则是系统预期未来还会再来一次，于是干脆多准备一点。这样看，redundancy 就不再只是浪费，而是系统为了应对未来不确定性主动保留的余量。\n\n所以这一节不是在赞美受苦，而是在说明为什么 extra capacity 在很多系统里是理性的。"
+        "关键区别在于：是把损伤修补回去，还是超额反应(overshooting)、越过原有水平。塔勒布(Taleb)用冗余(redundancy)说明额外容量(capacity)不是浪费，而是过度补偿(overcompensation)所采取的形式。\n\n这给本书第一次提供了反脆弱(antifragility)的可操作机制。后续章节在讨论兴奋效应(hormesis)、期权性(optionality)以及从变化中学习的系统时，会复用同样的逻辑。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Lenny Cake 的 heavy lifting 场景说明：短时间的大负荷加上恢复，会让身体做出比“修复旧状态”更强的反应。Taleb 再把这种逻辑推广到 extra kidney、Hydra 多长出来的头、以及 cash reserve，说明系统常常会保留超过最低需要量的余量。\n\n这些例子真正要说明的是：多出来的 capacity 并不是浪费，而是系统在可承受压力之后生成的保护层。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)描述了他观看兰尼·凯克(Lenny Cake)进行极限重量训练的场景。身体被一次短促、大负荷的训练推到极限，随后被允许休息。塔勒布把这种模式更广泛地与冗余(redundancy)联系起来：多出一颗肾、海德拉(Hydra)多长出来的一颗头，或储备多余的现金——这些都说明系统持有的容量(capacity)超过了它昨天所需的最低量。\n\n这一情境想说明的是：关键区别在于是把损伤修补回去，还是超额反应(overshooting)、越过原有水平。塔勒布用冗余说明额外容量不是浪费，而是过度补偿(overcompensation)所采取的形式。"
       ]
     ]
   },
   "chapter02-concept3": {
     "title": "Too little challenge can weaken performance",
-    "titleZh": "挑战不足会削弱表现",
+    "titleZh": "挑战不足会削弱表现(performance)",
+    "bodyZh": [
+      [
+        "主张",
+        "需要挑战(challenge)的系统，在生活变得过于平顺时，可能变得迟钝或失效。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)指出，飞行员的技能在自动化抹去过多挑战(challenge)时会变钝；甚至美国联邦航空局(FAA)都承认飞行员可能把太多责任让渡给机器。他还描述了讲课时低声细语、而不是像电视播报员那样大声讲话的做法——因为这样听众需要更费力地跟随，注意力反而更集中。"
+      ],
+      [
+        "为什么这个例子重要",
+        "两个情境展现出同一种模式：挑战(challenge)过少会削弱注意力和技能；适度的阻力(resistance)反而能磨砺表现(performance)。"
+      ],
+      [
+        "全书联结",
+        "这为第 3 章的论点做铺垫：人不应被当作家电(appliance)对待。它也支持塔勒布(Taleb)之后偏好的几件事——摩擦(friction)、试错(trial and error)，以及那些强迫人去适应的环境。"
+      ]
+    ],
     "chapterLabel": "Chapter 2",
     "en": [
       [
@@ -92,22 +146,44 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "有些系统需要适度挑战才能保持锋利；如果环境过于顺滑，技能和注意力反而会变弱。"
+        "核心观点",
+        "需要挑战(challenge)的系统，在生活变得过于平顺时，可能变得迟钝或失效。"
       ],
       [
         "详细解释",
-        "Taleb 在这里强调的是 underchallenge 的问题。大家通常担心压力过大，但他要读者看到：压力过少也可能伤害 performance。系统如果长期不需要集中注意、不需要调整，就会失去原本的能力。\n\n所以这里的逻辑不是“越难越好”，而是“完全没有摩擦也不好”。"
+        "两个情境展示出同一种模式：挑战(challenge)过少会削弱注意力和技能；适度的阻力(resistance)反而能磨砺表现(performance)。\n\n这为第 3 章的论点做铺垫：人不应被当作家电(appliance)对待。它也支持塔勒布(Taleb)之后偏好的几件事——摩擦(friction)、试错(trial and error)，以及那些强迫人去适应的环境。"
       ],
       [
-        "这个例子到底在说明什么",
-        "pilot 的例子说明，automation 拿走太多 challenge 后，人的 skill 会变钝。lecture 里故意压低声音的例子也一样：观众要更用力去听，反而更专注。\n\n这些例子真正要说明的是：适度的 resistance 有时能提升表现，而不是只会制造麻烦。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)指出，飞行员的技能在自动化抹去过多挑战(challenge)时会变钝；甚至美国联邦航空局(FAA)都承认飞行员可能把太多责任让渡给机器。他还描述了讲课时低声细语、而不是像电视播报员那样高声讲话的做法，因为这样听众需要更费力地跟随，注意力反而更集中。\n\n这一情境想说明的是：两个情境展示出同一种模式——挑战过少会削弱注意力和技能；适度的阻力(resistance)反而能磨砺表现(performance)。"
       ]
     ]
   },
   "chapter02-concept4": {
     "title": "Information and repression often strengthen what they attack",
-    "titleZh": "压制反而会让被攻击者更强",
+    "titleZh": "信息与压制(repression)常常让被攻击的对象更强",
+    "bodyZh": [
+      [
+        "主张",
+        "观念、书籍、运动和声誉，都可能从压制(suppression)或污名化(discredit)的尝试中获取能量。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)给出若干相互呼应的案例。格雷厄姆·格林(Graham Greene)和亨利·米勒(Henry Miller)的禁书因被禁反而吸引到更多读者。当压制(repression)制造出愤怒与殉道者时，骚乱和政治运动可能因此扩大。一个作者甚至能从丑闻中受益——而同样的丑闻会毁掉一位拿薪水的雇员的职业生涯。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这些例子说明，过度补偿(overcompensation)并不只是生物层面的现象。在社会和信息系统中，一次攻击可以成为「这件事很重要」的信号，从而触发比平淡推广更强的反应。"
+      ],
+      [
+        "全书联结",
+        "这把反脆弱性(antifragility)从身体和表现扩展到政治、媒体和声誉。后续章节不断回到这个想法：压制、干预和控制经常事与愿违。"
+      ],
+      [
+        "常见误解",
+        "并非每一次攻击都会帮到攻击对象。这种模式只在两个条件同时具备时才奏效：目标本身能存活下来，并且这次攻击制造出关注、愤怒，或额外的凝聚力。"
+      ]
+    ],
     "chapterLabel": "Chapter 2",
     "en": [
       [
@@ -125,16 +201,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在 social 和 informational systems 里，压制、攻击、封禁，有时反而会让被攻击的对象更强。"
+        "核心观点",
+        "观念、书籍、运动和声誉，都可能从压制(suppression)或污名化(discredit)的尝试中获得能量。"
       ],
       [
         "详细解释",
-        "Taleb 想说明，overcompensation 不只发生在身体里。到了 ideas、books、movements、reputations 这些对象上，攻击本身可能变成 attention 和 cohesion 的来源。前提当然是对象先活下来，而且攻击会被外界理解成“它值得被打压”。\n\n这就是为什么 repression 有时会适得其反。"
+        "这些例子说明，过度补偿(overcompensation)并不只是生物层面的现象。在社会和信息系统中，一次攻击可以成为「这件事很重要」的信号，从而触发比平淡推广更强的反应。\n\n并非每一次攻击都会帮到攻击对象。这种模式只在两个条件同时具备时才奏效：目标本身能存活下来，并且这次攻击制造出关注、愤怒或额外的凝聚力。"
       ],
       [
-        "这个例子到底在说明什么",
-        "被禁的书会因为 banned 这个标签得到更多读者，political movement 会因为 repression 产生 martyrs 和 outrage，author 甚至可能因为 scandal 得到更多关注。\n\n这些例子真正要说明的是：在某些系统里，攻击不是单纯的负面输入，它还会向外界发出“这个对象很重要”的信号。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)给出若干相互呼应的案例。格雷厄姆·格林(Graham Greene)和亨利·米勒(Henry Miller)的禁书因被禁反而吸引到更多读者。当压制(repression)制造出愤怒与殉道者时，骚乱与政治运动可能因此扩大。一个作者甚至能从丑闻中受益——而同样的丑闻会毁掉一位拿薪水的雇员的职业生涯。\n\n这一情境想说明的是：这些例子说明，过度补偿(overcompensation)并不只是生物层面的现象。在社会和信息系统中，一次攻击可以成为「这件事很重要」的信号，从而触发比平淡推广更强的反应。"
       ]
     ]
   }

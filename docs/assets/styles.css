@@ -1082,6 +1082,19 @@
       color: var(--ink);
     }
 
+    .zh-paragraph-break {
+      display: block;
+      margin-top: 12px;
+    }
+
+    /* Deep dive UI is hidden: explainer data is kept in the JS files for archival,
+       but the buttons, drawer, and backdrop are no longer surfaced. */
+    .deep-row,
+    .drawer,
+    .drawer-backdrop {
+      display: none !important;
+    }
+
     .concept strong {
       color: var(--ink);
     }

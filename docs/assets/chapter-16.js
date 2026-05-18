@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter16 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter16-concept1": {
     "title": "The ecological and the ludic are not the same training ground",
-    "titleZh": "生态环境与游戏环境不是同一种训练场",
+    "titleZh": "生态环境(ecological)和游戏环境(ludic)不是同一种训练场",
+    "bodyZh": [
+      [
+        "主张",
+        "在「规则清晰的游戏」里练出来的技能，往往无法迁移到真实生活——后者的规则是部分隐藏、变化中的。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)把二十一点(blackjack)和国际象棋(chess)与真实生活作对比。在游戏里规则是预先知道的，在生活里却不是。他又加上一个课堂例子：还没正确学算术的孩子能数出 15 根杆之间的 14 段间隔；而刚学算术的孩子常常被混淆，答成 15。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为一个规则封闭的环境只训练一种技能。一旦规则不再明晰，游戏里的成功就不再保证生活里的成功。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)想堵住一种现代常见的推断：在「受控的教育环境」里成功，并不会自动转化为在生态(ecological)环境里的胜任能力。在全书层面，这支持了第 17 章对那种「无法用课堂语言完全辩护的实用启发式(practical heuristics)」的辩护。"
+      ]
+    ],
     "chapterLabel": "Chapter 16",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "`ludic` world 和 `ecological` world 不是同一种训练场。明确规则的 game 里练出来的 skill，不一定能 transfer 到真实生活。"
+        "核心观点",
+        "在「规则清晰的游戏」里练出来的技能，往往无法迁移到真实生活——后者的规则是部分隐藏、变化中的。"
       ],
       [
         "详细解释",
-        "Taleb 要反对的是“在受控环境里表现好，就等于在现实里也会表现好”的推理。game world 的规则是清楚、封闭、稳定的；life world 的规则则经常是不完整、隐藏、变动的。\n\n所以 classroom 或 game success 不能直接外推成 ecological competence。"
+        "一个规则封闭的环境，只训练一种技能。一旦规则不再明晰，游戏里的成功就不再保证生活里的成功。\n\n塔勒布(Taleb)想堵住一种现代常见的推断：在「受控的教育环境」里成功，并不会自动转化为在生态(ecological)环境里的胜任能力。在全书层面，这支持了第 17 章对那种「无法用课堂语言完全辩护的实用启发式(practical heuristics)」的辩护。"
       ],
       [
-        "这个例子到底在说明什么",
-        "blackjack 和 chess 的规则都已知，所以它们训练的是一套 closed-rule skill。十五根杆子之间有十四个间隔的 classroom 例子则说明，孩子一旦被刚教会某条 formal rule，反而可能更看不见真实场景里的结构。\n\n这个例子真正要说明的是：显规则环境里练出的能力，未必适用于现实。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)把二十一点(blackjack)和国际象棋(chess)与真实生活作对比。在游戏里规则是预先知道的，在生活里却不是。他又加上一个课堂例子：还没正确学算术的孩子能数出 15 根杆之间的 14 段间隔；而刚学算术的孩子常常会被混淆，答成 15。\n\n这一情境的重点是：一个规则封闭的环境只训练一种技能；一旦规则不再明晰，游戏里的成功就不再保证生活里的成功。"
       ]
     ]
   },
   "chapter16-concept2": {
     "title": "Standardized education often strips away optionality",
-    "titleZh": "标准化教育会剥掉期权",
+    "titleZh": "标准化教育(standardized education)经常剥掉期权性(optionality)",
+    "bodyZh": [
+      [
+        "主张",
+        "学习越是被标准化、被打包、被脚本化，留给「构建真实世界判断力所需的探索性暴露(exposure)」的空间就越少。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)用「足球妈妈(soccer mom)」象征被过度管理的童年：家长开车把孩子从一个被监督的活动送到下一个，并试图清除一切污垢、不确定性和无脚本时间。他把这种孩子与那种仍然接触自然(biophilia)、街头杂乱和试错(trial and error)的孩子作对比。他又加上圈养中的狮子：它们活得更久、更安全，但生活在一种更稀薄、更退化的状态里。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为过度保护(overprotection)正好剔除了那些教人适应的压力源(stressors)和模糊性。「安全」可能悄悄变成驯化与脆弱(fragility)。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)在把对旅游化(touristification)的攻击延伸到教育领域。在全书层面，本章对「脚本」的怀疑直接通向第 17 章对理性主义(rationalism)的批评。"
+      ]
+    ],
     "chapterLabel": "Chapter 16",
     "en": [
       [
@@ -59,22 +95,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "learning 一旦被过度 standardized、packaged、scripted，就会拿走很多原本能培养 real-world judgment 的 optionality。"
+        "核心观点",
+        "学习越是被标准化、被打包、被脚本化，留给「构建真实世界判断力所需的探索性暴露(exposure)」的空间就越少。"
       ],
       [
         "详细解释",
-        "Taleb 这里攻击的不是 learning，而是 overmanaged childhood 和 overprotected education。太多 safety、mapping 和 controlled activity，会让孩子失去 ambiguity、trial and error 和自己探索的空间。\n\n这样看，安全并不总是纯收益，它也可能是 domestication。"
+        "过度保护(overprotection)正好剔除了那些教人适应的压力源(stressors)和模糊性。「安全」可能悄悄变成驯化与脆弱(fragility)。\n\n塔勒布(Taleb)是在把对旅游化(touristification)的攻击延伸到教育领域。在全书层面，本章对「脚本」的怀疑直接通向第 17 章对理性主义(rationalism)的批评。"
       ],
       [
-        "这个例子到底在说明什么",
-        "`soccer mom` 是 Taleb 用来象征 overmanagement 的 figure。captivity 里的 lion 虽然更安全、更长寿，却活成了退化版；同理，孩子如果永远在 mapped environment 里长大，适应能力也会下降。\n\n这个例子真正要说明的是：被过度保护的系统，常常会丢掉原本让它强的东西。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)用「足球妈妈(soccer mom)」象征被过度管理的童年：家长开车把孩子从一个被监督的活动送到下一个，并试图清除一切污垢、不确定性和无脚本时间。他把这种孩子与那种仍然接触自然(biophilia)、街头杂乱与试错(trial and error)的孩子作对比。他又加上圈养中的狮子：它们活得更久、更安全，但生活在一种更稀薄、更退化的状态里。\n\n这一情境的重点是：过度保护正好剔除了那些教人适应的压力源和模糊性——安全可能悄悄变成驯化与脆弱(fragility)。"
       ]
     ]
   },
   "chapter16-concept3": {
     "title": "Autodidactic and flaneur-like learning preserves antifragility",
-    "titleZh": "自学和闲游式学习保住反脆弱",
+    "titleZh": "自学(autodidactic)和漫游者(flaneur)式的学习保住了反脆弱性(antifragility)",
+    "bodyZh": [
+      [
+        "主张",
+        "由学习者自己挑选、自己组合、自己检验的学习，比中央化课程更能保住自由、好奇心与不对称性(asymmetry)。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)直接讲了他的自传式故事。他只学到能通过学校考试的最低限度，然后开始自己疯狂阅读，有时一周三十到六十小时。后来当概率(probability)让他着迷时，他几乎订购了书名里带「probability」或「stochastic」的每一本书，跟着好奇心而不是课程自学。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为自我导向的学习像一根杠铃(barbell)。学校被压在「最低安全水平」，而真正的上行(upside)来自课纲之外的开放阅读、漂移和好奇心。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)想给出一个正面替代方案，而不只是攻击学校。解药是自我导向的暴露(exposure)。在全书层面，「漫游者(flaneur)」这一主题延续到第 17 章——塔勒布(Taleb)在那里为不透明的(opaque)实践知识辩护。"
+      ]
+    ],
     "chapterLabel": "Chapter 16",
     "en": [
       [
@@ -92,16 +146,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "self-directed learning 比 centralized curriculum 更能保存 curiosity、freedom 和 antifragility。"
+        "核心观点",
+        "由学习者自己挑选、自己组合、自己检验的学习，比中央化课程更能保住自由、好奇心与不对称性(asymmetry)。"
       ],
       [
         "详细解释",
-        "Taleb 在这里不只是反对学校，而是提出 alternative：把 formal schooling 压到 minimum safe level，把真正有 upside 的学习交给 curiosity、drift 和 self-selection。这样的学习方式更像 barbell：基础不完全丢掉，但真正的增长来自开放探索。\n\n所以 autodidactic learning 对他来说不是浪漫姿态，而是一种更强的 exposure structure。"
+        "自我导向的学习像一根杠铃(barbell)。学校被压在「最低安全水平」，而真正的上行(upside)来自课纲之外的开放阅读、漂移和好奇心。\n\n塔勒布(Taleb)想给出一个正面替代方案，而不只是攻击学校。解药是自我导向的暴露(exposure)。在全书层面，「漫游者」这一主题延续到第 17 章——塔勒布(Taleb)在那里为不透明的(opaque)实践知识辩护。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Taleb 自己大量自学 probability 和 stochastic text 的经历，说明一个人可以通过 following curiosity 建立非常深的 knowledge，而不一定依赖 syllabus。学校只是底线，真正的 upside 来自额外的阅读和 wandering。\n\n这个例子真正要说明的是：如果学习能由自己驱动，它会更像 antifragile process。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)直接讲了他的自传式故事。他只学到能通过学校考试的最低限度，然后开始自己疯狂阅读，有时一周三十到六十小时。后来当概率(probability)让他着迷时，他几乎订购了书名里带「probability」或「stochastic」的每一本书，跟着好奇心而不是课程自学。\n\n这一情境的重点是：自我导向的学习像一根杠铃——学校被压在最低安全水平，而真正的上行来自课纲之外的开放阅读、漂移和好奇心。"
       ]
     ]
   }

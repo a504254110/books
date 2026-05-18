@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter25 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter25-concept1": {
     "title": "The book's one-leg summary is a generator, not a slogan",
-    "titleZh": "全书的“一句话总结”是生成器，不是口号",
+    "titleZh": "本书的「一条腿总结(one-leg summary)」是一台生成器，而不是口号",
+    "bodyZh": [
+      [
+        "主张",
+        "「一切都在波动(volatility)中获益或受损」是塔勒布(Taleb)为整本书写下的「生成器句子(generator sentence)」，而不只是一句俏皮的收尾。"
+      ],
+      [
+        "例子",
+        "在手稿临近收尾时，塔勒布(Taleb)的朋友、概率学家(probabilist)沙伊·皮尔佩尔(Shaiy Pilpel)请他「单腿站着把整本书讲清楚」。塔勒布(Taleb)立刻给出了答案——因为他现在把每一章都看作同一个中心不对称(asymmetry)的推导。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它告诉读者读完书之后该怎么使用它：塔勒布(Taleb)希望用一个简单的问题，在新领域中重新生成本书余下的论证。"
+      ],
+      [
+        "全书联结",
+        "这一句话把三元法(Triad)、凸性(convexity)、期权性(optionality)、医学不对称(medical asymmetry)和切肤之痛(skin in the game)压缩成一种可复用的检验。"
+      ]
+    ],
     "chapterLabel": "Chapter 25",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "`Everything gains or loses from volatility` 不是一句漂亮口号，而是 Taleb 用来重新生成整本书的 generator sentence。"
+        "核心观点",
+        "「一切都在波动(volatility)中获益或受损」是塔勒布(Taleb)为整本书写下的「生成器句子(generator sentence)」，而不只是一句俏皮的收尾。"
       ],
       [
         "详细解释",
-        "Taleb 在结尾不是做普通 recap，而是试图把全书压缩成一条可以迁移到任何领域的判断句。\n\n重点不在记住所有章节细节，而在学会用这一句去重新审视金融、医学、城市、职业、伦理和个人生活。\n\n所以这句话的功能更像 engine，而不是海报标语。"
+        "它告诉读者读完书之后该怎么使用它。塔勒布(Taleb)希望用一个简单的问题，在新领域中重新生成本书余下的论证。\n\n这一句话把三元法(Triad)、凸性(convexity)、期权性(optionality)、医学不对称(medical asymmetry)和切肤之痛(skin in the game)压缩成一种可复用的检验。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Shaiy Pilpel 让 Taleb 用 `one leg` 讲清这本书，Taleb 几乎立刻就给出答案。这个例子要说明的是：Taleb 认为全书所有章节，本质上都可以被还原到同一个 asymmetry question。"
+        "这个例子在说明什么",
+        "在手稿临近收尾时，塔勒布(Taleb)的朋友、概率学家(probabilist)沙伊·皮尔佩尔(Shaiy Pilpel)请他「单腿站着把整本书讲清楚」。塔勒布(Taleb)立刻给出了答案——因为他现在把每一章都看作同一个中心不对称(asymmetry)的推导。\n\n这一情境的重点是：它告诉读者读完书之后该怎么使用它——塔勒布(Taleb)希望用一个简单的问题，在新领域中重新生成本书余下的论证。"
       ]
     ]
   },
   "chapter25-concept2": {
     "title": "The practical problem is exposure, not total understanding",
-    "titleZh": "真正要解决的是暴露，不是完全理解",
+    "titleZh": "实际要解决的是「暴露(exposure)」，而不是「完全理解」",
+    "bodyZh": [
+      [
+        "主张",
+        "即使我们没有完全理解这个世界，我们仍然可以通过改变自己对它的暴露(exposure)，来改善自己的位置。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)重述本书的一个关键动作：我们可能永远不会完整地知道 `x`，但我们可以重塑 `f(x)`。杠铃(barbell)就是这一动作的可操作示例——它不要求完整的预测，就能改变收益(payoff)。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为本书提供的并不是全知。它提供的是一种在不确定性(uncertainty)下生活与决策的方式——通过改变收益的形状。"
+      ],
+      [
+        "全书联结",
+        "这把结论扣回泰勒斯(Thales)、期权(options)、杠铃(barbell)、医学，以及每一个塔勒布(Taleb)偏向收益结构设计(payoff design)而非解释式自信(explanatory confidence)的章节。"
+      ]
+    ],
     "chapterLabel": "Chapter 25",
     "en": [
       [
@@ -59,22 +95,44 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "这本书真正提供的，不是 total understanding，而是 exposure design。你不必完全知道世界，只需要把自己放在更好的 payoff shape 上。"
+        "核心观点",
+        "即使我们没有完全理解这个世界，我们仍然可以通过改变自己对它的暴露(exposure)，来改善自己的位置。"
       ],
       [
         "详细解释",
-        "Taleb 在结尾再次强调：我们经常无法真正知道 `x`，但仍然可以设计 `f(x)`。也就是说，无法完全预测世界，不等于无法改善自己的 position。\n\n这使得 antifragility 不是一种全知理论，而是一套在 ignorance 下也能工作的做法。\n\n它的重点从 `know everything` 转成 `shape exposure well`。"
+        "本书提供的并不是全知。它提供的是一种在不确定性(uncertainty)下生活与决策的方式——通过改变收益(payoff)的形状。\n\n这把结论扣回泰勒斯(Thales)、期权(options)、杠铃(barbell)、医学以及每一个塔勒布(Taleb)偏向收益结构设计(payoff design)而非解释式自信(explanatory confidence)的章节。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Taleb 在这里回扣了 barbell。barbell 的价值不在于你更会预测未来，而在于你把 downside 压住、把 upside 打开。这个例子要说明的是：真正实用的智慧，往往不是增加认知确定性，而是优化 payoff 结构。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)重述本书的一个关键动作：我们可能永远不会完整地知道 `x`，但我们可以重塑 `f(x)`。杠铃(barbell)就是这一动作的可操作示例——它不要求完整的预测，就能改变收益(payoff)。\n\n这一情境的重点是：本书提供的并不是全知，而是一种在不确定性下生活与决策的方式——通过改变收益的形状。"
       ]
     ]
   },
   "chapter25-concept3": {
     "title": "Ethics and vitality are both about relation to volatility",
-    "titleZh": "伦理与生命力都取决于和波动的关系",
+    "titleZh": "伦理与生命力(vitality)都关乎「与波动(volatility)的关系」",
+    "bodyZh": [
+      [
+        "主张",
+        "同一种不对称(asymmetry)逻辑统辖着道德生活与个人生活：不要把下行(downside)强加给别人；也不要把自己的生活构建成「完全隔绝(insulation)」就是最高善。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)把「黄金法则(Golden Rule)」和汉谟拉比(Hammurabi)的对称性与整本书联系起来，最后以一个意象作结：玻璃是死的，而活的东西是「做多波动(long volatility)」的。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它说明了为什么伦理章节并不是「附加物」。同一个问题统辖系统和人：它们如何对波动(variation)做出反应？当它们失败时，由谁来买单？"
+      ],
+      [
+        "全书联结",
+        "这就是技术性的凸性(convexity)、医学上的审慎，与切肤之痛(skin in the game)彻底融合的那一点。它也自然指向尾声(epilogue)中关于死亡、更新和延续的意象。"
+      ],
+      [
+        "常见误解",
+        "塔勒布(Taleb)并不是说所有的风险(risk)都是高尚的。他是在说：一个被剥离了努力、不确定性(uncertainty)和个人暴露(exposure)的生活，在更深的意义上反而是「无生命的」。"
+      ]
+    ],
     "chapterLabel": "Chapter 25",
     "en": [
       [
@@ -92,16 +150,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "Taleb 最后把 ethics 和 vitality 合在一起：不要把 downside 推给别人，也不要把自己的人生建成完全隔绝波动的玻璃器皿。"
+        "核心观点",
+        "同一种不对称(asymmetry)逻辑，统辖着道德生活与个人生活：不要把下行(downside)强加给别人；也不要把自己的生活构建成「完全隔绝(insulation)」就是最高善。"
       ],
       [
         "详细解释",
-        "这一章最后几段有两个合并动作。第一个是伦理层面：Hammurabi、Golden Rule、skin in the game 都在要求对称性。第二个是生存层面：真正活着的东西，和 volatility、effort、uncertainty 之间有关系。\n\n所以他认为过度安全、完全绝缘的生活，并不是更高形态的生命，而更像失去生命张力的保存状态。\n\n这让全书最后落在一个同时是 moral and existential 的判断上。"
+        "伦理章节并不是「附加物」。同一个问题统辖着系统和人：它们如何对波动(variation)做出反应？当它们失败时，由谁来买单？\n\n塔勒布(Taleb)并不是说所有的风险(risk)都是高尚的。他是在说：一个被剥离了努力、不确定性(uncertainty)和个人暴露(exposure)的生活，在更深的意义上反而是「无生命的」。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Taleb 一边回到 Hammurabi 和 Golden Rule，一边用 `glass is dead`、living things are `long volatility` 的对比来收尾。这个例子要说明的是：技术性的 convexity 逻辑，到了最后也在定义怎样的人生算真正活着。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)把「黄金法则(Golden Rule)」和汉谟拉比(Hammurabi)的对称性与整本书联系起来，最后以一个意象作结：玻璃是死的，而活的东西是「做多波动(long volatility)」的。\n\n这一情境的重点是：伦理章节并不是附加物——同一个问题统辖系统和人：它们如何对波动(variation)做出反应？当它们失败时，由谁来买单？"
       ]
     ]
   }

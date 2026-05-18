@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter13 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter13-concept1": {
     "title": "Invention and implementation are different breakthroughs",
-    "titleZh": "发明和落地是两种不同的突破",
+    "titleZh": "「发明(invention)」与「落地(implementation)」是两种不同的突破",
+    "bodyZh": [
+      [
+        "主张",
+        "一样东西可以长期处于「半发明(half-invented)」状态。真正的突破往往是「落地(implementation)」，而不是理论上的发现。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)从带轮行李箱开始：人类拥有轮子已经数千年，旅行者却仍然用手拖着沉重行李，直到有人把小轮子直接装到行李箱底下。他又加上类似案例：中美洲人(Mesoamericans)有玩具轮子但没有轮式运输；希腊人(Greeks)有一台早期蒸汽机作为奇巧之物；史蒂夫·乔布斯(Steve Jobs)则把鼠标和图形界面变得能在普通桌面上可用。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为看似显而易见的想法，往往只是在事后(hindsight)看才显而易见。实践必须先识别出这种期权(option)、再把它推入使用，发明本身才能改变生活。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)在把期权性(optionality)从金融扩展到创新(innovation)。同样的逻辑驱动了后续几章关于「绿木材(green lumber)」和「被重写的历史」的讨论。"
+      ]
+    ],
     "chapterLabel": "Chapter 13",
     "en": [
       [
@@ -26,22 +44,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "很多东西会长期停留在“半发明”状态。真正改变世界的 breakthrough，常常不是理论上想到它，而是把它真正做进日常使用里。"
+        "核心观点",
+        "一样东西可以长期处于「半发明(half-invented)」状态。真正的突破往往是「落地(implementation)」，而不是理论上的发现。"
       ],
       [
         "详细解释",
-        "Taleb 要打破的是 hindsight illusion。事后看，轮子装到箱子上像是 obvious idea；但在真的被使用之前，它只是 scattered possibility。implementation 才是把 option 变成现实生活的一步。\n\n所以 invention 和 implementation 不是一回事。"
+        "看似显而易见的想法，往往只是在事后(hindsight)看才显而易见。实践必须先识别出这种期权(option)、再把它推入使用，发明本身才能改变生活。\n\n塔勒布(Taleb)在此把期权性(optionality)从金融扩展到创新(innovation)。同样的逻辑驱动了后续几章关于「绿木材(green lumber)」和「被重写的历史」的讨论。"
       ],
       [
-        "这个例子到底在说明什么",
-        "wheeled suitcase 的例子最清楚：人类早就有 wheel，但旅行者仍然拉着重箱子走了很久。Mesoamerican toy wheel、Greek steam engine、Steve Jobs 让 mouse 和 graphical interface 变得日常可用，也都在说明同一件事。\n\n这些例子真正要说明的是：idea 存在，并不等于它已经进入真实世界。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)从带轮行李箱开始：人类拥有轮子已经数千年，旅行者却仍然用手拖着沉重行李，直到有人把小轮子直接装到行李箱底下。他又加上类似案例：中美洲人(Mesoamericans)有玩具轮子，但没有轮式运输；希腊人(Greeks)有一台早期蒸汽机作为奇巧之物；史蒂夫·乔布斯(Steve Jobs)则把鼠标和图形界面变得能在普通桌面上可用。\n\n这一情境的重点是：看似显而易见的想法，往往只是在事后看才显而易见。实践必须先识别出这种期权(option)、再把它推入使用，发明本身才能改变生活。"
       ]
     ]
   },
   "chapter13-concept2": {
     "title": "Trial and error is guided search, not dumb randomness",
-    "titleZh": "试错是有导向的搜索，不是瞎随机",
+    "titleZh": "试错(trial and error)是有指引的搜索，而不是愚蠢的随机性(randomness)",
+    "bodyZh": [
+      [
+        "主张",
+        "试错(trial and error)之所以有效，是因为每一次尝试都在改变你所知道的东西。好的搜索保留发现的上行(upside)，同时从失败中学习。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)以一次简单的房间搜索开篇：如果你在客厅找丢失的钱包，你不会一直盯着同一个角落。他随后给出格雷格·斯特姆(Greg Stemm)的例子——这位水下探险家专门寻找古沉船，比如西班牙护卫舰「梅赛德斯圣母(Nuestra Señora de las Mercedes)」。每一次失败的搜索都从地图上抹去一部分，所以下一次搜索就不再像上一次那么盲。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为从外面看，这个过程显得乱糟糟，但其实是有纪律的。搜索过程中的损失若帮你缩小了范围、保留了「大发现」的机会，就不是纯粹的浪费。"
+      ],
+      [
+        "全书联结",
+        "这是塔勒布(Taleb)关于「在不透明环境下如何理性行动」的模型。它支持了后续对实验主义、风投式下注，以及那些被外人错误地称为「非理性」的搜索流程的辩护。"
+      ]
+    ],
     "chapterLabel": "Chapter 13",
     "en": [
       [
@@ -59,22 +95,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "`trial and error` 并不是盲目乱试。每一次尝试都会改变你知道的东西，所以它其实是一种 guided search。"
+        "核心观点",
+        "试错(trial and error)之所以有效，是因为每一次尝试都在改变你所知道的东西。好的搜索保留发现的上行(upside)，同时从失败中学习。"
       ],
       [
         "详细解释",
-        "Taleb 不想让人把试错理解成“没有方法”。好的 search process 看起来 messy，但每次失败都会缩小未知区域，并保留下一次找到大回报的机会。\n\n因此，trial and error 的 rationality 不在于每步都对，而在于它不断更新搜索空间。"
+        "从外面看，这个过程显得乱糟糟，但其实是有纪律的。如果搜索过程中的损失帮你缩小了范围、保留了「大发现」的机会，那它们就不是纯粹的浪费。\n\n这是塔勒布(Taleb)关于「在不透明环境下如何理性行动」的模型。它支持了后续对实验主义、风投式下注，以及那些被外人错误地称为「非理性」的搜索流程的辩护。"
       ],
       [
-        "这个例子到底在说明什么",
-        "找钱包时你不会在同一个地方搜两次，Greg Stemm 寻宝时每次失败也会让剩余 territory 更有价值。失败不是白费，而是在提供排除信息。\n\n这些例子真正要说明的是：试错的价值，不只是“撞大运”，而是每次试错都让下一步更有针对性。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)以一次简单的房间搜索开篇：如果你在客厅找丢失的钱包，你不会一直盯着同一个角落。他随后给出格雷格·斯特姆(Greg Stemm)的例子——这位水下探险家专门寻找古沉船，比如西班牙护卫舰「梅赛德斯圣母(Nuestra Señora de las Mercedes)」。每一次失败的搜索都从地图上抹去了一部分，所以下一次搜索就不再像上一次那么盲。\n\n这一情境的重点是：从外面看，这个过程显得乱糟糟，但其实是有纪律的。搜索过程中的损失若帮你缩小了范围、保留了大发现的机会，就不是纯粹的浪费。"
       ]
     ]
   },
   "chapter13-concept3": {
     "title": "The lecturing-birds illusion mistakes practice for a lecture effect",
-    "titleZh": "“教鸟飞”的错觉：把实践当成理论的功劳",
+    "titleZh": "「教鸟飞」的错觉把实践误归功于讲座效应",
+    "bodyZh": [
+      [
+        "主张",
+        "机构知识(institutional knowledge)经常把那些实际来自实践、学徒制和试错(trial and error)的技能、技术与成功，归到自己名下。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)设想哈佛(Harvard)的鸟类学家给鸟讲飞行课，然后发表论文，把这节课当作鸟会飞的原因。他用这个讽刺去攻击培根式叙事——那种叙事认为，学术先制造技术、实践随后跟上。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为它命名了塔勒布(Taleb)希望读者注意到的那个具体机构性错误：「解释」出现在「成功」旁边，然后宣称自己就是这次成功的作者。"
+      ],
+      [
+        "全书联结",
+        "这一章为后续关于「绿木材(green lumber)」和「失败者所写的历史」的论证提供了社会机制。同样的「抢功」模式会反复出现。"
+      ]
+    ],
     "chapterLabel": "Chapter 13",
     "en": [
       [
@@ -92,22 +146,40 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "`lecturing-birds` 的幻觉，就是把 practice 旁边出现的 lecture、paper、theory，误当成真正产生 skill 的原因。"
+        "核心观点",
+        "机构知识(institutional knowledge)经常把那些实际来自实践、学徒制和试错(trial and error)的技能、技术与成功，归到自己名下。"
       ],
       [
         "详细解释",
-        "Taleb 在讽刺一种非常常见的 institutional error：先有实践成功，后有解释出现，然后解释者反过来把功劳拿走，说成功是自己造成的。这样一来，paper 和 lecture 就被看得比 apprenticeship 和 trial and error 更重要。\n\n所以这节是在拆穿一种倒置的 credit story。"
+        "它命名了塔勒布(Taleb)希望读者注意到的那个具体机构性错误：「解释」出现在「成功」旁边，然后宣称自己就是这次成功的作者。\n\n这一章为后续关于「绿木材(green lumber)」和「失败者所写的历史」的论证提供了社会机制。同样的「抢功」模式会反复出现。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Harvard ornithologists 给 birds 讲怎么飞的寓言，本身就是夸张版的 institution critique。鸟本来就会飞，lecture 只是后来附着上去的解释，但 paper 却可能把 lecture 写成 cause。\n\n这个例子真正要说明的是：解释经常出现得更晚，却喜欢把自己写成起点。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)设想哈佛(Harvard)的鸟类学家给鸟讲飞行课，然后发表论文，把这节课当作鸟会飞的原因。他用这个讽刺去攻击培根式叙事——那种叙事认为，学术先制造技术、实践随后跟上。\n\n这一情境的重点是：它命名了塔勒布(Taleb)希望读者注意到的具体机构性错误——「解释」出现在「成功」旁边，然后宣称自己就是这次成功的作者。"
       ]
     ]
   },
   "chapter13-concept4": {
     "title": "Epiphenomena make people tell the causal story backward",
-    "titleZh": "附带现象让人把因果故事讲反",
+    "titleZh": "附带现象(epiphenomena)让人把因果故事讲反",
+    "bodyZh": [
+      [
+        "主张",
+        "人们经常观察到两件事同时出现，于是推断出错误的因果方向。当机构掌控叙事时，这种错误尤其顽固。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)用船上的罗盘作为最干净的意象：罗盘反映方向，但并不驾驶船只。他随后把这一逻辑扩展到研究与财富，并扩展到「贪婪导致每一次危机」的说法——尽管贪婪是古已有之的，真正的问题是脆弱(fragile)的系统设计。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为一旦因果方向被弄反，政策和声望都会跟着走错方向。人们开始资助、赞美、监管那个「可见的伴随者」，而不是真正的生成者。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)需要这一警告，下一些章节才能去攻击教育、创新和经济史中那些错误的因果箭头。否则，第 4 部分(Book IV)其余内容听起来就更像修辞，而不是诊断。"
+      ]
+    ],
     "chapterLabel": "Chapter 13",
     "en": [
       [
@@ -125,16 +197,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "人们常常看到两个现象一起出现，就把因果方向讲反。`epiphenomenon` 最大的问题，不是共现，而是它会诱导错误的 causal story。"
+        "核心观点",
+        "人们经常观察到两件事同时出现，于是推断出错误的因果方向。当机构掌控叙事时，这种错误尤其顽固。"
       ],
       [
         "详细解释",
-        "Taleb 这里要警惕的是 reverse causation。某个东西可能只是伴随出现、只是反映状态，但人会把它写成真正的 driver。这样一来，prestige、policy 和 funding 都会朝错的方向走。\n\n所以这节其实是在训练一种因果上的怀疑。"
+        "一旦因果方向被弄反，政策和声望也会跟着走错方向。人们开始资助、赞美、监管那个「可见的伴随者」，而不是真正的生成者。\n\n塔勒布(Taleb)需要这一警告，下一些章节才能去攻击教育、创新和经济史中那些错误的因果箭头。否则，第 4 部分(Book IV)其余内容听起来就更像修辞，而不是诊断。"
       ],
       [
-        "这个例子到底在说明什么",
-        "船上的 compass 会显示方向，但不会 steering。把 compass 当 cause，就是把 indicator 当 engine。Taleb 再把这种错误扩展到 research and wealth、以及 greed 和 crisis 的关系上。\n\n这些例子真正要说明的是：看到两个东西一起出现，不等于你已经知道是谁推动谁。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)用船上的罗盘作为最干净的意象：罗盘反映方向，但并不驾驶船只。他随后把这一逻辑扩展到研究与财富，并扩展到「贪婪导致每一次危机」的说法——尽管贪婪是古已有之的，真正的问题是脆弱(fragile)的系统设计。\n\n这一情境的重点是：一旦因果方向被弄反，政策和声望也会跟着走错方向。人们开始资助、赞美、监管那个可见的伴随者，而不是真正的生成者。"
       ]
     ]
   }

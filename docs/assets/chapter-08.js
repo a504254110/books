@@ -8,7 +8,25 @@ window.ANTIFRAGILE_CHAPTERS.chapter8 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter08-concept1": {
     "title": "Forecasting has no credible record in Black Swan domains",
-    "titleZh": "预测在黑天鹅领域并无可信记录",
+    "titleZh": "在黑天鹅(Black Swan)领域，预测(forecasting)没有可信的过往记录",
+    "bodyZh": [
+      [
+        "主张",
+        "在被重大罕见事件主导的领域里，专家不只是表现糟糕；他们的长期预测(forecasting)记录基本等于零。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)回忆在韩国(Korea)的一场会议——国际货币基金组织(IMF)高级官员加藤隆俊(Takatoshi Kato)展示了 2010 至 2014 年的经济预测。塔勒布(Taleb)冲上讲台，告诉听众应该去要同一机构若干年前对 2008 年和 2009 年所做的预测——记录就藏在那里。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一情境说明塔勒布(Taleb)为何在攻击方法之前先攻击声望。一份对未来五年的精致预测意义有限——如果同一位预测者完全错过了上一次重大冲击(shock)的话。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)必须先打破预测(prediction)的声望，才能用反脆弱性(antifragility)作为新的组织视角去取代它。在全书层面，这为第 9 章开始的非预测式(nonpredictive)世界观腾出了空间。"
+      ]
+    ],
     "chapterLabel": "Chapter 8",
     "en": [
       [
@@ -26,22 +44,44 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "在被 rare consequential events 主导的领域里，long-range forecasting 几乎没有可信记录可言。"
+        "核心观点",
+        "在被重大罕见事件主导的领域里，专家不只是表现糟糕；他们的长期预测(forecasting)记录基本等于零。"
       ],
       [
         "详细解释",
-        "Taleb 并不是说 expert 只是“预测得不够准”，而是说在 Black Swan domain 里，预测这件事本身就缺乏可验证的 track record。表面上很 polished 的 forecast，很可能只是因为大家不去回看它过去真正面对 shock 时的成绩。\n\n所以这一节首先要打掉的是 prediction 的 prestige。"
+        "这一情境说明塔勒布(Taleb)为何在攻击方法之前先攻击声望。一份对未来五年的精致预测意义有限——如果同一位预测者完全错过了上一次重大冲击(shock)的话。\n\n塔勒布(Taleb)必须先打破预测的声望，然后才能用反脆弱性(antifragility)作为新的组织视角去取代它。在全书层面，这为第 9 章开始的非预测式(nonpredictive)世界观腾出了空间。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Korea conference 的场景很直白：与其听 2010 到 2014 的 projection，不如先把同一家机构当年对 2008、2009 的旧预测拿出来看。真正暴露 forecasting 水平的，不是未来的漂亮表格，而是已经发生过的 shock 有没有被看到。\n\n这个例子真正要说明的是：没有历史 record 支撑的 forecast，不该自动得到权威地位。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)回忆在韩国(Korea)的一场会议——加藤隆俊(Takatoshi Kato)展示了 2010 至 2014 年的经济预测。塔勒布(Taleb)冲上讲台，告诉听众应该去要同一机构若干年前对 2008 年和 2009 年所做的预测——记录就藏在那里。\n\n这一情境的重点是：这一情境说明塔勒布(Taleb)为何在攻击方法之前先攻击声望。一份对未来五年的精致预测意义有限——如果同一位预测者完全错过了上一次重大冲击的话。"
       ]
     ]
   },
   "chapter08-concept2": {
     "title": "Forecasting is harmful when it licenses fragility",
-    "titleZh": "若预测变成放任脆弱的借口，就有害",
+    "titleZh": "当预测(forecasting)纵容脆弱(fragility)时，预测就有害",
+    "bodyZh": [
+      [
+        "主张",
+        "预测(prediction)真正的代价不是出错后的尴尬，而是它带来的虚假信心(false confidence)——让人去建造对意外没有余地的系统。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)引用心理学家、行为经济学先驱丹尼尔·卡尼曼(Daniel Kahneman)给他看过的证据：即使是随机数字预测，也会增加人的风险承担。他把这与江湖郎中卖的「蛇油(snake-oil)」对比——那种假药之所以危险，不只是因为它无效，而是因为它把行为引向错误的方向。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这一点重要，是因为预测(prediction)并非中立。一份糟糕的预测可以主动增加脆弱性(fragility)——它会让人承担更多风险、缩小安全边际，或信任本该重新设计的系统。"
+      ],
+      [
+        "全书联结",
+        "塔勒布(Taleb)希望读者把预测看作具有医源性(iatrogenic)的东西。它可以让暴露(exposure)变得更糟，即使没人立刻察觉。在全书层面，这一论证会在伦理章节中重新出现——塔勒布(Taleb)在那里追问：预测者是否为他们建议的后果买单？"
+      ],
+      [
+        "常见误解",
+        "塔勒布(Taleb)并不是说错误预测的主要问题是「让专家难堪」。他的观点是：当机构据此采取行动时，预测才真正变得有害。"
+      ]
+    ],
     "chapterLabel": "Chapter 8",
     "en": [
       [
@@ -59,22 +99,44 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "预测真正危险的地方，不只是预测错了会尴尬，而是错误预测会给人一种虚假的确定感，从而鼓励更 fragile 的设计和行为。"
+        "核心观点",
+        "预测(prediction)真正的代价不是出错后的尴尬，而是它带来的虚假信心(false confidence)——让人去建造那些对意外没有余地的系统。"
       ],
       [
         "详细解释",
-        "Taleb 把 forecasting 看成一种可能有 iatrogenic 后果的活动。错的 forecast 并不是中性的，它会让人增加杠杆、减少 margin、或相信某个本来应该被 redesign 的 system。\n\n所以 forecasting 的 harm 在于它会主动改变人的行为。"
+        "预测(prediction)并非中立。一份糟糕的预测可以主动增加脆弱性(fragility)，因为它会让人承担更多风险、缩小安全边际，或信任本该重新设计的系统。\n\n塔勒布(Taleb)并不是在说错误预测的主要问题是「让专家难堪」。他的观点是：当机构据此采取行动时，预测才真正变得有害。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Kahneman 给 Taleb 的证据说明，就算 forecast 是随机数字，人也会因为看到了这些数字而承担更多风险。Taleb 把这件事比作 snake-oil medicine：危险不只是它没效果，而是它让人按错方向行动。\n\n这个例子真正要说明的是：预测不是 harmless opinion，它可能会直接制造 fragility。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)引用了卡尼曼(Kahneman)给他看过的证据：即使是随机数字预测，也会增加人的风险承担。他把这与江湖郎中卖的「蛇油(snake-oil)」做对比：那种假药之所以危险，不只是因为它无效，而是因为它把行为引向错误的方向。\n\n这一情境的重点是：预测(prediction)并非中立。一份糟糕的预测可以主动增加脆弱性(fragility)，因为它会让人承担更多风险、缩小安全边际，或信任本该重新设计的系统。"
       ]
     ]
   },
   "chapter08-concept3": {
     "title": "Replace prediction with fragility detection",
-    "titleZh": "用脆弱性识别代替预测",
+    "titleZh": "用脆弱性识别(fragility detection)代替预测(prediction)",
+    "bodyZh": [
+      [
+        "主张",
+        "当事件无法预测(forecastable)时，能力应当以「能否识别谁脆弱(fragile)、谁稳健(robust)、谁从失序(disorder)中获益」来衡量。"
+      ],
+      [
+        "例子",
+        "塔勒布(Taleb)说他在韩国(Korea)当场提出了「三元法(Triad)」，作为对预测剧场的回应。他随后给出具体替代方案：足够小、且埋设足够深的核反应堆，使故障不会扩散；以及瑞典(Sweden)在 1991 年之后的财政纪律(fiscal discipline)，使后来的危机伤害更小。"
+      ],
+      [
+        "为什么这个例子重要",
+        "这些例子说明塔勒布(Taleb)想用什么来取代预测(prediction)。目标不是提前知道冲击(shock)的具体形态，而是构建一个在冲击到来时不会严重断裂的系统。"
+      ],
+      [
+        "全书联结",
+        "这是第二部(Book II)与第三部(Book III)之间的关节。塔勒布(Taleb)并不是只留给读者怀疑主义——他在提供一个不同的标准。在全书层面，这是胖东尼(Fat Tony)章节以及第三部非预测式(nonpredictive)世界观的明确启点。"
+      ],
+      [
+        "常见误解",
+        "脆弱性识别(fragility detection)并不取消「规划」的必要。它把规划的标准从「猜中事件」改成了「限制因猜错而造成的伤害」。"
+      ]
+    ],
     "chapterLabel": "Chapter 8",
     "en": [
       [
@@ -92,16 +154,16 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
     ],
     "zh": [
       [
-        "核心意思",
-        "当事件本身不可预测时，真正有用的能力不是 guess the event，而是识别谁 fragile、谁 robust、谁会从 disorder 中受益。"
+        "核心观点",
+        "当事件无法预测(forecastable)时，能力应当以「能否识别谁脆弱(fragile)、谁稳健(robust)、谁从失序(disorder)中获益」来衡量。"
       ],
       [
         "详细解释",
-        "Taleb 不想只留下怀疑主义，他要换一个标准。planning 不是被取消，而是被重写：重点从“提前知道会发生什么”变成“即使猜错了也别被打死”。\n\n这就是他用 fragility detection 来替代 forecasting 的原因。"
+        "这些例子说明塔勒布(Taleb)真正想要的、用以取代预测(prediction)的东西。目标不是提前知道冲击(shock)的具体形态，而是构建一个在冲击到来时不会严重断裂的系统。\n\n脆弱性识别(fragility detection)并不取消「规划」的必要。它把规划的标准从「猜中事件」改成了「限制因猜错而造成的伤害」。"
       ],
       [
-        "这个例子到底在说明什么",
-        "Korea 那场 conference 之后，Taleb 现场提出 Triad，就是要把讨论从 forecasting theater 拉回 exposure analysis。small nuclear reactor 的例子、Sweden 的 fiscal discipline 也都在说明同一件事：你不必知道 exact shock，只需要让 system 在 shock 来时不要崩得太惨。\n\n这些例子真正要说明的是：在不可预测的世界里，设计比预测更重要。"
+        "这个例子在说明什么",
+        "塔勒布(Taleb)说他在韩国(Korea)当场提出了「三元法(Triad)」，作为对预测剧场的回应。他随后给出具体的替代方案：足够小、且埋设足够深的核反应堆，使故障不会扩散；以及瑞典(Sweden)在 1991 年之后的财政纪律(fiscal discipline)，使后来的危机伤害更小。\n\n这一情境的重点是：这些例子说明塔勒布(Taleb)真正想要的东西——目标不是提前知道冲击(shock)的具体形态，而是构建一个在冲击到来时不会严重断裂的系统。"
       ]
     ]
   }
