@@ -47,8 +47,16 @@
         </button>
       </nav>
 
-      <nav class="nav-group" aria-label="Chapters">
-        <p class="nav-title">Chapters</p>
+      <nav class="nav-group nav-group-collapsible collapsed" aria-label="Chapters">
+        <div class="nav-title-row">
+          <p class="nav-title">Chapters</p>
+          <button class="nav-collapse" type="button" data-collapse-toggle="chapterList" aria-controls="chapterList" aria-expanded="false" aria-label="Expand chapters">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="nav-list" id="chapterList" aria-hidden="true">
         <button class="nav-button" type="button" data-view-target="chapter-1" data-nav-item>
           <span>1. Between Damocles and Hydra</span>
         </button>
@@ -127,6 +135,14 @@
         <button class="nav-button" type="button" data-view-target="epilogue" data-nav-item>
           <span>Epilogue. From Resurrection to Resurrection</span>
         </button>
+        </div>
+      </nav>
+
+      <nav class="nav-group" aria-label="Quiz">
+        <p class="nav-title">Quiz</p>
+        <button class="nav-button" type="button" data-view-target="quiz" data-nav-item>
+          <span>Book Quiz</span>
+        </button>
       </nav>
 
     </aside>
@@ -156,8 +172,39 @@
             <h3 id="start-reading">Begin with the vocabulary chapter.</h3>
             <p>Chapter 1 establishes the core distinction between fragile, robust, and antifragile before the remaining chapters expand it into stress, randomness, intervention, prediction, optionality, medicine, ethics, and renewal.</p>
           </div>
-          <button class="primary-action" type="button" data-view-target="chapter-1">Start chapter 1</button>
+          <button class="primary-action" type="button" data-view-target="chapter-1" data-expand-chapters="true">Start chapter 1</button>
         </section>
+
+        <section class="panel start-card" aria-labelledby="start-quiz">
+          <div>
+            <div class="section-label">Test Recall</div>
+            <h3 id="start-quiz">Start the book quiz.</h3>
+            <p>Use 40 single-question drills to check whether you can explain Taleb's concepts, examples, and whole-book logic without rereading the summaries.</p>
+          </div>
+          <button class="primary-action quiz-action" type="button" data-view-target="quiz">Start quiz</button>
+        </section>
+      </section>
+
+      <section class="view quiz" id="quiz" data-view>
+        <div class="quiz-hero">
+          <div class="eyebrow">Book Quiz</div>
+          <h2>Check whether the ideas survived the reading.</h2>
+          <p>Read the question first. Try to answer out loud before opening the reveal panel. A strong answer should use Taleb's vocabulary and at least one concrete example from the book.</p>
+        </div>
+
+        <section class="quiz-cockpit" aria-label="Quiz controls">
+          <div>
+            <div class="section-label">Current Drill</div>
+            <h3 id="quizPosition">Question 1 / 40</h3>
+            <p id="quizScope">Core Vocabulary</p>
+          </div>
+          <div class="quiz-progress" aria-hidden="true">
+            <span id="quizProgressBar"></span>
+          </div>
+          <div class="quiz-jump" id="quizJump" aria-label="Jump to question"></div>
+        </section>
+
+        <article class="quiz-single-card" id="quizCard" aria-live="polite"></article>
       </section>
 
       <div id="chapterMount"></div>
@@ -208,6 +255,7 @@
   <script src="assets/chapter-24.js"></script>
   <script src="assets/chapter-25.js"></script>
   <script src="assets/epilogue.js"></script>
+  <script src="assets/quiz.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>

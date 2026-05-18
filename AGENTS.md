@@ -147,8 +147,8 @@ When an example requires this much setup to pass, that is a signal to use it alo
 ## Standalone HTML reader
 
 - The standalone HTML reader is an export layer, not the source of truth. Keep source summaries in `books/<slug>/chapters/` and source explainers in `books/<slug>/explainers-en/` / `books/<slug>/explainers-zh/`; generate HTML assets from those files.
-- Put standalone reader files under `antifragile-html/`. Keep `index.html` as the shell and shared navigation; put chapter payloads in `antifragile-html/assets/chapter-NN.js`; keep shared interaction in `antifragile-html/assets/app.js`; keep shared design in `antifragile-html/assets/styles.css`.
-- The HTML folder should remain portable. A reader should be able to receive the folder and open `index.html` directly without installing Obsidian or a build tool. Do not depend on remote fonts, remote scripts, package managers, or fetch calls.
+- Put standalone reader files under `docs/` so GitHub Pages can publish from the repository's `docs` folder. Keep `docs/index.html` as the shell and shared navigation; put chapter payloads in `docs/assets/chapter-NN.js`; keep shared interaction in `docs/assets/app.js`; keep shared design in `docs/assets/styles.css`; keep quiz data in `docs/assets/quiz.js`.
+- The HTML folder should remain portable. A reader should be able to receive the `docs/` folder and open `index.html` directly without installing Obsidian or a build tool. Do not depend on remote fonts, remote scripts, package managers, or fetch calls.
 - Do not store personal reading progress in the standalone HTML reader unless the user explicitly requests a local-only browser storage feature. By default, omit reading status from the HTML export.
 - Keep the HTML visual direction editorial and minimal: strong serif headings, readable line length, high contrast, restrained motion, and semantic color. Avoid dashboard density and decorative icon spam.
 - Use the same chapter order in HTML as in Obsidian: top orientation, core concepts, lighter after-reading appendix, then navigation.
