@@ -153,7 +153,15 @@
       gap: 12px;
     }
 
-    .theme-toggle {
+    .brand-actions,
+    .topbar-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .theme-toggle,
+    .language-toggle {
       width: 44px;
       height: 44px;
       border: 1px solid var(--line-strong);
@@ -167,10 +175,23 @@
       transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
     }
 
-    .theme-toggle:hover {
+    .language-toggle {
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+    }
+
+    .theme-toggle:hover,
+    .language-toggle:hover {
       background: var(--surface-strong);
       border-color: var(--accent);
       color: var(--accent-strong);
+    }
+
+    .language-toggle[aria-pressed="true"] {
+      background: var(--active-bg);
+      border-color: var(--active-bg);
+      color: var(--active-ink);
     }
 
     .theme-icon {
@@ -335,6 +356,7 @@
     .deep-button:focus-visible,
     .close-button:focus-visible,
     .theme-toggle:focus-visible,
+    .language-toggle:focus-visible,
     .secondary-action:focus-visible,
     .primary-action:focus-visible,
     .chapter-nav-card:focus-visible,
@@ -1297,6 +1319,12 @@
     }
 
     .zh {
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", var(--sans);
+      line-height: 1.78;
+    }
+
+    .zh-content p,
+    .zh-content li {
       font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", var(--sans);
       line-height: 1.78;
     }

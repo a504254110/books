@@ -24,7 +24,7 @@ mode: chapter
 > - Stoicism matters here not as emotional numbness, but as a practical way to reduce dependence, limit losses, and stay open to gains.
 
 > [!info]- Grounding
-> **Grounding.** Locators: PDF pp. 169-175; chapter map: PDF p. 13 (2012 English *Antifragile*). This repository does not redistribute the book; verify with your own licensed copy.
+> **Grounding:** Locators: PDF pp. 169-175; chapter map: PDF p. 13 (2012 English *Antifragile*). This repository does not redistribute the book; verify with your own licensed copy.
 
 ## What you should be able to say out loud
 
@@ -49,47 +49,47 @@ mode: chapter
 ### Concept 1: Seneca solves antifragility as asymmetry
 
 > [!concept]
-> **Claim.** The central Stoic move is to arrange life so that bad outcomes hurt less than good outcomes can help. That asymmetry turns uncertainty from a threat into something potentially favorable.
+> **Claim:** The central Stoic move is to arrange life so that bad outcomes hurt less than good outcomes can help. That asymmetry turns uncertainty from a threat into something potentially favorable.
 >
-> **Example.** Taleb introduces Seneca as more than a philosopher. He was also a rich Roman statesman exposed to court politics, exile, and danger. Taleb then contrasts him with Professor Triffat, the modern decision theorist who teaches risk formulas but refuses to use them when making a serious career choice.
+> **Example:** Taleb introduces Seneca as more than a philosopher. He was also a rich Roman statesman exposed to court politics, exile, and danger. Taleb then contrasts him with Professor Triffat, the modern decision theorist who teaches risk formulas but refuses to use them when making a serious career choice.
 >
-> **Why this example matters.** This matters because Taleb wants a thinker who actually lived under risk, wealth, politics, and danger. Seneca becomes credible here because his ideas were tested in serious life, not just in academic diagrams.
+> **Why this example matters:** This matters because Taleb wants a thinker who actually lived under risk, wealth, politics, and danger. Seneca becomes credible here because his ideas were tested in serious life, not just in academic diagrams.
 >
-> **Whole-book connection.** Chapter 9 gave Taleb a character who senses fragility. Seneca gives him the first clean rule for how to structure exposure. That rule becomes the base for the barbell in chapter 11.
+> **Whole-book connection:** Chapter 9 gave Taleb a character who senses fragility. Seneca gives him the first clean rule for how to structure exposure. That rule becomes the base for the barbell in chapter 11.
 >
 > **Deep dive.** [[10-concept-1-seneca-solves-antifragility-as-asymmetry-en|English]] · [[10-concept-1-seneca-solves-antifragility-as-asymmetry-zh|中文]]
 >
-> **Grounding.** PDF pp. 169-172; chapter map, PDF p. 13.
+> **Grounding:** PDF pp. 169-172; chapter map, PDF p. 13.
 
 ### Concept 2: Stoic practice lowers the emotional downside of loss
 
 > [!concept]
-> **Claim.** By mentally degrading the importance of possessions and rehearsing loss, Stoicism reduces the damage inflicted by adverse outcomes.
+> **Claim:** By mentally degrading the importance of possessions and rehearsing loss, Stoicism reduces the damage inflicted by adverse outcomes.
 >
-> **Example.** Taleb starts with Zeno, the founder of Stoicism. After a shipwreck destroys his cargo, Zeno treats the loss as release rather than total ruin. Taleb then gives Seneca-style modern scenes, like traveling with almost nothing or writing a resignation letter before starting a job so the job cannot own your mind.
+> **Example:** Taleb starts with Zeno, the founder of Stoicism. After a shipwreck destroys his cargo, Zeno treats the loss as release rather than total ruin. Taleb then gives Seneca-style modern scenes, like traveling with almost nothing or writing a resignation letter before starting a job so the job cannot own your mind.
 >
-> **Why this example matters.** This matters because the method works before the bad event arrives. By practicing less dependence in advance, you shrink the emotional and practical downside of loss.
+> **Why this example matters:** This matters because the method works before the bad event arrives. By practicing less dependence in advance, you shrink the emotional and practical downside of loss.
 >
-> **Whole-book connection.** Taleb is turning Stoicism into applied risk management. This prepares the later via negativa chapters, where subtraction, restraint, and removal of dependence become practical tools.
+> **Whole-book connection:** Taleb is turning Stoicism into applied risk management. This prepares the later via negativa chapters, where subtraction, restraint, and removal of dependence become practical tools.
 >
 > **Deep dive.** [[10-concept-2-stoic-practice-lowers-the-emotional-downside-of-loss-en|English]] · [[10-concept-2-stoic-practice-lowers-the-emotional-downside-of-loss-zh|中文]]
 >
-> **Grounding.** PDF pp. 171-174; chapter map, PDF p. 13.
+> **Grounding:** PDF pp. 171-174; chapter map, PDF p. 13.
 
 ### Concept 3: Dependence itself is a source of fragility
 
 > [!concept]
-> **Claim.** The more a person is owned by circumstances, luxury, and emotional dependence, the larger the downside of life becomes.
+> **Claim:** The more a person is owned by circumstances, luxury, and emotional dependence, the larger the downside of life becomes.
 >
-> **Example.** Taleb reads Seneca's attacks on luxury in a specific way: once wealth gives you many things to protect, you sleep worse, worry more, and become ruled by what you own. Seneca therefore keeps the upside of wealth but tries to remove the slavery that usually comes with it.
+> **Example:** Taleb reads Seneca's attacks on luxury in a specific way: once wealth gives you many things to protect, you sleep worse, worry more, and become ruled by what you own. Seneca therefore keeps the upside of wealth but tries to remove the slavery that usually comes with it.
 >
-> **Why this example matters.** This matters because the problem is not wealth itself. The problem is when comfort, status, or possessions enlarge your downside and make you afraid of losing them.
+> **Why this example matters:** This matters because the problem is not wealth itself. The problem is when comfort, status, or possessions enlarge your downside and make you afraid of losing them.
 >
-> **Whole-book connection.** Taleb is broadening fragility from external systems to inner life. Later chapters on deprivation, subtraction, and ethical exposure all depend on this idea that dependence quietly amplifies downside.
+> **Whole-book connection:** Taleb is broadening fragility from external systems to inner life. Later chapters on deprivation, subtraction, and ethical exposure all depend on this idea that dependence quietly amplifies downside.
 >
 > **Deep dive.** [[10-concept-3-dependence-itself-is-a-source-of-fragility-en|English]] · [[10-concept-3-dependence-itself-is-a-source-of-fragility-zh|中文]]
 >
-> **Grounding.** PDF pp. 172-175; chapter map, PDF p. 13.
+> **Grounding:** PDF pp. 172-175; chapter map, PDF p. 13.
 
 ## Points to debate
 

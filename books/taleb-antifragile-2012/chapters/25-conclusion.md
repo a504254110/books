@@ -25,7 +25,7 @@ mode: chapter
 > - He ends with a final existential claim: safety without variation may preserve an object, but it does not describe a fully alive human life.
 
 > [!info]- Grounding
-> **Grounding.** Locators: PDF pp. 436-437; chapter map: PDF p. 14 (2012 English *Antifragile*). This repository does not redistribute the book; verify with your own licensed copy.
+> **Grounding:** Locators: PDF pp. 436-437; chapter map: PDF p. 14 (2012 English *Antifragile*). This repository does not redistribute the book; verify with your own licensed copy.
 
 ## What you should be able to say out loud
 
@@ -45,49 +45,49 @@ mode: chapter
 ### Concept 1: The book's one-leg summary is a generator, not a slogan
 
 > [!concept]
-> **Claim.** `Everything gains or loses from volatility` is Taleb's generator sentence for the whole book, not just a catchy closing line.
+> **Claim:** `Everything gains or loses from volatility` is Taleb's generator sentence for the whole book, not just a catchy closing line.
 >
-> **Example.** At the end of the manuscript Taleb's friend Shaiy Pilpel, a probabilist, asks him to explain the book standing on one leg. Taleb answers immediately because he now sees each chapter as a derivation of one central asymmetry.
+> **Example:** At the end of the manuscript Taleb's friend Shaiy Pilpel, a probabilist, asks him to explain the book standing on one leg. Taleb answers immediately because he now sees each chapter as a derivation of one central asymmetry.
 >
-> **Why this example matters.** This matters because it tells the reader how to use the book after finishing it. Taleb wants one simple question to regenerate the rest of the argument in new domains.
+> **Why this example matters:** This matters because it tells the reader how to use the book after finishing it. Taleb wants one simple question to regenerate the rest of the argument in new domains.
 >
-> **Whole-book connection.** This sentence compresses the Triad, convexity, optionality, medical asymmetry, and skin in the game into one reusable test.
+> **Whole-book connection:** This sentence compresses the Triad, convexity, optionality, medical asymmetry, and skin in the game into one reusable test.
 >
 > **Deep dive.** [[25-concept-1-the-book-s-one-leg-summary-is-a-generator-not-a-slogan-en|English]] · [[25-concept-1-the-book-s-one-leg-summary-is-a-generator-not-a-slogan-zh|中文]]
 >
-> **Grounding.** PDF p. 436; chapter map, PDF p. 14.
+> **Grounding:** PDF p. 436; chapter map, PDF p. 14.
 
 ### Concept 2: The practical problem is exposure, not total understanding
 
 > [!concept]
-> **Claim.** Even when we do not fully understand the world, we can still improve our position by changing our exposure to it.
+> **Claim:** Even when we do not fully understand the world, we can still improve our position by changing our exposure to it.
 >
-> **Example.** Taleb restates one of the book's key moves: we may never know `x` in full, but we can reshape `f(x)`. The barbell is the practical example of this move, because it changes the payoff without requiring total prediction.
+> **Example:** Taleb restates one of the book's key moves: we may never know `x` in full, but we can reshape `f(x)`. The barbell is the practical example of this move, because it changes the payoff without requiring total prediction.
 >
-> **Why this example matters.** This matters because the book is not really offering omniscience. It is offering a way to live and decide under uncertainty by changing the shape of the payoff.
+> **Why this example matters:** This matters because the book is not really offering omniscience. It is offering a way to live and decide under uncertainty by changing the shape of the payoff.
 >
-> **Whole-book connection.** This ties the conclusion back to Thales, options, the barbell, medicine, and every chapter where Taleb preferred payoff design to explanatory confidence.
+> **Whole-book connection:** This ties the conclusion back to Thales, options, the barbell, medicine, and every chapter where Taleb preferred payoff design to explanatory confidence.
 >
 > **Deep dive.** [[25-concept-2-the-practical-problem-is-exposure-not-total-understanding-en|English]] · [[25-concept-2-the-practical-problem-is-exposure-not-total-understanding-zh|中文]]
 >
-> **Grounding.** PDF pp. 436-437; chapter map, PDF p. 14.
+> **Grounding:** PDF pp. 436-437; chapter map, PDF p. 14.
 
 ### Concept 3: Ethics and vitality are both about relation to volatility
 
 > [!concept]
-> **Claim.** The same asymmetry logic governs moral life and personal life: do not impose downside on others, and do not build your own life as if total insulation were the highest good.
+> **Claim:** The same asymmetry logic governs moral life and personal life: do not impose downside on others, and do not build your own life as if total insulation were the highest good.
 >
-> **Example.** Taleb links the Golden Rule and Hammurabi's symmetry to the whole book, then ends with the image that the glass is dead while living things are `long volatility`.
+> **Example:** Taleb links the Golden Rule and Hammurabi's symmetry to the whole book, then ends with the image that the glass is dead while living things are `long volatility`.
 >
-> **Why this example matters.** This matters because it shows why the ethical chapters were not an add-on. The same question governs both systems and people: how do they respond to variation, and who pays when they fail?
+> **Why this example matters:** This matters because it shows why the ethical chapters were not an add-on. The same question governs both systems and people: how do they respond to variation, and who pays when they fail?
 >
-> **Whole-book connection.** This is the point where technical convexity, medical prudence, and skin in the game fully merge. It also points naturally toward the epilogue's imagery of death, renewal, and continuity.
+> **Whole-book connection:** This is the point where technical convexity, medical prudence, and skin in the game fully merge. It also points naturally toward the epilogue's imagery of death, renewal, and continuity.
 >
-> **Possible confusion.** Taleb is not saying that all risk is noble. He is saying that a life stripped of effort, uncertainty, and personal exposure becomes lifeless in a deeper sense.
+> **Possible confusion:** Taleb is not saying that all risk is noble. He is saying that a life stripped of effort, uncertainty, and personal exposure becomes lifeless in a deeper sense.
 >
 > **Deep dive.** [[25-concept-3-ethics-and-vitality-are-both-about-relation-to-volatility-en|English]] · [[25-concept-3-ethics-and-vitality-are-both-about-relation-to-volatility-zh|中文]]
 >
-> **Grounding.** PDF pp. 436-437; chapter map, PDF p. 14.
+> **Grounding:** PDF pp. 436-437; chapter map, PDF p. 14.
 
 ## Points to debate
 

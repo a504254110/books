@@ -11,30 +11,40 @@
     <header class="topbar" aria-label="Mobile toolbar">
       <button class="secondary-action" id="menuButton" type="button" aria-controls="sidebar" aria-expanded="false">Menu</button>
       <div class="mobile-title">Antifragile Reader</div>
-      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme" title="Switch to dark theme">
-        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M21 14.6A8.6 8.6 0 0 1 9.4 3a7.5 7.5 0 1 0 11.6 11.6Z"></path>
-        </svg>
-        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="12" cy="12" r="4"></circle>
-          <path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"></path>
-        </svg>
-      </button>
+      <div class="topbar-actions">
+        <button class="language-toggle" type="button" data-language-toggle aria-pressed="false" aria-label="Switch content language to Chinese" title="Switch content language to Chinese">
+          <span data-language-label>EN</span>
+        </button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 14.6A8.6 8.6 0 0 1 9.4 3a7.5 7.5 0 1 0 11.6 11.6Z"></path>
+          </svg>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"></path>
+          </svg>
+        </button>
+      </div>
     </header>
 
     <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
       <div class="brand">
         <div class="brand-top">
           <div class="brand-kicker">HTML Reader</div>
-          <button class="theme-toggle sidebar-theme" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme" title="Switch to dark theme">
-            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M21 14.6A8.6 8.6 0 0 1 9.4 3a7.5 7.5 0 1 0 11.6 11.6Z"></path>
-            </svg>
-            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="12" cy="12" r="4"></circle>
-              <path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"></path>
-            </svg>
-          </button>
+          <div class="brand-actions">
+            <button class="language-toggle" type="button" data-language-toggle aria-pressed="false" aria-label="Switch content language to Chinese" title="Switch content language to Chinese">
+              <span data-language-label>EN</span>
+            </button>
+            <button class="theme-toggle sidebar-theme" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme" title="Switch to dark theme">
+              <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 14.6A8.6 8.6 0 0 1 9.4 3a7.5 7.5 0 1 0 11.6 11.6Z"></path>
+              </svg>
+              <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"></path>
+              </svg>
+            </button>
+          </div>
         </div>
         <h1>Antifragile</h1>
         <p>A standalone reading interface for all chapter summaries and concept explainers. This edition includes all 25 chapters and the epilogue.</p>

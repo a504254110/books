@@ -25,7 +25,7 @@ mode: chapter
 > - Fat Tony's debt-free estate and strange secret bequest give one final image of prudence, judgment, and trust without overexplaining the lesson.
 
 > [!info]- Grounding
-> **Grounding.** PDF locators (p. 439; epilogue entry p. 14) refer to the 2012 English *Antifragile*. This repository does not redistribute the book; verify with your own licensed copy.
+> **Grounding:** PDF locators (p. 439; epilogue entry p. 14) refer to the 2012 English *Antifragile*. This repository does not redistribute the book; verify with your own licensed copy.
 
 ## What you should be able to say out loud
 
@@ -44,34 +44,34 @@ mode: chapter
 ### Concept 1: The book ends with a cycle of loss followed by renewal
 
 > [!concept]
-> **Claim.** Taleb closes the book with an image of recurrence rather than a final proof.
+> **Claim:** Taleb closes the book with an image of recurrence rather than a final proof.
 >
-> **Example.** Nero is in the Levant for the Adonis rites, where women mourn the god's death and then celebrate resurrection as winter gives way to spring and the rivers turn red with mountain runoff.
+> **Example:** Nero is in the Levant for the Adonis rites, where women mourn the god's death and then celebrate resurrection as winter gives way to spring and the rivers turn red with mountain runoff.
 >
-> **Why this example matters.** This matters because it restages the book's deepest pattern. Systems, seasons, and lineages move through destruction and renewal, not through permanent preservation of every component.
+> **Why this example matters:** This matters because it restages the book's deepest pattern. Systems, seasons, and lineages move through destruction and renewal, not through permanent preservation of every component.
 >
-> **Whole-book connection.** This echoes chapter 1's Damocles, Phoenix, and Hydra imagery and chapter 4's argument that life often renews itself through replacement.
+> **Whole-book connection:** This echoes chapter 1's Damocles, Phoenix, and Hydra imagery and chapter 4's argument that life often renews itself through replacement.
 >
 > **Deep dive.** [[epilogue-concept-1-the-book-ends-with-a-cycle-of-loss-followed-by-renewal-en|English]] · [[epilogue-concept-1-the-book-ends-with-a-cycle-of-loss-followed-by-renewal-zh|中文]]
 >
-> **Grounding.** PDF p. 439; chapter map, PDF p. 14.
+> **Grounding:** PDF p. 439; chapter map, PDF p. 14.
 
 ### Concept 2: Fat Tony's last act is still downside-first prudence
 
 > [!concept]
-> **Claim.** Even after death, Fat Tony is presented as conservative where downside matters and trusting where explicit rulebooks would be too rigid.
+> **Claim:** Even after death, Fat Tony is presented as conservative where downside matters and trusting where explicit rulebooks would be too rigid.
 >
-> **Example.** Nero discovers that Tony's estate is debt-free, conservative, and fairly distributed. Then comes the posthumous prank: Tony leaves Nero twenty million dollars for a noble but secret and dangerous mission, trusting Nero to read his mind.
+> **Example:** Nero discovers that Tony's estate is debt-free, conservative, and fairly distributed. Then comes the posthumous prank: Tony leaves Nero twenty million dollars for a noble but secret and dangerous mission, trusting Nero to read his mind.
 >
-> **Why this example matters.** This matters because it condenses Tony's role in the book. He controls ruin where control is possible, but he still leaves room for judgment, optionality, and unscripted action.
+> **Why this example matters:** This matters because it condenses Tony's role in the book. He controls ruin where control is possible, but he still leaves room for judgment, optionality, and unscripted action.
 >
-> **Whole-book connection.** The estate scene ties back to Seneca, the barbell, and skin in the game. Tony's final trust in Nero also fits Taleb's preference for embodied judgment over bureaucratic instruction.
+> **Whole-book connection:** The estate scene ties back to Seneca, the barbell, and skin in the game. Tony's final trust in Nero also fits Taleb's preference for embodied judgment over bureaucratic instruction.
 >
-> **Possible confusion.** The epilogue is more literary than analytic. That is deliberate. Its job is to leave the book in lived image, not to prove another theorem.
+> **Possible confusion:** The epilogue is more literary than analytic. That is deliberate. Its job is to leave the book in lived image, not to prove another theorem.
 >
 > **Deep dive.** [[epilogue-concept-2-fat-tony-s-last-act-is-still-downside-first-prudence-en|English]] · [[epilogue-concept-2-fat-tony-s-last-act-is-still-downside-first-prudence-zh|中文]]
 >
-> **Grounding.** PDF p. 439.
+> **Grounding:** PDF p. 439.
 
 ## Points to debate
 

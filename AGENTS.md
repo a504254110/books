@@ -193,19 +193,19 @@ When an example requires this much setup to pass, that is a signal to use it alo
 - For each concept card:
   - `### Concept 1: ...` and continue numbering in order
   - One `[!concept]` callout directly under the heading
-  - `**Claim.**`
-  - `**Example.**`
+  - `**Claim:**`
+  - `**Example:**`
   - `Example` should be self-contained and understandable without having read the original chapter
   - `Example` should name a concrete scene, case, or thought experiment from the chapter rather than a paraphrased abstraction
   - If the example uses a named story, historical figure, or famous anecdote, explain who or what it is before drawing the lesson from it
   - Default to a single example. Only use multiple tightly linked examples when each one independently passes the `First-time reader test`
   - If the example depends on timing, dose, or sequence, explain that sequence directly
-  - `**Why this example matters.**`
+  - `**Why this example matters:**`
   - This field should explain the lesson, contrast, or mistake corrected by the example. It should not simply repeat the `Claim`.
   - Prefer short sentences and simple verbs in these fields. Keep the key vocabulary, but make the scene and the contrast easy to understand on first read.
-  - `**Whole-book connection.**`
-  - Optional `**Possible confusion.**`
-  - Optional quiet `**Grounding.**`
+  - `**Whole-book connection:**`
+  - Optional `**Possible confusion:**`
+  - Optional quiet `**Grounding:**`
 - `## Points to debate`
 - Add 2-4 bullets on tensions, objections, overreach, or likely disagreement
 - `## Why this chapter matters in the whole book`

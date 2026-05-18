@@ -12,11 +12,13 @@
     }
 
     const explainers = window.ANTIFRAGILE_EXPLAINERS || {};
+    const translations = window.ANTIFRAGILE_TRANSLATIONS || {};
 
     const state = {
       currentView: "overview",
       currentConcept: "concept1",
       currentLang: "en",
+      contentLang: "en",
       theme: "light",
       chaptersExpanded: false,
       currentQuizIndex: 0,
@@ -24,14 +26,17 @@
     };
 
     const themeStorageKey = "antifragile-html-reader:theme";
+    const languageStorageKey = "antifragile-html-reader:language";
     const chapterNavStorageKey = "antifragile-html-reader:chapters-expanded";
     const viewStorageKey = "antifragile-html-reader:last-view";
     const quizStorageKey = "antifragile-html-reader:quiz-index";
     const quizData = window.ANTIFRAGILE_QUIZ || [];
+    const quizTranslationsZh = window.ANTIFRAGILE_QUIZ_ZH || [];
     const views = Array.from(document.querySelectorAll("[data-view]"));
     const viewTargetButtons = Array.from(document.querySelectorAll("[data-view-target]"));
     const navButtons = Array.from(document.querySelectorAll("[data-nav-item]"));
     const themeButtons = Array.from(document.querySelectorAll("[data-theme-toggle]"));
+    const languageButtons = Array.from(document.querySelectorAll("[data-language-toggle]"));
     const collapseButtons = Array.from(document.querySelectorAll("[data-collapse-toggle]"));
     const quizPosition = document.getElementById("quizPosition");
     const quizScope = document.getElementById("quizScope");
@@ -87,6 +92,234 @@
         button.setAttribute("aria-label", label);
         button.setAttribute("title", label);
       });
+    }
+
+    function loadLanguage() {
+      try {
+        const saved = localStorage.getItem(languageStorageKey);
+        state.contentLang = saved === "zh" ? "zh" : "en";
+      } catch {
+        state.contentLang = "en";
+      }
+      state.currentLang = state.contentLang;
+      applyLanguage();
+    }
+
+    function toggleLanguage() {
+      state.contentLang = state.contentLang === "zh" ? "en" : "zh";
+      state.currentLang = state.contentLang;
+      try {
+        localStorage.setItem(languageStorageKey, state.contentLang);
+      } catch {
+        // Local-file privacy settings can block storage; the current page state still updates.
+      }
+      applyLanguage();
+      if (!drawer.hidden) renderDrawer();
+    }
+
+    function applyLanguage() {
+      document.documentElement.dataset.contentLang = state.contentLang;
+      const isChinese = state.contentLang === "zh";
+      const label = isChinese ? "Switch content language to English" : "Switch content language to Chinese";
+      languageButtons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(isChinese));
+        button.setAttribute("aria-label", label);
+        button.setAttribute("title", label);
+        const languageLabel = button.querySelector("[data-language-label]");
+        if (languageLabel) languageLabel.textContent = isChinese ? "中" : "EN";
+      });
+      applyChapterTranslations();
+      applyGeneratedChineseChapterLayer();
+      renderQuiz();
+    }
+
+    function applyChapterTranslations() {
+      Object.entries(translations).forEach(([viewId, viewTranslations]) => {
+        const view = document.getElementById(viewId);
+        if (!view) return;
+        view.classList.toggle("zh-content", state.contentLang === "zh" && Boolean(viewTranslations.zh));
+        const entries = viewTranslations[state.contentLang] || [];
+        const translatedSelectors = new Set(entries.map((entry) => entry.selector));
+        const fallbackEntries = Object.values(viewTranslations).flat();
+        fallbackEntries.forEach((entry) => {
+          const target = document.querySelector(entry.selector);
+          if (!target) return;
+          if (!target.dataset.originalHtml) target.dataset.originalHtml = target.innerHTML;
+          target.innerHTML = translatedSelectors.has(entry.selector)
+            ? entries.find((candidate) => candidate.selector === entry.selector).html
+            : target.dataset.originalHtml;
+        });
+      });
+    }
+
+    function applyGeneratedChineseChapterLayer() {
+      const isChinese = state.contentLang === "zh";
+      document.querySelectorAll(".view.chapter").forEach((view) => {
+        const hasExplicitTranslations = Boolean(translations[view.id]?.zh);
+        if (hasExplicitTranslations) return;
+        view.classList.toggle("zh-content", isChinese);
+        applyGeneratedChineseScaffold(view, isChinese);
+        applyGeneratedChineseConcepts(view, isChinese);
+      });
+      document.querySelectorAll("[data-open-deep-auto='true']").forEach((button) => {
+        button.textContent = isChinese ? "深度解释" : "Deep dive";
+      });
+    }
+
+    function applyGeneratedChineseScaffold(view, isChinese) {
+      const headingTranslations = {
+        "Chapter in one minute": "一分钟读懂本章",
+        "Core concepts": "核心概念",
+        "Review appendix": "复盘附录",
+        "What you should be able to say out loud": "你应该能够直接说出来的内容",
+        "Key distinctions": "关键区分",
+        "Common confusions in this chapter": "本章常见误解",
+        "Points to debate": "可以讨论的争议点",
+        "Why this chapter matters in the whole book": "本章在整本书中的作用",
+        "Navigate": "导航"
+      };
+      view.querySelectorAll("h2").forEach((heading) => {
+        if (!heading.dataset.originalText) heading.dataset.originalText = heading.textContent.trim();
+        const original = heading.dataset.originalText;
+        heading.textContent = isChinese && headingTranslations[original] ? headingTranslations[original] : original;
+      });
+      view.querySelectorAll(".review-appendix-header .section-label").forEach((label) => {
+        if (!label.dataset.originalText) label.dataset.originalText = label.textContent.trim();
+        label.textContent = isChinese ? "读后复盘" : label.dataset.originalText;
+      });
+      view.querySelectorAll(".review-appendix-header p").forEach((paragraph) => {
+        if (!paragraph.dataset.originalHtml) paragraph.dataset.originalHtml = paragraph.innerHTML;
+        paragraph.innerHTML = isChinese
+          ? "核心概念读完后，再用这一部分复盘：它帮助你整理讨论时能说出口的判断、关键区分、常见误解、可争论的问题，以及这一章在整本书里的位置。"
+          : paragraph.dataset.originalHtml;
+      });
+      view.querySelectorAll(".chapter-nav-kicker").forEach((kicker) => {
+        if (!kicker.dataset.originalText) kicker.dataset.originalText = kicker.textContent.trim();
+        const original = kicker.dataset.originalText;
+        const translated = { Previous: "上一章", Home: "首页", Next: "下一章" }[original];
+        kicker.textContent = isChinese && translated ? translated : original;
+      });
+      view.querySelectorAll(".chapter-nav-card").forEach((card) => {
+        const title = card.querySelector(".chapter-nav-title");
+        if (!title) return;
+        if (!title.dataset.originalHtml) title.dataset.originalHtml = title.innerHTML;
+        if (!isChinese) {
+          title.innerHTML = title.dataset.originalHtml;
+          return;
+        }
+        if (title.dataset.originalHtml === "Back to overview") title.textContent = "回到总览";
+        if (title.dataset.originalHtml === "No next chapter") title.textContent = "没有下一章";
+        if (title.dataset.originalHtml === "No previous chapter") title.textContent = "没有上一章";
+      });
+      applyGeneratedChineseReadingLists(view, isChinese);
+    }
+
+    function applyGeneratedChineseConcepts(view, isChinese) {
+      view.querySelectorAll(".concept[data-concept]").forEach((concept) => {
+        const explainer = explainers[concept.dataset.concept];
+        if (!explainer?.zh) return;
+        const sections = Array.isArray(explainer.zh) ? explainer.zh : explainer.zh.sections;
+        if (!sections?.length) return;
+
+        const heading = concept.querySelector("h3");
+        if (heading) {
+          if (!heading.dataset.originalText) heading.dataset.originalText = heading.textContent.trim();
+          if (isChinese) {
+            const conceptNumber = heading.dataset.originalText.match(/^Concept\s+(\d+)/)?.[1] || "";
+            const title = explainer.titleZh || shortenText(firstParagraph(sections[0]?.[1] || "概念解释"), 54);
+            heading.textContent = conceptNumber ? `概念 ${conceptNumber}：${title}` : title;
+          } else {
+            heading.textContent = heading.dataset.originalText;
+          }
+        }
+
+        const paragraphs = Array.from(concept.children).filter((child) => child.tagName === "P" && !child.classList.contains("grounding"));
+        paragraphs.forEach((paragraph, index) => {
+          if (!paragraph.dataset.originalHtml) paragraph.dataset.originalHtml = paragraph.innerHTML;
+          if (!isChinese) {
+            paragraph.hidden = false;
+            paragraph.innerHTML = paragraph.dataset.originalHtml;
+            return;
+          }
+          const section = sections[index];
+          if (!section) {
+            paragraph.hidden = true;
+            return;
+          }
+          paragraph.hidden = false;
+          const [label, body] = section;
+          paragraph.innerHTML = `<strong>${escapeHtml(label)}：</strong> ${formatTextAsInlineHtml(body)}`;
+        });
+
+        concept.querySelectorAll(".grounding").forEach((grounding) => {
+          if (!grounding.dataset.originalHtml) grounding.dataset.originalHtml = grounding.innerHTML;
+          grounding.innerHTML = isChinese
+            ? grounding.dataset.originalHtml.replace(/^Grounding:/, "出处：").replace(/chapter map/g, "章节地图")
+            : grounding.dataset.originalHtml;
+        });
+      });
+    }
+
+    function applyGeneratedChineseReadingLists(view, isChinese) {
+      const conceptSections = getChineseConceptSections(view);
+      if (!conceptSections.length) return;
+      const coreIdeas = conceptSections.map((sections) => sections[0]?.[1]).filter(Boolean);
+      const details = conceptSections.map((sections) => firstParagraph(sections[1]?.[1])).filter(Boolean);
+      const examples = conceptSections.map((sections) => firstParagraph(sections[2]?.[1])).filter(Boolean);
+      applyListTranslation(view.querySelectorAll(".abstract li"), coreIdeas, isChinese, true);
+      applyListTranslation(view.querySelectorAll(".insight-section--say .insight-list li"), coreIdeas, isChinese);
+      applyListTranslation(view.querySelectorAll(".insight-section--distinctions .insight-list li"), details, isChinese);
+      applyListTranslation(view.querySelectorAll(".insight-section--confusions .insight-list li"), details.slice(0, 2), isChinese);
+      applyListTranslation(view.querySelectorAll(".insight-section--debate .insight-list li"), examples.map((text) => `可以讨论这个例子是否足以支撑概念：${text}`), isChinese);
+      applyListTranslation(view.querySelectorAll(".insight-section--whole .insight-list li"), details, isChinese);
+    }
+
+    function getChineseConceptSections(view) {
+      return Array.from(view.querySelectorAll(".concept[data-concept]"))
+        .map((concept) => {
+          const explainer = explainers[concept.dataset.concept];
+          const sections = explainer?.zh;
+          return Array.isArray(sections) ? sections : sections?.sections;
+        })
+        .filter((sections) => sections?.length);
+    }
+
+    function applyListTranslation(items, values, isChinese, isAbstract = false) {
+      Array.from(items).forEach((item, index) => {
+        if (!item.dataset.originalHtml) item.dataset.originalHtml = item.innerHTML;
+        if (!isChinese) {
+          item.hidden = false;
+          item.innerHTML = item.dataset.originalHtml;
+          return;
+        }
+        const value = values[index];
+        if (!value) {
+          item.hidden = true;
+          return;
+        }
+        item.hidden = false;
+        if (isAbstract) {
+          item.innerHTML = `<span class="abstract-number">${String(index + 1).padStart(2, "0")}</span><span>${formatTextAsInlineHtml(value)}</span>`;
+          return;
+        }
+        item.innerHTML = formatTextAsInlineHtml(value);
+      });
+    }
+
+    function firstParagraph(value = "") {
+      return value.split("\n\n")[0] || value;
+    }
+
+    function shortenText(value, maxLength) {
+      if (value.length <= maxLength) return value;
+      return `${value.slice(0, maxLength).trim()}...`;
+    }
+
+    function formatTextAsInlineHtml(value) {
+      return value
+        .split("\n\n")
+        .map((paragraph) => escapeHtml(paragraph))
+        .join("<br><br>");
     }
 
     function loadChapterNavState() {
@@ -173,6 +406,24 @@
       setTimeout(() => centerActiveNavInList(state.currentView), 260);
     }
 
+    function prepareLanguageAwareDeepDives() {
+      document.querySelectorAll(".chapter .deep-row").forEach((row) => {
+        if (row.querySelector("[data-open-deep-auto='true']")) return;
+        const deepButtons = Array.from(row.querySelectorAll("[data-open-deep]"));
+        const concept = deepButtons[0]?.dataset.openDeep;
+        if (!concept) return;
+        row.querySelector("span")?.remove();
+        deepButtons.forEach((button) => button.remove());
+        const button = document.createElement("button");
+        button.className = "deep-button";
+        button.type = "button";
+        button.dataset.openDeep = concept;
+        button.dataset.openDeepAuto = "true";
+        button.textContent = "Deep dive";
+        row.appendChild(button);
+      });
+    }
+
     function setView(viewId, persist = true) {
       if (!isKnownView(viewId)) return;
       state.currentView = viewId;
@@ -211,9 +462,10 @@
       if (!langData) return;
       const sections = Array.isArray(langData) ? langData : langData.sections;
       if (!sections) return;
-      drawerTitle.textContent = explainer.title;
+      drawerTitle.textContent = state.currentLang === "zh" ? (explainer.titleZh || "概念解释") : explainer.title;
       const chapterLabel = explainer.chapterLabel || "Chapter 1";
-      drawerSubtitle.textContent = state.currentLang === "zh" ? `中文解释 · ${chapterLabel}` : `English explainer · ${chapterLabel}`;
+      const localizedChapterLabel = state.currentLang === "zh" ? localizeChapterLabel(chapterLabel) : chapterLabel;
+      drawerSubtitle.textContent = state.currentLang === "zh" ? `中文解释 · ${localizedChapterLabel}` : `English explainer · ${chapterLabel}`;
       drawerContent.className = state.currentLang === "zh" ? "drawer-content zh" : "drawer-content";
       drawerContent.innerHTML = sections.map(([heading, body]) => {
         const paragraphs = body.split("\n\n").map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("");
@@ -227,9 +479,14 @@
       });
     }
 
+    function localizeChapterLabel(label) {
+      if (label === "Epilogue") return "尾声";
+      return label.replace(/^Chapter\s+(\d+)$/, "第 $1 章");
+    }
+
     function openDrawer(concept, lang) {
       state.currentConcept = concept;
-      state.currentLang = lang;
+      state.currentLang = lang || state.contentLang;
       renderDrawer();
       drawer.hidden = false;
       drawerBackdrop.hidden = false;
@@ -283,35 +540,61 @@
     function renderQuiz() {
       if (!quizCard || !quizData.length) return;
       const item = quizData[state.currentQuizIndex];
+      const localizedItem = getLocalizedQuizItem(item, state.currentQuizIndex);
       const questionNumber = state.currentQuizIndex + 1;
       const paddedNumber = String(questionNumber).padStart(2, "0");
       const relatedView = item.relatedView || quizRelatedViews[state.currentQuizIndex] || "overview";
       const relatedLabel = item.relatedLabel || getViewLabel(relatedView);
-      const relatedPrefix = isChapterView(relatedView) ? "Related chapter" : "Related reading";
-      quizPosition.textContent = `Question ${questionNumber} / ${quizData.length}`;
-      quizScope.textContent = item.scope;
+      const localizedRelatedLabel = localizedItem.relatedLabel || relatedLabel;
+      const relatedPrefix = state.contentLang === "zh"
+        ? (isChapterView(relatedView) ? "相关章节" : "相关阅读")
+        : (isChapterView(relatedView) ? "Related chapter" : "Related reading");
+      quizPosition.textContent = state.contentLang === "zh"
+        ? `第 ${questionNumber} 题 / 共 ${quizData.length} 题`
+        : `Question ${questionNumber} / ${quizData.length}`;
+      quizScope.textContent = localizedItem.scope;
       quizProgressBar.style.width = `${(questionNumber / quizData.length) * 100}%`;
       quizJump.innerHTML = quizData.map((quizItem, index) => {
         const active = index === state.currentQuizIndex;
-        return `<button class="quiz-jump-button${active ? " active" : ""}" type="button" data-quiz-action="jump" data-quiz-index="${index}" aria-label="Jump to question ${index + 1}" aria-current="${active ? "true" : "false"}">${String(index + 1).padStart(2, "0")}</button>`;
+        const jumpLabel = state.contentLang === "zh" ? `跳到第 ${index + 1} 题` : `Jump to question ${index + 1}`;
+        return `<button class="quiz-jump-button${active ? " active" : ""}" type="button" data-quiz-action="jump" data-quiz-index="${index}" aria-label="${escapeHtml(jumpLabel)}" aria-current="${active ? "true" : "false"}">${String(index + 1).padStart(2, "0")}</button>`;
       }).join("");
+      const prevLabel = state.contentLang === "zh" ? "上一题" : "Previous";
+      const nextLabel = state.contentLang === "zh" ? "下一题" : "Next";
+      const revealLabel = state.contentLang === "zh" ? "显示答案" : "Reveal answer";
+      const hideLabel = state.contentLang === "zh" ? "隐藏答案" : "Hide answer";
+      const expectedLabel = state.contentLang === "zh" ? "参考答案：" : "Expected answer.";
+      const signalLabel = state.contentLang === "zh" ? "判断信号：" : "Book signal.";
       quizCard.innerHTML = `
         <div class="quiz-card-head">
           <span class="quiz-number">${paddedNumber}</span>
-          <span class="quiz-scope">${escapeHtml(item.scope)}</span>
-          <button class="quiz-related-button" type="button" data-quiz-action="go-related" data-related-view="${escapeHtml(relatedView)}">${escapeHtml(relatedPrefix)}: ${escapeHtml(relatedLabel)}</button>
+          <span class="quiz-scope">${escapeHtml(localizedItem.scope)}</span>
+          <button class="quiz-related-button" type="button" data-quiz-action="go-related" data-related-view="${escapeHtml(relatedView)}">${escapeHtml(relatedPrefix)}: ${escapeHtml(localizedRelatedLabel)}</button>
         </div>
-        <h3 class="quiz-question">${escapeHtml(item.question)}</h3>
+        <h3 class="quiz-question">${escapeHtml(localizedItem.question)}</h3>
         <div class="quiz-actions">
-          <button class="quiz-nav-button" type="button" data-quiz-action="prev"${state.currentQuizIndex === 0 ? " disabled" : ""}>Previous</button>
-          <button class="quiz-reveal-button" type="button" data-quiz-action="toggle-answer" aria-expanded="${String(state.quizAnswerVisible)}">${state.quizAnswerVisible ? "Hide answer" : "Reveal answer"}</button>
-          <button class="quiz-nav-button" type="button" data-quiz-action="next"${state.currentQuizIndex === quizData.length - 1 ? " disabled" : ""}>Next</button>
+          <button class="quiz-nav-button" type="button" data-quiz-action="prev"${state.currentQuizIndex === 0 ? " disabled" : ""}>${prevLabel}</button>
+          <button class="quiz-reveal-button" type="button" data-quiz-action="toggle-answer" aria-expanded="${String(state.quizAnswerVisible)}">${state.quizAnswerVisible ? hideLabel : revealLabel}</button>
+          <button class="quiz-nav-button" type="button" data-quiz-action="next"${state.currentQuizIndex === quizData.length - 1 ? " disabled" : ""}>${nextLabel}</button>
         </div>
         <div class="quiz-answer${state.quizAnswerVisible ? " open" : ""}" ${state.quizAnswerVisible ? "" : "hidden"}>
-          <p><strong>Expected answer.</strong> ${escapeHtml(item.expected)}</p>
-          <p><strong>Book signal.</strong> ${escapeHtml(item.signal)}</p>
+          <p><strong>${expectedLabel}</strong> ${escapeHtml(localizedItem.expected)}</p>
+          <p><strong>${signalLabel}</strong> ${escapeHtml(localizedItem.signal)}</p>
         </div>
       `;
+    }
+
+    function getLocalizedQuizItem(item, index) {
+      if (state.contentLang !== "zh") return item;
+      const translation = item.zh || quizTranslationsZh[index];
+      if (!translation) return item;
+      return {
+        scope: translation.scope || item.scope,
+        question: translation.question || item.question,
+        expected: translation.expected || item.expected,
+        signal: translation.signal || item.signal,
+        relatedLabel: translation.relatedLabel || item.relatedLabel
+      };
     }
 
     function escapeHtml(value) {
@@ -343,8 +626,10 @@
       button.addEventListener("click", () => scrollToTarget(button.dataset.scrollTarget));
     });
 
+    prepareLanguageAwareDeepDives();
+
     document.querySelectorAll("[data-open-deep]").forEach((button) => {
-      button.addEventListener("click", () => openDrawer(button.dataset.openDeep, button.dataset.lang));
+      button.addEventListener("click", () => openDrawer(button.dataset.openDeep, button.dataset.lang || state.contentLang));
     });
 
     document.querySelectorAll("[data-drawer-lang]").forEach((button) => {
@@ -358,6 +643,9 @@
     drawerBackdrop.addEventListener("click", closeDrawer);
     themeButtons.forEach((button) => {
       button.addEventListener("click", toggleTheme);
+    });
+    languageButtons.forEach((button) => {
+      button.addEventListener("click", toggleLanguage);
     });
     collapseButtons.forEach((button) => {
       button.addEventListener("click", () => toggleCollapsedNav(button));
@@ -393,6 +681,7 @@
     });
 
     loadTheme();
+    loadLanguage();
     loadChapterNavState();
     loadQuizState();
     loadSavedView();
