@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter6 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter06-concept1": {
     "title": "Tight control often creates instability",
+    "titleZh": "管得太紧反而制造不稳定",
     "chapterLabel": "Chapter 6",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter06-concept2": {
     "title": "Randomness can help systems find better states",
+    "titleZh": "随机性帮助系统找到更优状态",
     "chapterLabel": "Chapter 6",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter06-concept3": {
     "title": "Systems need turnover and reshuffling to renew themselves",
+    "titleZh": "系统需要更迭与洗牌来自我更新",
     "chapterLabel": "Chapter 6",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter06-concept4": {
     "title": "Forced calm in politics often stores explosive risk",
+    "titleZh": "强制的政治平静会积累爆炸性风险",
     "chapterLabel": "Chapter 6",
     "en": [
       [

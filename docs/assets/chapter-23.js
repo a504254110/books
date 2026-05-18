@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter23 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter23-concept1": {
     "title": "Skin in the game is the ethical opposite of the agency problem",
+    "titleZh": "切肤之痛是代理问题的伦理对立面",
     "chapterLabel": "Chapter 23",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter23-concept2": {
     "title": "Talk without risk is a free option",
+    "titleZh": "没风险的言论是免费的期权",
     "chapterLabel": "Chapter 23",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter23-concept3": {
     "title": "Track record and portfolio reveal more than postdiction",
+    "titleZh": "履历和组合比事后解释更可靠",
     "chapterLabel": "Chapter 23",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter23-concept4": {
     "title": "Modern corporations and banks industrialize transferred antifragility",
+    "titleZh": "现代公司与银行把转嫁的反脆弱工业化了",
     "chapterLabel": "Chapter 23",
     "en": [
       [

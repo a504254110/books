@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter22 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter22-concept1": {
     "title": "Life expectancy gains do not defend every medical addition",
+    "titleZh": "寿命延长不能为每一项医疗加项背书",
     "chapterLabel": "Chapter 22",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter22-concept2": {
     "title": "In daily life, subtraction is often the safer health strategy",
+    "titleZh": "日常生活里减法是更安全的健康策略",
     "chapterLabel": "Chapter 22",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter22-concept3": {
     "title": "Intermittent deprivation can be healthier than steady abundance",
+    "titleZh": "间歇性匮乏比持续丰盛更健康",
     "chapterLabel": "Chapter 22",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter22-concept4": {
     "title": "A long life is not worth much if it becomes a fragile life",
+    "titleZh": "活得久但脆弱并不值得追求",
     "chapterLabel": "Chapter 22",
     "en": [
       [

@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter9 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter09-concept1": {
     "title": "Fat Tony reads people and systems through fragility cues",
+    "titleZh": "胖东尼靠脆弱信号读人和系统",
     "chapterLabel": "Chapter 9",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter09-concept2": {
     "title": "Fragilistas substitute polish for contact with reality",
+    "titleZh": "脆弱派用漂亮论述代替真实接触",
     "chapterLabel": "Chapter 9",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter09-concept3": {
     "title": "Consequences matter more than elegant arguments",
+    "titleZh": "后果比漂亮论证更重要",
     "chapterLabel": "Chapter 9",
     "en": [
       [

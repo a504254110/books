@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter24 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter24-concept1": {
     "title": "Profession often reshapes ethics instead of merely expressing it",
+    "titleZh": "职业会重塑伦理，而不只是表达伦理",
     "chapterLabel": "Chapter 24",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter24-concept2": {
     "title": "Free opinion requires self-ownership, not just wealth",
+    "titleZh": "言论自由靠自主，不只是靠财富",
     "chapterLabel": "Chapter 24",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter24-concept3": {
     "title": "Complex regulation gives insiders legal ways to exploit the public",
+    "titleZh": "复杂监管给内部人合法的剥削路径",
     "chapterLabel": "Chapter 24",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter24-concept4": {
     "title": "Organized knowledge creates a researcher's free option",
+    "titleZh": "组织化知识给研究者制造了免费期权",
     "chapterLabel": "Chapter 24",
     "en": [
       [

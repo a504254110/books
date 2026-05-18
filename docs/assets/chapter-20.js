@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter20 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter20-concept1": {
     "title": "The best forecast usually starts by subtracting the fragile",
+    "titleZh": "最好的预测从减掉脆弱开始",
     "chapterLabel": "Chapter 20",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter20-concept2": {
     "title": "The Lindy effect makes old nonperishable things stronger bets",
+    "titleZh": "林迪效应：时间越久的非消耗品越靠谱",
     "chapterLabel": "Chapter 20",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter20-concept3": {
     "title": "Neomania mistakes rational redesign for real improvement",
+    "titleZh": "新潮癖把重新设计错当成真改进",
     "chapterLabel": "Chapter 20",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter20-concept4": {
     "title": "Time filters noise out of books, science, and ideas",
+    "titleZh": "时间会从书、科学和观念中筛掉噪声",
     "chapterLabel": "Chapter 20",
     "en": [
       [

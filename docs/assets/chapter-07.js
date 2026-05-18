@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter7 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter07-concept1": {
     "title": "Naive intervention mistakes the urge to help for actual benefit",
+    "titleZh": "天真干预把“想帮忙”误当成“真有用”",
     "chapterLabel": "Chapter 7",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter07-concept2": {
     "title": "Iatrogenics is hidden harm caused by the helper",
+    "titleZh": "医源性伤害：帮助者造成的隐性伤害",
     "chapterLabel": "Chapter 7",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter07-concept3": {
     "title": "In opaque systems, delay can be disciplined restraint",
+    "titleZh": "不透明系统里，延后行动也是一种纪律",
     "chapterLabel": "Chapter 7",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter07-concept4": {
     "title": "Too much information makes people overreact to noise",
+    "titleZh": "信息过载让人对噪声过度反应",
     "chapterLabel": "Chapter 7",
     "en": [
       [

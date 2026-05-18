@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter13 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter13-concept1": {
     "title": "Invention and implementation are different breakthroughs",
+    "titleZh": "发明和落地是两种不同的突破",
     "chapterLabel": "Chapter 13",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter13-concept2": {
     "title": "Trial and error is guided search, not dumb randomness",
+    "titleZh": "试错是有导向的搜索，不是瞎随机",
     "chapterLabel": "Chapter 13",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter13-concept3": {
     "title": "The lecturing-birds illusion mistakes practice for a lecture effect",
+    "titleZh": "“教鸟飞”的错觉：把实践当成理论的功劳",
     "chapterLabel": "Chapter 13",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter13-concept4": {
     "title": "Epiphenomena make people tell the causal story backward",
+    "titleZh": "附带现象让人把因果故事讲反",
     "chapterLabel": "Chapter 13",
     "en": [
       [

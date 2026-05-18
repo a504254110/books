@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter16 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter16-concept1": {
     "title": "The ecological and the ludic are not the same training ground",
+    "titleZh": "生态环境与游戏环境不是同一种训练场",
     "chapterLabel": "Chapter 16",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter16-concept2": {
     "title": "Standardized education often strips away optionality",
+    "titleZh": "标准化教育会剥掉期权",
     "chapterLabel": "Chapter 16",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter16-concept3": {
     "title": "Autodidactic and flaneur-like learning preserves antifragility",
+    "titleZh": "自学和闲游式学习保住反脆弱",
     "chapterLabel": "Chapter 16",
     "en": [
       [

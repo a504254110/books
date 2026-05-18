@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter21 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter21-concept1": {
     "title": "Under opacity, the burden of proof falls on the unnatural intervention",
+    "titleZh": "不透明时，举证责任落在反自然干预上",
     "chapterLabel": "Chapter 21",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter21-concept2": {
     "title": "Iatrogenics is nonlinear, so treatment should focus on severe cases",
+    "titleZh": "医源性伤害非线性，治疗应聚焦重症",
     "chapterLabel": "Chapter 21",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter21-concept3": {
     "title": "In biology, irregular stress can beat steady optimization",
+    "titleZh": "生物学里不规则压力胜于稳定优化",
     "chapterLabel": "Chapter 21",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter21-concept4": {
     "title": "Metric improvement is not the same thing as patient improvement",
+    "titleZh": "指标改善不等于病人改善",
     "chapterLabel": "Chapter 21",
     "en": [
       [

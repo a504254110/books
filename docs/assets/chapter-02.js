@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter2 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter02-concept1": {
     "title": "Post-traumatic growth is the neglected mirror image of trauma",
+    "titleZh": "创伤之后的成长常被忽略",
     "chapterLabel": "Chapter 2",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter02-concept2": {
     "title": "Overcompensation builds extra capacity, not just repair",
+    "titleZh": "过度补偿构建多余产能，而非只是修复",
     "chapterLabel": "Chapter 2",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter02-concept3": {
     "title": "Too little challenge can weaken performance",
+    "titleZh": "挑战不足会削弱表现",
     "chapterLabel": "Chapter 2",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter02-concept4": {
     "title": "Information and repression often strengthen what they attack",
+    "titleZh": "压制反而会让被攻击者更强",
     "chapterLabel": "Chapter 2",
     "en": [
       [

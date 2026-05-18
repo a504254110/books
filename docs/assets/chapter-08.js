@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter8 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter08-concept1": {
     "title": "Forecasting has no credible record in Black Swan domains",
+    "titleZh": "预测在黑天鹅领域并无可信记录",
     "chapterLabel": "Chapter 8",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter08-concept2": {
     "title": "Forecasting is harmful when it licenses fragility",
+    "titleZh": "若预测变成放任脆弱的借口，就有害",
     "chapterLabel": "Chapter 8",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter08-concept3": {
     "title": "Replace prediction with fragility detection",
+    "titleZh": "用脆弱性识别代替预测",
     "chapterLabel": "Chapter 8",
     "en": [
       [

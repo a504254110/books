@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter18 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter18-concept1": {
     "title": "Fragility and antifragility are nonlinear response shapes",
+    "titleZh": "脆弱与反脆弱是非线性反应形状",
     "chapterLabel": "Chapter 18",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter18-concept2": {
     "title": "One large shock is not equivalent to many small ones",
+    "titleZh": "一次大冲击 ≠ 多次小冲击",
     "chapterLabel": "Chapter 18",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter18-concept3": {
     "title": "Scaling changes the nature of risk",
+    "titleZh": "规模会改变风险的性质",
     "chapterLabel": "Chapter 18",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter18-concept4": {
     "title": "Redundancy is rational in nonlinear systems",
+    "titleZh": "非线性系统里冗余是理性的",
     "chapterLabel": "Chapter 18",
     "en": [
       [

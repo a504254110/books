@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter11 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter11-concept1": {
     "title": "The first step is to remove catastrophic downside",
+    "titleZh": "第一步是先消除致命下行",
     "chapterLabel": "Chapter 11",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter11-concept2": {
     "title": "The barbell combines safety and speculation",
+    "titleZh": "杠铃策略：把安全与投机分开组合",
     "chapterLabel": "Chapter 11",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter11-concept3": {
     "title": "Many careers work best when income security and upside are separated",
+    "titleZh": "把收入安全与上行分开的事业更稳",
     "chapterLabel": "Chapter 11",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter11-concept4": {
     "title": "The middle is often more dangerous than the extremes",
+    "titleZh": "中间地带常比两端更危险",
     "chapterLabel": "Chapter 11",
     "en": [
       [

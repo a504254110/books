@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter10 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter10-concept1": {
     "title": "Seneca solves antifragility as asymmetry",
+    "titleZh": "塞内卡把反脆弱写成不对称",
     "chapterLabel": "Chapter 10",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter10-concept2": {
     "title": "Stoic practice lowers the emotional downside of loss",
+    "titleZh": "斯多葛修炼降低损失的情绪下行",
     "chapterLabel": "Chapter 10",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter10-concept3": {
     "title": "Dependence itself is a source of fragility",
+    "titleZh": "依赖本身就是脆弱的来源",
     "chapterLabel": "Chapter 10",
     "en": [
       [

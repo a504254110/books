@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter14 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter14-concept1": {
     "title": "Relevant knowledge is often not narratable knowledge",
+    "titleZh": "真正有用的知识常常说不清楚",
     "chapterLabel": "Chapter 14",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter14-concept2": {
     "title": "Correlation between universities and wealth does not settle causation",
+    "titleZh": "大学与财富的相关性不等于因果",
     "chapterLabel": "Chapter 14",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter14-concept3": {
     "title": "\"Not the same thing\" is a rule against bad transfer",
+    "titleZh": "“不是同一回事”：警惕错误类比",
     "chapterLabel": "Chapter 14",
     "en": [
       [

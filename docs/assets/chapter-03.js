@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter3 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter03-concept1": {
     "title": "Living systems can learn from stress; machines mainly wear down",
+    "titleZh": "生命体从压力中学习，机器只会损耗",
     "chapterLabel": "Chapter 3",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter03-concept2": {
     "title": "Short stress with recovery differs from chronic stress",
+    "titleZh": "短压力加恢复 ≠ 慢性压力",
     "chapterLabel": "Chapter 3",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter03-concept3": {
     "title": "Touristification removes the randomness people use to learn",
+    "titleZh": "旅游化抹掉学习所需的随机性",
     "chapterLabel": "Chapter 3",
     "en": [
       [

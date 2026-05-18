@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.epilogue = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "epilogue-concept1": {
     "title": "The book ends with a cycle of loss followed by renewal",
+    "titleZh": "本书以损失—更新的循环作结",
     "chapterLabel": "Epilogue",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "epilogue-concept2": {
     "title": "Fat Tony's last act is still downside-first prudence",
+    "titleZh": "胖东尼的最后一幕仍是“先看下行”的审慎",
     "chapterLabel": "Epilogue",
     "en": [
       [

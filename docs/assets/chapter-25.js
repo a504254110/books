@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter25 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter25-concept1": {
     "title": "The book's one-leg summary is a generator, not a slogan",
+    "titleZh": "全书的“一句话总结”是生成器，不是口号",
     "chapterLabel": "Chapter 25",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter25-concept2": {
     "title": "The practical problem is exposure, not total understanding",
+    "titleZh": "真正要解决的是暴露，不是完全理解",
     "chapterLabel": "Chapter 25",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter25-concept3": {
     "title": "Ethics and vitality are both about relation to volatility",
+    "titleZh": "伦理与生命力都取决于和波动的关系",
     "chapterLabel": "Chapter 25",
     "en": [
       [

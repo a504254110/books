@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter17 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter17-concept1": {
     "title": "The unintelligible is not the unintelligent",
+    "titleZh": "说不清楚不等于不聪明",
     "chapterLabel": "Chapter 17",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter17-concept2": {
     "title": "Rationalism can mistake explanation for cause",
+    "titleZh": "理性主义易把解释当成原因",
     "chapterLabel": "Chapter 17",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter17-concept3": {
     "title": "Traditions can store intelligence that no one person can fully explain",
+    "titleZh": "传统里藏着无人能完整解释的智慧",
     "chapterLabel": "Chapter 17",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter17-concept4": {
     "title": "Payoff and fragility matter more than True or False",
+    "titleZh": "回报与脆弱比真假更重要",
     "chapterLabel": "Chapter 17",
     "en": [
       [

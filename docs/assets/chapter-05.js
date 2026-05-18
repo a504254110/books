@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter5 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter05-concept1": {
     "title": "Apparent stability can hide deeper fragility",
+    "titleZh": "表面稳定常常隐藏深层脆弱",
     "chapterLabel": "Chapter 5",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter05-concept2": {
     "title": "Mediocristan and Extremistan are different randomness regimes",
+    "titleZh": "平均斯坦与极端斯坦是两种随机机制",
     "chapterLabel": "Chapter 5",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter05-concept3": {
     "title": "Municipal noise is often stabilizing",
+    "titleZh": "市政层面的小噪声反而起稳定作用",
     "chapterLabel": "Chapter 5",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter05-concept4": {
     "title": "Switzerland benefits from other people's shocks",
+    "titleZh": "瑞士从他人的冲击中获益",
     "chapterLabel": "Chapter 5",
     "en": [
       [

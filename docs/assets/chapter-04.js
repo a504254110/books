@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter4 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter04-concept1": {
     "title": "The whole can be antifragile because the parts are fragile",
+    "titleZh": "整体反脆弱，靠的是局部脆弱",
     "chapterLabel": "Chapter 4",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter04-concept2": {
     "title": "Death and error are part of how living systems learn",
+    "titleZh": "死亡和错误是系统学习的一部分",
     "chapterLabel": "Chapter 4",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter04-concept3": {
     "title": "Small isolated mistakes teach; synchronized mistakes blow up",
+    "titleZh": "分散的小错有教益，同步的错会爆雷",
     "chapterLabel": "Chapter 4",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter04-concept4": {
     "title": "Entrepreneurs matter because they carry real downside",
+    "titleZh": "企业家的意义在于承担真实风险",
     "chapterLabel": "Chapter 4",
     "en": [
       [

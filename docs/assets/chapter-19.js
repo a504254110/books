@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter19 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter19-concept1": {
     "title": "The inverse philosopher's stone detects fragility by acceleration of harm",
+    "titleZh": "反向贤者之石：用伤害加速度看脆弱",
     "chapterLabel": "Chapter 19",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter19-concept2": {
     "title": "In fragile systems model error is usually one-sided",
+    "titleZh": "脆弱系统里的模型误差通常单向",
     "chapterLabel": "Chapter 19",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter19-concept3": {
     "title": "In nonlinear settings the average can hide the real danger",
+    "titleZh": "非线性场景下平均值会掩盖真正危险",
     "chapterLabel": "Chapter 19",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter19-concept4": {
     "title": "Optionality is the positive philosopher's stone",
+    "titleZh": "期权性是正向的贤者之石",
     "chapterLabel": "Chapter 19",
     "en": [
       [

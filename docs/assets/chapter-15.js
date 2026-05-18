@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter15 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter15-concept1": {
     "title": "Official histories retrofit theory onto practical success",
+    "titleZh": "官方历史把理论后贴到实践成功上",
     "chapterLabel": "Chapter 15",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter15-concept2": {
     "title": "Engineering and architecture often worked before theory caught up",
+    "titleZh": "工程与建筑常常先行于理论",
     "chapterLabel": "Chapter 15",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter15-concept3": {
     "title": "Medicine advanced through empirics and serendipity more than design narratives admit",
+    "titleZh": "医学进步多靠经验和偶然，而非设计",
     "chapterLabel": "Chapter 15",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter15-concept4": {
     "title": "Optional progress looks messy to planners and statisticians",
+    "titleZh": "依靠期权的进步看上去乱糟糟",
     "chapterLabel": "Chapter 15",
     "en": [
       [

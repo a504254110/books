@@ -8,6 +8,7 @@ window.ANTIFRAGILE_CHAPTERS.chapter12 = {
 window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {}, {
   "chapter12-concept1": {
     "title": "Thales mattered because he had an option, not because he had a theory",
+    "titleZh": "泰勒斯赢在拿到了期权，而不是理论",
     "chapterLabel": "Chapter 12",
     "en": [
       [
@@ -40,6 +41,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter12-concept2": {
     "title": "Sweet grapes means Thales tested both wealth and his own motives",
+    "titleZh": "酸葡萄的反面：他在测试自己的动机",
     "chapterLabel": "Chapter 12",
     "en": [
       [
@@ -72,6 +74,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter12-concept3": {
     "title": "Many of the best options in life are embedded, free, or cheap",
+    "titleZh": "生活里最好的期权往往便宜或免费",
     "chapterLabel": "Chapter 12",
     "en": [
       [
@@ -104,6 +107,7 @@ window.ANTIFRAGILE_EXPLAINERS = Object.assign(window.ANTIFRAGILE_EXPLAINERS || {
   },
   "chapter12-concept4": {
     "title": "Options like dispersion, fanatics, and favorable extremes",
+    "titleZh": "分散、狂热者与有利极端这些期权",
     "chapterLabel": "Chapter 12",
     "en": [
       [
