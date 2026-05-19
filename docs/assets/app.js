@@ -1,4 +1,4 @@
-    const APP_VERSION = "89a1ba93-4249-45ed-8cc1-fdf7a69904c7";
+    const APP_VERSION = "4747be42-8c90-463f-ade6-6b00ecdae940";
     const appVersionStorageKey = "antifragile-html-reader:app-version";
 
     try {
@@ -653,10 +653,17 @@
     function applyGeneratedChineseReadingLists(view, isChinese) {
       const conceptSections = getChineseConceptSections(view);
       if (!conceptSections.length) return;
+      // Per-chapter overrides (e.g. oneMinuteZh) live on the chapter data object,
+      // looked up by mapping the view's id back to the chapter key.
+      const chapterKey = (view.id || "").replace(/-/g, "");
+      const chapterData = (window.ANTIFRAGILE_CHAPTERS || {})[chapterKey] || {};
       const coreIdeas = conceptSections.map((sections) => sections[0] && sections[0][1]).filter(Boolean);
       const details = conceptSections.map((sections) => firstParagraph((sections[1] && sections[1][1]) || "")).filter(Boolean);
       const examples = conceptSections.map((sections) => firstParagraph((sections[2] && sections[2][1]) || "")).filter(Boolean);
-      applyListTranslation(view.querySelectorAll(".abstract li"), coreIdeas, isChinese, true);
+      const oneMinuteZh = Array.isArray(chapterData.oneMinuteZh) && chapterData.oneMinuteZh.length
+        ? chapterData.oneMinuteZh
+        : coreIdeas;
+      applyListTranslation(view.querySelectorAll(".abstract li"), oneMinuteZh, isChinese, true);
       applyListTranslation(view.querySelectorAll(".insight-section--say .insight-list li"), coreIdeas, isChinese);
       applyListTranslation(view.querySelectorAll(".insight-section--distinctions .insight-list li"), details, isChinese);
       applyListTranslation(view.querySelectorAll(".insight-section--confusions .insight-list li"), details.slice(0, 2), isChinese);
