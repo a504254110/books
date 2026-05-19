@@ -7,7 +7,19 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Antifragile Reader</title>
-  <link rel="stylesheet" href="assets/styles.css?v=fb15dbf5-cb13-4105-9086-792f4b2784c3">
+  <script>
+    // Single source of truth for cache-busting. Bump this one string to invalidate
+    // every asset URL at once; the inline loader at the bottom of <body> reads it.
+    window.APP_VERSION = "3aa4f63e-f777-433c-8b77-ee7bdf7092bd";
+  </script>
+  <script>
+    (function () {
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "assets/styles.css?v=" + window.APP_VERSION;
+      document.head.appendChild(link);
+    })();
+  </script>
 </head>
 <body>
   <div class="app">
@@ -291,33 +303,28 @@
     <div class="drawer-content" id="drawerContent"></div>
   </aside>
 
-  <script src="assets/chapter-01.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-02.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-03.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-04.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-05.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-06.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-07.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-08.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-09.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-10.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-11.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-12.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-13.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-14.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-15.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-16.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-17.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-18.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-19.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-20.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-21.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-22.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-23.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-24.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/chapter-25.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/epilogue.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/quiz.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
-  <script src="assets/app.js?v=fb15dbf5-cb13-4105-9086-792f4b2784c3"></script>
+  <script>
+    (function () {
+      // Inject every asset script in document order, all stamped with the single
+      // APP_VERSION defined at the top of <head>. Bumping the version is now a
+      // one-line change up there — no more 30 string replaces.
+      var v = window.APP_VERSION;
+      var names = [
+        "chapter-01.js", "chapter-02.js", "chapter-03.js", "chapter-04.js", "chapter-05.js",
+        "chapter-06.js", "chapter-07.js", "chapter-08.js", "chapter-09.js", "chapter-10.js",
+        "chapter-11.js", "chapter-12.js", "chapter-13.js", "chapter-14.js", "chapter-15.js",
+        "chapter-16.js", "chapter-17.js", "chapter-18.js", "chapter-19.js", "chapter-20.js",
+        "chapter-21.js", "chapter-22.js", "chapter-23.js", "chapter-24.js", "chapter-25.js",
+        "epilogue.js", "quiz.js", "app.js"
+      ];
+      names.forEach(function (name) {
+        var s = document.createElement("script");
+        s.src = "assets/" + name + "?v=" + v;
+        // Force in-order execution; without this, dynamically-injected scripts run async.
+        s.async = false;
+        document.body.appendChild(s);
+      });
+    })();
+  </script>
 </body>
 </html>

@@ -423,6 +423,71 @@ def test_mobile_topbar_visible(page: Page, ctx: dict) -> None:
     assert display == "flex", f"Topbar expected flex on mobile, got {display}"
 
 
+def test_mobile_no_horizontal_overflow(page: Page, ctx: dict) -> None:
+    """The mobile topbar used to leak negative horizontal margins from the desktop
+    base rule, pushing html.scrollWidth past clientWidth by ~22 px and allowing a
+    tiny left-right scroll. Guard against regression."""
+    if not ctx["is_mobile"]:
+        return
+    reset_storage(page)
+    sizes = page.evaluate(
+        """
+        () => {
+          const h = document.documentElement;
+          return { clientWidth: h.clientWidth, scrollWidth: h.scrollWidth, bodyScroll: document.body.scrollWidth };
+        }
+        """
+    )
+    overflow = sizes["scrollWidth"] - sizes["clientWidth"]
+    assert overflow <= 0.5, (
+        f"Mobile document overflows horizontally: clientWidth={sizes['clientWidth']}, "
+        f"scrollWidth={sizes['scrollWidth']} (excess {overflow} px)"
+    )
+
+
+def test_mobile_shortcut_hint_hidden(page: Page, ctx: dict) -> None:
+    """The Cmd/Ctrl+K hint is misleading on mobile (no keyboard); it should be hidden."""
+    if not ctx["is_mobile"]:
+        return
+    reset_storage(page)
+    displays = page.evaluate(
+        "() => Array.from(document.querySelectorAll('.shortcut-key')).map(k => getComputedStyle(k).display)"
+    )
+    assert displays, "no .shortcut-key elements found"
+    visible = [d for d in displays if d != "none"]
+    assert not visible, f".shortcut-key should all be hidden on mobile, got displays={displays}"
+
+
+def test_mobile_tap_outside_closes_sidebar(page: Page, ctx: dict) -> None:
+    """Open the sidebar, tap somewhere outside it, sidebar should auto-close."""
+    if not ctx["is_mobile"]:
+        return
+    reset_storage(page)
+    page.locator("#menuButton").click()
+    page.wait_for_timeout(220)
+    assert "open" in (page.locator("#sidebar").get_attribute("class") or ""), "sidebar did not open"
+    # Tap just outside the sidebar's right edge. Sidebar width on mobile ≈ 343 px,
+    # viewport innerWidth ≈ 413 (mobile DPR inflation), so x=395 lands on main area.
+    page.mouse.click(395, 400)
+    page.wait_for_timeout(220)
+    cls = page.locator("#sidebar").get_attribute("class") or ""
+    assert "open" not in cls, f"sidebar should have auto-closed after tap-outside, class={cls!r}"
+
+
+def test_mobile_tap_inside_sidebar_keeps_open(page: Page, ctx: dict) -> None:
+    """Tapping a non-navigating control inside the sidebar (theme/language) should
+    NOT trigger the auto-close path."""
+    if not ctx["is_mobile"]:
+        return
+    reset_storage(page)
+    page.locator("#menuButton").click()
+    page.wait_for_timeout(220)
+    page.locator("#sidebar [data-language-toggle]").first.click()
+    page.wait_for_timeout(220)
+    cls = page.locator("#sidebar").get_attribute("class") or ""
+    assert "open" in cls, f"sidebar should stay open after in-sidebar control click, class={cls!r}"
+
+
 # --- desktop-only --- #
 
 def test_desktop_topbar_hidden(page: Page, ctx: dict) -> None:
@@ -465,6 +530,140 @@ def test_desktop_sidebar_collapse_and_restore(page: Page, ctx: dict) -> None:
     assert page.evaluate("() => document.documentElement.dataset.sidebarCollapsed") == "false"
 
 
+def test_desktop_shortcut_hint_visible(page: Page, ctx: dict) -> None:
+    """The Cmd/Ctrl+K hint should still render on desktop (keyboards exist there)."""
+    if ctx["is_mobile"]:
+        return
+    reset_storage(page)
+    visible = page.evaluate(
+        "() => Array.from(document.querySelectorAll('.shortcut-key')).filter(k => getComputedStyle(k).display !== 'none').length"
+    )
+    assert visible >= 1, f"At least one .shortcut-key should be visible on desktop, got {visible}"
+
+
+def test_chapter_zh_one_minute_uses_chapter_data(page: Page, ctx: dict) -> None:
+    """The Chinese 'Chapter in one minute' list must come from the per-chapter
+    oneMinuteZh array (a 1:1 translation of the English list), NOT from the first
+    sentence of each concept. Regression-protect that wiring."""
+    reset_storage(page)
+    page.evaluate("() => document.querySelectorAll('[data-language-toggle]')[0].click()")
+    page.wait_for_timeout(250)
+    # Sample chapter 1: the EN line 1 begins with "The title frames three responses..."
+    # The new ZH translation should begin with "标题...达摩克利斯..." (not Taleb...类别).
+    page.evaluate("() => document.querySelector('[data-view-target=\"chapter-1\"]').click()")
+    page.wait_for_timeout(350)
+    first_line = page.evaluate(
+        "() => { const li = document.querySelector('#chapter-1 .abstract li'); return li ? li.textContent.trim() : ''; }"
+    )
+    assert "达摩克利斯" in first_line or "标题" in first_line, (
+        f"ch1 first one-minute line should be a translation of the EN line (contains '达摩克利斯'/'标题'), "
+        f"got {first_line[:120]!r}"
+    )
+    # Also verify chapter data carries the field
+    has_field = page.evaluate(
+        "() => Array.isArray((window.ANTIFRAGILE_CHAPTERS && window.ANTIFRAGILE_CHAPTERS.chapter1 || {}).oneMinuteZh)"
+    )
+    assert has_field, "window.ANTIFRAGILE_CHAPTERS.chapter1.oneMinuteZh should be an array"
+
+
+def test_compact_pager_navigation(page: Page, ctx: dict) -> None:
+    """Each chapter view should have a compact prev/next pager in .chapter-tools.
+    Click flow: ch5 → next → ch6 → prev → ch5. Edges: ch1 prev disabled, epilogue next disabled."""
+    reset_storage(page)
+    page.evaluate("() => document.querySelector('[data-view-target=\"chapter-5\"]').click()")
+    page.wait_for_timeout(250)
+    info = page.evaluate(
+        """
+        () => {
+          const pager = document.querySelector('#chapter-5 .compact-pager');
+          if (!pager) return null;
+          const btns = Array.from(pager.querySelectorAll('button'));
+          return {
+            count: btns.length,
+            prev: btns[0] ? btns[0].dataset.viewTarget : null,
+            next: btns[1] ? btns[1].dataset.viewTarget : null,
+          };
+        }
+        """
+    )
+    assert info and info["count"] == 2, f"ch5 should have a 2-button pager, got {info}"
+    assert info["prev"] == "chapter-4" and info["next"] == "chapter-6", info
+
+    page.locator("#chapter-5 .compact-pager button[data-view-target='chapter-6']").click()
+    page.wait_for_timeout(250)
+    assert active_view_id(page) == "chapter-6"
+
+    page.locator("#chapter-6 .compact-pager button[data-view-target='chapter-5']").click()
+    page.wait_for_timeout(250)
+    assert active_view_id(page) == "chapter-5"
+
+    # Edges
+    page.evaluate("() => document.querySelector('[data-view-target=\"chapter-1\"]').click()")
+    page.wait_for_timeout(250)
+    ch1 = page.evaluate(
+        "() => { const b = document.querySelectorAll('#chapter-1 .compact-pager button'); return {prev_disabled: b[0].disabled, next_target: b[1].dataset.viewTarget}; }"
+    )
+    assert ch1["prev_disabled"] is True, "ch1 prev should be disabled"
+    assert ch1["next_target"] == "chapter-2"
+
+    page.evaluate("() => document.querySelector('[data-view-target=\"epilogue\"]').click()")
+    page.wait_for_timeout(250)
+    ep = page.evaluate(
+        "() => { const b = document.querySelectorAll('#epilogue .compact-pager button'); return {prev_target: b[0].dataset.viewTarget, next_disabled: b[1].disabled}; }"
+    )
+    assert ep["prev_target"] == "chapter-25"
+    assert ep["next_disabled"] is True, "epilogue next should be disabled"
+
+
+def test_cache_busting_single_source(page: Page, ctx: dict) -> None:
+    """The bootstrap injects every asset with ?v=APP_VERSION read from window.APP_VERSION.
+    Confirm app.js's APP_VERSION matches window.APP_VERSION (single source of truth)."""
+    reset_storage(page)
+    info = page.evaluate(
+        """
+        () => {
+          const fromWindow = window.APP_VERSION;
+          const appJsSrc = Array.from(document.scripts).find(s => s.src.includes('app.js')).src;
+          const urlMatch = appJsSrc.match(/[?&]v=([^&]+)/);
+          return {
+            window_version: fromWindow,
+            app_js_query: urlMatch ? urlMatch[1] : null,
+          };
+        }
+        """
+    )
+    assert info["window_version"], "window.APP_VERSION must be set"
+    assert info["app_js_query"] == info["window_version"], (
+        f"app.js src ?v={info['app_js_query']} should match window.APP_VERSION={info['window_version']}"
+    )
+
+
+def test_chapter_zh_body_matches_en_paragraph_count(page: Page, ctx: dict) -> None:
+    """bodyZh should give the Chinese chapter body the same paragraph count and label
+    structure as the English original (Claim / Example / Why / Whole-book / Possible confusion)."""
+    reset_storage(page)
+    # Capture EN paragraph count for ch1 concept-1.
+    page.evaluate("() => document.querySelector('[data-view-target=\"chapter-1\"]').click()")
+    page.wait_for_timeout(300)
+    en_count = page.evaluate(
+        "() => document.querySelectorAll('#chapter-1 #concept-1 p:not(.grounding)').length"
+    )
+    # Switch to ZH; count visible (non-hidden) paragraphs in same concept.
+    page.evaluate("() => document.querySelectorAll('[data-language-toggle]')[0].click()")
+    page.wait_for_timeout(300)
+    zh_count = page.evaluate(
+        "() => Array.from(document.querySelectorAll('#chapter-1 #concept-1 p:not(.grounding)')).filter(p => !p.hidden).length"
+    )
+    assert zh_count == en_count, (
+        f"ZH visible paragraph count ({zh_count}) should match EN paragraph count ({en_count}) for ch1 concept-1"
+    )
+    # Also check first ZH paragraph carries the Chinese label '主张：' (matching EN 'Claim:').
+    first_zh = page.evaluate(
+        "() => document.querySelector('#chapter-1 #concept-1 p:not(.grounding)').textContent.trim()"
+    )
+    assert first_zh.startswith("主张"), f"first ZH paragraph should lead with '主张', got {first_zh[:60]!r}"
+
+
 # ----------------------------- runner ------------------------------------ #
 
 TESTS: list[Callable[[Page, dict], None]] = [
@@ -486,14 +685,23 @@ TESTS: list[Callable[[Page, dict], None]] = [
     test_view_persistence,
     test_chapter_collapse_toggle,
     test_no_console_errors_on_main_paths,
+    test_chapter_zh_one_minute_uses_chapter_data,
+    test_chapter_zh_body_matches_en_paragraph_count,
+    test_compact_pager_navigation,
+    test_cache_busting_single_source,
     # mobile-only
     test_mobile_menu_button_clickable,
     test_mobile_sidebar_open_close,
     test_mobile_sidebar_closes_on_navigation,
     test_mobile_deep_dive_not_triggerable,
     test_mobile_topbar_visible,
+    test_mobile_no_horizontal_overflow,
+    test_mobile_shortcut_hint_hidden,
+    test_mobile_tap_outside_closes_sidebar,
+    test_mobile_tap_inside_sidebar_keeps_open,
     # desktop-only
     test_desktop_topbar_hidden,
+    test_desktop_shortcut_hint_visible,
     test_desktop_sidebar_visible_by_default,
     test_desktop_sidebar_collapse_and_restore,
 ]

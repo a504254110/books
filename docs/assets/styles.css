@@ -994,6 +994,45 @@
       margin-top: 22px;
     }
 
+    .compact-pager {
+      display: inline-flex;
+      gap: 6px;
+      margin-left: auto;
+    }
+
+    .compact-pager-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      padding: 0;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--button-bg);
+      color: var(--ink);
+      cursor: pointer;
+      font-size: 1rem;
+      line-height: 1;
+      transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+    }
+
+    .compact-pager-btn:hover:not(:disabled) {
+      background: var(--surface-strong);
+      border-color: var(--accent);
+      color: var(--accent-strong);
+    }
+
+    .compact-pager-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .compact-pager-btn:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
     .locator {
       display: inline-flex;
       align-items: center;
@@ -1732,6 +1771,11 @@
            negative margins push the header past both viewport edges and create
            ~22 px of horizontal overflow. Reset them here. */
         margin: 0 0 16px;
+      }
+
+      /* Mobile has no physical keyboard; the Cmd/Ctrl+K hint is misleading there. */
+      .shortcut-key {
+        display: none;
       }
 
       .sidebar {

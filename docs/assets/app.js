@@ -1,4 +1,6 @@
-    const APP_VERSION = "fb15dbf5-cb13-4105-9086-792f4b2784c3";
+    // Defined in index.html's inline bootstrap. Falls back to empty string for
+    // legacy callers but in normal page loads it will always be set.
+    const APP_VERSION = window.APP_VERSION || "";
     const appVersionStorageKey = "antifragile-html-reader:app-version";
 
     try {
@@ -27,6 +29,44 @@
         .sort((a, b) => a.number - b.number);
       chapterMount.innerHTML = chapters.map((chapter) => chapter.html).join("");
     }
+
+    // Inject a compact prev/next pager into every chapter's .chapter-tools strip,
+    // right next to the "Chapter X of N" locator. We do this before the global
+    // viewTargetButtons capture below so the new buttons get the standard click handler.
+    (function injectCompactChapterPagers() {
+      const orderedViews = Array.from(document.querySelectorAll("article.view.chapter, #epilogue"))
+        .map((view) => ({
+          view,
+          id: view.id,
+          number: view.id === "epilogue" ? 1000 : Number(view.id.replace("chapter-", "")) || 0,
+        }))
+        .sort((a, b) => a.number - b.number);
+      orderedViews.forEach((item, index) => {
+        const tools = item.view.querySelector(".chapter-tools");
+        if (!tools || tools.querySelector(".compact-pager")) return;
+        const prev = index > 0 ? orderedViews[index - 1] : null;
+        const next = index < orderedViews.length - 1 ? orderedViews[index + 1] : null;
+        const pager = document.createElement("nav");
+        pager.className = "compact-pager";
+        pager.setAttribute("aria-label", "Chapter pagination");
+        const makeButton = (target, glyph, label) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "compact-pager-btn";
+          btn.setAttribute("aria-label", label);
+          btn.textContent = glyph;
+          if (target) {
+            btn.dataset.viewTarget = target;
+          } else {
+            btn.disabled = true;
+          }
+          return btn;
+        };
+        pager.appendChild(makeButton(prev ? prev.id : "", "←", prev ? "Previous chapter" : "No previous chapter"));
+        pager.appendChild(makeButton(next ? next.id : "", "→", next ? "Next chapter" : "No next chapter"));
+        tools.appendChild(pager);
+      });
+    })();
 
     const explainers = window.ANTIFRAGILE_EXPLAINERS || {};
     const translations = window.ANTIFRAGILE_TRANSLATIONS || {};
@@ -1126,6 +1166,17 @@
       const open = !sidebar.classList.contains("open");
       sidebar.classList.toggle("open", open);
       menuButton.setAttribute("aria-expanded", String(open));
+    });
+
+    // On mobile, tapping anywhere outside the sidebar dismisses it. Skip taps on the
+    // menu button itself (its own handler toggles the state) and taps inside the
+    // sidebar (so nav buttons, language/theme toggles, etc. still work).
+    document.addEventListener("click", (event) => {
+      if (!sidebar.classList.contains("open")) return;
+      if (!isMobileViewport()) return;
+      const target = event.target;
+      if (target.closest("#sidebar") || target.closest("#menuButton")) return;
+      closeMobileSidebar();
     });
 
     document.addEventListener("keydown", (event) => {
