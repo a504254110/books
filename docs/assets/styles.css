@@ -1727,6 +1727,11 @@
 
       .topbar {
         display: flex;
+        /* The base rule uses negative horizontal margins to align the topbar with
+           desktop main's padding. On mobile the parent layout collapses, so those
+           negative margins push the header past both viewport edges and create
+           ~22 px of horizontal overflow. Reset them here. */
+        margin: 0 0 16px;
       }
 
       .sidebar {

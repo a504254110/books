@@ -1,4 +1,4 @@
-    const APP_VERSION = "4747be42-8c90-463f-ade6-6b00ecdae940";
+    const APP_VERSION = "fb15dbf5-cb13-4105-9086-792f4b2784c3";
     const appVersionStorageKey = "antifragile-html-reader:app-version";
 
     try {
